@@ -166,7 +166,7 @@
     <p class="section-sub">The point of this project, stated plainly, before any table.</p>
     <div class="headline-grid">
       <div class="stat-tile"><div class="value">93%</div><div class="label">of researched applications are immediately buildable for AI agents</div></div>
-      <div class="stat-tile"><div class="value">OAuth2</div><div class="label">is the dominant authentication method — 39.5% of apps that support any auth support this</div></div>
+      <div class="stat-tile"><div class="value">OAuth2</div><div class="label">is the dominant authentication method, supported by 58 of the 100 apps</div></div>
       <div class="stat-tile"><div class="value">42</div><div class="label">applications already expose MCP support (42% of the set)</div></div>
       <div class="stat-tile"><div class="value">54</div><div class="label">apps are already live in Composio's own toolkit registry — direct ground truth, not a guess</div></div>
     </div>
@@ -188,14 +188,14 @@
         
           <div class="bar-row">
             <span class="label">API key</span>
-            <div class="bar-track"><div class="bar-fill" style="width:36.1%; background: var(--series-2);"></div></div>
-            <span class="bar-count">53</span>
+            <div class="bar-track"><div class="bar-fill" style="width:38.1%; background: var(--series-2);"></div></div>
+            <span class="bar-count">56</span>
           </div>
         
           <div class="bar-row">
             <span class="label">Token</span>
-            <div class="bar-track"><div class="bar-fill" style="width:12.9%; background: var(--series-3);"></div></div>
-            <span class="bar-count">19</span>
+            <div class="bar-track"><div class="bar-fill" style="width:17.7%; background: var(--series-3);"></div></div>
+            <span class="bar-count">26</span>
           </div>
         
           <div class="bar-row">
@@ -205,80 +205,14 @@
           </div>
         
           <div class="bar-row">
-            <span class="label">App Token</span>
-            <div class="bar-track"><div class="bar-fill" style="width:0.7%; background: var(--series-1);"></div></div>
-            <span class="bar-count">1</span>
-          </div>
-        
-          <div class="bar-row">
-            <span class="label">Bot Token</span>
-            <div class="bar-track"><div class="bar-fill" style="width:0.7%; background: var(--series-1);"></div></div>
-            <span class="bar-count">1</span>
-          </div>
-        
-          <div class="bar-row">
-            <span class="label">System User Token</span>
-            <div class="bar-track"><div class="bar-fill" style="width:0.7%; background: var(--series-1);"></div></div>
-            <span class="bar-count">1</span>
-          </div>
-        
-          <div class="bar-row">
-            <span class="label">JWT</span>
-            <div class="bar-track"><div class="bar-fill" style="width:0.7%; background: var(--series-1);"></div></div>
-            <span class="bar-count">1</span>
-          </div>
-        
-          <div class="bar-row">
-            <span class="label">None</span>
-            <div class="bar-track"><div class="bar-fill" style="width:0.7%; background: var(--series-1);"></div></div>
-            <span class="bar-count">1</span>
-          </div>
-        
-          <div class="bar-row">
-            <span class="label">Bearer Token</span>
-            <div class="bar-track"><div class="bar-fill" style="width:0.7%; background: var(--series-1);"></div></div>
-            <span class="bar-count">1</span>
-          </div>
-        
-          <div class="bar-row">
-            <span class="label">API Token</span>
-            <div class="bar-track"><div class="bar-fill" style="width:0.7%; background: var(--series-1);"></div></div>
-            <span class="bar-count">1</span>
-          </div>
-        
-          <div class="bar-row">
-            <span class="label">Global API Key</span>
-            <div class="bar-track"><div class="bar-fill" style="width:0.7%; background: var(--series-1);"></div></div>
-            <span class="bar-count">1</span>
-          </div>
-        
-          <div class="bar-row">
-            <span class="label">Public Key</span>
-            <div class="bar-track"><div class="bar-fill" style="width:0.7%; background: var(--series-1);"></div></div>
-            <span class="bar-count">1</span>
-          </div>
-        
-          <div class="bar-row">
-            <span class="label">Private Key</span>
-            <div class="bar-track"><div class="bar-fill" style="width:0.7%; background: var(--series-1);"></div></div>
-            <span class="bar-count">1</span>
-          </div>
-        
-          <div class="bar-row">
-            <span class="label">Personal Access Token</span>
-            <div class="bar-track"><div class="bar-fill" style="width:0.7%; background: var(--series-1);"></div></div>
-            <span class="bar-count">1</span>
+            <span class="label">Other</span>
+            <div class="bar-track"><div class="bar-fill" style="width:1.4%; background: var(--series-5);"></div></div>
+            <span class="bar-count">2</span>
           </div>
         
           <div class="bar-row">
             <span class="label">Basic</span>
             <div class="bar-track"><div class="bar-fill" style="width:0.7%; background: var(--series-4);"></div></div>
-            <span class="bar-count">1</span>
-          </div>
-        
-          <div class="bar-row">
-            <span class="label">Other</span>
-            <div class="bar-track"><div class="bar-fill" style="width:0.7%; background: var(--series-5);"></div></div>
             <span class="bar-count">1</span>
           </div>
         
@@ -510,18 +444,20 @@ python generate_report.py # stage 4: this page</pre>
       <div class="stat-tile"><div class="value">65%</div><div class="label">final accuracy (after browser-use re-check loop)</div></div>
     </div>
     <p class="workflow-note">
-      On this sample, first-pass and post-verification accuracy land within a single field-check of each
-      other. The browser-use loop didn't move the headline number, and we're reporting that as-is rather
-      than smoothing it over. But the reason isn't reasoning errors: on the two fields that actually decide
+      First-pass and post-verification accuracy land within one field-check of each other — the
+      browser-use loop didn't move the headline number, and we're reporting that flat rather than
+      smoothing it over. The reason isn't reasoning errors: on the two fields that actually decide
       whether an app is buildable — <code>self_serve</code> and <code>buildable</code> — accuracy didn't
-      change at all. Nearly every miss is concentrated in <code>authentication</code>, and most of those are
-      the agent naming the right auth family with the wrong specific term: Token vs. Bearer Token (Vercel),
-      API key vs. Public/Private Key pair (MongoDB Atlas), API key vs. Bot Token (Telegram), Token vs. App
-      Token (Lark). That's exact-string scoring undercounting semantically correct answers, not a
-      comprehension failure — the verification loop refined terminology, it didn't change integration
-      decisions. Separately, there's a real, repeated pattern worth flagging: the agent over-guesses
-      <code>self_serve_trial</code> when the docs actually say <code>self_serve_free</code>, across several
-      unrelated apps.
+      change at all. Nearly every miss sits in <code>authentication</code>, where the agent usually names
+      the right auth family with the wrong specific term: Token vs. Bearer Token (Vercel), API key vs.
+      Public/Private Key pair (MongoDB Atlas), API key vs. Bot Token (Telegram). That's exact-string
+      scoring punishing a semantically correct answer, not a comprehension failure — the loop refined
+      terminology, it didn't change integration decisions.
+    </p>
+    <p class="workflow-note">
+      <strong>One real pattern worth flagging:</strong> the agent repeatedly over-guesses
+      <code>self_serve_trial</code> when the docs actually say <code>self_serve_free</code> — a
+      consistent bias, not random noise.
     </p>
     
     <div class="card" style="margin-top:16px;">

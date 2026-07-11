@@ -9,6 +9,7 @@ so it works as a static deploy target (GitHub Pages / Netlify / anywhere).
 """
 
 import json
+from collections import Counter
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader
@@ -25,6 +26,26 @@ AUTH_COLOR_ORDER = {
     "OAuth2": "series-1", "API key": "series-2", "Token": "series-3",
     "Basic": "series-4", "Other": "series-5", "Unknown": "series-6",
 }
+
+# Human verification introduced precise token names (e.g. "Bearer Token",
+# "Public Key") that are accurate detail for the findings table but fragment
+# the summary chart into a long tail of singleton bars. Bucket back into the
+# assignment's own taxonomy (OAuth2 / API key / Token / Basic / Other /
+# Unknown) for the chart only — the findings table still shows exact terms.
+AUTH_BUCKETS = {
+    "oauth2": "OAuth2", "api key": "API key", "token": "Token", "basic": "Basic",
+    "bearer token": "Token", "app token": "Token", "bot token": "Token",
+    "system user token": "Token", "api token": "Token", "personal access token": "Token",
+    "public key": "API key", "private key": "API key", "global api key": "API key",
+    "jwt": "Token", "none": "Other", "other": "Other", "unknown": "Unknown",
+}
+
+
+def bucket_auth_distribution(raw: dict) -> dict:
+    bucketed = Counter()
+    for label, count in raw.items():
+        bucketed[AUTH_BUCKETS.get(label.strip().lower(), "Other")] += count
+    return dict(bucketed.most_common())
 
 
 def load_records():
@@ -93,7 +114,7 @@ def main():
     template = env.get_template("report.html.j2")
     html = template.render(
         total_apps=patterns["total_apps"],
-        auth_bars=bars(patterns["auth_distribution"], AUTH_COLOR_ORDER),
+        auth_bars=bars(bucket_auth_distribution(patterns["auth_distribution"]), AUTH_COLOR_ORDER),
         self_serve_bars=bars(patterns["self_serve_distribution"]),
         category_bars=category_bars(patterns["by_category"]),
         top_blockers=list(patterns["top_blockers"].items())[:6],

@@ -166,7 +166,7 @@
     <p class="section-sub">The point of this project, stated plainly, before any table.</p>
     <div class="headline-grid">
       <div class="stat-tile"><div class="value">{{ (buildable_today.pct * 100) | round | int }}%</div><div class="label">of researched applications are immediately buildable for AI agents</div></div>
-      <div class="stat-tile"><div class="value">{{ auth_bars[0].label if auth_bars else "—" }}</div><div class="label">is the dominant authentication method — {{ auth_bars[0].pct if auth_bars else 0 }}% of apps that support any auth support this</div></div>
+      <div class="stat-tile"><div class="value">{{ auth_bars[0].label if auth_bars else "—" }}</div><div class="label">is the dominant authentication method, supported by {{ auth_bars[0].count if auth_bars else 0 }} of the {{ total_apps }} apps</div></div>
       <div class="stat-tile"><div class="value">{{ mcp_coverage.count }}</div><div class="label">applications already expose MCP support ({{ (mcp_coverage.pct*100)|round|int }}% of the set)</div></div>
       <div class="stat-tile"><div class="value">{{ composio_registry_hits }}</div><div class="label">apps are already live in Composio's own toolkit registry — direct ground truth, not a guess</div></div>
     </div>
@@ -312,18 +312,20 @@ python generate_report.py # stage 4: this page</pre>
       <div class="stat-tile"><div class="value">{{ (accuracy.final_accuracy*100)|round|int }}%</div><div class="label">final accuracy (after browser-use re-check loop)</div></div>
     </div>
     <p class="workflow-note">
-      On this sample, first-pass and post-verification accuracy land within a single field-check of each
-      other. The browser-use loop didn't move the headline number, and we're reporting that as-is rather
-      than smoothing it over. But the reason isn't reasoning errors: on the two fields that actually decide
+      First-pass and post-verification accuracy land within one field-check of each other — the
+      browser-use loop didn't move the headline number, and we're reporting that flat rather than
+      smoothing it over. The reason isn't reasoning errors: on the two fields that actually decide
       whether an app is buildable — <code>self_serve</code> and <code>buildable</code> — accuracy didn't
-      change at all. Nearly every miss is concentrated in <code>authentication</code>, and most of those are
-      the agent naming the right auth family with the wrong specific term: Token vs. Bearer Token (Vercel),
-      API key vs. Public/Private Key pair (MongoDB Atlas), API key vs. Bot Token (Telegram), Token vs. App
-      Token (Lark). That's exact-string scoring undercounting semantically correct answers, not a
-      comprehension failure — the verification loop refined terminology, it didn't change integration
-      decisions. Separately, there's a real, repeated pattern worth flagging: the agent over-guesses
-      <code>self_serve_trial</code> when the docs actually say <code>self_serve_free</code>, across several
-      unrelated apps.
+      change at all. Nearly every miss sits in <code>authentication</code>, where the agent usually names
+      the right auth family with the wrong specific term: Token vs. Bearer Token (Vercel), API key vs.
+      Public/Private Key pair (MongoDB Atlas), API key vs. Bot Token (Telegram). That's exact-string
+      scoring punishing a semantically correct answer, not a comprehension failure — the loop refined
+      terminology, it didn't change integration decisions.
+    </p>
+    <p class="workflow-note">
+      <strong>One real pattern worth flagging:</strong> the agent repeatedly over-guesses
+      <code>self_serve_trial</code> when the docs actually say <code>self_serve_free</code> — a
+      consistent bias, not random noise.
     </p>
     {% if accuracy.accuracy_by_field %}
     <div class="card" style="margin-top:16px;">
