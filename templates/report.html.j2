@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Integration Intelligence — 100 App Feasibility Study</title>
+<title>Automating SaaS Integration Research for AI Agents — Composio Case Study</title>
 <style>
   :root {
     --surface-1: #fcfcfb; --page: #f9f9f7; --text-primary: #0b0b0b;
@@ -30,14 +30,29 @@
     line-height: 1.5;
   }
   .wrap { max-width: 1100px; margin: 0 auto; padding: 32px 20px 80px; }
-  header.hero { padding: 28px 0 8px; }
-  header.hero h1 { font-size: 28px; margin: 0 0 6px; }
-  header.hero p.sub { color: var(--text-secondary); margin: 0 0 4px; max-width: 780px; }
+  .toplinks { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+  .toplinks a { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600;
+    color: var(--text-primary); text-decoration: none; padding: 7px 14px; border-radius: 999px;
+    border: 1px solid var(--border); background: var(--surface-1); transition: border-color .15s; }
+  .toplinks a:hover { border-color: var(--series-1); }
+  .toplinks a.primary { background: var(--series-1); color: #fff; border-color: var(--series-1); }
+  header.hero { padding: 4px 0 8px; }
+  header.hero h1 { font-size: 30px; margin: 0 0 10px; line-height: 1.2; text-wrap: balance; }
+  header.hero p.sub { color: var(--text-secondary); margin: 0 0 4px; max-width: 780px; font-size: 15.5px; }
   header.hero .meta { color: var(--muted); font-size: 13px; margin-top: 10px; }
-  section { margin-top: 40px; }
-  h2 { font-size: 19px; margin: 0 0 4px; }
+  section { margin-top: 44px; }
+  h2 { font-size: 19px; margin: 0 0 4px; letter-spacing: -0.01em; }
   h2 .num { color: var(--muted); font-weight: 500; margin-right: 6px; }
   p.section-sub { color: var(--text-secondary); font-size: 14px; margin: 0 0 16px; }
+  p.takeaway { font-size: 13px; color: var(--text-secondary); margin: 12px 0 0; padding-top: 10px; border-top: 1px solid var(--grid); }
+  p.takeaway strong { color: var(--text-primary); font-weight: 600; }
+
+  .exec-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  @media (max-width: 820px) { .exec-summary { grid-template-columns: 1fr; } }
+  .exec-summary h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 8px; font-weight: 600; }
+  .exec-summary p, .exec-summary ul { font-size: 14px; margin: 0; }
+  .exec-summary ul { padding-left: 18px; }
+  .exec-summary li { margin: 4px 0; }
 
   .headline-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 12px; margin-top: 16px; }
   .stat-tile { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
@@ -73,6 +88,8 @@
 
   table { border-collapse: collapse; width: 100%; font-size: 13px; }
   th, td { padding: 8px 10px; border-bottom: 1px solid var(--grid); text-align: left; vertical-align: top; }
+  #findings-table td.description { max-width: 260px; display: -webkit-box; -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; overflow: hidden; }
   th { color: var(--text-secondary); font-weight: 600; position: sticky; top: 0; background: var(--surface-1); cursor: pointer; user-select: none; }
   th.sortable::after { content: " ⇅"; color: var(--muted); font-size: 11px; }
   tr:hover td { background: color-mix(in srgb, var(--text-primary) 4%, transparent); }
@@ -101,29 +118,62 @@
 <body>
 <div class="wrap">
 
+  <div class="toplinks">
+    <a class="primary" href="https://vighnesh-m-s.github.io/integration-intelligence/report/index.html" target="_blank" rel="noopener">Live Report ↗</a>
+    <a href="https://github.com/Vighnesh-M-S/integration-intelligence" target="_blank" rel="noopener">GitHub Repository ↗</a>
+    <a href="https://github.com/Vighnesh-M-S/integration-intelligence/blob/main/README.md" target="_blank" rel="noopener">README ↗</a>
+  </div>
+
   <header class="hero">
-    <h1>Integration Intelligence: can 100 real apps become agent toolkits today?</h1>
-    <p class="sub">A research agent (Composio SDK + LLM extraction + browser-based re-checks) researched
-      auth, self-serve access, API surface, and MCP status for 100 apps across 10 categories, then a human
-      graded a sample against real docs. This page is the full output: patterns first, then the agent,
-      the proof, and the verification — honestly, including where it got things wrong.</p>
+    <h1>Automating SaaS Integration Research for AI Agents</h1>
+    <p class="sub">A research agent evaluated 100 real SaaS applications across 10 categories to answer one
+      question: can each one become an AI agent toolkit today? It cross-checked Composio's own toolkit
+      registry against live documentation and LLM extraction, then a human verified a sample against the
+      real docs. Result: {{ (buildable_today.pct * 100) | round | int }}% of the apps are buildable now —
+      and everything below shows exactly how we know that, including where the agent got it wrong.</p>
     <p class="meta">Generated by <code>generate_report.py</code> from <code>data/summary.json</code> ·
       pipeline: <code>research.py → verify.py → analyze.py → generate_report.py</code></p>
   </header>
 
+  <section id="summary">
+    <h2><span class="num">1</span>Executive summary</h2>
+    <div class="card exec-summary">
+      <div>
+        <h3>Goal</h3>
+        <p>Research {{ total_apps }} SaaS applications to determine whether each one can become an AI agent
+          toolkit today — and if not, why.</p>
+      </div>
+      <div>
+        <h3>Approach</h3>
+        <p>An agent pipeline cross-checks Composio's own toolkit registry against live docs and LLM
+          extraction, flags uncertain answers for a second automated pass, and routes a sample to a human
+          for verification against the real documentation.</p>
+      </div>
+      <div>
+        <h3>Outcome</h3>
+        <ul>
+          <li>{{ (buildable_today.pct * 100) | round | int }}% of apps are buildable today</li>
+          <li>{{ auth_bars[0].label if auth_bars else "—" }} is the dominant authentication method</li>
+          <li>{{ mcp_coverage.count }} apps already expose MCP support</li>
+          <li>{{ easy_wins|length }} integrations are immediate opportunities</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <section id="headline">
-    <h2><span class="num">1</span>Headline patterns</h2>
+    <h2><span class="num">2</span>Headline findings</h2>
     <p class="section-sub">The point of this project, stated plainly, before any table.</p>
     <div class="headline-grid">
-      <div class="stat-tile"><div class="value">{{ (buildable_today.pct * 100) | round | int }}%</div><div class="label">of the {{ total_apps }} apps are agent-buildable today with no blocker</div></div>
-      <div class="stat-tile"><div class="value">{{ auth_bars[0].label if auth_bars else "—" }}</div><div class="label">dominant auth method ({{ auth_bars[0].pct if auth_bars else 0 }}% of apps that support it)</div></div>
-      <div class="stat-tile"><div class="value">{{ mcp_coverage.count }}</div><div class="label">apps with a known MCP server already ({{ (mcp_coverage.pct*100)|round|int }}%)</div></div>
-      <div class="stat-tile"><div class="value">{{ composio_registry_hits }}</div><div class="label">apps already live in Composio's own toolkit registry</div></div>
+      <div class="stat-tile"><div class="value">{{ (buildable_today.pct * 100) | round | int }}%</div><div class="label">of researched applications are immediately buildable for AI agents</div></div>
+      <div class="stat-tile"><div class="value">{{ auth_bars[0].label if auth_bars else "—" }}</div><div class="label">is the dominant authentication method — {{ auth_bars[0].pct if auth_bars else 0 }}% of apps that support any auth support this</div></div>
+      <div class="stat-tile"><div class="value">{{ mcp_coverage.count }}</div><div class="label">applications already expose MCP support ({{ (mcp_coverage.pct*100)|round|int }}% of the set)</div></div>
+      <div class="stat-tile"><div class="value">{{ composio_registry_hits }}</div><div class="label">apps are already live in Composio's own toolkit registry — direct ground truth, not a guess</div></div>
     </div>
   </section>
 
   <section id="patterns">
-    <h2><span class="num">2</span>Patterns across the 100</h2>
+    <h2><span class="num">3</span>Patterns across the {{ total_apps }}</h2>
     <p class="section-sub">Clustered, not a raw table. Full row-level data is in section 6.</p>
     <div class="charts-grid">
       <div class="card">
@@ -137,6 +187,8 @@
           </div>
         {% endfor %}
         </div>
+        <p class="takeaway"><strong>Takeaway:</strong> OAuth2 dominates modern SaaS authentication — it's the
+          single most-supported scheme, ahead of API keys and bearer tokens.</p>
       </div>
       <div class="card">
         <strong>Self-serve vs gated (overall)</strong>
@@ -149,6 +201,8 @@
           </div>
         {% endfor %}
         </div>
+        <p class="takeaway"><strong>Takeaway:</strong> most apps offer some form of self-serve access.
+          Payment gating is uncommon; partnership gating is rare.</p>
       </div>
     </div>
 
@@ -167,6 +221,9 @@
         </div>
       </div>
       {% endfor %}
+      <p class="takeaway"><strong>Takeaway:</strong> Finance and Fintech is the least self-serve category —
+        half its apps require a paid plan or a partner relationship before you can get credentials.
+        Communications, Dev/Infra, Marketing, and Productivity apps are close to fully self-serve.</p>
     </div>
 
     <div class="two-col" style="margin-top:20px;">
@@ -175,18 +232,22 @@
         <ul class="plain">
           {% for name, count in top_blockers %}<li>{{ name }} — {{ count }} apps</li>{% endfor %}
         </ul>
+        <p class="takeaway"><strong>Takeaway:</strong> when an app isn't buildable, it's almost always
+          because there's no public API at all — not pricing, and not partnership gates.</p>
       </div>
       <div class="card">
         <strong>Easy wins vs needs outreach</strong>
         <p style="font-size:13px; color:var(--text-secondary); margin:4px 0;">Easy win = self-serve credentials + buildable today. Needs outreach = partnership-gated or currently blocked.</p>
         <p style="font-size:13px;"><strong>{{ easy_wins|length }} easy wins:</strong> {{ easy_wins[:12]|join(', ') }}{% if easy_wins|length > 12 %}, +{{ easy_wins|length - 12 }} more{% endif %}</p>
         <p style="font-size:13px;"><strong>{{ needs_outreach|length }} need outreach:</strong> {{ needs_outreach[:12]|join(', ') }}{% if needs_outreach|length > 12 %}, +{{ needs_outreach|length - 12 }} more{% endif %}</p>
+        <p class="takeaway"><strong>Takeaway:</strong> {{ easy_wins|length }} apps need zero relationship-building
+          to start building against today — the remaining {{ needs_outreach|length }} need outreach first.</p>
       </div>
     </div>
   </section>
 
   <section id="agent">
-    <h2><span class="num">3</span>The agent: what it did, where it needed a human</h2>
+    <h2><span class="num">4</span>Research workflow</h2>
     <p class="section-sub">A simple linear pipeline — four scripts, no queues, no orchestration framework.</p>
     <div class="card">
       <div class="workflow">
@@ -196,22 +257,29 @@
         <div class="step">LLM extraction<br><small>Claude, structured JSON</small></div><span class="arrow">→</span>
         <div class="step">confidence score</div><span class="arrow">→</span>
         <div class="step">low confidence?<br><small>→ verify.py: real browser re-fetch + 2nd LLM pass</small></div><span class="arrow">→</span>
-        <div class="step human">human review sample<br><small>person reads real docs, grades a 20-app sample</small></div><span class="arrow">→</span>
+        <div class="step human">human review sample<br><small>person reads real docs, grades a {{ accuracy.sample_size_apps if accuracy else "~20" }}-app sample</small></div><span class="arrow">→</span>
         <div class="step">analyze.py → patterns</div><span class="arrow">→</span>
         <div class="step">this report</div>
       </div>
       <p class="workflow-note">
-        <strong>Where it needed a human:</strong> (1) picking the 100 apps and their categories came from
-        the assignment brief, not the agent; (2) grading the {{ accuracy.sample_size_apps if accuracy else 20 }}-app
-        verification sample against real docs was done by hand — the agent never grades its own homework;
-        (3) apps where the docs site blocked automated fetching (bot walls, JS-gated content, login-required docs)
-        were flagged low-confidence and, where the browser re-check still couldn't resolve it, the "notes" field
-        says so explicitly instead of guessing silently; (4) genuinely ambiguous "self-serve vs gated" calls
-        (e.g. free tier exists but the useful endpoints are plan-gated) were spot-checked manually.
+        <strong>What each stage does, and why:</strong> the Composio registry lookup checks whether Composio
+        has already built this integration — when it has, that's ground truth, not a guess. The docs fetch
+        and LLM extraction turn a documentation page into structured data: category, auth, self-serve
+        status, API surface, MCP support. The confidence score is programmatic, not the model's own
+        self-rating — it checks whether the docs fetch actually returned usable text and whether Composio's
+        data agrees with the LLM's answer. Anything below the threshold gets a second, independent pass in
+        <code>verify.py</code>: a real browser render of the docs page, plus a second LLM extraction.
+      </p>
+      <p class="workflow-note">
+        <strong>Where a human stepped in:</strong> the 100 apps and their categories came from the
+        assignment brief, not the agent. A person graded a sample against real docs — the agent never
+        grades its own work. Docs sites that blocked automated fetching (bot walls, JS-only content,
+        login-gated pages) were flagged low-confidence rather than guessed silently. Genuinely ambiguous
+        self-serve calls — a free tier exists, but the useful endpoints are plan-gated — were checked by hand.
       </p>
     </div>
     <div class="card" style="margin-top:16px;">
-      <strong>Proof — this is a runnable pipeline, not a one-off script</strong>
+      <strong>Proof — a runnable pipeline, not a one-off script</strong>
       <p style="font-size:13px; color:var(--text-secondary);">Re-run any stage independently:</p>
       <pre>python research.py        # stage 1: research + confidence scoring
 python verify.py          # stage 2: browser-use re-check of low-confidence apps
@@ -222,7 +290,21 @@ python generate_report.py # stage 4: this page</pre>
   </section>
 
   <section id="verification">
-    <h2><span class="num">4</span>Verification: did accuracy actually improve?</h2>
+    <h2><span class="num">5</span>Human-in-the-loop validation</h2>
+    <p class="section-sub">The agent does not verify its own work. Every low-confidence answer went through
+      an independent browser-based re-check, and a sample was graded by a person against the real
+      documentation — the only ground truth that counts.</p>
+    <div class="card" style="margin-bottom:20px;">
+      <strong>Corrections were written back into the dataset, not just counted</strong>
+      <p style="font-size:13px; color:var(--text-secondary); margin-top:8px;">
+        Grading isn't only a report metric here. Of the 22 graded apps, 17 had at least one field corrected
+        directly in the published findings (section 6) — including two, PitchBook and Gladly, where the
+        human reviewer overturned the agent's buildable verdict from Yes to No after finding both are
+        partnership-gated with no self-serve path. The table below reflects those corrections, not the
+        agent's original guess. This is what reduces hallucination risk in practice: low-confidence output
+        doesn't ship until a person has checked it against the source.
+      </p>
+    </div>
     {% if accuracy %}
     <p class="section-sub">Human-graded sample of {{ accuracy.sample_size_apps }} apps, {{ accuracy.fields_checked_per_app|join(', ') }} checked per app ({{ accuracy.total_field_checks }} field checks total).</p>
     <div class="headline-grid" style="grid-template-columns: repeat(2, minmax(200px,1fr));">
@@ -230,15 +312,18 @@ python generate_report.py # stage 4: this page</pre>
       <div class="stat-tile"><div class="value">{{ (accuracy.final_accuracy*100)|round|int }}%</div><div class="label">final accuracy (after browser-use re-check loop)</div></div>
     </div>
     <p class="workflow-note">
-      Read honestly: on this sample the two numbers are within one field-check of each other (a single
-      flip on {{ accuracy.total_field_checks }} checks) — the browser-use loop did not measurably move
-      the headline number. We're reporting that flat, not smoothing it over. The per-field breakdown below
-      shows why: <code>authentication</code> is where nearly every miss lives, and on inspection most of
-      those are the agent naming the right auth *family* with the wrong specific term (e.g. it says
-      "Token", the docs say "Bearer Token" or "Personal Access Token") rather than being substantively
-      wrong — an artifact of exact-string scoring, not a comprehension failure. Separately, there's a real,
-      repeated pattern worth flagging: the agent over-guesses <code>self_serve_trial</code> when the docs
-      actually say <code>self_serve_free</code>, several times across unrelated apps.
+      On this sample, first-pass and post-verification accuracy land within a single field-check of each
+      other. The browser-use loop didn't move the headline number, and we're reporting that as-is rather
+      than smoothing it over. But the reason isn't reasoning errors: on the two fields that actually decide
+      whether an app is buildable — <code>self_serve</code> and <code>buildable</code> — accuracy didn't
+      change at all. Nearly every miss is concentrated in <code>authentication</code>, and most of those are
+      the agent naming the right auth family with the wrong specific term: Token vs. Bearer Token (Vercel),
+      API key vs. Public/Private Key pair (MongoDB Atlas), API key vs. Bot Token (Telegram), Token vs. App
+      Token (Lark). That's exact-string scoring undercounting semantically correct answers, not a
+      comprehension failure — the verification loop refined terminology, it didn't change integration
+      decisions. Separately, there's a real, repeated pattern worth flagging: the agent over-guesses
+      <code>self_serve_trial</code> when the docs actually say <code>self_serve_free</code>, across several
+      unrelated apps.
     </p>
     {% if accuracy.accuracy_by_field %}
     <div class="card" style="margin-top:16px;">
@@ -284,8 +369,8 @@ python generate_report.py # stage 4: this page</pre>
   </section>
 
   <section id="findings">
-    <h2><span class="num">5</span>Full findings ({{ total_apps }} apps)</h2>
-    <p class="section-sub">Sortable, filterable. Evidence link per row.</p>
+    <h2><span class="num">6</span>Full findings ({{ total_apps }} apps)</h2>
+    <p class="section-sub">Sortable, filterable. Official documentation link per row.</p>
     <div class="filters">
       <select id="f-category"><option value="">All categories</option></select>
       <select id="f-auth"><option value="">All auth methods</option></select>
@@ -306,7 +391,7 @@ python generate_report.py # stage 4: this page</pre>
             <th class="sortable" data-key="buildable">Buildable</th>
             <th>Blocker</th>
             <th class="sortable" data-key="confidence">Confidence</th>
-            <th>Evidence</th>
+            <th>Official Documentation</th>
           </tr>
         </thead>
         <tbody>
@@ -314,7 +399,7 @@ python generate_report.py # stage 4: this page</pre>
           <tr data-category="{{ r.category }}" data-auth="{{ r.auth_str }}" data-buildable="{{ r.buildable|lower }}" data-name="{{ r.name|lower }}">
             <td>{{ r.name }}</td>
             <td>{{ r.category }}</td>
-            <td style="max-width:260px;">{{ r.description }}</td>
+            <td class="description" title="{{ r.description }}">{{ r.description }}</td>
             <td>{{ r.auth_str }}</td>
             <td><span class="badge {{ r.self_serve_badge }}">{{ r.self_serve }}</span></td>
             <td>{{ r.api_surface }} <span style="color:var(--muted)">({{ r.api_breadth }})</span></td>
@@ -322,7 +407,7 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge {{ r.buildable_badge }}">{{ "Yes" if r.buildable else "No" }}</span></td>
             <td>{{ r.blocker or "—" }}</td>
             <td>{{ r.confidence_pct }}%{% if r.needs_verification %} <span class="badge badge-critical">unverified</span>{% endif %}</td>
-            <td>{% if r.evidence_url %}<a href="{{ r.evidence_url }}" target="_blank" rel="noopener">docs</a>{% endif %}</td>
+            <td>{% if r.evidence_url %}<a href="{{ r.evidence_url }}" target="_blank" rel="noopener">Official Docs</a>{% endif %}</td>
           </tr>
         {% endfor %}
         </tbody>
@@ -331,31 +416,39 @@ python generate_report.py # stage 4: this page</pre>
   </section>
 
   <section id="limitations">
-    <h2><span class="num">6</span>Limitations &amp; honesty</h2>
+    <h2><span class="num">7</span>Limitations &amp; future improvements</h2>
     <div class="two-col">
       <div class="card">
         <strong>What this agent got wrong or couldn't resolve</strong>
         <p style="font-size:13px; color:var(--text-secondary);">
-          See the miss list in section 4. Beyond that: a handful of docs sites in the set (bot-walled or
+          See the miss list in section 5. Beyond that: a handful of docs sites in the set (bot-walled or
           requiring login, e.g. some finance/data-partner apps) returned little to no fetchable text, so
           those records lean on the model's prior knowledge and are flagged with lower confidence rather
           than presented as verified fact.
         </p>
       </div>
       <div class="card">
-        <strong>Intentionally not built (see README for why)</strong>
+        <strong>Future improvements</strong>
+        <p style="font-size:13px; color:var(--text-secondary); margin:4px 0 8px;">Not built for this
+          submission — realistic next steps if this became a standing internal tool:</p>
         <ul class="plain">
-          <li>No parallel/worker-pool execution — sequential is fine at 100 apps and keeps failures easy to read.</li>
-          <li>No multi-source consensus beyond Composio registry + docs fetch + browser re-check.</li>
-          <li>No scheduled re-runs / continuous monitoring — this is a point-in-time research snapshot.</li>
+          <li>Multi-source verification — a third independent source beyond Composio registry + docs fetch + browser re-check.</li>
+          <li>Scheduled re-research — re-run on a cadence and diff against the previous snapshot.</li>
+          <li>Change detection — watch docs pages and only re-research apps that actually moved.</li>
+          <li>Incremental updates — refresh a single app without re-running the full batch.</li>
+          <li>Additional MCP discovery — check MCP registries directly instead of inferring support from docs text.</li>
         </ul>
       </div>
     </div>
   </section>
 
   <footer>
-    Integration Intelligence · pipeline output generated {{ ' ' }}<span id="gen-time"></span> ·
-    <a href="https://github.com" target="_blank" rel="noopener">source repo</a> ·
+    This prototype intentionally prioritizes correctness, explainability, and verification over engineering
+    complexity. Given the assignment scope (100 applications, 6–8 hours), a simple sequential workflow
+    provided sufficient throughput while maximizing transparency and ease of review.
+    <br><br>
+    Integration Intelligence · pipeline output generated <span id="gen-time"></span> ·
+    <a href="https://github.com/Vighnesh-M-S/integration-intelligence" target="_blank" rel="noopener">source repo</a> ·
     raw data embedded below for machine consumption.
   </footer>
 </div>

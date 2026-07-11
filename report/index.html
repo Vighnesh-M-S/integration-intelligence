@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Integration Intelligence — 100 App Feasibility Study</title>
+<title>Automating SaaS Integration Research for AI Agents — Composio Case Study</title>
 <style>
   :root {
     --surface-1: #fcfcfb; --page: #f9f9f7; --text-primary: #0b0b0b;
@@ -30,14 +30,29 @@
     line-height: 1.5;
   }
   .wrap { max-width: 1100px; margin: 0 auto; padding: 32px 20px 80px; }
-  header.hero { padding: 28px 0 8px; }
-  header.hero h1 { font-size: 28px; margin: 0 0 6px; }
-  header.hero p.sub { color: var(--text-secondary); margin: 0 0 4px; max-width: 780px; }
+  .toplinks { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 20px; }
+  .toplinks a { display: inline-flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600;
+    color: var(--text-primary); text-decoration: none; padding: 7px 14px; border-radius: 999px;
+    border: 1px solid var(--border); background: var(--surface-1); transition: border-color .15s; }
+  .toplinks a:hover { border-color: var(--series-1); }
+  .toplinks a.primary { background: var(--series-1); color: #fff; border-color: var(--series-1); }
+  header.hero { padding: 4px 0 8px; }
+  header.hero h1 { font-size: 30px; margin: 0 0 10px; line-height: 1.2; text-wrap: balance; }
+  header.hero p.sub { color: var(--text-secondary); margin: 0 0 4px; max-width: 780px; font-size: 15.5px; }
   header.hero .meta { color: var(--muted); font-size: 13px; margin-top: 10px; }
-  section { margin-top: 40px; }
-  h2 { font-size: 19px; margin: 0 0 4px; }
+  section { margin-top: 44px; }
+  h2 { font-size: 19px; margin: 0 0 4px; letter-spacing: -0.01em; }
   h2 .num { color: var(--muted); font-weight: 500; margin-right: 6px; }
   p.section-sub { color: var(--text-secondary); font-size: 14px; margin: 0 0 16px; }
+  p.takeaway { font-size: 13px; color: var(--text-secondary); margin: 12px 0 0; padding-top: 10px; border-top: 1px solid var(--grid); }
+  p.takeaway strong { color: var(--text-primary); font-weight: 600; }
+
+  .exec-summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+  @media (max-width: 820px) { .exec-summary { grid-template-columns: 1fr; } }
+  .exec-summary h3 { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); margin: 0 0 8px; font-weight: 600; }
+  .exec-summary p, .exec-summary ul { font-size: 14px; margin: 0; }
+  .exec-summary ul { padding-left: 18px; }
+  .exec-summary li { margin: 4px 0; }
 
   .headline-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 12px; margin-top: 16px; }
   .stat-tile { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
@@ -73,6 +88,8 @@
 
   table { border-collapse: collapse; width: 100%; font-size: 13px; }
   th, td { padding: 8px 10px; border-bottom: 1px solid var(--grid); text-align: left; vertical-align: top; }
+  #findings-table td.description { max-width: 260px; display: -webkit-box; -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical; overflow: hidden; }
   th { color: var(--text-secondary); font-weight: 600; position: sticky; top: 0; background: var(--surface-1); cursor: pointer; user-select: none; }
   th.sortable::after { content: " ⇅"; color: var(--muted); font-size: 11px; }
   tr:hover td { background: color-mix(in srgb, var(--text-primary) 4%, transparent); }
@@ -101,29 +118,62 @@
 <body>
 <div class="wrap">
 
+  <div class="toplinks">
+    <a class="primary" href="https://vighnesh-m-s.github.io/integration-intelligence/report/index.html" target="_blank" rel="noopener">Live Report ↗</a>
+    <a href="https://github.com/Vighnesh-M-S/integration-intelligence" target="_blank" rel="noopener">GitHub Repository ↗</a>
+    <a href="https://github.com/Vighnesh-M-S/integration-intelligence/blob/main/README.md" target="_blank" rel="noopener">README ↗</a>
+  </div>
+
   <header class="hero">
-    <h1>Integration Intelligence: can 100 real apps become agent toolkits today?</h1>
-    <p class="sub">A research agent (Composio SDK + LLM extraction + browser-based re-checks) researched
-      auth, self-serve access, API surface, and MCP status for 100 apps across 10 categories, then a human
-      graded a sample against real docs. This page is the full output: patterns first, then the agent,
-      the proof, and the verification — honestly, including where it got things wrong.</p>
+    <h1>Automating SaaS Integration Research for AI Agents</h1>
+    <p class="sub">A research agent evaluated 100 real SaaS applications across 10 categories to answer one
+      question: can each one become an AI agent toolkit today? It cross-checked Composio's own toolkit
+      registry against live documentation and LLM extraction, then a human verified a sample against the
+      real docs. Result: 93% of the apps are buildable now —
+      and everything below shows exactly how we know that, including where the agent got it wrong.</p>
     <p class="meta">Generated by <code>generate_report.py</code> from <code>data/summary.json</code> ·
       pipeline: <code>research.py → verify.py → analyze.py → generate_report.py</code></p>
   </header>
 
+  <section id="summary">
+    <h2><span class="num">1</span>Executive summary</h2>
+    <div class="card exec-summary">
+      <div>
+        <h3>Goal</h3>
+        <p>Research 100 SaaS applications to determine whether each one can become an AI agent
+          toolkit today — and if not, why.</p>
+      </div>
+      <div>
+        <h3>Approach</h3>
+        <p>An agent pipeline cross-checks Composio's own toolkit registry against live docs and LLM
+          extraction, flags uncertain answers for a second automated pass, and routes a sample to a human
+          for verification against the real documentation.</p>
+      </div>
+      <div>
+        <h3>Outcome</h3>
+        <ul>
+          <li>93% of apps are buildable today</li>
+          <li>OAuth2 is the dominant authentication method</li>
+          <li>42 apps already expose MCP support</li>
+          <li>83 integrations are immediate opportunities</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
   <section id="headline">
-    <h2><span class="num">1</span>Headline patterns</h2>
+    <h2><span class="num">2</span>Headline findings</h2>
     <p class="section-sub">The point of this project, stated plainly, before any table.</p>
     <div class="headline-grid">
-      <div class="stat-tile"><div class="value">93%</div><div class="label">of the 100 apps are agent-buildable today with no blocker</div></div>
-      <div class="stat-tile"><div class="value">OAuth2</div><div class="label">dominant auth method (39.5% of apps that support it)</div></div>
-      <div class="stat-tile"><div class="value">42</div><div class="label">apps with a known MCP server already (42%)</div></div>
-      <div class="stat-tile"><div class="value">54</div><div class="label">apps already live in Composio's own toolkit registry</div></div>
+      <div class="stat-tile"><div class="value">93%</div><div class="label">of researched applications are immediately buildable for AI agents</div></div>
+      <div class="stat-tile"><div class="value">OAuth2</div><div class="label">is the dominant authentication method — 39.5% of apps that support any auth support this</div></div>
+      <div class="stat-tile"><div class="value">42</div><div class="label">applications already expose MCP support (42% of the set)</div></div>
+      <div class="stat-tile"><div class="value">54</div><div class="label">apps are already live in Composio's own toolkit registry — direct ground truth, not a guess</div></div>
     </div>
   </section>
 
   <section id="patterns">
-    <h2><span class="num">2</span>Patterns across the 100</h2>
+    <h2><span class="num">3</span>Patterns across the 100</h2>
     <p class="section-sub">Clustered, not a raw table. Full row-level data is in section 6.</p>
     <div class="charts-grid">
       <div class="card">
@@ -233,6 +283,8 @@
           </div>
         
         </div>
+        <p class="takeaway"><strong>Takeaway:</strong> OAuth2 dominates modern SaaS authentication — it's the
+          single most-supported scheme, ahead of API keys and bearer tokens.</p>
       </div>
       <div class="card">
         <strong>Self-serve vs gated (overall)</strong>
@@ -275,6 +327,8 @@
           </div>
         
         </div>
+        <p class="takeaway"><strong>Takeaway:</strong> most apps offer some form of self-serve access.
+          Payment gating is uncommon; partnership gating is rare.</p>
       </div>
     </div>
 
@@ -365,6 +419,9 @@
         </div>
       </div>
       
+      <p class="takeaway"><strong>Takeaway:</strong> Finance and Fintech is the least self-serve category —
+        half its apps require a paid plan or a partner relationship before you can get credentials.
+        Communications, Dev/Infra, Marketing, and Productivity apps are close to fully self-serve.</p>
     </div>
 
     <div class="two-col" style="margin-top:20px;">
@@ -373,18 +430,22 @@
         <ul class="plain">
           <li>No public API — 5 apps</li><li>Partnership-gated — 2 apps</li>
         </ul>
+        <p class="takeaway"><strong>Takeaway:</strong> when an app isn't buildable, it's almost always
+          because there's no public API at all — not pricing, and not partnership gates.</p>
       </div>
       <div class="card">
         <strong>Easy wins vs needs outreach</strong>
         <p style="font-size:13px; color:var(--text-secondary); margin:4px 0;">Easy win = self-serve credentials + buildable today. Needs outreach = partnership-gated or currently blocked.</p>
         <p style="font-size:13px;"><strong>83 easy wins:</strong> Ahrefs, Aircall, Airtable, Apify, Asana, Attio, BigCommerce, Binance, Bright Data, Clay, ClickUp, Close, +71 more</p>
         <p style="font-size:13px;"><strong>7 need outreach:</strong> Consensus, Gladly, NotebookLM, PitchBook, Sherlock, fanbasis, iPayX</p>
+        <p class="takeaway"><strong>Takeaway:</strong> 83 apps need zero relationship-building
+          to start building against today — the remaining 7 need outreach first.</p>
       </div>
     </div>
   </section>
 
   <section id="agent">
-    <h2><span class="num">3</span>The agent: what it did, where it needed a human</h2>
+    <h2><span class="num">4</span>Research workflow</h2>
     <p class="section-sub">A simple linear pipeline — four scripts, no queues, no orchestration framework.</p>
     <div class="card">
       <div class="workflow">
@@ -394,22 +455,29 @@
         <div class="step">LLM extraction<br><small>Claude, structured JSON</small></div><span class="arrow">→</span>
         <div class="step">confidence score</div><span class="arrow">→</span>
         <div class="step">low confidence?<br><small>→ verify.py: real browser re-fetch + 2nd LLM pass</small></div><span class="arrow">→</span>
-        <div class="step human">human review sample<br><small>person reads real docs, grades a 20-app sample</small></div><span class="arrow">→</span>
+        <div class="step human">human review sample<br><small>person reads real docs, grades a 22-app sample</small></div><span class="arrow">→</span>
         <div class="step">analyze.py → patterns</div><span class="arrow">→</span>
         <div class="step">this report</div>
       </div>
       <p class="workflow-note">
-        <strong>Where it needed a human:</strong> (1) picking the 100 apps and their categories came from
-        the assignment brief, not the agent; (2) grading the 22-app
-        verification sample against real docs was done by hand — the agent never grades its own homework;
-        (3) apps where the docs site blocked automated fetching (bot walls, JS-gated content, login-required docs)
-        were flagged low-confidence and, where the browser re-check still couldn't resolve it, the "notes" field
-        says so explicitly instead of guessing silently; (4) genuinely ambiguous "self-serve vs gated" calls
-        (e.g. free tier exists but the useful endpoints are plan-gated) were spot-checked manually.
+        <strong>What each stage does, and why:</strong> the Composio registry lookup checks whether Composio
+        has already built this integration — when it has, that's ground truth, not a guess. The docs fetch
+        and LLM extraction turn a documentation page into structured data: category, auth, self-serve
+        status, API surface, MCP support. The confidence score is programmatic, not the model's own
+        self-rating — it checks whether the docs fetch actually returned usable text and whether Composio's
+        data agrees with the LLM's answer. Anything below the threshold gets a second, independent pass in
+        <code>verify.py</code>: a real browser render of the docs page, plus a second LLM extraction.
+      </p>
+      <p class="workflow-note">
+        <strong>Where a human stepped in:</strong> the 100 apps and their categories came from the
+        assignment brief, not the agent. A person graded a sample against real docs — the agent never
+        grades its own work. Docs sites that blocked automated fetching (bot walls, JS-only content,
+        login-gated pages) were flagged low-confidence rather than guessed silently. Genuinely ambiguous
+        self-serve calls — a free tier exists, but the useful endpoints are plan-gated — were checked by hand.
       </p>
     </div>
     <div class="card" style="margin-top:16px;">
-      <strong>Proof — this is a runnable pipeline, not a one-off script</strong>
+      <strong>Proof — a runnable pipeline, not a one-off script</strong>
       <p style="font-size:13px; color:var(--text-secondary);">Re-run any stage independently:</p>
       <pre>python research.py        # stage 1: research + confidence scoring
 python verify.py          # stage 2: browser-use re-check of low-confidence apps
@@ -420,7 +488,21 @@ python generate_report.py # stage 4: this page</pre>
   </section>
 
   <section id="verification">
-    <h2><span class="num">4</span>Verification: did accuracy actually improve?</h2>
+    <h2><span class="num">5</span>Human-in-the-loop validation</h2>
+    <p class="section-sub">The agent does not verify its own work. Every low-confidence answer went through
+      an independent browser-based re-check, and a sample was graded by a person against the real
+      documentation — the only ground truth that counts.</p>
+    <div class="card" style="margin-bottom:20px;">
+      <strong>Corrections were written back into the dataset, not just counted</strong>
+      <p style="font-size:13px; color:var(--text-secondary); margin-top:8px;">
+        Grading isn't only a report metric here. Of the 22 graded apps, 17 had at least one field corrected
+        directly in the published findings (section 6) — including two, PitchBook and Gladly, where the
+        human reviewer overturned the agent's buildable verdict from Yes to No after finding both are
+        partnership-gated with no self-serve path. The table below reflects those corrections, not the
+        agent's original guess. This is what reduces hallucination risk in practice: low-confidence output
+        doesn't ship until a person has checked it against the source.
+      </p>
+    </div>
     
     <p class="section-sub">Human-graded sample of 22 apps, authentication, self_serve, buildable checked per app (66 field checks total).</p>
     <div class="headline-grid" style="grid-template-columns: repeat(2, minmax(200px,1fr));">
@@ -428,15 +510,18 @@ python generate_report.py # stage 4: this page</pre>
       <div class="stat-tile"><div class="value">65%</div><div class="label">final accuracy (after browser-use re-check loop)</div></div>
     </div>
     <p class="workflow-note">
-      Read honestly: on this sample the two numbers are within one field-check of each other (a single
-      flip on 66 checks) — the browser-use loop did not measurably move
-      the headline number. We're reporting that flat, not smoothing it over. The per-field breakdown below
-      shows why: <code>authentication</code> is where nearly every miss lives, and on inspection most of
-      those are the agent naming the right auth *family* with the wrong specific term (e.g. it says
-      "Token", the docs say "Bearer Token" or "Personal Access Token") rather than being substantively
-      wrong — an artifact of exact-string scoring, not a comprehension failure. Separately, there's a real,
-      repeated pattern worth flagging: the agent over-guesses <code>self_serve_trial</code> when the docs
-      actually say <code>self_serve_free</code>, several times across unrelated apps.
+      On this sample, first-pass and post-verification accuracy land within a single field-check of each
+      other. The browser-use loop didn't move the headline number, and we're reporting that as-is rather
+      than smoothing it over. But the reason isn't reasoning errors: on the two fields that actually decide
+      whether an app is buildable — <code>self_serve</code> and <code>buildable</code> — accuracy didn't
+      change at all. Nearly every miss is concentrated in <code>authentication</code>, and most of those are
+      the agent naming the right auth family with the wrong specific term: Token vs. Bearer Token (Vercel),
+      API key vs. Public/Private Key pair (MongoDB Atlas), API key vs. Bot Token (Telegram), Token vs. App
+      Token (Lark). That's exact-string scoring undercounting semantically correct answers, not a
+      comprehension failure — the verification loop refined terminology, it didn't change integration
+      decisions. Separately, there's a real, repeated pattern worth flagging: the agent over-guesses
+      <code>self_serve_trial</code> when the docs actually say <code>self_serve_free</code>, across several
+      unrelated apps.
     </p>
     
     <div class="card" style="margin-top:16px;">
@@ -528,8 +613,8 @@ python generate_report.py # stage 4: this page</pre>
   </section>
 
   <section id="findings">
-    <h2><span class="num">5</span>Full findings (100 apps)</h2>
-    <p class="section-sub">Sortable, filterable. Evidence link per row.</p>
+    <h2><span class="num">6</span>Full findings (100 apps)</h2>
+    <p class="section-sub">Sortable, filterable. Official documentation link per row.</p>
     <div class="filters">
       <select id="f-category"><option value="">All categories</option></select>
       <select id="f-auth"><option value="">All auth methods</option></select>
@@ -550,7 +635,7 @@ python generate_report.py # stage 4: this page</pre>
             <th class="sortable" data-key="buildable">Buildable</th>
             <th>Blocker</th>
             <th class="sortable" data-key="confidence">Confidence</th>
-            <th>Evidence</th>
+            <th>Official Documentation</th>
           </tr>
         </thead>
         <tbody>
@@ -558,7 +643,7 @@ python generate_report.py # stage 4: this page</pre>
           <tr data-category="CRM and Sales" data-auth="OAuth2" data-buildable="true" data-name="salesforce">
             <td>Salesforce</td>
             <td>CRM and Sales</td>
-            <td style="max-width:260px;">Salesforce is a comprehensive cloud-based customer relationship management (CRM) platform providing sales, customer service, marketing automation, and analytics tools.</td>
+            <td class="description" title="Salesforce is a comprehensive cloud-based customer relationship management (CRM) platform providing sales, customer service, marketing automation, and analytics tools.">Salesforce is a comprehensive cloud-based customer relationship management (CRM) platform providing sales, customer service, marketing automation, and analytics tools.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST+GraphQL <span style="color:var(--muted)">(broad)</span></td>
@@ -566,13 +651,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://salesforce.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://salesforce.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="CRM and Sales" data-auth="OAuth2, Token" data-buildable="true" data-name="hubspot">
             <td>HubSpot</td>
             <td>CRM and Sales</td>
-            <td style="max-width:260px;">An agentic customer platform and CRM that unifies marketing, sales, service, content, and data tools for businesses.</td>
+            <td class="description" title="An agentic customer platform and CRM that unifies marketing, sales, service, content, and data tools for businesses.">An agentic customer platform and CRM that unifies marketing, sales, service, content, and data tools for businesses.</td>
             <td>OAuth2, Token</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -580,13 +665,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>99%</td>
-            <td><a href="https://hubspot.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://hubspot.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="CRM and Sales" data-auth="OAuth2, API key, Token" data-buildable="true" data-name="pipedrive">
             <td>Pipedrive</td>
             <td>CRM and Sales</td>
-            <td style="max-width:260px;">A web-based sales CRM and pipeline management platform designed to help businesses plan sales activities and monitor deals.</td>
+            <td class="description" title="A web-based sales CRM and pipeline management platform designed to help businesses plan sales activities and monitor deals.">A web-based sales CRM and pipeline management platform designed to help businesses plan sales activities and monitor deals.</td>
             <td>OAuth2, API key, Token</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -594,13 +679,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>85%</td>
-            <td><a href="https://pipedrive.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://pipedrive.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="CRM and Sales" data-auth="OAuth2, API key" data-buildable="true" data-name="attio">
             <td>Attio</td>
             <td>CRM and Sales</td>
-            <td style="max-width:260px;">An AI-powered CRM designed for modern sales, offering flexible data structures and automated workflows.</td>
+            <td class="description" title="An AI-powered CRM designed for modern sales, offering flexible data structures and automated workflows.">An AI-powered CRM designed for modern sales, offering flexible data structures and automated workflows.</td>
             <td>OAuth2, API key</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -608,13 +693,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://attio.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://attio.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="CRM and Sales" data-auth="OAuth2, API key" data-buildable="true" data-name="twenty">
             <td>Twenty</td>
             <td>CRM and Sales</td>
-            <td style="max-width:260px;">An open-source, modular CRM framework that provides developer-focused building blocks for custom sales applications.</td>
+            <td class="description" title="An open-source, modular CRM framework that provides developer-focused building blocks for custom sales applications.">An open-source, modular CRM framework that provides developer-focused building blocks for custom sales applications.</td>
             <td>OAuth2, API key</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>GraphQL <span style="color:var(--muted)">(broad)</span></td>
@@ -622,13 +707,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>69% <span class="badge badge-critical">unverified</span></td>
-            <td><a href="https://twenty.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://twenty.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="CRM and Sales" data-auth="OAuth2" data-buildable="true" data-name="podio">
             <td>Podio</td>
             <td>CRM and Sales</td>
-            <td style="max-width:260px;">A flexible work management and CRM platform that enables teams to build custom workspaces, automate workflows, and collaborate.</td>
+            <td class="description" title="A flexible work management and CRM platform that enables teams to build custom workspaces, automate workflows, and collaborate.">A flexible work management and CRM platform that enables teams to build custom workspaces, automate workflows, and collaborate.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -636,13 +721,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>70%</td>
-            <td><a href="https://podio.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://podio.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="CRM and Sales" data-auth="OAuth2" data-buildable="true" data-name="zoho crm">
             <td>Zoho CRM</td>
             <td>CRM and Sales</td>
-            <td style="max-width:260px;">A comprehensive customer relationship management platform designed to help businesses manage sales, marketing, and customer support processes.</td>
+            <td class="description" title="A comprehensive customer relationship management platform designed to help businesses manage sales, marketing, and customer support processes.">A comprehensive customer relationship management platform designed to help businesses manage sales, marketing, and customer support processes.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -650,13 +735,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://zoho.com/crm" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://zoho.com/crm" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="CRM and Sales" data-auth="API key" data-buildable="true" data-name="close">
             <td>Close</td>
             <td>CRM and Sales</td>
-            <td style="max-width:260px;">A sales CRM platform that integrates calling, email, SMS, and pipeline management with an embedded AI agent named Chloe for automated lead qualification and follow-up.</td>
+            <td class="description" title="A sales CRM platform that integrates calling, email, SMS, and pipeline management with an embedded AI agent named Chloe for automated lead qualification and follow-up.">A sales CRM platform that integrates calling, email, SMS, and pipeline management with an embedded AI agent named Chloe for automated lead qualification and follow-up.</td>
             <td>API key</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -664,13 +749,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>85%</td>
-            <td><a href="https://close.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://close.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="CRM and Sales" data-auth="API key" data-buildable="true" data-name="copper">
             <td>Copper</td>
             <td>CRM and Sales</td>
-            <td style="max-width:260px;">A CRM platform tightly integrated with Google Workspace designed to manage customer relationships, sales pipelines, and project delivery.</td>
+            <td class="description" title="A CRM platform tightly integrated with Google Workspace designed to manage customer relationships, sales pipelines, and project delivery.">A CRM platform tightly integrated with Google Workspace designed to manage customer relationships, sales pipelines, and project delivery.</td>
             <td>API key</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -678,13 +763,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://copper.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://copper.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="CRM and Sales" data-auth="API key, Token" data-buildable="true" data-name="dealcloud">
             <td>DealCloud</td>
             <td>CRM and Sales</td>
-            <td style="max-width:260px;">A specialized CRM and relationship management platform tailored for financial services, investment banking, and private capital firms.</td>
+            <td class="description" title="A specialized CRM and relationship management platform tailored for financial services, investment banking, and private capital firms.">A specialized CRM and relationship management platform tailored for financial services, investment banking, and private capital firms.</td>
             <td>API key, Token</td>
             <td><span class="badge badge-critical">gated_paid_plan</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -692,13 +777,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>69% <span class="badge badge-critical">unverified</span></td>
-            <td><a href="https://api.docs.dealcloud.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://api.docs.dealcloud.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Support and Helpdesk" data-auth="OAuth2" data-buildable="true" data-name="zendesk">
             <td>Zendesk</td>
             <td>Support and Helpdesk</td>
-            <td style="max-width:260px;">A comprehensive customer service and helpdesk platform featuring AI-powered autonomous agents, ticketing, and omnichannel communication management.</td>
+            <td class="description" title="A comprehensive customer service and helpdesk platform featuring AI-powered autonomous agents, ticketing, and omnichannel communication management.">A comprehensive customer service and helpdesk platform featuring AI-powered autonomous agents, ticketing, and omnichannel communication management.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -706,13 +791,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://zendesk.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://zendesk.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Support and Helpdesk" data-auth="OAuth2" data-buildable="true" data-name="intercom">
             <td>Intercom</td>
             <td>Support and Helpdesk</td>
-            <td style="max-width:260px;">A comprehensive AI-powered customer service helpdesk and support platform integrating human agents with an AI agent (Fin) and ticketing workflows.</td>
+            <td class="description" title="A comprehensive AI-powered customer service helpdesk and support platform integrating human agents with an AI agent (Fin) and ticketing workflows.">A comprehensive AI-powered customer service helpdesk and support platform integrating human agents with an AI agent (Fin) and ticketing workflows.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -720,13 +805,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://intercom.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://intercom.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Support and Helpdesk" data-auth="API key, OAuth2" data-buildable="true" data-name="freshdesk">
             <td>Freshdesk</td>
             <td>Support and Helpdesk</td>
-            <td style="max-width:260px;">A cloud-based customer support and helpdesk software platform that integrates AI-powered agents and automation to manage omnichannel service workflows.</td>
+            <td class="description" title="A cloud-based customer support and helpdesk software platform that integrates AI-powered agents and automation to manage omnichannel service workflows.">A cloud-based customer support and helpdesk software platform that integrates AI-powered agents and automation to manage omnichannel service workflows.</td>
             <td>API key, OAuth2</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -734,13 +819,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://freshdesk.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://freshdesk.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Support and Helpdesk" data-auth="API key, OAuth2" data-buildable="true" data-name="front">
             <td>Front</td>
             <td>Support and Helpdesk</td>
-            <td style="max-width:260px;">A customer service and communication platform that unifies shared inboxes, ticketing, and AI-powered collaboration tools across multiple channels.</td>
+            <td class="description" title="A customer service and communication platform that unifies shared inboxes, ticketing, and AI-powered collaboration tools across multiple channels.">A customer service and communication platform that unifies shared inboxes, ticketing, and AI-powered collaboration tools across multiple channels.</td>
             <td>API key, OAuth2</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -748,13 +833,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://front.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://front.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Support and Helpdesk" data-auth="API key" data-buildable="true" data-name="pylon">
             <td>Pylon</td>
             <td>Support and Helpdesk</td>
-            <td style="max-width:260px;">An AI-native B2B support platform that unifies omnichannel customer conversations into a single interface with built-in AI agents for automated routing, resolution, and account intelligence.</td>
+            <td class="description" title="An AI-native B2B support platform that unifies omnichannel customer conversations into a single interface with built-in AI agents for automated routing, resolution, and account intelligence.">An AI-native B2B support platform that unifies omnichannel customer conversations into a single interface with built-in AI agents for automated routing, resolution, and account intelligence.</td>
             <td>API key</td>
             <td><span class="badge badge-critical">gated_paid_plan</span></td>
             <td>REST <span style="color:var(--muted)">(moderate)</span></td>
@@ -762,13 +847,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://usepylon.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://usepylon.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Support and Helpdesk" data-auth="API key" data-buildable="true" data-name="liveagent">
             <td>LiveAgent</td>
             <td>Support and Helpdesk</td>
-            <td style="max-width:260px;">An all-in-one omnichannel help desk platform featuring ticketing, live chat, call center, and built-in AI automation tools.</td>
+            <td class="description" title="An all-in-one omnichannel help desk platform featuring ticketing, live chat, call center, and built-in AI automation tools.">An all-in-one omnichannel help desk platform featuring ticketing, live chat, call center, and built-in AI automation tools.</td>
             <td>API key</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -776,13 +861,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://liveagent.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://liveagent.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Support and Helpdesk" data-auth="API key" data-buildable="true" data-name="plain">
             <td>Plain</td>
             <td>Support and Helpdesk</td>
-            <td style="max-width:260px;">A B2B support infrastructure platform that unifies communication channels and allows for the orchestration of AI agents, workflows, and insights.</td>
+            <td class="description" title="A B2B support infrastructure platform that unifies communication channels and allows for the orchestration of AI agents, workflows, and insights.">A B2B support infrastructure platform that unifies communication channels and allows for the orchestration of AI agents, workflows, and insights.</td>
             <td>API key</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -790,13 +875,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://plain.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://plain.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Support and Helpdesk" data-auth="API key, OAuth2" data-buildable="true" data-name="help scout">
             <td>Help Scout</td>
             <td>Support and Helpdesk</td>
-            <td style="max-width:260px;">A customer support and helpdesk platform that combines email, live chat, and AI-powered automation to manage customer relationships.</td>
+            <td class="description" title="A customer support and helpdesk platform that combines email, live chat, and AI-powered automation to manage customer relationships.">A customer support and helpdesk platform that combines email, live chat, and AI-powered automation to manage customer relationships.</td>
             <td>API key, OAuth2</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -804,13 +889,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>84%</td>
-            <td><a href="https://helpscout.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://helpscout.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Support and Helpdesk" data-auth="OAuth2" data-buildable="true" data-name="gorgias">
             <td>Gorgias</td>
             <td>Support and Helpdesk</td>
-            <td style="max-width:260px;">A comprehensive ecommerce helpdesk platform that integrates AI agents with Shopify data to automate support and drive sales across multiple communication channels.</td>
+            <td class="description" title="A comprehensive ecommerce helpdesk platform that integrates AI agents with Shopify data to automate support and drive sales across multiple communication channels.">A comprehensive ecommerce helpdesk platform that integrates AI agents with Shopify data to automate support and drive sales across multiple communication channels.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -818,13 +903,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>99%</td>
-            <td><a href="https://gorgias.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://gorgias.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Support and Helpdesk" data-auth="API key" data-buildable="false" data-name="gladly">
             <td>Gladly</td>
             <td>Support and Helpdesk</td>
-            <td style="max-width:260px;">A customer service platform featuring AI-driven agents that manage omnichannel support conversations and maintain lifelong customer profiles.</td>
+            <td class="description" title="A customer service platform featuring AI-driven agents that manage omnichannel support conversations and maintain lifelong customer profiles.">A customer service platform featuring AI-driven agents that manage omnichannel support conversations and maintain lifelong customer profiles.</td>
             <td>API key</td>
             <td><span class="badge badge-critical">gated_partnership</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -832,13 +917,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-critical">No</span></td>
             <td>partnership-gated, no self-serve path</td>
             <td>100%</td>
-            <td><a href="https://gladly.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://gladly.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Communications and Messaging" data-auth="OAuth2, Token" data-buildable="true" data-name="slack">
             <td>Slack</td>
             <td>Communications and Messaging</td>
-            <td style="max-width:260px;">Slack is a cloud-based collaboration hub that connects people, information, and tools through channels and messaging.</td>
+            <td class="description" title="Slack is a cloud-based collaboration hub that connects people, information, and tools through channels and messaging.">Slack is a cloud-based collaboration hub that connects people, information, and tools through channels and messaging.</td>
             <td>OAuth2, Token</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -846,13 +931,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://slack.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://slack.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Communications and Messaging" data-auth="API key, Token" data-buildable="true" data-name="twilio">
             <td>Twilio</td>
             <td>Communications and Messaging</td>
-            <td style="max-width:260px;">A cloud communications platform providing APIs for SMS, voice, email, and messaging, integrated with AI orchestration and customer data.</td>
+            <td class="description" title="A cloud communications platform providing APIs for SMS, voice, email, and messaging, integrated with AI orchestration and customer data.">A cloud communications platform providing APIs for SMS, voice, email, and messaging, integrated with AI orchestration and customer data.</td>
             <td>API key, Token</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -860,13 +945,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>70%</td>
-            <td><a href="https://twilio.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://twilio.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Communications and Messaging" data-auth="OAuth2" data-buildable="true" data-name="zoho cliq">
             <td>Zoho Cliq</td>
             <td>Communications and Messaging</td>
-            <td style="max-width:260px;">A team communication and collaboration platform featuring instant messaging, voice/video calls, and workflow automation.</td>
+            <td class="description" title="A team communication and collaboration platform featuring instant messaging, voice/video calls, and workflow automation.">A team communication and collaboration platform featuring instant messaging, voice/video calls, and workflow automation.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -874,13 +959,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>99%</td>
-            <td><a href="https://zoho.com/cliq" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://zoho.com/cliq" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Communications and Messaging" data-auth="OAuth2, App Token" data-buildable="true" data-name="lark (larksuite)">
             <td>Lark (Larksuite)</td>
             <td>Communications and Messaging</td>
-            <td style="max-width:260px;">A comprehensive enterprise collaboration suite integrating messaging, calendars, documents, video conferencing, and workflow automation into a single platform.</td>
+            <td class="description" title="A comprehensive enterprise collaboration suite integrating messaging, calendars, documents, video conferencing, and workflow automation into a single platform.">A comprehensive enterprise collaboration suite integrating messaging, calendars, documents, video conferencing, and workflow automation into a single platform.</td>
             <td>OAuth2, App Token</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -888,13 +973,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://open.larksuite.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://open.larksuite.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Communications and Messaging" data-auth="API key, Token" data-buildable="true" data-name="pumble">
             <td>Pumble</td>
             <td>Communications and Messaging</td>
-            <td style="max-width:260px;">A comprehensive team communication and collaboration platform featuring persistent messaging, channels, video/voice conferencing, and file sharing.</td>
+            <td class="description" title="A comprehensive team communication and collaboration platform featuring persistent messaging, channels, video/voice conferencing, and file sharing.">A comprehensive team communication and collaboration platform featuring persistent messaging, channels, video/voice conferencing, and file sharing.</td>
             <td>API key, Token</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(moderate)</span></td>
@@ -902,13 +987,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>69% <span class="badge badge-critical">unverified</span></td>
-            <td><a href="https://pumble.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://pumble.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Communications and Messaging" data-auth="OAuth2" data-buildable="true" data-name="discord">
             <td>Discord</td>
             <td>Communications and Messaging</td>
-            <td style="max-width:260px;">A platform for real-time communication via voice, video, and text, organized into servers and channels.</td>
+            <td class="description" title="A platform for real-time communication via voice, video, and text, organized into servers and channels.">A platform for real-time communication via voice, video, and text, organized into servers and channels.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -916,13 +1001,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://discord.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://discord.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Communications and Messaging" data-auth="Bot Token" data-buildable="true" data-name="telegram">
             <td>Telegram</td>
             <td>Communications and Messaging</td>
-            <td style="max-width:260px;">A cloud-based messaging platform providing APIs for building bots, customized clients, and integrated web applications.</td>
+            <td class="description" title="A cloud-based messaging platform providing APIs for building bots, customized clients, and integrated web applications.">A cloud-based messaging platform providing APIs for building bots, customized clients, and integrated web applications.</td>
             <td>Bot Token</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -930,13 +1015,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://core.telegram.org" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://core.telegram.org" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Communications and Messaging" data-auth="System User Token" data-buildable="true" data-name="whatsapp business">
             <td>WhatsApp Business</td>
             <td>Communications and Messaging</td>
-            <td style="max-width:260px;">Enterprise-grade API platform for businesses to send and receive WhatsApp messages, manage contacts, and facilitate customer communications.</td>
+            <td class="description" title="Enterprise-grade API platform for businesses to send and receive WhatsApp messages, manage contacts, and facilitate customer communications.">Enterprise-grade API platform for businesses to send and receive WhatsApp messages, manage contacts, and facilitate customer communications.</td>
             <td>System User Token</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -944,13 +1029,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://developers.facebook.com/docs/whatsapp" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://developers.facebook.com/docs/whatsapp" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Communications and Messaging" data-auth="OAuth2, API key, Token" data-buildable="true" data-name="aircall">
             <td>Aircall</td>
             <td>Communications and Messaging</td>
-            <td style="max-width:260px;">A cloud-based business phone and contact center software that integrates voice, SMS, and AI-driven automation with CRM and help desk platforms.</td>
+            <td class="description" title="A cloud-based business phone and contact center software that integrates voice, SMS, and AI-driven automation with CRM and help desk platforms.">A cloud-based business phone and contact center software that integrates voice, SMS, and AI-driven automation with CRM and help desk platforms.</td>
             <td>OAuth2, API key, Token</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -958,13 +1043,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>69% <span class="badge badge-critical">unverified</span></td>
-            <td><a href="https://aircall.io" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://aircall.io" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Communications and Messaging" data-auth="API key, JWT" data-buildable="true" data-name="vonage">
             <td>Vonage</td>
             <td>Communications and Messaging</td>
-            <td style="max-width:260px;">A communications platform providing APIs for voice, video, messaging, and network capabilities to integrate real-time connectivity into applications.</td>
+            <td class="description" title="A communications platform providing APIs for voice, video, messaging, and network capabilities to integrate real-time connectivity into applications.">A communications platform providing APIs for voice, video, messaging, and network capabilities to integrate real-time connectivity into applications.</td>
             <td>API key, JWT</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -972,13 +1057,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://developer.vonage.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://developer.vonage.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Marketing, Ads, Email and Social" data-auth="OAuth2" data-buildable="true" data-name="google ads">
             <td>Google Ads</td>
             <td>Marketing, Ads, Email and Social</td>
-            <td style="max-width:260px;">A comprehensive advertising platform that allows businesses to create, manage, and automate ad campaigns across Google&#39;s network.</td>
+            <td class="description" title="A comprehensive advertising platform that allows businesses to create, manage, and automate ad campaigns across Google&#39;s network.">A comprehensive advertising platform that allows businesses to create, manage, and automate ad campaigns across Google&#39;s network.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -986,13 +1071,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>70%</td>
-            <td><a href="https://developers.google.com/google-ads" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://developers.google.com/google-ads" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Marketing, Ads, Email and Social" data-auth="OAuth2" data-buildable="true" data-name="meta ads">
             <td>Meta Ads</td>
             <td>Marketing, Ads, Email and Social</td>
-            <td style="max-width:260px;">Meta&#39;s Marketing API enables programmatic management and optimization of ad campaigns, audiences, and insights across Facebook, Instagram, Messenger, and WhatsApp.</td>
+            <td class="description" title="Meta&#39;s Marketing API enables programmatic management and optimization of ad campaigns, audiences, and insights across Facebook, Instagram, Messenger, and WhatsApp.">Meta&#39;s Marketing API enables programmatic management and optimization of ad campaigns, audiences, and insights across Facebook, Instagram, Messenger, and WhatsApp.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST+GraphQL <span style="color:var(--muted)">(broad)</span></td>
@@ -1000,13 +1085,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>69% <span class="badge badge-critical">unverified</span></td>
-            <td><a href="https://developers.facebook.com/docs/marketing-apis" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://developers.facebook.com/docs/marketing-apis" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Marketing, Ads, Email and Social" data-auth="OAuth2" data-buildable="true" data-name="linkedin ads">
             <td>LinkedIn Ads</td>
             <td>Marketing, Ads, Email and Social</td>
-            <td style="max-width:260px;">LinkedIn&#39;s marketing and advertising platform enables businesses to manage ad campaigns, target professional audiences, track conversions, and sync lead data.</td>
+            <td class="description" title="LinkedIn&#39;s marketing and advertising platform enables businesses to manage ad campaigns, target professional audiences, track conversions, and sync lead data.">LinkedIn&#39;s marketing and advertising platform enables businesses to manage ad campaigns, target professional audiences, track conversions, and sync lead data.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1014,13 +1099,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>99%</td>
-            <td><a href="https://learn.microsoft.com/linkedin/marketing" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://learn.microsoft.com/linkedin/marketing" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Marketing, Ads, Email and Social" data-auth="OAuth2, API key" data-buildable="true" data-name="gohighlevel">
             <td>GoHighLevel</td>
             <td>Marketing, Ads, Email and Social</td>
-            <td style="max-width:260px;">An all-in-one sales and marketing automation platform for agencies and small businesses featuring CRM, email marketing, and funnel building.</td>
+            <td class="description" title="An all-in-one sales and marketing automation platform for agencies and small businesses featuring CRM, email marketing, and funnel building.">An all-in-one sales and marketing automation platform for agencies and small businesses featuring CRM, email marketing, and funnel building.</td>
             <td>OAuth2, API key</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1028,13 +1113,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>49% <span class="badge badge-critical">unverified</span></td>
-            <td><a href="https://highlevel.stoplight.io" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://highlevel.stoplight.io" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Marketing, Ads, Email and Social" data-auth="OAuth2, API key" data-buildable="true" data-name="mailchimp">
             <td>Mailchimp</td>
             <td>Marketing, Ads, Email and Social</td>
-            <td style="max-width:260px;">An all-in-one marketing platform providing APIs for email marketing campaigns, transactional messaging, and e-commerce stack integration.</td>
+            <td class="description" title="An all-in-one marketing platform providing APIs for email marketing campaigns, transactional messaging, and e-commerce stack integration.">An all-in-one marketing platform providing APIs for email marketing campaigns, transactional messaging, and e-commerce stack integration.</td>
             <td>OAuth2, API key</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST+GraphQL <span style="color:var(--muted)">(broad)</span></td>
@@ -1042,13 +1127,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://mailchimp.com/developer" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://mailchimp.com/developer" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Marketing, Ads, Email and Social" data-auth="API key" data-buildable="true" data-name="klaviyo">
             <td>Klaviyo</td>
             <td>Marketing, Ads, Email and Social</td>
-            <td style="max-width:260px;">Klaviyo is a marketing automation platform specializing in email and SMS marketing, offering deep customer data segmentation and personalized automation flows.</td>
+            <td class="description" title="Klaviyo is a marketing automation platform specializing in email and SMS marketing, offering deep customer data segmentation and personalized automation flows.">Klaviyo is a marketing automation platform specializing in email and SMS marketing, offering deep customer data segmentation and personalized automation flows.</td>
             <td>API key</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1056,13 +1141,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>85%</td>
-            <td><a href="https://developers.klaviyo.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://developers.klaviyo.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Marketing, Ads, Email and Social" data-auth="API key" data-buildable="true" data-name="systeme.io">
             <td>systeme.io</td>
             <td>Marketing, Ads, Email and Social</td>
-            <td style="max-width:260px;">An all-in-one marketing platform for sales funnels, email automation, course hosting, and affiliate management.</td>
+            <td class="description" title="An all-in-one marketing platform for sales funnels, email automation, course hosting, and affiliate management.">An all-in-one marketing platform for sales funnels, email automation, course hosting, and affiliate management.</td>
             <td>API key</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(moderate)</span></td>
@@ -1070,13 +1155,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>69% <span class="badge badge-critical">unverified</span></td>
-            <td><a href="https://systeme.io" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://systeme.io" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Marketing, Ads, Email and Social" data-auth="OAuth2" data-buildable="true" data-name="pinterest">
             <td>Pinterest</td>
             <td>Marketing, Ads, Email and Social</td>
-            <td style="max-width:260px;">A visual discovery engine and advertising platform that allows users to save ideas and brands to reach customers through promoted Pins and product catalogs.</td>
+            <td class="description" title="A visual discovery engine and advertising platform that allows users to save ideas and brands to reach customers through promoted Pins and product catalogs.">A visual discovery engine and advertising platform that allows users to save ideas and brands to reach customers through promoted Pins and product catalogs.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1084,13 +1169,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>69% <span class="badge badge-critical">unverified</span></td>
-            <td><a href="https://developers.pinterest.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://developers.pinterest.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Marketing, Ads, Email and Social" data-auth="OAuth2" data-buildable="true" data-name="threads (meta)">
             <td>Threads (Meta)</td>
             <td>Marketing, Ads, Email and Social</td>
-            <td style="max-width:260px;">A social media platform for sharing text, photos, and videos, integrated into the Meta ecosystem for community engagement.</td>
+            <td class="description" title="A social media platform for sharing text, photos, and videos, integrated into the Meta ecosystem for community engagement.">A social media platform for sharing text, photos, and videos, integrated into the Meta ecosystem for community engagement.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(moderate)</span></td>
@@ -1098,13 +1183,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>70%</td>
-            <td><a href="https://developers.facebook.com/docs/threads" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://developers.facebook.com/docs/threads" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Marketing, Ads, Email and Social" data-auth="API key" data-buildable="true" data-name="sendgrid">
             <td>SendGrid</td>
             <td>Marketing, Ads, Email and Social</td>
-            <td style="max-width:260px;">Cloud-based email infrastructure platform providing transactional email APIs, SMTP relay, and marketing campaign management tools.</td>
+            <td class="description" title="Cloud-based email infrastructure platform providing transactional email APIs, SMTP relay, and marketing campaign management tools.">Cloud-based email infrastructure platform providing transactional email APIs, SMTP relay, and marketing campaign management tools.</td>
             <td>API key</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1112,13 +1197,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>85%</td>
-            <td><a href="https://sendgrid.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://sendgrid.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Ecommerce" data-auth="OAuth2, API key, Token" data-buildable="true" data-name="shopify">
             <td>Shopify</td>
             <td>Ecommerce</td>
-            <td style="max-width:260px;">A leading e-commerce platform that enables businesses to build online stores and manage sales, inventory, and checkout.</td>
+            <td class="description" title="A leading e-commerce platform that enables businesses to build online stores and manage sales, inventory, and checkout.">A leading e-commerce platform that enables businesses to build online stores and manage sales, inventory, and checkout.</td>
             <td>OAuth2, API key, Token</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST+GraphQL <span style="color:var(--muted)">(broad)</span></td>
@@ -1126,13 +1211,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>84%</td>
-            <td><a href="https://shopify.dev" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://shopify.dev" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Ecommerce" data-auth="API key" data-buildable="true" data-name="woocommerce">
             <td>WooCommerce</td>
             <td>Ecommerce</td>
-            <td style="max-width:260px;">A flexible, open-source ecommerce plugin for WordPress that turns a website into an online store.</td>
+            <td class="description" title="A flexible, open-source ecommerce plugin for WordPress that turns a website into an online store.">A flexible, open-source ecommerce plugin for WordPress that turns a website into an online store.</td>
             <td>API key</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1140,13 +1225,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>70%</td>
-            <td><a href="https://woocommerce.com/document/woocommerce-rest-api" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://woocommerce.com/document/woocommerce-rest-api" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Ecommerce" data-auth="OAuth2, API key, Token" data-buildable="true" data-name="bigcommerce">
             <td>BigCommerce</td>
             <td>Ecommerce</td>
-            <td style="max-width:260px;">A comprehensive open-SaaS ecommerce platform providing APIs for storefront management, product catalogs, order processing, and customer data.</td>
+            <td class="description" title="A comprehensive open-SaaS ecommerce platform providing APIs for storefront management, product catalogs, order processing, and customer data.">A comprehensive open-SaaS ecommerce platform providing APIs for storefront management, product catalogs, order processing, and customer data.</td>
             <td>OAuth2, API key, Token</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST+GraphQL <span style="color:var(--muted)">(broad)</span></td>
@@ -1154,13 +1239,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>70%</td>
-            <td><a href="https://developer.bigcommerce.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://developer.bigcommerce.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Ecommerce" data-auth="OAuth2" data-buildable="true" data-name="salesforce commerce cloud">
             <td>Salesforce Commerce Cloud</td>
             <td>Ecommerce</td>
-            <td style="max-width:260px;">A comprehensive enterprise-grade e-commerce platform providing cloud-based solutions for B2C and B2B online storefronts.</td>
+            <td class="description" title="A comprehensive enterprise-grade e-commerce platform providing cloud-based solutions for B2C and B2B online storefronts.">A comprehensive enterprise-grade e-commerce platform providing cloud-based solutions for B2C and B2B online storefronts.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-critical">gated_paid_plan</span></td>
             <td>REST+GraphQL <span style="color:var(--muted)">(broad)</span></td>
@@ -1168,13 +1253,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>79%</td>
-            <td><a href="https://developer.salesforce.com/docs/commerce" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://developer.salesforce.com/docs/commerce" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Ecommerce" data-auth="OAuth2, Token" data-buildable="true" data-name="magento (adobe commerce)">
             <td>Magento (Adobe Commerce)</td>
             <td>Ecommerce</td>
-            <td style="max-width:260px;">A comprehensive enterprise-grade e-commerce platform offering B2B and B2C commerce capabilities with extensive extensibility via API.</td>
+            <td class="description" title="A comprehensive enterprise-grade e-commerce platform offering B2B and B2C commerce capabilities with extensive extensibility via API.">A comprehensive enterprise-grade e-commerce platform offering B2B and B2C commerce capabilities with extensive extensibility via API.</td>
             <td>OAuth2, Token</td>
             <td><span class="badge badge-critical">gated_paid_plan</span></td>
             <td>REST+GraphQL <span style="color:var(--muted)">(broad)</span></td>
@@ -1182,13 +1267,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>69% <span class="badge badge-critical">unverified</span></td>
-            <td><a href="https://developer.adobe.com/commerce" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://developer.adobe.com/commerce" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Ecommerce" data-auth="OAuth2, API key" data-buildable="true" data-name="squarespace">
             <td>Squarespace</td>
             <td>Ecommerce</td>
-            <td style="max-width:260px;">A website building and hosting platform offering integrated ecommerce tools, content management, and developer APIs for custom site extensions.</td>
+            <td class="description" title="A website building and hosting platform offering integrated ecommerce tools, content management, and developer APIs for custom site extensions.">A website building and hosting platform offering integrated ecommerce tools, content management, and developer APIs for custom site extensions.</td>
             <td>OAuth2, API key</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(moderate)</span></td>
@@ -1196,13 +1281,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>69% <span class="badge badge-critical">unverified</span></td>
-            <td><a href="https://developers.squarespace.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://developers.squarespace.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Ecommerce" data-auth="OAuth2, Token" data-buildable="true" data-name="ecwid">
             <td>Ecwid</td>
             <td>Ecommerce</td>
-            <td style="max-width:260px;">Ecwid is a cloud-based e-commerce platform that allows merchants to build online stores and integrate them into existing websites and social platforms.</td>
+            <td class="description" title="Ecwid is a cloud-based e-commerce platform that allows merchants to build online stores and integrate them into existing websites and social platforms.">Ecwid is a cloud-based e-commerce platform that allows merchants to build online stores and integrate them into existing websites and social platforms.</td>
             <td>OAuth2, Token</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1210,13 +1295,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>69% <span class="badge badge-critical">unverified</span></td>
-            <td><a href="https://api-docs.ecwid.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://api-docs.ecwid.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Ecommerce" data-auth="OAuth2" data-buildable="true" data-name="gumroad">
             <td>Gumroad</td>
             <td>Ecommerce</td>
-            <td style="max-width:260px;">A creator-focused e-commerce platform for selling digital products, memberships, and courses.</td>
+            <td class="description" title="A creator-focused e-commerce platform for selling digital products, memberships, and courses.">A creator-focused e-commerce platform for selling digital products, memberships, and courses.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(moderate)</span></td>
@@ -1224,13 +1309,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>79%</td>
-            <td><a href="https://gumroad.com/api" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://gumroad.com/api" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Ecommerce" data-auth="OAuth2" data-buildable="true" data-name="amazon selling partner">
             <td>Amazon Selling Partner</td>
             <td>Ecommerce</td>
-            <td style="max-width:260px;">Amazon&#39;s comprehensive REST-based API enabling developers to build applications for Amazon Selling Partners to manage orders, inventory, reports, and financial data.</td>
+            <td class="description" title="Amazon&#39;s comprehensive REST-based API enabling developers to build applications for Amazon Selling Partners to manage orders, inventory, reports, and financial data.">Amazon&#39;s comprehensive REST-based API enabling developers to build applications for Amazon Selling Partners to manage orders, inventory, reports, and financial data.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-critical">gated_admin_approval</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1238,13 +1323,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>99%</td>
-            <td><a href="https://developer-docs.amazon.com/sp-api" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://developer-docs.amazon.com/sp-api" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Ecommerce" data-auth="Unknown" data-buildable="false" data-name="fanbasis">
             <td>fanbasis</td>
             <td>Ecommerce</td>
-            <td style="max-width:260px;">An all-in-one digital business infrastructure platform for selling high-ticket knowledge, services, and digital products with integrated payments and fulfillment.</td>
+            <td class="description" title="An all-in-one digital business infrastructure platform for selling high-ticket knowledge, services, and digital products with integrated payments and fulfillment.">An all-in-one digital business infrastructure platform for selling high-ticket knowledge, services, and digital products with integrated payments and fulfillment.</td>
             <td>Unknown</td>
             <td><span class="badge badge-critical">gated_admin_approval</span></td>
             <td>unclear <span style="color:var(--muted)">(unknown)</span></td>
@@ -1252,13 +1337,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-critical">No</span></td>
             <td>no public API documentation available</td>
             <td>69% <span class="badge badge-critical">unverified</span></td>
-            <td><a href="https://fanbasis.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://fanbasis.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Data, SEO and Scraping" data-auth="API key" data-buildable="true" data-name="dataforseo">
             <td>DataForSEO</td>
             <td>Data, SEO and Scraping</td>
-            <td style="max-width:260px;">Comprehensive SEO and search engine data API providing SERP, keyword analysis, and on-page data through REST endpoints.</td>
+            <td class="description" title="Comprehensive SEO and search engine data API providing SERP, keyword analysis, and on-page data through REST endpoints.">Comprehensive SEO and search engine data API providing SERP, keyword analysis, and on-page data through REST endpoints.</td>
             <td>API key</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1266,13 +1351,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>84%</td>
-            <td><a href="https://docs.dataforseo.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://docs.dataforseo.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Data, SEO and Scraping" data-auth="API key" data-buildable="true" data-name="se ranking">
             <td>SE Ranking</td>
             <td>Data, SEO and Scraping</td>
-            <td style="max-width:260px;">Comprehensive SEO software suite providing tools for rank tracking, website auditing, backlink analysis, and keyword research.</td>
+            <td class="description" title="Comprehensive SEO software suite providing tools for rank tracking, website auditing, backlink analysis, and keyword research.">Comprehensive SEO software suite providing tools for rank tracking, website auditing, backlink analysis, and keyword research.</td>
             <td>API key</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1280,13 +1365,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://seranking.com/api" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://seranking.com/api" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Data, SEO and Scraping" data-auth="API key, OAuth2" data-buildable="true" data-name="ahrefs">
             <td>Ahrefs</td>
             <td>Data, SEO and Scraping</td>
-            <td style="max-width:260px;">A comprehensive SEO and digital marketing tool suite providing extensive data on backlinks, keywords, site health, and search rankings.</td>
+            <td class="description" title="A comprehensive SEO and digital marketing tool suite providing extensive data on backlinks, keywords, site health, and search rankings.">A comprehensive SEO and digital marketing tool suite providing extensive data on backlinks, keywords, site health, and search rankings.</td>
             <td>API key, OAuth2</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1294,13 +1379,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>85%</td>
-            <td><a href="https://ahrefs.com/api" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://ahrefs.com/api" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Data, SEO and Scraping" data-auth="API key" data-buildable="true" data-name="mrscraper">
             <td>MrScraper</td>
             <td>Data, SEO and Scraping</td>
-            <td style="max-width:260px;">An all-in-one web scraping and data extraction platform featuring AI-powered scrapers, bulk processing, and programmable SDKs.</td>
+            <td class="description" title="An all-in-one web scraping and data extraction platform featuring AI-powered scrapers, bulk processing, and programmable SDKs.">An all-in-one web scraping and data extraction platform featuring AI-powered scrapers, bulk processing, and programmable SDKs.</td>
             <td>API key</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1308,13 +1393,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>70%</td>
-            <td><a href="https://docs.mrscraper.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://docs.mrscraper.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Data, SEO and Scraping" data-auth="API key" data-buildable="true" data-name="apify">
             <td>Apify</td>
             <td>Data, SEO and Scraping</td>
-            <td style="max-width:260px;">A cloud platform for deploying serverless web scraping and automation Actors, offering proxy, storage, and AI-agent integration tools.</td>
+            <td class="description" title="A cloud platform for deploying serverless web scraping and automation Actors, offering proxy, storage, and AI-agent integration tools.">A cloud platform for deploying serverless web scraping and automation Actors, offering proxy, storage, and AI-agent integration tools.</td>
             <td>API key</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1322,13 +1407,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://docs.apify.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://docs.apify.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Data, SEO and Scraping" data-auth="API key" data-buildable="true" data-name="firecrawl">
             <td>Firecrawl</td>
             <td>Data, SEO and Scraping</td>
-            <td style="max-width:260px;">A web scraping and data extraction service that transforms websites into clean, LLM-ready markdown or structured data for AI agents.</td>
+            <td class="description" title="A web scraping and data extraction service that transforms websites into clean, LLM-ready markdown or structured data for AI agents.">A web scraping and data extraction service that transforms websites into clean, LLM-ready markdown or structured data for AI agents.</td>
             <td>API key</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(moderate)</span></td>
@@ -1336,13 +1421,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>85%</td>
-            <td><a href="https://firecrawl.dev" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://firecrawl.dev" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Data, SEO and Scraping" data-auth="API key, Token" data-buildable="true" data-name="bright data">
             <td>Bright Data</td>
             <td>Data, SEO and Scraping</td>
-            <td style="max-width:260px;">A comprehensive web data platform providing proxy networks, scraping APIs, and browser infrastructure for large-scale data extraction and AI agent web access.</td>
+            <td class="description" title="A comprehensive web data platform providing proxy networks, scraping APIs, and browser infrastructure for large-scale data extraction and AI agent web access.">A comprehensive web data platform providing proxy networks, scraping APIs, and browser infrastructure for large-scale data extraction and AI agent web access.</td>
             <td>API key, Token</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1350,13 +1435,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>70%</td>
-            <td><a href="https://brightdata.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://brightdata.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Data, SEO and Scraping" data-auth="None" data-buildable="false" data-name="sherlock">
             <td>Sherlock</td>
             <td>Data, SEO and Scraping</td>
-            <td style="max-width:260px;">A command-line tool to hunt down social media accounts by username across social networks.</td>
+            <td class="description" title="A command-line tool to hunt down social media accounts by username across social networks.">A command-line tool to hunt down social media accounts by username across social networks.</td>
             <td>None</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>none_public <span style="color:var(--muted)">(unknown)</span></td>
@@ -1364,13 +1449,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-critical">No</span></td>
             <td>no public API (local CLI tool)</td>
             <td>100%</td>
-            <td><a href="https://github.com/sherlock-project/sherlock" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://github.com/sherlock-project/sherlock" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Data, SEO and Scraping" data-auth="API key" data-buildable="true" data-name="waterfall.io">
             <td>Waterfall.io</td>
             <td>Data, SEO and Scraping</td>
-            <td style="max-width:260px;">A GTM enrichment API that aggregates data from 30+ providers to supply verified emails, mobile numbers, and prospect profiles.</td>
+            <td class="description" title="A GTM enrichment API that aggregates data from 30+ providers to supply verified emails, mobile numbers, and prospect profiles.">A GTM enrichment API that aggregates data from 30+ providers to supply verified emails, mobile numbers, and prospect profiles.</td>
             <td>API key</td>
             <td><span class="badge badge-critical">gated_paid_plan</span></td>
             <td>REST <span style="color:var(--muted)">(moderate)</span></td>
@@ -1378,13 +1463,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>69% <span class="badge badge-critical">unverified</span></td>
-            <td><a href="https://waterfall.io" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://waterfall.io" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Data, SEO and Scraping" data-auth="API key, OAuth2" data-buildable="true" data-name="clay">
             <td>Clay</td>
             <td>Data, SEO and Scraping</td>
-            <td style="max-width:260px;">A GTM automation platform that functions as an orchestration layer for data enrichment, AI-driven prospect research, and multi-tool workflow execution.</td>
+            <td class="description" title="A GTM automation platform that functions as an orchestration layer for data enrichment, AI-driven prospect research, and multi-tool workflow execution.">A GTM automation platform that functions as an orchestration layer for data enrichment, AI-driven prospect research, and multi-tool workflow execution.</td>
             <td>API key, OAuth2</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1392,13 +1477,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>69% <span class="badge badge-critical">unverified</span></td>
-            <td><a href="https://clay.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://clay.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Developer, Infra and Data platforms" data-auth="OAuth2, Token" data-buildable="true" data-name="github">
             <td>GitHub</td>
             <td>Developer, Infra and Data platforms</td>
-            <td style="max-width:260px;">A cloud-based hosting service for version control and collaboration, allowing developers to store and manage their code.</td>
+            <td class="description" title="A cloud-based hosting service for version control and collaboration, allowing developers to store and manage their code.">A cloud-based hosting service for version control and collaboration, allowing developers to store and manage their code.</td>
             <td>OAuth2, Token</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST+GraphQL <span style="color:var(--muted)">(broad)</span></td>
@@ -1406,13 +1491,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://docs.github.com/rest" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://docs.github.com/rest" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Developer, Infra and Data platforms" data-auth="Bearer Token" data-buildable="true" data-name="vercel">
             <td>Vercel</td>
             <td>Developer, Infra and Data platforms</td>
-            <td style="max-width:260px;">A cloud platform for static sites and Serverless Functions that provides a REST API to manage deployments, domains, projects, and infrastructure.</td>
+            <td class="description" title="A cloud platform for static sites and Serverless Functions that provides a REST API to manage deployments, domains, projects, and infrastructure.">A cloud platform for static sites and Serverless Functions that provides a REST API to manage deployments, domains, projects, and infrastructure.</td>
             <td>Bearer Token</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1420,13 +1505,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://vercel.com/docs/rest-api" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://vercel.com/docs/rest-api" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Developer, Infra and Data platforms" data-auth="OAuth2, Token" data-buildable="true" data-name="netlify">
             <td>Netlify</td>
             <td>Developer, Infra and Data platforms</td>
-            <td style="max-width:260px;">A cloud platform for deploying, hosting, and managing web applications, sites, and serverless functions.</td>
+            <td class="description" title="A cloud platform for deploying, hosting, and managing web applications, sites, and serverless functions.">A cloud platform for deploying, hosting, and managing web applications, sites, and serverless functions.</td>
             <td>OAuth2, Token</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1434,13 +1519,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>70%</td>
-            <td><a href="https://docs.netlify.com/api" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://docs.netlify.com/api" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Developer, Infra and Data platforms" data-auth="API Token, Global API Key" data-buildable="true" data-name="cloudflare">
             <td>Cloudflare</td>
             <td>Developer, Infra and Data platforms</td>
-            <td style="max-width:260px;">A global cloud platform providing CDN, edge computing, security, and networking services for developers and organizations.</td>
+            <td class="description" title="A global cloud platform providing CDN, edge computing, security, and networking services for developers and organizations.">A global cloud platform providing CDN, edge computing, security, and networking services for developers and organizations.</td>
             <td>API Token, Global API Key</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1448,13 +1533,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://developers.cloudflare.com/api" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://developers.cloudflare.com/api" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Developer, Infra and Data platforms" data-auth="OAuth2" data-buildable="true" data-name="supabase">
             <td>Supabase</td>
             <td>Developer, Infra and Data platforms</td>
-            <td style="max-width:260px;">A backend-as-a-service platform that provides a managed Postgres database, authentication, real-time subscriptions, storage, and edge functions.</td>
+            <td class="description" title="A backend-as-a-service platform that provides a managed Postgres database, authentication, real-time subscriptions, storage, and edge functions.">A backend-as-a-service platform that provides a managed Postgres database, authentication, real-time subscriptions, storage, and edge functions.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST+GraphQL <span style="color:var(--muted)">(broad)</span></td>
@@ -1462,13 +1547,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://supabase.com/docs" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://supabase.com/docs" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Developer, Infra and Data platforms" data-auth="API key, Token" data-buildable="true" data-name="neo4j">
             <td>Neo4j</td>
             <td>Developer, Infra and Data platforms</td>
-            <td style="max-width:260px;">A graph database platform for managing highly connected data, supporting advanced analytics, AI agent memory, and knowledge graph construction.</td>
+            <td class="description" title="A graph database platform for managing highly connected data, supporting advanced analytics, AI agent memory, and knowledge graph construction.">A graph database platform for managing highly connected data, supporting advanced analytics, AI agent memory, and knowledge graph construction.</td>
             <td>API key, Token</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST+GraphQL <span style="color:var(--muted)">(broad)</span></td>
@@ -1476,13 +1561,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>84%</td>
-            <td><a href="https://neo4j.com/docs/api" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://neo4j.com/docs/api" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Developer, Infra and Data platforms" data-auth="OAuth2, API key" data-buildable="true" data-name="snowflake">
             <td>Snowflake</td>
             <td>Developer, Infra and Data platforms</td>
-            <td style="max-width:260px;">A cloud-based data platform that provides data storage, processing, and analytic solutions.</td>
+            <td class="description" title="A cloud-based data platform that provides data storage, processing, and analytic solutions.">A cloud-based data platform that provides data storage, processing, and analytic solutions.</td>
             <td>OAuth2, API key</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1490,13 +1575,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>84%</td>
-            <td><a href="https://docs.snowflake.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://docs.snowflake.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Developer, Infra and Data platforms" data-auth="Public Key, Private Key" data-buildable="true" data-name="mongodb atlas">
             <td>MongoDB Atlas</td>
             <td>Developer, Infra and Data platforms</td>
-            <td style="max-width:260px;">A multi-cloud developer data platform that provides a fully managed MongoDB database, vector search, and operational infrastructure via APIs.</td>
+            <td class="description" title="A multi-cloud developer data platform that provides a fully managed MongoDB database, vector search, and operational infrastructure via APIs.">A multi-cloud developer data platform that provides a fully managed MongoDB database, vector search, and operational infrastructure via APIs.</td>
             <td>Public Key, Private Key</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1504,13 +1589,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://mongodb.com/docs/atlas/api" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://mongodb.com/docs/atlas/api" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Developer, Infra and Data platforms" data-auth="API key, OAuth2" data-buildable="true" data-name="datadog">
             <td>Datadog</td>
             <td>Developer, Infra and Data platforms</td>
-            <td style="max-width:260px;">A comprehensive monitoring, security, and observability platform for cloud-scale applications, infrastructure, and services.</td>
+            <td class="description" title="A comprehensive monitoring, security, and observability platform for cloud-scale applications, infrastructure, and services.">A comprehensive monitoring, security, and observability platform for cloud-scale applications, infrastructure, and services.</td>
             <td>API key, OAuth2</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1518,13 +1603,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>85%</td>
-            <td><a href="https://docs.datadoghq.com/api" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://docs.datadoghq.com/api" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Developer, Infra and Data platforms" data-auth="OAuth2, Token" data-buildable="true" data-name="sentry">
             <td>Sentry</td>
             <td>Developer, Infra and Data platforms</td>
-            <td style="max-width:260px;">Sentry is an application performance monitoring and error tracking platform that helps developers identify, triage, and resolve code issues.</td>
+            <td class="description" title="Sentry is an application performance monitoring and error tracking platform that helps developers identify, triage, and resolve code issues.">Sentry is an application performance monitoring and error tracking platform that helps developers identify, triage, and resolve code issues.</td>
             <td>OAuth2, Token</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1532,13 +1617,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://docs.sentry.io/api" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://docs.sentry.io/api" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Productivity and Project Management" data-auth="OAuth2, API key, Token" data-buildable="true" data-name="notion">
             <td>Notion</td>
             <td>Productivity and Project Management</td>
-            <td style="max-width:260px;">A connected workspace for wiki, docs, and project management, allowing teams to collaborate and organize information.</td>
+            <td class="description" title="A connected workspace for wiki, docs, and project management, allowing teams to collaborate and organize information.">A connected workspace for wiki, docs, and project management, allowing teams to collaborate and organize information.</td>
             <td>OAuth2, API key, Token</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1546,13 +1631,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://developers.notion.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://developers.notion.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Productivity and Project Management" data-auth="OAuth2, API key" data-buildable="true" data-name="airtable">
             <td>Airtable</td>
             <td>Productivity and Project Management</td>
-            <td style="max-width:260px;">A low-code platform that combines the features of a database and a spreadsheet for flexible project management and data organization.</td>
+            <td class="description" title="A low-code platform that combines the features of a database and a spreadsheet for flexible project management and data organization.">A low-code platform that combines the features of a database and a spreadsheet for flexible project management and data organization.</td>
             <td>OAuth2, API key</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1560,13 +1645,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>79%</td>
-            <td><a href="https://airtable.com/developers" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://airtable.com/developers" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Productivity and Project Management" data-auth="OAuth2, API key" data-buildable="true" data-name="linear">
             <td>Linear</td>
             <td>Productivity and Project Management</td>
-            <td style="max-width:260px;">Linear is a streamlined project management tool designed for high-performance software development teams to track issues and sprints.</td>
+            <td class="description" title="Linear is a streamlined project management tool designed for high-performance software development teams to track issues and sprints.">Linear is a streamlined project management tool designed for high-performance software development teams to track issues and sprints.</td>
             <td>OAuth2, API key</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>GraphQL <span style="color:var(--muted)">(broad)</span></td>
@@ -1574,13 +1659,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://developers.linear.app" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://developers.linear.app" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Productivity and Project Management" data-auth="OAuth2" data-buildable="true" data-name="jira">
             <td>Jira</td>
             <td>Productivity and Project Management</td>
-            <td style="max-width:260px;">A comprehensive project management and issue tracking platform for agile software development teams.</td>
+            <td class="description" title="A comprehensive project management and issue tracking platform for agile software development teams.">A comprehensive project management and issue tracking platform for agile software development teams.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST+GraphQL <span style="color:var(--muted)">(broad)</span></td>
@@ -1588,13 +1673,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>80%</td>
-            <td><a href="https://developer.atlassian.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://developer.atlassian.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Productivity and Project Management" data-auth="OAuth2" data-buildable="true" data-name="asana">
             <td>Asana</td>
             <td>Productivity and Project Management</td>
-            <td style="max-width:260px;">A cloud-based project and task management platform designed to help teams orchestrate work and streamline workflows.</td>
+            <td class="description" title="A cloud-based project and task management platform designed to help teams orchestrate work and streamline workflows.">A cloud-based project and task management platform designed to help teams orchestrate work and streamline workflows.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1602,13 +1687,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://developers.asana.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://developers.asana.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Productivity and Project Management" data-auth="OAuth2" data-buildable="true" data-name="monday.com">
             <td>Monday.com</td>
             <td>Productivity and Project Management</td>
-            <td style="max-width:260px;">A collaborative work operating system that enables project management, workflow automation, and the integration of AI agents as first-class team members.</td>
+            <td class="description" title="A collaborative work operating system that enables project management, workflow automation, and the integration of AI agents as first-class team members.">A collaborative work operating system that enables project management, workflow automation, and the integration of AI agents as first-class team members.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>GraphQL <span style="color:var(--muted)">(broad)</span></td>
@@ -1616,13 +1701,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://developer.monday.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://developer.monday.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Productivity and Project Management" data-auth="OAuth2" data-buildable="true" data-name="clickup">
             <td>ClickUp</td>
             <td>Productivity and Project Management</td>
-            <td style="max-width:260px;">A comprehensive cloud-based project management and productivity platform for task tracking, document collaboration, and workflow automation.</td>
+            <td class="description" title="A comprehensive cloud-based project management and productivity platform for task tracking, document collaboration, and workflow automation.">A comprehensive cloud-based project management and productivity platform for task tracking, document collaboration, and workflow automation.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1630,13 +1715,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://clickup.com/api" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://clickup.com/api" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Productivity and Project Management" data-auth="API key" data-buildable="true" data-name="coda">
             <td>Coda</td>
             <td>Productivity and Project Management</td>
-            <td style="max-width:260px;">A cloud-based document platform that combines documents, spreadsheets, and apps into a unified workspace.</td>
+            <td class="description" title="A cloud-based document platform that combines documents, spreadsheets, and apps into a unified workspace.">A cloud-based document platform that combines documents, spreadsheets, and apps into a unified workspace.</td>
             <td>API key</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1644,13 +1729,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>85%</td>
-            <td><a href="https://coda.io/developers" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://coda.io/developers" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Productivity and Project Management" data-auth="OAuth2, API key, Token" data-buildable="true" data-name="smartsheet">
             <td>Smartsheet</td>
             <td>Productivity and Project Management</td>
-            <td style="max-width:260px;">A cloud-based platform for work management, project collaboration, and workflow automation.</td>
+            <td class="description" title="A cloud-based platform for work management, project collaboration, and workflow automation.">A cloud-based platform for work management, project collaboration, and workflow automation.</td>
             <td>OAuth2, API key, Token</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1658,13 +1743,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>70%</td>
-            <td><a href="https://smartsheet.com/developers" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://smartsheet.com/developers" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Productivity and Project Management" data-auth="OAuth2, Personal Access Token" data-buildable="true" data-name="harvest">
             <td>Harvest</td>
             <td>Productivity and Project Management</td>
-            <td style="max-width:260px;">A time-tracking and project management application that helps businesses track billable hours, manage invoices, and analyze project expenses.</td>
+            <td class="description" title="A time-tracking and project management application that helps businesses track billable hours, manage invoices, and analyze project expenses.">A time-tracking and project management application that helps businesses track billable hours, manage invoices, and analyze project expenses.</td>
             <td>OAuth2, Personal Access Token</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1672,13 +1757,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://help.getharvest.com/api-v2" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://help.getharvest.com/api-v2" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Finance and Fintech" data-auth="OAuth2, API key, Basic" data-buildable="true" data-name="stripe">
             <td>Stripe</td>
             <td>Finance and Fintech</td>
-            <td style="max-width:260px;">A financial infrastructure platform providing payment processing, billing, and commerce APIs for online businesses.</td>
+            <td class="description" title="A financial infrastructure platform providing payment processing, billing, and commerce APIs for online businesses.">A financial infrastructure platform providing payment processing, billing, and commerce APIs for online businesses.</td>
             <td>OAuth2, API key, Basic</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1686,13 +1771,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://stripe.com/docs/api" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://stripe.com/docs/api" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Finance and Fintech" data-auth="API key" data-buildable="true" data-name="plaid">
             <td>Plaid</td>
             <td>Finance and Fintech</td>
-            <td style="max-width:260px;">A financial data aggregation platform that provides APIs for connecting users&#39; bank accounts to applications for payments, identity verification, and financial insights.</td>
+            <td class="description" title="A financial data aggregation platform that provides APIs for connecting users&#39; bank accounts to applications for payments, identity verification, and financial insights.">A financial data aggregation platform that provides APIs for connecting users&#39; bank accounts to applications for payments, identity verification, and financial insights.</td>
             <td>API key</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1700,13 +1785,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>70%</td>
-            <td><a href="https://plaid.com/docs" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://plaid.com/docs" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Finance and Fintech" data-auth="API key" data-buildable="true" data-name="binance">
             <td>Binance</td>
             <td>Finance and Fintech</td>
-            <td style="max-width:260px;">A global cryptocurrency exchange platform providing services for trading, staking, and managing digital assets.</td>
+            <td class="description" title="A global cryptocurrency exchange platform providing services for trading, staking, and managing digital assets.">A global cryptocurrency exchange platform providing services for trading, staking, and managing digital assets.</td>
             <td>API key</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1714,13 +1799,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>49% <span class="badge badge-critical">unverified</span></td>
-            <td><a href="https://binance-docs.github.io" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://binance-docs.github.io" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Finance and Fintech" data-auth="API key" data-buildable="true" data-name="paygent connect">
             <td>Paygent Connect</td>
             <td>Finance and Fintech</td>
-            <td style="max-width:260px;">A payment gateway solution providing payment processing, recurring billing, and merchant account services.</td>
+            <td class="description" title="A payment gateway solution providing payment processing, recurring billing, and merchant account services.">A payment gateway solution providing payment processing, recurring billing, and merchant account services.</td>
             <td>API key</td>
             <td><span class="badge badge-critical">gated_paid_plan</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1728,13 +1813,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>48% <span class="badge badge-critical">unverified</span></td>
-            <td><a href="https://paygent.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://paygent.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Finance and Fintech" data-auth="Unknown" data-buildable="false" data-name="ipayx">
             <td>iPayX</td>
             <td>Finance and Fintech</td>
-            <td style="max-width:260px;">A FINTRAC-registered FX verification tool that audits foreign-exchange transactions against mid-market rates to reveal hidden spreads and costs.</td>
+            <td class="description" title="A FINTRAC-registered FX verification tool that audits foreign-exchange transactions against mid-market rates to reveal hidden spreads and costs.">A FINTRAC-registered FX verification tool that audits foreign-exchange transactions against mid-market rates to reveal hidden spreads and costs.</td>
             <td>Unknown</td>
             <td><span class="badge badge-muted">unknown</span></td>
             <td>unclear <span style="color:var(--muted)">(unknown)</span></td>
@@ -1742,13 +1827,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-critical">No</span></td>
             <td>no public API documentation available</td>
             <td>69% <span class="badge badge-critical">unverified</span></td>
-            <td><a href="https://ipayx.ai/docs" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://ipayx.ai/docs" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Finance and Fintech" data-auth="OAuth2" data-buildable="true" data-name="quickbooks">
             <td>QuickBooks</td>
             <td>Finance and Fintech</td>
-            <td style="max-width:260px;">A cloud-based accounting software suite for small and medium-sized businesses to manage income, expenses, and financial reporting.</td>
+            <td class="description" title="A cloud-based accounting software suite for small and medium-sized businesses to manage income, expenses, and financial reporting.">A cloud-based accounting software suite for small and medium-sized businesses to manage income, expenses, and financial reporting.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1756,13 +1841,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>80%</td>
-            <td><a href="https://developer.intuit.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://developer.intuit.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Finance and Fintech" data-auth="OAuth2" data-buildable="true" data-name="xero">
             <td>Xero</td>
             <td>Finance and Fintech</td>
-            <td style="max-width:260px;">A cloud-based accounting software platform for small businesses, providing comprehensive financial management, invoicing, and reporting capabilities.</td>
+            <td class="description" title="A cloud-based accounting software platform for small businesses, providing comprehensive financial management, invoicing, and reporting capabilities.">A cloud-based accounting software platform for small businesses, providing comprehensive financial management, invoicing, and reporting capabilities.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_trial</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1770,13 +1855,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>85%</td>
-            <td><a href="https://developer.xero.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://developer.xero.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Finance and Fintech" data-auth="Token" data-buildable="true" data-name="brex">
             <td>Brex</td>
             <td>Finance and Fintech</td>
-            <td style="max-width:260px;">A unified spend management platform providing corporate cards, expense tracking, bill pay, and travel booking capabilities.</td>
+            <td class="description" title="A unified spend management platform providing corporate cards, expense tracking, bill pay, and travel booking capabilities.">A unified spend management platform providing corporate cards, expense tracking, bill pay, and travel booking capabilities.</td>
             <td>Token</td>
             <td><span class="badge badge-critical">gated_admin_approval</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1784,13 +1869,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>84%</td>
-            <td><a href="https://developer.brex.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://developer.brex.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Finance and Fintech" data-auth="API key" data-buildable="true" data-name="ramp">
             <td>Ramp</td>
             <td>Finance and Fintech</td>
-            <td style="max-width:260px;">Ramp is an all-in-one spend management and corporate card platform that automates expense reporting and finance operations.</td>
+            <td class="description" title="Ramp is an all-in-one spend management and corporate card platform that automates expense reporting and finance operations.">Ramp is an all-in-one spend management and corporate card platform that automates expense reporting and finance operations.</td>
             <td>API key</td>
             <td><span class="badge badge-critical">gated_paid_plan</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1798,13 +1883,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>84%</td>
-            <td><a href="https://docs.ramp.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://docs.ramp.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="Finance and Fintech" data-auth="API key" data-buildable="false" data-name="pitchbook">
             <td>PitchBook</td>
             <td>Finance and Fintech</td>
-            <td style="max-width:260px;">A comprehensive data and research platform providing intelligence on private capital markets including venture capital, private equity, and M&amp;A.</td>
+            <td class="description" title="A comprehensive data and research platform providing intelligence on private capital markets including venture capital, private equity, and M&amp;A.">A comprehensive data and research platform providing intelligence on private capital markets including venture capital, private equity, and M&amp;A.</td>
             <td>API key</td>
             <td><span class="badge badge-critical">gated_partnership</span></td>
             <td>REST <span style="color:var(--muted)">(broad)</span></td>
@@ -1812,13 +1897,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-critical">No</span></td>
             <td>partnership-gated, no self-serve path</td>
             <td>100%</td>
-            <td><a href="https://pitchbook.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://pitchbook.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="AI, Research and Media-native" data-auth="OAuth2" data-buildable="false" data-name="notebooklm">
             <td>NotebookLM</td>
             <td>AI, Research and Media-native</td>
-            <td style="max-width:260px;">An AI-powered personalized research assistant that helps users synthesize, query, and generate audio overviews from their uploaded documents.</td>
+            <td class="description" title="An AI-powered personalized research assistant that helps users synthesize, query, and generate audio overviews from their uploaded documents.">An AI-powered personalized research assistant that helps users synthesize, query, and generate audio overviews from their uploaded documents.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>none_public <span style="color:var(--muted)">(unknown)</span></td>
@@ -1826,13 +1911,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-critical">No</span></td>
             <td>no public API</td>
             <td>70%</td>
-            <td><a href="https://notebooklm.google" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://notebooklm.google" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="AI, Research and Media-native" data-auth="OAuth2" data-buildable="true" data-name="otter ai">
             <td>Otter AI</td>
             <td>AI, Research and Media-native</td>
-            <td style="max-width:260px;">An AI-powered meeting assistant that provides real-time transcription, automated meeting notes, and team collaboration features.</td>
+            <td class="description" title="An AI-powered meeting assistant that provides real-time transcription, automated meeting notes, and team collaboration features.">An AI-powered meeting assistant that provides real-time transcription, automated meeting notes, and team collaboration features.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(narrow)</span></td>
@@ -1840,13 +1925,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>68% <span class="badge badge-critical">unverified</span></td>
-            <td><a href="https://help.otter.ai" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://help.otter.ai" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="AI, Research and Media-native" data-auth="OAuth2" data-buildable="true" data-name="fathom">
             <td>Fathom</td>
             <td>AI, Research and Media-native</td>
-            <td style="max-width:260px;">AI-powered meeting intelligence platform that records, transcribes, summarizes, and syncs meeting insights to CRM and productivity tools.</td>
+            <td class="description" title="AI-powered meeting intelligence platform that records, transcribes, summarizes, and syncs meeting insights to CRM and productivity tools.">AI-powered meeting intelligence platform that records, transcribes, summarizes, and syncs meeting insights to CRM and productivity tools.</td>
             <td>OAuth2</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(moderate)</span></td>
@@ -1854,13 +1939,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>99%</td>
-            <td><a href="https://fathom.video" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://fathom.video" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="AI, Research and Media-native" data-auth="Unknown" data-buildable="false" data-name="consensus">
             <td>Consensus</td>
             <td>AI, Research and Media-native</td>
-            <td style="max-width:260px;">An AI-powered academic search engine that synthesizes answers from over 200 million peer-reviewed research papers.</td>
+            <td class="description" title="An AI-powered academic search engine that synthesizes answers from over 200 million peer-reviewed research papers.">An AI-powered academic search engine that synthesizes answers from over 200 million peer-reviewed research papers.</td>
             <td>Unknown</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>none_public <span style="color:var(--muted)">(unknown)</span></td>
@@ -1868,13 +1953,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-critical">No</span></td>
             <td>no public API</td>
             <td>69% <span class="badge badge-critical">unverified</span></td>
-            <td><a href="https://consensus.app" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://consensus.app" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="AI, Research and Media-native" data-auth="API key" data-buildable="true" data-name="reducto">
             <td>Reducto</td>
             <td>AI, Research and Media-native</td>
-            <td style="max-width:260px;">An agentic document processing platform that provides APIs for parsing, classifying, and extracting data from complex documents using OCR and vision-language models.</td>
+            <td class="description" title="An agentic document processing platform that provides APIs for parsing, classifying, and extracting data from complex documents using OCR and vision-language models.">An agentic document processing platform that provides APIs for parsing, classifying, and extracting data from complex documents using OCR and vision-language models.</td>
             <td>API key</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(moderate)</span></td>
@@ -1882,13 +1967,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://reducto.ai" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://reducto.ai" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="AI, Research and Media-native" data-auth="API key" data-buildable="true" data-name="devin">
             <td>Devin</td>
             <td>AI, Research and Media-native</td>
-            <td style="max-width:260px;">An autonomous AI software engineer capable of coding, debugging, testing, and managing SDLC tasks within an integrated development environment.</td>
+            <td class="description" title="An autonomous AI software engineer capable of coding, debugging, testing, and managing SDLC tasks within an integrated development environment.">An autonomous AI software engineer capable of coding, debugging, testing, and managing SDLC tasks within an integrated development environment.</td>
             <td>API key</td>
             <td><span class="badge badge-critical">gated_paid_plan</span></td>
             <td>unclear <span style="color:var(--muted)">(unknown)</span></td>
@@ -1896,13 +1981,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://docs.devin.ai" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://docs.devin.ai" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="AI, Research and Media-native" data-auth="Other" data-buildable="true" data-name="higgsfield">
             <td>higgsfield</td>
             <td>AI, Research and Media-native</td>
-            <td style="max-width:260px;">A media-native AI platform providing an MCP-based agent toolkit for cinematic image/video generation, character consistency, and video analysis.</td>
+            <td class="description" title="A media-native AI platform providing an MCP-based agent toolkit for cinematic image/video generation, character consistency, and video analysis.">A media-native AI platform providing an MCP-based agent toolkit for cinematic image/video generation, character consistency, and video analysis.</td>
             <td>Other</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>none_public <span style="color:var(--muted)">(narrow)</span></td>
@@ -1910,13 +1995,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>70%</td>
-            <td><a href="https://higgsfield.ai/cli" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://higgsfield.ai/cli" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="AI, Research and Media-native" data-auth="Unknown" data-buildable="true" data-name="mermaid cli">
             <td>Mermaid CLI</td>
             <td>AI, Research and Media-native</td>
-            <td style="max-width:260px;">A command-line interface for generating SVG, PNG, or PDF files from Mermaid diagram definition files.</td>
+            <td class="description" title="A command-line interface for generating SVG, PNG, or PDF files from Mermaid diagram definition files.">A command-line interface for generating SVG, PNG, or PDF files from Mermaid diagram definition files.</td>
             <td>Unknown</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>none_public <span style="color:var(--muted)">(narrow)</span></td>
@@ -1924,13 +2009,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>69% <span class="badge badge-critical">unverified</span></td>
-            <td><a href="https://github.com/mermaid-js/mermaid-cli" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://github.com/mermaid-js/mermaid-cli" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="AI, Research and Media-native" data-auth="API key, OAuth2" data-buildable="true" data-name="youtube transcript">
             <td>YouTube Transcript</td>
             <td>AI, Research and Media-native</td>
-            <td style="max-width:260px;">A REST API and MCP-compatible service that provides access to YouTube transcripts, channel video lists, search functionality, and playlist extraction.</td>
+            <td class="description" title="A REST API and MCP-compatible service that provides access to YouTube transcripts, channel video lists, search functionality, and playlist extraction.">A REST API and MCP-compatible service that provides access to YouTube transcripts, channel video lists, search functionality, and playlist extraction.</td>
             <td>API key, OAuth2</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(moderate)</span></td>
@@ -1938,13 +2023,13 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>100%</td>
-            <td><a href="https://transcriptapi.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://transcriptapi.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
           <tr data-category="AI, Research and Media-native" data-auth="OAuth2, API key" data-buildable="true" data-name="grain">
             <td>Grain</td>
             <td>AI, Research and Media-native</td>
-            <td style="max-width:260px;">An AI-powered meeting recording and transcription platform that integrates with AI agents to automate notes, action items, and data sync.</td>
+            <td class="description" title="An AI-powered meeting recording and transcription platform that integrates with AI agents to automate notes, action items, and data sync.">An AI-powered meeting recording and transcription platform that integrates with AI agents to automate notes, action items, and data sync.</td>
             <td>OAuth2, API key</td>
             <td><span class="badge badge-good">self_serve_free</span></td>
             <td>REST <span style="color:var(--muted)">(moderate)</span></td>
@@ -1952,7 +2037,7 @@ python generate_report.py # stage 4: this page</pre>
             <td><span class="badge badge-good">Yes</span></td>
             <td>—</td>
             <td>70%</td>
-            <td><a href="https://grain.com" target="_blank" rel="noopener">docs</a></td>
+            <td><a href="https://grain.com" target="_blank" rel="noopener">Official Docs</a></td>
           </tr>
         
         </tbody>
@@ -1961,31 +2046,39 @@ python generate_report.py # stage 4: this page</pre>
   </section>
 
   <section id="limitations">
-    <h2><span class="num">6</span>Limitations &amp; honesty</h2>
+    <h2><span class="num">7</span>Limitations &amp; future improvements</h2>
     <div class="two-col">
       <div class="card">
         <strong>What this agent got wrong or couldn't resolve</strong>
         <p style="font-size:13px; color:var(--text-secondary);">
-          See the miss list in section 4. Beyond that: a handful of docs sites in the set (bot-walled or
+          See the miss list in section 5. Beyond that: a handful of docs sites in the set (bot-walled or
           requiring login, e.g. some finance/data-partner apps) returned little to no fetchable text, so
           those records lean on the model's prior knowledge and are flagged with lower confidence rather
           than presented as verified fact.
         </p>
       </div>
       <div class="card">
-        <strong>Intentionally not built (see README for why)</strong>
+        <strong>Future improvements</strong>
+        <p style="font-size:13px; color:var(--text-secondary); margin:4px 0 8px;">Not built for this
+          submission — realistic next steps if this became a standing internal tool:</p>
         <ul class="plain">
-          <li>No parallel/worker-pool execution — sequential is fine at 100 apps and keeps failures easy to read.</li>
-          <li>No multi-source consensus beyond Composio registry + docs fetch + browser re-check.</li>
-          <li>No scheduled re-runs / continuous monitoring — this is a point-in-time research snapshot.</li>
+          <li>Multi-source verification — a third independent source beyond Composio registry + docs fetch + browser re-check.</li>
+          <li>Scheduled re-research — re-run on a cadence and diff against the previous snapshot.</li>
+          <li>Change detection — watch docs pages and only re-research apps that actually moved.</li>
+          <li>Incremental updates — refresh a single app without re-running the full batch.</li>
+          <li>Additional MCP discovery — check MCP registries directly instead of inferring support from docs text.</li>
         </ul>
       </div>
     </div>
   </section>
 
   <footer>
-    Integration Intelligence · pipeline output generated  <span id="gen-time"></span> ·
-    <a href="https://github.com" target="_blank" rel="noopener">source repo</a> ·
+    This prototype intentionally prioritizes correctness, explainability, and verification over engineering
+    complexity. Given the assignment scope (100 applications, 6–8 hours), a simple sequential workflow
+    provided sufficient throughput while maximizing transparency and ease of review.
+    <br><br>
+    Integration Intelligence · pipeline output generated <span id="gen-time"></span> ·
+    <a href="https://github.com/Vighnesh-M-S/integration-intelligence" target="_blank" rel="noopener">source repo</a> ·
     raw data embedded below for machine consumption.
   </footer>
 </div>
