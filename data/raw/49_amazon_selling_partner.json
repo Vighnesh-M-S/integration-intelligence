@@ -1,0 +1,37 @@
+{
+  "docs": {
+    "url": "https://developer-docs.amazon.com/sp-api",
+    "status": 200,
+    "text": "Selling Partner API\nFor AI agents: visit https://developer-docs.amazon/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI.\nJump to Content\nHome\nDocumentation\nCode Samples\nAPI Reference\nAnnouncements\nModels\nRelease Notes\nFAQ\nGitHub\nVideos\nDefault\nGerman (Germany)\nSpanish (Spain)\nFrench (France)\nItalian (Italy)\nJapanese (Japan)\nPortuguese (Brazil)\nTurkish (Turkey)\nChinese (China)\nHome\nSupport\nHome\nDeveloper Hub\nAPI Status\nSupport\nSelling Partner API\nWelcome to Selling Partner API Documentation. Learn how to get started and build applications with Amazon's REST-based SP-API.\nSubscribe to updates via \nRSS feed\n.\nGet Started\nWelcome to SP-API Documentation\nWhat is the Selling Partner API?\nSelling Partner API Onboarding Overview\nView More\u2026\n \nChangelog\nSP-API Release Notes\nSP-API Deprecation Schedule\nSP-API Product Metadata Updates\nDirectories\nSP-API Models\nSP-API Seller Use Cases\nSP-API Vendor Use Cases\nView More\u2026\n \nRegistration\nSP-API Registration Overview\nDeveloper Registration Request Status\nThird-Party Provider Registration\nView More\u2026\n \nAuthorization\nAuthorize Applications\nRenew Authorizations\nRevoke Authorizations\nView More\u2026\n \nIntegration\nBuilding Robust Amazon SP-API Applications\nSP-API SDKs\nDelete an Application From Your Developer Account\nCalling the SP-API\nConfiguration Details\nCall Structure\nDevelopment Tools\nView More\u2026\n \nSolution Provider Portal\nManage Users in Solution Provider Portal\nManage Your Business And Contact information in Solution Provider Portal\nUpdate Your Developer Profile in Solution Provider Portal\nView More\u2026\n \nTutorials\nTutorial: Subscribe to the ORDER_CHANGE Notification\nTutorial: Test Selling Partner API Endpoints\nTutorial: Automate your SP-API Calls Using a C# SDK\nView More\u2026\n \nTroubleshooting\nTroubleshoot SP-API Errors\nURL Encoding\nResolve Common HTTP and Authorization Error Codes\nView More\u2026\n \nSelling Partner Appstore\nWhat is the Selling Partner Appstore?\nList Your App on the Selling Partner Appstore\nEdit Your Appstore Listing\nView More\u2026\n \nService Provider Network\nList Your Service\nSecurity and Compliance\nSP-API Security and Compliance Overview\nAmazon Selling Partner API Guard Implementation Guide\nVAT Calculation Service\nView More\u2026\n \nA+ Content API\nA+ Content API\nA+ Content Examples\nAmazon Warehousing and Distribution API\nAmazon Warehousing and Distribution API\nAmazon Warehousing and Distribution API v2024-05-09 Reference\nApp Integrations API\nApp Integrations API\nApplication Management API\nApplication Management API\nCatalog Items API\nCatalog Items API\nCatalog Items API Rate Limits\nCatalog Items API v2022-04-01 Reference\nCustomer Feedback API\nCustomer Feedback API\nCustomer Feedback API Rate Limits\nData Kiosk\nData Kiosk API\nData Kiosk Schema Explorer User Guide\nData Kiosk Query Processing Finished Notification\nView More\u2026\n \nDelivery by Amazon API\nDelivery by Amazon API\nEasy Ship API\nEasy Ship API\nExternal Fulfillment\nExternal Fulfillment Inventory API\nExternal Fulfillment Returns API\nExternal Fulfillment Shipping API\nView More\u2026\n \nFulfillment By Amazon (FBA)\nFBA Inventory API\nFBA Inventory Dynamic Sandbox Guide\nFeeds API\nFeeds API\nFeed Type Values\nFeeds JSON Schemas\nView More\u2026\n \nFinances\nFinances API\nTransfers API\nFulfillment Inbound API\nFulfillment Inbound API\nFulfillment Inbound API FAQ\nMigrating Fulfillment Inbound workflows\nView More\u2026\n \nFulfillment Outbound API\nFulfillment Outbound Dynamic Sandbox Guide\nFulfillment Outbound API\nFulfillment Outbound API Rate Limits\nView More\u2026\n \nInvoicing\nInvoices API\nInvoices API FAQ\nListings\nListings Items API\nListings Items API Rate Limits\nListings Restrictions API\nView More\u2026\n \nMerchant Fulfillment API\nMerchant Fulfillment API\nMessaging API\nMessaging API\nNotifications API\nNotifications API\nNotification Type Values\nTutorial: Subscribe to the ORDER_CHANGE Notification\nOrders API\nOrders API\nTutorial: Retrieve and Pass a Purchase Order Number to a Carrier\nOrders API Migration Guide\nView More\u2026\n \nProduct Fees API\nProduct Fees API\nProduct Pricing API\nProduct Pricing API\nProduct Pricing API and Notifications FAQ\nPrice Adjustment Automation Workflows Guide\nView More\u2026\n \nReplenishment API\nReplenishment API\nReports API\nReports API\nReport Type Values\nReports JSON Schemas\nView More\u2026\n \nSales API\nSales API\nSeller Wallet API\nSeller Wallet API\nSeller Wallet API Rate Limits\nSellers API\nSellers API\nServices API\nServices API\nShipment Invoicing API\nShipment Invoicing API\nShipping API\nShipping API v2 Resources\nShipping API v1 Reference\nSolicitations API\nSolicitations API\nSupply Sources API\nSupply Sources API\nMulti-Location Inventory Integration Guide\nSupply Sources API Rate Limits\nTokens API\nTokens API\nUploads API\nUploads API\nVehicles API\nVehicles API\nVehicles API Rate Limits\nVendor Direct Fulfillment APIs\nVendor Direct Fulfillment Dynamic Sandbox Guide\nVendor Direct Fulfillment Workflow Guide\nSP-API Bill-to-Party Addresses\nVendor Direct Fulfillment Transaction Status API\nVendor Direct Fulfillment Transaction Status API\nVendor Direct Fulfillment Inventory API\nVendor Direct Fulfillment Inventory API\nVendor Direct Fulfillment Orders API\nVendor Direct Fulfillment Orders API\nVendor Direct Fulfillment Shipping API\nVendor Direct Fulfillment Shipping API\nVendor Direct Fulfillment Payments API\nVendor Direct Fulfillment Payments API\nVendor Retail Procurement Invoices API\nVendor Retail Procurement Invoices API\nVendor Retail Procurement Orders API\nVendor Retail Procurement Orders API\nVendor Retail Procurement Shipments API\nVendor Retail Procurement Shipments API\nVendor Retail Procurement Transaction Status API\nVendor Retail Procurement Transaction Status API",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "amazon",
+    "name": "Amazon",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "E-commerce"
+    ],
+    "tools_count": 0.0,
+    "description": "Amazon is an e-commerce giant delivering a massive online marketplace, cloud services, and digital products that connect retailers, consumers, and businesses worldwide for seamless transactions"
+  },
+  "llm_raw": {
+    "description": "Amazon's comprehensive REST-based API enabling developers to build applications for Amazon Selling Partners to manage orders, inventory, reports, and financial data.",
+    "authentication": [
+      "OAuth2"
+    ],
+    "self_serve": "gated_admin_approval",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://developer-docs.amazon.com/sp-api"
+    ],
+    "notes": "Requires strict Amazon developer registration and application approval process; while technically 'self-serve' for registration, it is highly gated by compliance reviews.",
+    "self_confidence": 0.95
+  }
+}

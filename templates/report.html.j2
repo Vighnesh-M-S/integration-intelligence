@@ -1,0 +1,410 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Integration Intelligence — 100 App Feasibility Study</title>
+<style>
+  :root {
+    --surface-1: #fcfcfb; --page: #f9f9f7; --text-primary: #0b0b0b;
+    --text-secondary: #52514e; --muted: #898781; --grid: #e1e0d9;
+    --baseline: #c3c2b7; --border: rgba(11,11,11,0.10);
+    --series-1: #2a78d6; --series-2: #1baf7a; --series-3: #eda100;
+    --series-4: #008300; --series-5: #4a3aa7; --series-6: #e34948;
+    --good: #0ca30c; --critical: #d03b3b; --warning: #fab219;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --surface-1: #1a1a19; --page: #0d0d0d; --text-primary: #ffffff;
+      --text-secondary: #c3c2b7; --muted: #898781; --grid: #2c2c2a;
+      --baseline: #383835; --border: rgba(255,255,255,0.10);
+      --series-1: #3987e5; --series-2: #199e70; --series-3: #c98500;
+      --series-4: #008300; --series-5: #9085e9; --series-6: #e66767;
+      --good: #0ca30c; --critical: #d03b3b; --warning: #fab219;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--page); color: var(--text-primary);
+    font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+    line-height: 1.5;
+  }
+  .wrap { max-width: 1100px; margin: 0 auto; padding: 32px 20px 80px; }
+  header.hero { padding: 28px 0 8px; }
+  header.hero h1 { font-size: 28px; margin: 0 0 6px; }
+  header.hero p.sub { color: var(--text-secondary); margin: 0 0 4px; max-width: 780px; }
+  header.hero .meta { color: var(--muted); font-size: 13px; margin-top: 10px; }
+  section { margin-top: 40px; }
+  h2 { font-size: 19px; margin: 0 0 4px; }
+  h2 .num { color: var(--muted); font-weight: 500; margin-right: 6px; }
+  p.section-sub { color: var(--text-secondary); font-size: 14px; margin: 0 0 16px; }
+
+  .headline-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px,1fr)); gap: 12px; margin-top: 16px; }
+  .stat-tile { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px; padding: 16px; }
+  .stat-tile .value { font-size: 28px; font-weight: 600; font-variant-numeric: tabular-nums; }
+  .stat-tile .label { color: var(--text-secondary); font-size: 13px; margin-top: 4px; }
+
+  .card { background: var(--surface-1); border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+  .charts-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 820px) { .charts-grid { grid-template-columns: 1fr; } }
+
+  .bar-row { display: grid; grid-template-columns: 110px 1fr 46px; align-items: center; gap: 8px; margin: 8px 0; font-size: 13px; }
+  .bar-row .label { color: var(--text-secondary); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .bar-track { background: var(--grid); border-radius: 4px; height: 14px; overflow: hidden; position: relative; }
+  .bar-fill { height: 100%; border-radius: 4px 0 0 4px; }
+  .bar-count { text-align: right; color: var(--text-secondary); font-variant-numeric: tabular-nums; }
+
+  .stacked-row { margin: 10px 0; font-size: 13px; }
+  .stacked-row .cat-label { display: flex; justify-content: space-between; color: var(--text-secondary); margin-bottom: 4px; }
+  .stacked-track { display: flex; height: 14px; border-radius: 4px; overflow: hidden; background: var(--grid); }
+  .stacked-seg.good { background: var(--good); }
+  .stacked-seg.critical { background: var(--critical); }
+  .legend { display: flex; gap: 16px; font-size: 12px; color: var(--text-secondary); margin-bottom: 10px; }
+  .legend .swatch { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+
+  .workflow { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .workflow .step { background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px; padding: 10px 14px; font-size: 13px; }
+  .workflow .step.human { border-color: var(--warning); background: color-mix(in srgb, var(--warning) 12%, var(--surface-1)); }
+  .workflow .arrow { color: var(--muted); }
+  .workflow-note { font-size: 13px; color: var(--text-secondary); margin-top: 12px; }
+
+  code, pre { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 12.5px; }
+  pre { background: var(--surface-1); border: 1px solid var(--border); border-radius: 8px; padding: 14px; overflow-x: auto; }
+
+  table { border-collapse: collapse; width: 100%; font-size: 13px; }
+  th, td { padding: 8px 10px; border-bottom: 1px solid var(--grid); text-align: left; vertical-align: top; }
+  th { color: var(--text-secondary); font-weight: 600; position: sticky; top: 0; background: var(--surface-1); cursor: pointer; user-select: none; }
+  th.sortable::after { content: " ⇅"; color: var(--muted); font-size: 11px; }
+  tr:hover td { background: color-mix(in srgb, var(--text-primary) 4%, transparent); }
+  .table-scroll { max-height: 640px; overflow: auto; border: 1px solid var(--border); border-radius: 10px; }
+
+  .badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 11.5px; font-weight: 600; }
+  .badge-good { background: color-mix(in srgb, var(--good) 16%, transparent); color: var(--good); }
+  .badge-critical { background: color-mix(in srgb, var(--critical) 14%, transparent); color: var(--critical); }
+  .badge-muted { background: color-mix(in srgb, var(--muted) 18%, transparent); color: var(--text-secondary); }
+
+  .filters { display: flex; gap: 10px; flex-wrap: wrap; margin-bottom: 12px; }
+  .filters select, .filters input { font: inherit; padding: 6px 8px; border-radius: 6px; border: 1px solid var(--border); background: var(--surface-1); color: var(--text-primary); }
+
+  .miss-list { list-style: none; padding: 0; margin: 10px 0 0; }
+  .miss-list li { padding: 8px 0; border-bottom: 1px solid var(--grid); font-size: 13px; }
+  .miss-list .field { color: var(--critical); font-weight: 600; }
+
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  @media (max-width: 820px) { .two-col { grid-template-columns: 1fr; } }
+  ul.plain { margin: 8px 0 0; padding-left: 18px; font-size: 13.5px; }
+  ul.plain li { margin: 4px 0; }
+  a { color: var(--series-1); }
+  footer { margin-top: 60px; color: var(--muted); font-size: 12.5px; border-top: 1px solid var(--grid); padding-top: 16px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <h1>Integration Intelligence: can 100 real apps become agent toolkits today?</h1>
+    <p class="sub">A research agent (Composio SDK + LLM extraction + browser-based re-checks) researched
+      auth, self-serve access, API surface, and MCP status for 100 apps across 10 categories, then a human
+      graded a sample against real docs. This page is the full output: patterns first, then the agent,
+      the proof, and the verification — honestly, including where it got things wrong.</p>
+    <p class="meta">Generated by <code>generate_report.py</code> from <code>data/summary.json</code> ·
+      pipeline: <code>research.py → verify.py → analyze.py → generate_report.py</code></p>
+  </header>
+
+  <section id="headline">
+    <h2><span class="num">1</span>Headline patterns</h2>
+    <p class="section-sub">The point of this project, stated plainly, before any table.</p>
+    <div class="headline-grid">
+      <div class="stat-tile"><div class="value">{{ (buildable_today.pct * 100) | round | int }}%</div><div class="label">of the {{ total_apps }} apps are agent-buildable today with no blocker</div></div>
+      <div class="stat-tile"><div class="value">{{ auth_bars[0].label if auth_bars else "—" }}</div><div class="label">dominant auth method ({{ auth_bars[0].pct if auth_bars else 0 }}% of apps that support it)</div></div>
+      <div class="stat-tile"><div class="value">{{ mcp_coverage.count }}</div><div class="label">apps with a known MCP server already ({{ (mcp_coverage.pct*100)|round|int }}%)</div></div>
+      <div class="stat-tile"><div class="value">{{ composio_registry_hits }}</div><div class="label">apps already live in Composio's own toolkit registry</div></div>
+    </div>
+  </section>
+
+  <section id="patterns">
+    <h2><span class="num">2</span>Patterns across the 100</h2>
+    <p class="section-sub">Clustered, not a raw table. Full row-level data is in section 6.</p>
+    <div class="charts-grid">
+      <div class="card">
+        <strong>Auth method distribution</strong>
+        <div style="margin-top:12px;">
+        {% for b in auth_bars %}
+          <div class="bar-row">
+            <span class="label">{{ b.label }}</span>
+            <div class="bar-track"><div class="bar-fill" style="width:{{ b.pct }}%; background: var(--{{ b.color }});"></div></div>
+            <span class="bar-count">{{ b.count }}</span>
+          </div>
+        {% endfor %}
+        </div>
+      </div>
+      <div class="card">
+        <strong>Self-serve vs gated (overall)</strong>
+        <div style="margin-top:12px;">
+        {% for b in self_serve_bars %}
+          <div class="bar-row">
+            <span class="label">{{ b.label }}</span>
+            <div class="bar-track"><div class="bar-fill" style="width:{{ b.pct }}%; background: {{ 'var(--good)' if 'self_serve' in b.label else ('var(--critical)' if 'gated' in b.label else 'var(--muted)') }};"></div></div>
+            <span class="bar-count">{{ b.count }}</span>
+          </div>
+        {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <div class="card" style="margin-top:20px;">
+      <strong>Self-serve vs gated, and buildability, by category</strong>
+      <div class="legend" style="margin-top:12px;">
+        <span><span class="swatch" style="background:var(--good);"></span>self-serve / buildable</span>
+        <span><span class="swatch" style="background:var(--critical);"></span>gated / blocked</span>
+      </div>
+      {% for c in category_bars %}
+      <div class="stacked-row">
+        <div class="cat-label"><span>{{ c.category }} ({{ c.total }} apps)</span><span>{{ c.self_serve }} self-serve · {{ c.buildable }} buildable</span></div>
+        <div class="stacked-track">
+          <div class="stacked-seg good" style="width:{{ c.self_serve_pct }}%"></div>
+          <div class="stacked-seg critical" style="width:{{ c.gated_pct }}%"></div>
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="two-col" style="margin-top:20px;">
+      <div class="card">
+        <strong>Most common blockers</strong>
+        <ul class="plain">
+          {% for name, count in top_blockers %}<li>{{ name }} — {{ count }} apps</li>{% endfor %}
+        </ul>
+      </div>
+      <div class="card">
+        <strong>Easy wins vs needs outreach</strong>
+        <p style="font-size:13px; color:var(--text-secondary); margin:4px 0;">Easy win = self-serve credentials + buildable today. Needs outreach = partnership-gated or currently blocked.</p>
+        <p style="font-size:13px;"><strong>{{ easy_wins|length }} easy wins:</strong> {{ easy_wins[:12]|join(', ') }}{% if easy_wins|length > 12 %}, +{{ easy_wins|length - 12 }} more{% endif %}</p>
+        <p style="font-size:13px;"><strong>{{ needs_outreach|length }} need outreach:</strong> {{ needs_outreach[:12]|join(', ') }}{% if needs_outreach|length > 12 %}, +{{ needs_outreach|length - 12 }} more{% endif %}</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="agent">
+    <h2><span class="num">3</span>The agent: what it did, where it needed a human</h2>
+    <p class="section-sub">A simple linear pipeline — four scripts, no queues, no orchestration framework.</p>
+    <div class="card">
+      <div class="workflow">
+        <div class="step">apps.csv (100 apps)</div><span class="arrow">→</span>
+        <div class="step">Composio registry lookup<br><small>composio.toolkits.get() — dogfooding Composio's own SDK as ground truth</small></div><span class="arrow">→</span>
+        <div class="step">fetch docs page<br><small>requests + BeautifulSoup</small></div><span class="arrow">→</span>
+        <div class="step">LLM extraction<br><small>Claude, structured JSON</small></div><span class="arrow">→</span>
+        <div class="step">confidence score</div><span class="arrow">→</span>
+        <div class="step">low confidence?<br><small>→ verify.py: real browser re-fetch + 2nd LLM pass</small></div><span class="arrow">→</span>
+        <div class="step human">human review sample<br><small>person reads real docs, grades a 20-app sample</small></div><span class="arrow">→</span>
+        <div class="step">analyze.py → patterns</div><span class="arrow">→</span>
+        <div class="step">this report</div>
+      </div>
+      <p class="workflow-note">
+        <strong>Where it needed a human:</strong> (1) picking the 100 apps and their categories came from
+        the assignment brief, not the agent; (2) grading the {{ accuracy.sample_size_apps if accuracy else 20 }}-app
+        verification sample against real docs was done by hand — the agent never grades its own homework;
+        (3) apps where the docs site blocked automated fetching (bot walls, JS-gated content, login-required docs)
+        were flagged low-confidence and, where the browser re-check still couldn't resolve it, the "notes" field
+        says so explicitly instead of guessing silently; (4) genuinely ambiguous "self-serve vs gated" calls
+        (e.g. free tier exists but the useful endpoints are plan-gated) were spot-checked manually.
+      </p>
+    </div>
+    <div class="card" style="margin-top:16px;">
+      <strong>Proof — this is a runnable pipeline, not a one-off script</strong>
+      <p style="font-size:13px; color:var(--text-secondary);">Re-run any stage independently:</p>
+      <pre>python research.py        # stage 1: research + confidence scoring
+python verify.py          # stage 2: browser-use re-check of low-confidence apps
+python analyze.py --sample   # stage 3a: (re)generate the human review sample
+python analyze.py         # stage 3b: patterns + accuracy summary
+python generate_report.py # stage 4: this page</pre>
+    </div>
+  </section>
+
+  <section id="verification">
+    <h2><span class="num">4</span>Verification: did accuracy actually improve?</h2>
+    {% if accuracy %}
+    <p class="section-sub">Human-graded sample of {{ accuracy.sample_size_apps }} apps, {{ accuracy.fields_checked_per_app|join(', ') }} checked per app ({{ accuracy.total_field_checks }} field checks total).</p>
+    <div class="headline-grid" style="grid-template-columns: repeat(2, minmax(200px,1fr));">
+      <div class="stat-tile"><div class="value">{{ (accuracy.first_pass_accuracy*100)|round|int }}%</div><div class="label">first-pass accuracy (before verify.py)</div></div>
+      <div class="stat-tile"><div class="value">{{ (accuracy.final_accuracy*100)|round|int }}%</div><div class="label">final accuracy (after browser-use re-check loop)</div></div>
+    </div>
+    <p class="workflow-note">
+      Read honestly: on this sample the two numbers are within one field-check of each other (a single
+      flip on {{ accuracy.total_field_checks }} checks) — the browser-use loop did not measurably move
+      the headline number. We're reporting that flat, not smoothing it over. The per-field breakdown below
+      shows why: <code>authentication</code> is where nearly every miss lives, and on inspection most of
+      those are the agent naming the right auth *family* with the wrong specific term (e.g. it says
+      "Token", the docs say "Bearer Token" or "Personal Access Token") rather than being substantively
+      wrong — an artifact of exact-string scoring, not a comprehension failure. Separately, there's a real,
+      repeated pattern worth flagging: the agent over-guesses <code>self_serve_trial</code> when the docs
+      actually say <code>self_serve_free</code>, several times across unrelated apps.
+    </p>
+    {% if accuracy.accuracy_by_field %}
+    <div class="card" style="margin-top:16px;">
+      <strong>Accuracy by field</strong>
+      <table style="margin-top:10px;">
+        <thead><tr><th>Field</th><th>Checks</th><th>First-pass</th><th>Final</th></tr></thead>
+        <tbody>
+        {% for field, v in accuracy.accuracy_by_field.items() %}
+          <tr>
+            <td>{{ field }}</td>
+            <td>{{ v.total }}</td>
+            <td>{{ (v.first_pass_accuracy*100)|round|int if v.first_pass_accuracy is not none else "—" }}%</td>
+            <td>{{ (v.final_accuracy*100)|round|int if v.final_accuracy is not none else "—" }}%</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+    {% endif %}
+    {% if accuracy.remaining_misses %}
+    <div class="card" style="margin-top:16px;">
+      <strong>Remaining misses, shown honestly</strong>
+      <ul class="miss-list">
+        {% for m in accuracy.remaining_misses %}
+        <li><strong>{{ m.app }}</strong> — <span class="field">{{ m.field }}</span>: agent said "{{ m.agent_said }}", docs actually say "{{ m.human_said }}"</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% else %}
+    <p style="font-size:13px; color:var(--text-secondary);">No remaining misses in the graded sample after the verification loop.</p>
+    {% endif %}
+    {% else %}
+    <div class="card">
+      <strong>Not yet graded.</strong>
+      <p style="font-size:13px; color:var(--text-secondary);">
+        Run <code>python analyze.py --sample</code> to generate <code>data/human_review_sample.csv</code>,
+        fill in the <code>human_*</code> columns by checking each app's real docs, then re-run
+        <code>python analyze.py</code> and regenerate this report. Shipping this section empty rather
+        than fabricating a number is intentional.
+      </p>
+    </div>
+    {% endif %}
+  </section>
+
+  <section id="findings">
+    <h2><span class="num">5</span>Full findings ({{ total_apps }} apps)</h2>
+    <p class="section-sub">Sortable, filterable. Evidence link per row.</p>
+    <div class="filters">
+      <select id="f-category"><option value="">All categories</option></select>
+      <select id="f-auth"><option value="">All auth methods</option></select>
+      <select id="f-buildable"><option value="">Buildable: any</option><option value="true">Buildable today</option><option value="false">Blocked</option></select>
+      <input id="f-search" type="text" placeholder="Search app name…">
+    </div>
+    <div class="table-scroll">
+      <table id="findings-table">
+        <thead>
+          <tr>
+            <th class="sortable" data-key="name">App</th>
+            <th class="sortable" data-key="category">Category</th>
+            <th>Description</th>
+            <th class="sortable" data-key="auth_str">Auth</th>
+            <th class="sortable" data-key="self_serve">Self-serve</th>
+            <th class="sortable" data-key="api_surface">API surface</th>
+            <th class="sortable" data-key="mcp">MCP</th>
+            <th class="sortable" data-key="buildable">Buildable</th>
+            <th>Blocker</th>
+            <th class="sortable" data-key="confidence">Confidence</th>
+            <th>Evidence</th>
+          </tr>
+        </thead>
+        <tbody>
+        {% for r in records %}
+          <tr data-category="{{ r.category }}" data-auth="{{ r.auth_str }}" data-buildable="{{ r.buildable|lower }}" data-name="{{ r.name|lower }}">
+            <td>{{ r.name }}</td>
+            <td>{{ r.category }}</td>
+            <td style="max-width:260px;">{{ r.description }}</td>
+            <td>{{ r.auth_str }}</td>
+            <td><span class="badge {{ r.self_serve_badge }}">{{ r.self_serve }}</span></td>
+            <td>{{ r.api_surface }} <span style="color:var(--muted)">({{ r.api_breadth }})</span></td>
+            <td>{{ "Yes" if r.mcp else "No" }}</td>
+            <td><span class="badge {{ r.buildable_badge }}">{{ "Yes" if r.buildable else "No" }}</span></td>
+            <td>{{ r.blocker or "—" }}</td>
+            <td>{{ r.confidence_pct }}%{% if r.needs_verification %} <span class="badge badge-critical">unverified</span>{% endif %}</td>
+            <td>{% if r.evidence_url %}<a href="{{ r.evidence_url }}" target="_blank" rel="noopener">docs</a>{% endif %}</td>
+          </tr>
+        {% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="limitations">
+    <h2><span class="num">6</span>Limitations &amp; honesty</h2>
+    <div class="two-col">
+      <div class="card">
+        <strong>What this agent got wrong or couldn't resolve</strong>
+        <p style="font-size:13px; color:var(--text-secondary);">
+          See the miss list in section 4. Beyond that: a handful of docs sites in the set (bot-walled or
+          requiring login, e.g. some finance/data-partner apps) returned little to no fetchable text, so
+          those records lean on the model's prior knowledge and are flagged with lower confidence rather
+          than presented as verified fact.
+        </p>
+      </div>
+      <div class="card">
+        <strong>Intentionally not built (see README for why)</strong>
+        <ul class="plain">
+          <li>No parallel/worker-pool execution — sequential is fine at 100 apps and keeps failures easy to read.</li>
+          <li>No multi-source consensus beyond Composio registry + docs fetch + browser re-check.</li>
+          <li>No scheduled re-runs / continuous monitoring — this is a point-in-time research snapshot.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    Integration Intelligence · pipeline output generated {{ ' ' }}<span id="gen-time"></span> ·
+    <a href="https://github.com" target="_blank" rel="noopener">source repo</a> ·
+    raw data embedded below for machine consumption.
+  </footer>
+</div>
+
+<script id="report-data" type="application/json">{{ records_json | safe }}</script>
+<script>
+  document.getElementById('gen-time').textContent = new Date().toISOString().slice(0,10);
+
+  const rows = Array.from(document.querySelectorAll('#findings-table tbody tr'));
+  const catSel = document.getElementById('f-category');
+  const authSel = document.getElementById('f-auth');
+  const buildSel = document.getElementById('f-buildable');
+  const search = document.getElementById('f-search');
+
+  const cats = [...new Set(rows.map(r => r.dataset.category))].sort();
+  cats.forEach(c => catSel.add(new Option(c, c)));
+  const auths = [...new Set(rows.flatMap(r => r.dataset.auth.split(', ')))].filter(Boolean).sort();
+  auths.forEach(a => authSel.add(new Option(a, a)));
+
+  function applyFilters() {
+    const c = catSel.value, a = authSel.value, b = buildSel.value, q = search.value.toLowerCase();
+    rows.forEach(r => {
+      const show = (!c || r.dataset.category === c)
+        && (!a || r.dataset.auth.includes(a))
+        && (!b || r.dataset.buildable === b)
+        && (!q || r.dataset.name.includes(q));
+      r.style.display = show ? '' : 'none';
+    });
+  }
+  [catSel, authSel, buildSel].forEach(el => el.addEventListener('change', applyFilters));
+  search.addEventListener('input', applyFilters);
+
+  document.querySelectorAll('#findings-table th.sortable').forEach(th => {
+    let asc = true;
+    th.addEventListener('click', () => {
+      const key = th.dataset.key;
+      const idx = Array.from(th.parentNode.children).indexOf(th);
+      const tbody = document.querySelector('#findings-table tbody');
+      const sorted = rows.slice().sort((r1, r2) => {
+        const v1 = r1.children[idx].textContent.trim();
+        const v2 = r2.children[idx].textContent.trim();
+        const n1 = parseFloat(v1), n2 = parseFloat(v2);
+        const cmp = (!isNaN(n1) && !isNaN(n2)) ? n1 - n2 : v1.localeCompare(v2);
+        return asc ? cmp : -cmp;
+      });
+      asc = !asc;
+      sorted.forEach(r => tbody.appendChild(r));
+    });
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+{
+  "id": "62",
+  "name": "Vercel",
+  "category": "Developer, Infra and Data platforms",
+  "hint_url": "vercel.com/docs/rest-api",
+  "composio_registry_match": {
+    "slug": "vercel",
+    "name": "Vercel",
+    "auth_schemes": [],
+    "categories": [
+      "Developer Tools"
+    ],
+    "tools_count": 131.0,
+    "description": "Vercel is a platform for frontend frameworks and static sites, enabling developers to host websites and web services that deploy instantly, scale automatically, and require minimal configuration."
+  },
+  "description": "A cloud platform for static sites and Serverless Functions that provides a REST API to manage deployments, domains, projects, and infrastructure.",
+  "authentication": [
+    "Bearer Token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://vercel.com/docs/rest-api"
+  ],
+  "notes": "Vercel has an extensive public REST API and existing community-maintained MCP servers available for integration. [human-verified: Bearer token confirmed. Free hobby tier. Token in Account Settings > Tokens instantly.]",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck",
+  "human_verified": true,
+  "human_verified_fields": [
+    "authentication"
+  ]
+}

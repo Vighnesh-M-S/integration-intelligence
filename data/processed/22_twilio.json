@@ -1,0 +1,26 @@
+{
+  "id": "22",
+  "name": "Twilio",
+  "category": "Communications and Messaging",
+  "hint_url": "twilio.com",
+  "composio_registry_match": null,
+  "description": "A cloud communications platform providing APIs for SMS, voice, email, and messaging, integrated with AI orchestration and customer data.",
+  "authentication": [
+    "API key",
+    "Token"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://twilio.com"
+  ],
+  "notes": "While no official MCP server exists, the platform is highly conducive to agent-tooling via its comprehensive REST APIs and official server-side SDKs.",
+  "confidence": 0.7,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research"
+}

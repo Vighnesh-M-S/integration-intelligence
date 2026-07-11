@@ -1,0 +1,32 @@
+{
+  "id": "68",
+  "name": "MongoDB Atlas",
+  "category": "Developer, Infra and Data platforms",
+  "hint_url": "mongodb.com/docs/atlas/api",
+  "composio_registry_match": null,
+  "description": "A multi-cloud developer data platform that provides a fully managed MongoDB database, vector search, and operational infrastructure via APIs.",
+  "authentication": [
+    "Public Key",
+    "Private Key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://mongodb.com/docs/atlas/api"
+  ],
+  "notes": "While no official MCP server exists, the Atlas Administration API is robust and well-documented for agentic tool use. Public API keys (Programmatic API Keys) are used for authentication. [human-verified: Public + Private key pair (Digest Auth) confirmed. Free M0 cluster. Keys in Access Manager.]",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck",
+  "human_verified": true,
+  "human_verified_fields": [
+    "authentication"
+  ]
+}

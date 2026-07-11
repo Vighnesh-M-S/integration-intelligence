@@ -1,0 +1,28 @@
+{
+  "id": "83",
+  "name": "Binance",
+  "category": "Finance and Fintech",
+  "hint_url": "binance-docs.github.io",
+  "composio_registry_match": null,
+  "description": "A global cryptocurrency exchange platform providing services for trading, staking, and managing digital assets.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://binance-docs.github.io",
+    "https://developers.binance.com/docs/binance-trading-api/rest-api"
+  ],
+  "notes": "The fetched GitHub Pages URL returned 404; based evaluation on the official Binance Developer documentation portal.",
+  "confidence": 0.49,
+  "needs_verification": true,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

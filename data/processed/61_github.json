@@ -1,0 +1,37 @@
+{
+  "id": "61",
+  "name": "GitHub",
+  "category": "Developer, Infra and Data platforms",
+  "hint_url": "docs.github.com/rest",
+  "composio_registry_match": {
+    "slug": "github",
+    "name": "GitHub",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Developer Tools"
+    ],
+    "tools_count": 871.0,
+    "description": "GitHub is a code hosting platform for version control and collaboration, offering Git-based repository management, issue tracking, and continuous integration features"
+  },
+  "description": "A cloud-based hosting service for version control and collaboration, allowing developers to store and manage their code.",
+  "authentication": [
+    "OAuth2",
+    "Token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST+GraphQL",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://docs.github.com/rest"
+  ],
+  "notes": "GitHub has highly mature REST and GraphQL APIs, massive ecosystem support, and a pre-existing official MCP server.",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

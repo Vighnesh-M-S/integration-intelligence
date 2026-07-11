@@ -1,0 +1,26 @@
+{
+  "docs": {
+    "url": "https://developers.facebook.com/docs/marketing-apis",
+    "status": 200,
+    "text": "Marketing API | Meta\nAds and Commerce\nMarketing API\n            \n                The Marketing API is a collection of \nGraph API\n endpoints and other features that can be used to help you advertise across Meta technologies. Before advertising on Facebook, Instagram, Messenger, and WhatsApp, we recommend you learn about Meta's \nad campaign structure\n to understand the objects you're working with and how they relate to each other.\n              \nGet started\nGet Started\n          \n            Begin creating and managing Meta ad campaigns by following step-by-step guidance on setting up campaigns, ad sets, and creatives using the Marketing API\n          \n                      Basic Ad Creation\n                    \n                    Get detailed guidance on how to set up campaigns, ad sets, and ad creatives, including code samples that illustrate the implementation process.\n                  \nLearn more\n                      Manage Campaigns \n                    \n                    Learn key operations you can perform using the Marketing API, including how to modify, pause and delete campaigns. \n                  \nLearn more\n                      Ad Optimization Basics\n                    \n                    Use Marketing API endpoints that serve as essential tools for developers to manage audiences and analyze ad campaign insights.\n                  \nLearn more\nRelated APIs\n          \n            Explore additional APIs to enhance ad targeting, manage catalogs, maintain business presence, and integrate commerce tools across Meta technologies\n          \n                      Conversions API\n                    \n                    Connect the marketing data on your servers to the Meta systems that optimize ad targeting, decrease cost per action, and measure results.\n                  \nLearn more\n                      Catalog API \n                    \n                    Create a catalog of items you want to promote and use it to run ads, sell from a shop on Facebook or Instagram, and more. \n                  \nLearn more\n                      Business Management API \n                    \n                    Create and maintain your business's organic and paid presence on Facebook, Instagram, Messenger, and WhatsApp.\n                  \nLearn more\n                      Commerce API \n                    \n                    Enables businesses to integrate their infrastructure with the tools available to sell products across Meta technologies, including shops and Marketplace.\n                  \nLearn more\nTools and Resources\nAds Manager\n\u2060\n.\nBusiness Manager\n\u2060\nCommerce Manager\n\u2060\nApp Dashboard\nMeta Business SDK\nMarketing API Status\n\u2060\nMeta Blueprint\n\u2060\nMeta Developer Community Forums",
+    "ok": true
+  },
+  "composio_raw": null,
+  "llm_raw": {
+    "description": "A comprehensive API suite for managing, automating, and optimizing advertising campaigns across Meta's platforms including Facebook, Instagram, Messenger, and WhatsApp.",
+    "authentication": [
+      "OAuth2"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "REST+GraphQL",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://developers.facebook.com/docs/marketing-apis"
+    ],
+    "notes": "While public, the Marketing API requires an approved app in Meta's Developer portal with specific 'Ads Management' permissions, which involves a vetting process for production access.",
+    "self_confidence": 0.95
+  }
+}

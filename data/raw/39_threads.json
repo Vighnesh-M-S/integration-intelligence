@@ -1,0 +1,26 @@
+{
+  "docs": {
+    "url": "https://developers.facebook.com/docs/threads",
+    "status": 200,
+    "text": "# Threads API\nThe Threads API enables developers to build their own unique integrations, and helps creators and brands manage their Threads presence at scale and easily share inspiring content with their communities.\n## Documentation Contents\n### [Overview](https://developers.facebook.com/documentation/threads/overview)\nBrief overview of the Threads API limitations.\n### [Get Started](https://developers.facebook.com/documentation/threads/get-started)\nLearn about the requirements for using the Threads API.\n### [Threads Use Case](https://developers.facebook.com/documentation/development/create-an-app/threads-use-case)\nHow to create and customize a Meta app with the Threads API use case in the App Dashboard.\n### [Reference](https://developers.facebook.com/documentation/threads/reference)\nThe Threads API endpoints and their parameters.\n### Guides\nLearn how to make posts, retrieve media, and troubleshoot issues.\n* [Single Thread Posts](https://developers.facebook.com/documentation/threads/posts#single-thread-posts)\n* [Carousel Posts](https://developers.facebook.com/documentation/threads/posts#carousel-posts)\n* [Threads Media](https://developers.facebook.com/documentation/threads/retrieve-and-discover-posts/retrieve-posts)\n* [Threads Profiles](https://developers.facebook.com/documentation/threads/threads-profiles)\n* [Troubleshooting](https://developers.facebook.com/documentation/threads/troubleshooting)\n* [Reply Moderation](https://developers.facebook.com/documentation/threads/reply-management)\n* [Mentions](https://developers.facebook.com/documentation/threads/threads-mentions)\n* [Insights](https://developers.facebook.com/documentation/threads/insights)\n* [Webhooks](https://developers.facebook.com/documentation/threads/webhooks)\n* [Keyword Search](https://developers.facebook.com/documentation/threads/keyword-search)\n* [oEmbed](https://developers.facebook.com/documentation/threads/tools-and-resources/embed-a-threads-post)\n* [Web Intents](https://developers.facebook.com/documentation/threads/threads-web-intents)\n* [Postman Collection](https://developers.facebook.com/documentation/threads/tools-and-resources/postman-collection)",
+    "ok": true
+  },
+  "composio_raw": null,
+  "llm_raw": {
+    "description": "A social media platform for sharing text, photos, and videos, integrated into the Meta ecosystem for community engagement.",
+    "authentication": [
+      "OAuth2"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "REST",
+    "api_breadth": "moderate",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://developers.facebook.com/docs/threads"
+    ],
+    "notes": "Uses standard Meta Graph API authorization flows. MCP status is based on current lack of verified official/widely-adopted community servers.",
+    "self_confidence": 1
+  }
+}

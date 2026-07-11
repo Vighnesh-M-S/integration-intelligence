@@ -1,0 +1,28 @@
+{
+  "id": "25",
+  "name": "Pumble",
+  "category": "Communications and Messaging",
+  "hint_url": "pumble.com",
+  "composio_registry_match": null,
+  "description": "A comprehensive team communication and collaboration platform featuring persistent messaging, channels, video/voice conferencing, and file sharing.",
+  "authentication": [
+    "API key",
+    "Token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "moderate",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://pumble.com"
+  ],
+  "notes": "Pumble explicitly markets an MCP server, indicating native support for AI agent integrations.",
+  "confidence": 0.69,
+  "needs_verification": true,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

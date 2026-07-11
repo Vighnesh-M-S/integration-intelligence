@@ -1,0 +1,37 @@
+{
+  "id": "65",
+  "name": "Supabase",
+  "category": "Developer, Infra and Data platforms",
+  "hint_url": "supabase.com/docs",
+  "composio_registry_match": {
+    "slug": "supabase",
+    "name": "Supabase",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Developer Tools",
+      "Databases"
+    ],
+    "tools_count": 124.0,
+    "description": "Supabase is an open-source backend-as-a-service providing a Postgres database, authentication, storage, and real-time subscription APIs for building modern applications"
+  },
+  "description": "A backend-as-a-service platform that provides a managed Postgres database, authentication, real-time subscriptions, storage, and edge functions.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST+GraphQL",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://supabase.com/docs"
+  ],
+  "notes": "The documentation explicitly mentions MCP support in the 'AI tools' section. The API breadth is very broad as it covers database management, auth, and infrastructure.",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

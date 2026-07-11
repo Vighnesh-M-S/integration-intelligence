@@ -1,0 +1,25 @@
+{
+  "id": "91",
+  "name": "NotebookLM",
+  "category": "AI, Research and Media-native",
+  "hint_url": "cloud.google.com/gemini",
+  "composio_registry_match": null,
+  "description": "An AI-powered personalized research assistant that helps users synthesize, query, and generate audio overviews from their uploaded documents.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "none_public",
+  "api_breadth": "unknown",
+  "mcp": false,
+  "buildable": false,
+  "blocker": "no public API",
+  "evidence_urls": [
+    "https://notebooklm.google"
+  ],
+  "notes": "NotebookLM is a consumer-facing Google Labs product and currently does not expose any public developer APIs or integration tools. The fetched Google Cloud Gemini docs are unrelated to NotebookLM's specific interface.",
+  "confidence": 0.7,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research"
+}

@@ -1,0 +1,29 @@
+{
+  "id": "34",
+  "name": "GoHighLevel",
+  "category": "Marketing, Ads, Email and Social",
+  "hint_url": "highlevel.stoplight.io",
+  "composio_registry_match": null,
+  "description": "An all-in-one sales and marketing automation platform for agencies and small businesses featuring CRM, email marketing, and funnel building.",
+  "authentication": [
+    "OAuth2",
+    "API key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://highlevel.stoplight.io",
+    "https://developers.gohighlevel.com/"
+  ],
+  "notes": "Relying on external knowledge of the GoHighLevel Developer API as the provided stoplight URL is a generic workspace placeholder.",
+  "confidence": 0.49,
+  "needs_verification": true,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

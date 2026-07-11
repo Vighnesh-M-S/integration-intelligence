@@ -1,0 +1,36 @@
+{
+  "docs": {
+    "url": "https://developers.klaviyo.com",
+    "status": 200,
+    "text": "API Reference & Technical Guides | Klaviyo Developers\nJump to Content\nHome\nGuides\nAPI Reference\nlegacy\nv2022-10-17\nv2023-01-24\nv2023-02-22\nv2023-06-15\nv2023-07-15\nv2023-08-15\nv2023-09-15\nv2023-10-15\nv2023-12-15\nv2024-02-15\nv2024-05-15\nv2024-06-15\nv2024-07-15\nv2024-10-15\nv2025-01-15\nv2025-04-15\nv2025-07-15\nv2025-10-15\nv2026-01-15\nv2026-04-15\nLog In\nHome\nChangelog\nHelp Center\nCommunity\nContact Us\nBuild personalized\nexperiences that scale.\n      Create apps and integrations using Klaviyo's API that help \n  your business grow. Get started for free.\n    \nExplore docs\nJoin 300+ others who have integrated with Klaviyo\nShopify logo\nWoo Commerce logo\nGorgias logo\nMagento logo\nZendesk logo\nYotpo. logo\nRecharge logo\nOkendo logo\nPrestashop logo\nAftership logo\nGet started\n          Start here\n        \n          Getting started\n        \n          Learn how to authenticate, how data is stored, and how to make your first API calls.\n        \nExplore docs\n          Guides\n        \n          Developer guides\n        \n          Read detailed guides for common developer use cases. Learn how our New APIs compare to our legacy APIs.\n        \nRead guides\n          Docs\n        \n          API docs\n        \n          Klaviyo's new and improved APIs are now available! Learn about our API objects, methods, attributes, and responses\n        \nRead API docs\n      Developer tools\n    \n      Speed up development with tools designed for your workflow.\n    \n          SDKs\n        \n          Install a Klaviyo maintained SDK to accelerate development\u2013 offered in Python, PHP, Ruby, and Node.\n        \nExplore SDKs\n          Test accounts\n        \n          Test custom integrations and apps without the risk of impacting your production account.\n        \nCreate test account\n          Postman\n        \n          Make test calls using Postman\u2019s UI tool with our collection of pre-built API requests.\n        \nTest with Postman\n          Sample code repository\n        \n          Find pre-built solutions, examples, and reference code guides in our Klaviyo Labs GitHub.\n        \nView code samples\n          Sample data\n        \n          Populate your test account with sample data to quickly explore our API and see how data is used in Klaviyo.\n        \nGenerate sample data\n          Napkin\n        \n          Create and deploy serverless cloud functions instantly from the browser. Quickly add authentication for your API, schedule tasks, and replay events.\n        \nExplore Napkin.io\n          Use cases\n        \nCustom integrations\nBetter user experience\nReporting\n            Build custom integrations to bring data into Klaviyo to create personalized experiences. Integrate with point-of-sale software, inventory management systems, scheduling apps, and more.\n          \nRead docs\n              Brian Whalley - Co-Founder of Wonderment\n            \n              \u201cSince Klaviyo doesn't impose a rigid data schema, it's easy to send in just about any arbitrary data without having to do annoying manipulations or data mappings and without having to pre-configure a data schema in the app.\u201d\n            \nRead story \u2192\n            Use profile information, custom events, catalog information, and other types of data to build custom customer experiences using Klaviyo's flows, template email builder, and more.\n          \nRead docs\n              Callum McMaugh - Techincal Lead at Giftnotes\n            \n              \u201cMerchants can set up flows based on Klaviyo events to send out branded notifications to both the [gift] recipient and the customer. They can also segment the customer and the recipient for greater insights into their customer\u2019s shopping habits.\u201d\n            \nRead story \u2192\n            Pull data from Klaviyo to create dashboards, sync to other systems, and perform analysis to keep up with your marketing performance.\n          \nRead docs\n              Kyle Tremblay - Sr. Product Manger at EXCLUSIVE\n            \n              \u201cIntegrating with Klaviyo\u2019s APIs was a no-brainer as it allowed us to build reporting that\u2019s informed by our clients\u2019 goals. Additionally, we\u2019re now able to highlight useful, holistic insights to determine what actions should be taken by our clients to meet their goals.\u201d\n            \nRead story \u2192\n      Join the community\n    \nDeveloper blog icon\n          Developer blog\n        \n          Learn about use cases, how-tos, case studies, and more. \n        \nDeveloper community icon\n          Developer community\n        \n          Get support and inspiration from Klaviyo community experts.",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "klaviyo",
+    "name": "Klaviyo",
+    "auth_schemes": [],
+    "categories": [
+      "Marketing Automation",
+      "Email Newsletters"
+    ],
+    "tools_count": 225.0,
+    "description": "Klaviyo is a data-driven email and SMS marketing platform that allows e-commerce brands to deliver targeted messages, track conversions, and scale customer relationships"
+  },
+  "llm_raw": {
+    "description": "Klaviyo is a marketing automation platform specializing in email and SMS marketing, offering deep customer data segmentation and personalized automation flows.",
+    "authentication": [
+      "API key"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://developers.klaviyo.com"
+    ],
+    "notes": "Authentication is primarily handled via Private API Keys generated in the Klaviyo dashboard; the platform has a mature and extensive REST API surface documented for broad developer use.",
+    "self_confidence": 1.0
+  }
+}

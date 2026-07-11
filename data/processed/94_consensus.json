@@ -1,0 +1,27 @@
+{
+  "id": "94",
+  "name": "Consensus",
+  "category": "AI, Research and Media-native",
+  "hint_url": "consensus.app",
+  "composio_registry_match": null,
+  "description": "An AI-powered academic search engine that synthesizes answers from over 200 million peer-reviewed research papers.",
+  "authentication": [
+    "Unknown"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "none_public",
+  "api_breadth": "unknown",
+  "mcp": false,
+  "buildable": false,
+  "blocker": "no public API",
+  "evidence_urls": [
+    "https://consensus.app"
+  ],
+  "notes": "Consensus does not currently provide a public developer API; usage is primarily via their web interface.",
+  "confidence": 0.69,
+  "needs_verification": true,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

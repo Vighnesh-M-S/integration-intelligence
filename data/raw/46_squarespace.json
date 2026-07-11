@@ -1,0 +1,27 @@
+{
+  "docs": {
+    "url": "https://developers.squarespace.com",
+    "status": 200,
+    "text": "Home \u2014 Squarespace Developers\nTemplate Docs\nCommerce APIs\nWebhooks\nCustom Code\nUpcoming Changes\nGet Started\nTemplate Docs\nCommerce APIs\nWebhooks\nCustom Code\nUpcoming Changes\nGet Started\nBuild Anything\nThe Squarespace Developer Platform enables developers to create fully custom sites and integrate with 3rd party tools. Start with a template, or build your site from scratch.\nGet Started\nUse our new \nContacts API\n to read profiles for customers, subscribers, and website users \u2192\nWeb Platform\nAccess the template files behind your Squarespace website. Edit markup, styles, and scripts using the tools you prefer to create a custom Squarespace-hosted template or website.\nGet Started\nCommerce APIs\nAPIs enabling you to build applications to manage the commerce features of your site. Connect your Squarespace store with other services, automate key tasks like shipping and tax filing, and more.\nLearn More\nFocus on building your site. We'll take care of the rest.\nBuild your site using the tools we use to create Squarespace templates. With the Squarespace Developer Platform, your site will be backed by the same infrastructure that powers millions of Squarespace websites.\nFull Code Control\nChange anything from the doctype to the footer. With Developer Mode enabled, you have access to all the template files that make up your Squarespace website.\nLocal Development\nUse the Squarespace Development Server to develop your site locally while working with your preferred native build tools.\nGit Built-in\nAll Squarespace template repositories are exposed via Git automatically, so you can work with a team and easily roll back.\nJSON Data Store\nQuery any page as JSON to access your site's data in a structured way. Your website content is an API.\nJSON-Template\nOur familiar template language has very few language constructs to learn, yet offers the power and expressiveness needed to implement any design.\nInfrastructure\nWhether you have 10 or 10,000 visitors a day, your site will remain online. We host Squarespace.com on the same servers, so we're in this together.\nContent Delivery Network\nOur built-in CDN reduces load times using geographically distributed servers. Your assets will be delivered quickly to any place on Earth.\nSite Manager\nManage your client's content using the same robust backend that powers millions of sites on our consumer platform.",
+    "ok": true
+  },
+  "composio_raw": null,
+  "llm_raw": {
+    "description": "A comprehensive website building and commerce platform offering hosted infrastructure, template customization, and APIs for site management.",
+    "authentication": [
+      "OAuth2",
+      "API key"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://developers.squarespace.com"
+    ],
+    "notes": "Squarespace provides extensive REST APIs for commerce and content management, though specific enterprise-grade features may be gated.",
+    "self_confidence": 0.95
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "docs": {
+    "url": "https://developers.pinterest.com",
+    "status": 200,
+    "text": "Pinterest Developers\nSkip to content\nDeveloper Platform\nOne API to seamlessly integrate with Pinterest\nSecurely plan content, manage ads, upload product feeds, and more.\nGet started\nUse cases\nTrack Conversions\n \nMaximize conversion visibility on Pinterest by using Pinterest Conversions API, Pinterest Tag, or uploading conversion data.\nCreate content\n \nBuild apps and experiences that allow Pinterest users to create and manage organic content (Pins and Boards) on Pinterest.\nBuild & Manage ads\n \nUse Pinterest API to manage ad campaigns, set up targeting, and report on campaign performance.\nManage product catalogs\n \nPinterest API for Shopping allows you to create and manage your product catalogs on Pinterest as well as create, manage and report on shopping ads.\nAnalyze Pinterest data\n \nPinterest API helps you ingest analytics data for content and ads directly from Pinterest into your data warehouse or analytics tools.\nSuccess stories\nVisit California shares personalized travel tips with Pinterest API\nRead more\nJoin our community of developers\nCheck it out\n, Opens a new tab\nCatch up on the latest updates\nRead our blog\n, Opens a new tab\nReady to build?\nGet started",
+    "ok": true
+  },
+  "composio_raw": null,
+  "llm_raw": {
+    "description": "A visual discovery and social media platform that allows users to manage pins, boards, advertising campaigns, and shopping product catalogs via API.",
+    "authentication": [
+      "OAuth2"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://developers.pinterest.com"
+    ],
+    "notes": "Pinterest uses OAuth2 for standard app integration; API access is generally open to registered developers via the developer portal.",
+    "self_confidence": 0.95
+  }
+}

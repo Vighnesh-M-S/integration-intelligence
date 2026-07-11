@@ -1,0 +1,35 @@
+{
+  "id": "78",
+  "name": "Coda",
+  "category": "Productivity and Project Management",
+  "hint_url": "coda.io/developers",
+  "composio_registry_match": {
+    "slug": "coda",
+    "name": "Coda",
+    "auth_schemes": [],
+    "categories": [
+      "Productivity",
+      "Project Management"
+    ],
+    "tools_count": 109.0,
+    "description": "Collaborative workspace platform that transforms documents into powerful tools for team productivity and project management"
+  },
+  "description": "A cloud-based document platform that combines documents, spreadsheets, and apps into a unified workspace.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://coda.io/developers"
+  ],
+  "notes": "While the documentation header refers to 'Superhuman Docs', this is the official Coda API documentation portal. The platform supports API keys for authentication.",
+  "confidence": 0.85,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

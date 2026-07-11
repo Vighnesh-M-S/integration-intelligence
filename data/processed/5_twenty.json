@@ -1,0 +1,28 @@
+{
+  "id": "5",
+  "name": "Twenty",
+  "category": "CRM and Sales",
+  "hint_url": "twenty.com",
+  "composio_registry_match": null,
+  "description": "An open-source, modular CRM framework that provides developer-focused building blocks for custom sales applications.",
+  "authentication": [
+    "OAuth2",
+    "API key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "GraphQL",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://twenty.com"
+  ],
+  "notes": "Twenty is architected as an extensible CRM platform. It provides a GraphQL API for its data model and is designed for self-hosting, making it highly amenable to agentic integration via local or cloud-hosted instances.",
+  "confidence": 0.69,
+  "needs_verification": true,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

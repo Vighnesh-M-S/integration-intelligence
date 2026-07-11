@@ -1,0 +1,37 @@
+{
+  "id": "33",
+  "name": "LinkedIn Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "hint_url": "learn.microsoft.com/linkedin/marketing",
+  "composio_registry_match": {
+    "slug": "linkedin",
+    "name": "LinkedIn",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Social Media Accounts",
+      "Marketing Automation"
+    ],
+    "tools_count": 22.0,
+    "description": "LinkedIn is a professional networking platform enabling job seekers, companies, and thought leaders to connect, share content, and discover business opportunities"
+  },
+  "description": "LinkedIn's marketing and advertising platform enables businesses to manage ad campaigns, target professional audiences, track conversions, and sync lead data.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://learn.microsoft.com/linkedin/marketing"
+  ],
+  "notes": "While the API is publicly documented, access often requires application review and approval by LinkedIn for production use cases.",
+  "confidence": 0.99,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

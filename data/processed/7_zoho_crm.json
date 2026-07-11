@@ -1,0 +1,37 @@
+{
+  "id": "7",
+  "name": "Zoho CRM",
+  "category": "CRM and Sales",
+  "hint_url": "zoho.com/crm",
+  "composio_registry_match": {
+    "slug": "zoho",
+    "name": "Zoho",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "CRM",
+      "Marketing Automation"
+    ],
+    "tools_count": 57.0,
+    "description": "Zoho is a suite of cloud applications including CRM, email marketing, and collaboration tools, enabling businesses to automate and scale operations"
+  },
+  "description": "A comprehensive customer relationship management platform designed to help businesses manage sales, marketing, and customer support processes.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://zoho.com/crm"
+  ],
+  "notes": "Zoho CRM is highly buildable and already has extensive integrations (including 57 tools on Composio) utilizing its comprehensive REST API with OAuth2.",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

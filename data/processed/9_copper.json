@@ -1,0 +1,31 @@
+{
+  "id": "9",
+  "name": "Copper",
+  "category": "CRM and Sales",
+  "hint_url": "copper.com",
+  "composio_registry_match": null,
+  "description": "A CRM platform tightly integrated with Google Workspace designed to manage customer relationships, sales pipelines, and project delivery.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://copper.com"
+  ],
+  "notes": "Uses OAuth2 for Google Workspace integration and provides a robust REST API for managing CRM entities like people, companies, opportunities, and projects. [human-verified: OAuth2 not found in current public docs. API key only in Settings > API Keys. 14-day trial available.]",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck",
+  "human_verified": true,
+  "human_verified_fields": [
+    "authentication"
+  ]
+}

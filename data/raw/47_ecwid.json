@@ -1,0 +1,27 @@
+{
+  "docs": {
+    "url": "https://api-docs.ecwid.com",
+    "status": 200,
+    "text": "Build with Ecwid apps | Ecwid Documentation\n\u2318\nCtrl\nk\nAsk\nContact API support\nMore\nAI Assistant\narrow-up-right-and-arrow-down-left-from-center\nGood afternoon\nI'm here to help you with the docs.\nWhat is this page about?\nWhat should I read next?\nCan you give an example?\n\u2318\nCtrl\ni\nAI\n \nBased on your context\nSend\nBuild with Ecwid apps\nEcwid API features\nGet started\nSet up your dev environment in Ecwid\nMake your first API request\nAdd more features to your custom app\nAPI glossary\nDevelop apps\nWhat is an Ecwid app\nPrivate and public Ecwid apps\nApp settings\nCommunity libraries\nLaunch apps\nPublic apps overview\nFAQ about public applications\nMonetize public apps\nSteps to go live with a public app\nNative and external apps\nContact Ecwid API support team\n \nOn this page\nFor the complete documentation index, see \nllms.txt\n. This page is also available as \nMarkdown\n.\nAsk\nOn this page\nBuild with Ecwid apps\nExplore our guides and examples to integrate Ecwid Ecommerce\nCustomize your store\nGet access to API with an app\nLearn app settings\nDevelop public apps\nFAQ about public applications\nSubmit your app idea\nGet human support\nAsk your questions and get answers from our API specialists. \nContact Ecwid API support\nGet help with API docs, update your app settings and more.\nJoin Slack community\nConnect and collaborate with the Ecwid team and fellow developers.\n Automate integrations\nWebhooks\nAutomate your business logic\nAutomation examples\nCheck out code and flow for syncing orders or product stock\n Build websites\nSite templates\nComplete website overhaul\nCustom sections\nBuilding blocks for the website\n Customize storefront\nList of JS API calls\nFind full list of available JS API calls\nJS API: track events\nUse pre-built event handlers on the storefront\nJS API: manage cart and checkout\nAdd or remove products from the cart, set customer's email, comments, and more\nJS API: Open page\nCreate redirects to products or search results\nJS API: manage customers\nCheck who is logged in, automate logouts and cookie consent\nJS API: Generate carts\nCreate pre-filled carts as links and share them with your customers\n Create discounts\nAccept tips\nAdd tips selector to the checkout\nLaunch promos\nHighly customizeable discounts for your store\nDiscount coupons\nCreate personal offers for your customers\n Browse guides\nSync new orders\nExport order data to external services\nExtra fields\nCollect additional data with orders\nCreate orders with API calls\nCalculate order details and place orders in the store on behalf of your clients\nPayment API\nConnect any payment provider with your Ecwid store\nShipping API\nCalculate online shipping rates at the checkout\nNext\nEcwid API features\nLast updated \n11 months ago\nWas this helpful?\nGet human support\n Automate integrations\n Build websites\n Customize storefront\n Create discounts\n Browse guides\nWas this helpful?",
+    "ok": true
+  },
+  "composio_raw": null,
+  "llm_raw": {
+    "description": "Ecwid is an e-commerce platform providing APIs for store management, custom app development, and storefront integration.",
+    "authentication": [
+      "OAuth2",
+      "Token"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://api-docs.ecwid.com"
+    ],
+    "notes": "API supports extensive management of orders, products, customers, and payment/shipping integrations.",
+    "self_confidence": 0.95
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "38",
+  "name": "Pinterest",
+  "category": "Marketing, Ads, Email and Social",
+  "hint_url": "developers.pinterest.com",
+  "composio_registry_match": null,
+  "description": "A visual discovery engine and advertising platform that allows users to save ideas and brands to reach customers through promoted Pins and product catalogs.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://developers.pinterest.com"
+  ],
+  "notes": "Pinterest uses OAuth 2.0 for API access; while it does not have an official MCP server listed in the default registry, its REST API is well-documented and highly suitable for agentic integration.",
+  "confidence": 0.69,
+  "needs_verification": true,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

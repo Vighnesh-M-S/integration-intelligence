@@ -1,0 +1,37 @@
+{
+  "id": "55",
+  "name": "Apify",
+  "category": "Data, SEO and Scraping",
+  "hint_url": "docs.apify.com",
+  "composio_registry_match": {
+    "slug": "apify",
+    "name": "Apify",
+    "auth_schemes": [],
+    "categories": [
+      "AI Web Scraping",
+      "Developer Tools"
+    ],
+    "tools_count": 112.0,
+    "description": "Apify is a platform for building, deploying, and managing web scraping and automation tools, known as Actors."
+  },
+  "description": "A cloud platform for deploying serverless web scraping and automation Actors, offering proxy, storage, and AI-agent integration tools.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://docs.apify.com"
+  ],
+  "notes": "Apify provides a comprehensive REST API and official MCP server support for AI agents. Authentication is performed via personal API tokens.",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research",
+  "human_verified": true,
+  "human_verified_fields": []
+}

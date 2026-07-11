@@ -1,0 +1,38 @@
+{
+  "id": "2",
+  "name": "HubSpot",
+  "category": "CRM and Sales",
+  "hint_url": "hubspot.com",
+  "composio_registry_match": {
+    "slug": "hubspot",
+    "name": "HubSpot",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "CRM",
+      "Marketing Automation"
+    ],
+    "tools_count": 244.0,
+    "description": "HubSpot is an inbound marketing, sales, and customer service platform integrating CRM, email automation, and analytics to facilitate lead nurturing and seamless customer experiences"
+  },
+  "description": "An agentic customer platform and CRM that unifies marketing, sales, service, content, and data tools for businesses.",
+  "authentication": [
+    "OAuth2",
+    "Token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://hubspot.com"
+  ],
+  "notes": "Composio lists 244 tools for HubSpot. HubSpot deprecated legacy API keys in favor of Private App Access Tokens (Token) and OAuth2.",
+  "confidence": 0.99,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

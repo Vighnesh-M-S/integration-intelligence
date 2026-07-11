@@ -1,0 +1,37 @@
+{
+  "id": "19",
+  "name": "Gorgias",
+  "category": "Support and Helpdesk",
+  "hint_url": "gorgias.com",
+  "composio_registry_match": {
+    "slug": "gorgias",
+    "name": "Gorgias",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "CRM",
+      "Customer Support"
+    ],
+    "tools_count": 32.0,
+    "description": "Gorgias is a helpdesk and live chat platform specializing in e-commerce, offering automated support, order management, and unified customer communication"
+  },
+  "description": "A comprehensive ecommerce helpdesk platform that integrates AI agents with Shopify data to automate support and drive sales across multiple communication channels.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://gorgias.com"
+  ],
+  "notes": "Gorgias has a well-documented public API for developers and a robust developer portal, making it highly suitable for agent tooling.",
+  "confidence": 0.99,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

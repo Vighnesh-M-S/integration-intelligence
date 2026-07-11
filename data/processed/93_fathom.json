@@ -1,0 +1,37 @@
+{
+  "id": "93",
+  "name": "Fathom",
+  "category": "AI, Research and Media-native",
+  "hint_url": "fathom.video",
+  "composio_registry_match": {
+    "slug": "fathom",
+    "name": "Fathom",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "AI Meeting Assistants",
+      "Transcription"
+    ],
+    "tools_count": 7.0,
+    "description": "AI meeting assistant that records, transcribes, and summarizes meetings"
+  },
+  "description": "AI-powered meeting intelligence platform that records, transcribes, summarizes, and syncs meeting insights to CRM and productivity tools.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "moderate",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://fathom.video"
+  ],
+  "notes": "Composio integration confirms the existence of a public API and OAuth2 support; Fathom's product model is heavily driven by API-based integrations with Slack, Salesforce, HubSpot, and Notion.",
+  "confidence": 0.99,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

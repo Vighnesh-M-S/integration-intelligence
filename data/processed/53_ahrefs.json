@@ -1,0 +1,36 @@
+{
+  "id": "53",
+  "name": "Ahrefs",
+  "category": "Data, SEO and Scraping",
+  "hint_url": "ahrefs.com/api",
+  "composio_registry_match": {
+    "slug": "ahrefs",
+    "name": "Ahrefs",
+    "auth_schemes": [],
+    "categories": [
+      "Marketing Automation",
+      "Analytics"
+    ],
+    "tools_count": 40.0,
+    "description": "Ahrefs is an SEO and marketing platform offering site audits, keyword research, content analysis, and competitive insights to improve search rankings and drive organic traffic"
+  },
+  "description": "A comprehensive SEO and digital marketing tool suite providing extensive data on backlinks, keywords, site health, and search rankings.",
+  "authentication": [
+    "API key",
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://ahrefs.com/api"
+  ],
+  "notes": "Composio reports 40 tools, indicating a mature, broad API surface. Documentation explicitly mentions OAuth2 for integrations and API keys for direct access.",
+  "confidence": 0.85,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

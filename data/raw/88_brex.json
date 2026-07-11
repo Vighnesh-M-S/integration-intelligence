@@ -1,0 +1,35 @@
+{
+  "docs": {
+    "url": "https://developer.brex.com",
+    "status": 200,
+    "text": "Overview\nSkip to content\nOverview\nAPIs\nAccounting\nBudgets & Limits\nExpenses\nFields\nOnboarding\nPayments\nTeam\nTransactions\nTravel\nWebhooks\nBrex MCP\nNo-Code Options\nCommunity Supported Libraries\nSupport\nOverview\nCopy\nCopy for LLM\nCopy page as Markdown for LLMs\nView as Markdown\nOpen this page as Markdown\nOpen in ChatGPT\nGet insights from ChatGPT\nOpen in Claude\nGet insights from Claude\nBrex\n is the first fully unified spend platform \u2014 with global corporate cards, expense management, reimbursements, travel, and bill pay. Brex makes it easy for finance teams to control all of their spend, all in one place. Using the Brex API, you can power your internal tools and create custom workflows.\nBrex APIs use the \nREST\n architecture, are defined using the \nOpenAPI specification\n and use standard HTTP response codes and verbs. All APIs accept and return JSON and require HTTPS.\nExplore our guides and review our API documentation to see how you can integrate with Brex.\nAccounting API\n: View and manage accounting data\nBudgets API\n: Manage budgets and budget programs\nExpenses API\n: View and manage card expenses data, receipt match and receipt uploads\nFields API\n: View and manage fields and their options\nOnboarding API\n: Refer your customers and personal contacts to Brex and prefill signup information\nPayments API\n: Manage vendors and send ACH, domestic wires, and checks\nTeam API\n: Manage users, locations, departments, and cards\nTransactions API\n: View your transactions, accounts, and statements\nTravel API\n: View trips made in Brex Travel\nWebhooks API\n: Send real-time notifications based on events\nQuickstart\nCheck out our \nquickstart guide\n to get up and running making your first Brex API call in just a few minutes. The rest of the guides and documentation provide more in-depth context.\nAPI Status\nGo to \nhttps://status.brex.com\n to see API and Brex system status.\nJoin us on Slack\nHave feedback, questions, or ideas? \nJoin our Slack community\n to discuss your API integrations with Brex employees and other developers.\nWas this helpful?\n\u00a0\nNext page\nAccounting\nAsk AI",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "brex",
+    "name": "Brex",
+    "auth_schemes": [],
+    "categories": [
+      "Accounting"
+    ],
+    "tools_count": 84.0,
+    "description": "Brex provides corporate credit cards, spend management, and financial tools tailored for startups and tech businesses to optimize cash flow, accounting, and growth"
+  },
+  "llm_raw": {
+    "description": "A unified spend management platform providing corporate cards, expense tracking, bill pay, and travel booking capabilities.",
+    "authentication": [
+      "Token"
+    ],
+    "self_serve": "gated_admin_approval",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": true,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://developer.brex.com"
+    ],
+    "notes": "Authentication is primarily via User/Developer API tokens; the platform typically requires a business account with admin access to generate production credentials.",
+    "self_confidence": 0.95
+  }
+}

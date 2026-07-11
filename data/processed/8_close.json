@@ -1,0 +1,35 @@
+{
+  "id": "8",
+  "name": "Close",
+  "category": "CRM and Sales",
+  "hint_url": "close.com",
+  "composio_registry_match": {
+    "slug": "close",
+    "name": "Close",
+    "auth_schemes": [],
+    "categories": [
+      "CRM",
+      "Drip Emails"
+    ],
+    "tools_count": 6.0,
+    "description": "Close is a CRM platform designed to help businesses manage and streamline their sales processes, including calling, email automation, and predictive dialers."
+  },
+  "description": "A sales CRM platform that integrates calling, email, SMS, and pipeline management with an embedded AI agent named Chloe for automated lead qualification and follow-up.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://close.com"
+  ],
+  "notes": "Close provides a robust REST API and explicitly mentions an official MCP server on their developer page. API key authentication is the industry standard for their REST API.",
+  "confidence": 0.85,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

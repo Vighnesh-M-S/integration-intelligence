@@ -1,0 +1,26 @@
+{
+  "docs": {
+    "url": "https://systeme.io",
+    "status": 200,
+    "text": "Systeme.io - The only tool you need to launch your online business\n \nEn\n\u2304\nWhy Systeme.io?\nFeatures\nResources\nPricing\nSign in\nWhy Systeme.io?\nFeatures\nResources\nTutorials\nTestimonials\nPodcast\nBlog\nPricing\nSign in\nWhy systeme.io?\nFeatures\nResources\nPricing\nWhy systeme.io?\nFeatures\nResources\nTutorials\nTestimonials\nPodcast\nBlog\nGlossary\nFree tools\nPricing\nSign in\nSign in\nStart for free now\nEn\n\u2304\n  Your platform for \nsales funnels\nemail marketing\nonline courses\nselling online\nblogging\nsales funnels\n  Your platform for \nsales funnels\nemail marketing\nonline courses\nselling online\nblogging\nsales funnels\nPowering 500,000+ entrepreneurs\nGet your free account now!\nClick here\nFree forever\nNo credit card required\nDoris S\nCorporate trainer\n\"My online business management made effortless\"\nI love how systeme.io combines email marketing, sales funnels, and course creation all in one platform. It\u2019s super intuitive and saves me from juggling multiple tools\nDarina K\nProfessional photographer\n\"Excellent customer service\"\nI love how many tools systeme.io offers in one program, which has allowed me to cancel several other apps and have a single space for my business. It makes the customer journey so much more positive...\nThe only tool you need to launch your online business\nWe make the whole process easier and faster so that you can focus on what\u2019s important - growing your business\nGet started for free\nNo credit card required\nFeatures\nSales funnels\nEmail marketing\nWebsite builder\nAffiliate management\nMarketing automation\nOnline courses builder\nCommunity builder\nBooking calendar\nSub-accounts\nPhysical products\nSMS marketing \nPipelines\nWebinars\nCreator stores\nWhite label\nSuggest a feature\nResources\nBlog\nSysteme.io logo files\nSysteme.io alternatives\nTemplate library\nPublic API\nHelp center\nInfo\nPricing\nTestimonials\nFree migration\nBecome an affiliate\nReceive your award\nFree DNS setup\nGet certified\nLegal\nPrivacy policy\nTerms and conditions\nAffiliate agreement\n\u00a9 systeme.io. All rights reserved\nCreate your free account\nGet my FREE account",
+    "ok": true
+  },
+  "composio_raw": null,
+  "llm_raw": {
+    "description": "An all-in-one marketing platform for sales funnels, email automation, course hosting, and e-commerce management.",
+    "authentication": [
+      "API key"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "REST",
+    "api_breadth": "moderate",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://systeme.io"
+    ],
+    "notes": "Systeme.io provides a public REST API documented for managing contacts, funnels, and courses, making it well-suited for agent-based automation.",
+    "self_confidence": 0.95
+  }
+}

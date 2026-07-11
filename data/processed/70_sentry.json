@@ -1,0 +1,38 @@
+{
+  "id": "70",
+  "name": "Sentry",
+  "category": "Developer, Infra and Data platforms",
+  "hint_url": "docs.sentry.io/api",
+  "composio_registry_match": {
+    "slug": "sentry",
+    "name": "Sentry",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Developer Tools",
+      "Server Monitoring"
+    ],
+    "tools_count": 209.0,
+    "description": "Integrate Sentry to manage your error tracking and monitoring."
+  },
+  "description": "Sentry is an application performance monitoring and error tracking platform that helps developers identify, triage, and resolve code issues.",
+  "authentication": [
+    "OAuth2",
+    "Token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://docs.sentry.io/api"
+  ],
+  "notes": "Composio registry confirms OAuth2 support; docs confirm API Token support via Authentication section.",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

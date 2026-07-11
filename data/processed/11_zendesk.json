@@ -1,0 +1,39 @@
+{
+  "id": "11",
+  "name": "Zendesk",
+  "category": "Support and Helpdesk",
+  "hint_url": "zendesk.com",
+  "composio_registry_match": {
+    "slug": "zendesk",
+    "name": "Zendesk",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "CRM",
+      "Customer Support"
+    ],
+    "tools_count": 452.0,
+    "description": "Zendesk provides customer support software with ticketing, live chat, and knowledge base features, enabling efficient helpdesk operations and customer engagement"
+  },
+  "description": "A comprehensive customer service and helpdesk platform featuring AI-powered autonomous agents, ticketing, and omnichannel communication management.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://zendesk.com"
+  ],
+  "notes": "Zendesk has an extensive, well-documented REST API and official MCP server implementations exist in the community.",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research",
+  "human_verified": true,
+  "human_verified_fields": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": "24",
+  "name": "Lark (Larksuite)",
+  "category": "Communications and Messaging",
+  "hint_url": "open.larksuite.com",
+  "composio_registry_match": null,
+  "description": "A comprehensive enterprise collaboration suite integrating messaging, calendars, documents, video conferencing, and workflow automation into a single platform.",
+  "authentication": [
+    "OAuth2",
+    "App Token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://open.larksuite.com"
+  ],
+  "notes": "Lark provides an extensive Open Platform with over 2500+ APIs, making it highly suitable for agent tooling integration via bots and webhooks. [human-verified: Both confirmed. Free developer account at open.larksuite.com. App creation instant.]",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck",
+  "human_verified": true,
+  "human_verified_fields": [
+    "authentication"
+  ]
+}

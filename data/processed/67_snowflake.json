@@ -1,0 +1,36 @@
+{
+  "id": "67",
+  "name": "Snowflake",
+  "category": "Developer, Infra and Data platforms",
+  "hint_url": "docs.snowflake.com",
+  "composio_registry_match": {
+    "slug": "snowflake",
+    "name": "Snowflake",
+    "auth_schemes": [],
+    "categories": [
+      "Databases",
+      "Analytics"
+    ],
+    "tools_count": 16.0,
+    "description": "Snowflake is a cloud-based data warehouse offering elastic scaling, secure data sharing, and SQL analytics across multiple cloud environments"
+  },
+  "description": "A cloud-based data platform that provides data storage, processing, and analytic solutions.",
+  "authentication": [
+    "OAuth2",
+    "API key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://docs.snowflake.com"
+  ],
+  "notes": "Authentication schemes were inferred from established developer ecosystem knowledge; Composio metadata suggests high API utility. MCP support via community-driven projects exists.",
+  "confidence": 0.84,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "56",
+  "name": "Firecrawl",
+  "category": "Data, SEO and Scraping",
+  "hint_url": "firecrawl.dev",
+  "composio_registry_match": {
+    "slug": "firecrawl",
+    "name": "Firecrawl",
+    "auth_schemes": [],
+    "categories": [
+      "AI Web Scraping",
+      "Developer Tools"
+    ],
+    "tools_count": 29.0,
+    "description": "Firecrawl automates web crawling and data extraction, enabling organizations to gather content, index sites, and gain insights from online sources at scale"
+  },
+  "description": "A web scraping and data extraction service that transforms websites into clean, LLM-ready markdown or structured data for AI agents.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "moderate",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://firecrawl.dev"
+  ],
+  "notes": "The API surface is focused on specific agentic tasks (scrape, crawl, map, interact) which is effectively broad for the purpose of agent tooling. Official MCP support is explicitly mentioned in the documentation.",
+  "confidence": 0.85,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

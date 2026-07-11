@@ -1,0 +1,28 @@
+{
+  "id": "10",
+  "name": "DealCloud",
+  "category": "CRM and Sales",
+  "hint_url": "api.docs.dealcloud.com",
+  "composio_registry_match": null,
+  "description": "A specialized CRM and relationship management platform tailored for financial services, investment banking, and private capital firms.",
+  "authentication": [
+    "API key",
+    "Token"
+  ],
+  "self_serve": "gated_paid_plan",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://api.docs.dealcloud.com"
+  ],
+  "notes": "DealCloud (by Intapp) is enterprise-grade software typically requiring a contract and dedicated implementation; API access is generally restricted to licensed clients.",
+  "confidence": 0.69,
+  "needs_verification": true,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "72",
+  "name": "Airtable",
+  "category": "Productivity and Project Management",
+  "hint_url": "airtable.com/developers",
+  "composio_registry_match": {
+    "slug": "airtable",
+    "name": "Airtable",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Productivity",
+      "Spreadsheets",
+      "Databases"
+    ],
+    "tools_count": 24.0,
+    "description": "Airtable merges spreadsheet functionality with database power, enabling teams to organize projects, track tasks, and collaborate through customizable views, automation, and integrations for data management"
+  },
+  "description": "A low-code platform that combines the features of a database and a spreadsheet for flexible project management and data organization.",
+  "authentication": [
+    "OAuth2",
+    "API key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://airtable.com/developers",
+    "https://airtable.com/developers/web-api/"
+  ],
+  "notes": "While the provided fetch page was empty due to browser detection, Airtable has a robust, publicly documented REST API used extensively in agentic tooling.",
+  "confidence": 0.79,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

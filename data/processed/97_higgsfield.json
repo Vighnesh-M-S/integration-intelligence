@@ -1,0 +1,25 @@
+{
+  "id": "97",
+  "name": "higgsfield",
+  "category": "AI, Research and Media-native",
+  "hint_url": "higgsfield.ai/cli",
+  "composio_registry_match": null,
+  "description": "A media-native AI platform providing an MCP-based agent toolkit for cinematic image/video generation, character consistency, and video analysis.",
+  "authentication": [
+    "Other"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "none_public",
+  "api_breadth": "narrow",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://higgsfield.ai/cli"
+  ],
+  "notes": "Relies on the Model Context Protocol (MCP) for agent integration rather than a traditional REST/GraphQL API. Authentication is handled via a CLI/browser-based auth flow.",
+  "confidence": 0.7,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research"
+}

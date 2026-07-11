@@ -1,0 +1,32 @@
+{
+  "id": "30",
+  "name": "Vonage",
+  "category": "Communications and Messaging",
+  "hint_url": "developer.vonage.com",
+  "composio_registry_match": null,
+  "description": "A communications platform providing APIs for voice, video, messaging, and network capabilities to integrate real-time connectivity into applications.",
+  "authentication": [
+    "API key",
+    "JWT"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://developer.vonage.com"
+  ],
+  "notes": "Vonage uses a combination of API keys/secrets and JWT tokens for authentication; well-established API ecosystem for agentic voice and messaging integration. [human-verified: API key + secret and JWT both confirmed. Free trial with \u20ac2 credit on signup.]",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck",
+  "human_verified": true,
+  "human_verified_fields": [
+    "authentication"
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "id": "20",
+  "name": "Gladly",
+  "category": "Support and Helpdesk",
+  "hint_url": "gladly.com",
+  "composio_registry_match": null,
+  "description": "A customer service platform featuring AI-driven agents that manage omnichannel support conversations and maintain lifelong customer profiles.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "gated_partnership",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": false,
+  "blocker": "partnership-gated, no self-serve path",
+  "evidence_urls": [
+    "https://gladly.com"
+  ],
+  "notes": "Gladly provides a comprehensive REST API for developers and partners to access customer history, conversations, and tasks. High-level API documentation is typically gated behind partner/customer access portals. [human-verified: Enterprise only. Must contact sales. No self-serve signup. OAuth2 not found in docs. Not buildable without partnership agreement.]",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck",
+  "human_verified": true,
+  "human_verified_fields": [
+    "authentication",
+    "self_serve",
+    "buildable"
+  ]
+}

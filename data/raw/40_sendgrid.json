@@ -1,0 +1,36 @@
+{
+  "docs": {
+    "url": "https://sendgrid.com",
+    "status": 200,
+    "text": "SendGrid Email API and Email Marketing Campaigns | Twilio\nEnglish\nAn icon of a down chevron\nEnglish\nAn icon of a checkmark\nFrench\nGerman\nJapanese\nPortuguese\nSpanish\n            Support\n            \n  \n  \n  \n  \n    \n    \n        \nAn icon of a down chevron\nHelp Center\nSupport Plans\nPartner Solutions\n        Login\n        \n  \n  \n  \n  \n    \n    \n        \nAn icon of a down chevron\nLog in to\n                      Twilio Console\n                    \nConversations, Communications and Authentication\nOr log in to access:\nTwilio Segment\nCustomer Data Platform\nTwilio SendGrid\nEmail and Marketing Campaigns\nTwilio logo\nAn icon of a search magnifying glass\nData is collected based on search terms.\u00a0\nPrivacy Policy\n                \n                Contact sales\n                \n                    \n                \n                \n            \n                \n                Start for free\n                \n                    \n                \n                \n            \nData is collected based on search terms.\u00a0\nPrivacy Policy\n                \n                Contact sales\n                \n                    \n                \n                \n            \n                \n                Start for free\n                \n                    \n                \n                \n            \n \n            Support\n            \n  \n  \n  \n  \n    \n    \n        \nAn icon of a down chevron\nHelp Center\nSupport Plans\nPartner Solutions\nLogin\n                \n                Contact sales\n                \n                    \n                \n                \n            \n                \n                Start for free\n                \n                    \n                \n                \n            \n                \n                Contact sales\n                \n                    \n                \n                \n            \n                \n                Start for free\n                \n                    \n                \n                \n            \n    SendGrid \u2764\ufe0f Twilio. We're finally moving in together on Twilio.com!\n  \nWe're merging our websites to make things simpler. You can now find all our trusted email solutions, plus everything else Twilio offers, over on\u00a0\nTwilio.com\n.\n                \n                Visit Twilio.com\n                \n                    \n                \n                \n            \n \n    Same email solutions, new home base.\n  \nDon\u2019t worry\u2014the same SendGrid email products and services, documentation and resources you know and love are available and fully supported on\u00a0\nTwilio.com\n.\n                \n                Log in now\n                \n                    \n                \n                \n            \n    Email at scale, proven deliverability, and so much more\n  \nSend email on a world-class platform that delivers more than 200 billion emails every month\u2014and explore the rest of the Twilio Platform to build a complete solution for verification and identity, alerts, support and sales, and more.\nTwilio SendGrid Email API and SMTP service\nThe trusted SendGrid Email API for delivery at scale. \n                \n                Explore SendGrid Email API\n                \n                    \n                \n                \n            \n                \n                View pricing\n                \n                    \n                \n                \n            \nEmail campaigns for marketers\nFlexible tools for creating engaging email campaigns. \n                \n                Explore Marketing Campaigns\n                \n                    \n                \n                \n            \n                \n                View pricing\n                \n                    \n                \n                \n            \n                \n                View all Twilio products\n                \n                    \n                \n                \n            \n                \n                Explore Twilio Platform\n                \n                    \n                \n                \n            \n    Resources to learn, build, or troubleshoot\n  \nAn Open book\n            Documentation\n          \nUse up-to-date documentation to quickly integrate and send with our APIs.\nShining stars\n            Help Center\n          \nChat with our AI assistant to get answers to your questions, troubleshoot, or find helpful information.\nUsers with a heart symbol\n            Partners\n          \nWork with one of our trusted partners to integrate our Email API, optimize deliverability, or get help with a pre-built or custom solution.\nBrowser Blog\n            Blog\n          \nFind guidance and best practices for building with our Email API, improving deliverability, and sending great emails.\nBrowser palying video\n            Resource Center\n          \nFind strategic guides, insights, and research to sharpen your customer engagement strategy.\nBar Graph\n            Status\n          \nSee the status of our products.",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "sendgrid",
+    "name": "SendGrid",
+    "auth_schemes": [],
+    "categories": [
+      "Transactional Email",
+      "Email Newsletters"
+    ],
+    "tools_count": 359.0,
+    "description": "SendGrid is a cloud-based email delivery platform providing transactional and marketing email services, with APIs for integration, analytics, and scalability"
+  },
+  "llm_raw": {
+    "description": "Cloud-based email infrastructure platform providing transactional email APIs, SMTP relay, and marketing campaign management tools.",
+    "authentication": [
+      "API key"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": true,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://sendgrid.com"
+    ],
+    "notes": "Authentication is primarily via API Key (often referred to as 'Authorization: Bearer' tokens in their docs). Broad API surface is well-documented on the Twilio/SendGrid developer portal.",
+    "self_confidence": 1.0
+  }
+}

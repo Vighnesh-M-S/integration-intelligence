@@ -1,0 +1,34 @@
+{
+  "id": "88",
+  "name": "Brex",
+  "category": "Finance and Fintech",
+  "hint_url": "developer.brex.com",
+  "composio_registry_match": {
+    "slug": "brex",
+    "name": "Brex",
+    "auth_schemes": [],
+    "categories": [
+      "Accounting"
+    ],
+    "tools_count": 84.0,
+    "description": "Brex provides corporate credit cards, spend management, and financial tools tailored for startups and tech businesses to optimize cash flow, accounting, and growth"
+  },
+  "description": "A unified spend management platform providing corporate cards, expense tracking, bill pay, and travel booking capabilities.",
+  "authentication": [
+    "Token"
+  ],
+  "self_serve": "gated_admin_approval",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://developer.brex.com"
+  ],
+  "notes": "Authentication is primarily via User/Developer API tokens; the platform typically requires a business account with admin access to generate production credentials.",
+  "confidence": 0.84,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

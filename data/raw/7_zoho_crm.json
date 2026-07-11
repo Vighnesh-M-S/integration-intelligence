@@ -1,0 +1,38 @@
+{
+  "docs": {
+    "url": "https://zoho.com/crm",
+    "status": 200,
+    "text": "Zoho CRM | Top-rated Sales CRM Software by Customers\n \n \n \nThe easiest AI CRM for growth.\nIntelligent automation meets intuitive design. Built with AI at its core, \nZoho CRM\n supercharges your business to get ahead without the overhead.\nGET STARTED\nVisionary in 2025 Magic Quadrant\u00e2\u0084\u00a2 \n for Sales Force Automation Platforms\n Read more \nGet started with your \n flexible free trial\nTrusted by 300K+ businesses worldwide\nSupercharge your sales with \nZia Agents\nHarness the power of a multi-agent platform that delivers the best of artificial intelligence and human experience.\nExplore agents\nTeams that work together, win together\nMultiple teams come together with sales to close deals. With Zoho CRM for Everyone, you can build unique, collaborative spaces for each team \u00e2\u0080\u0094 all with some AI assistance, of course. Start winning more, together.\nExplore CRM for Everyone\nTeamspaces\n Zia Module Creation\nZia Custom Design\nSet up a dedicated space for each team. Let teams work with the data they need and nothing else.\nNew to CRM? No problem. Teams can create their own modules through simple prompts.\nCreate detailed list views based on images. Upload a layout you like and generate a custom Canvas layout instantly.\nStaying relevant and driving innovation, \nsince 2005\nZoho CRM offers us technology that allows us to be more proactive and insight-driven, with all information in a single place. With our complete business under control, our productivity is up by 80% in the last year that we have been using Zoho.\nThomas John\nManaging Director, Agappe\nZoho CRM for Everyone is incredibly user-friendly and customizable. Its intuitive interface makes it easy to navigate. The reporting tools were also a standout, providing clear insights that helped us make informed decisions.\nSamer Zughul\nManaging Partner,\n Simplify9\nZoho CRM helped us automate our processes after we implemented workflow rules. Privacy and security are essential for us, and Zoho addressed it all. This was a game changer.\nOlga Kovshanova\nDirector, Minor Hotels\n I\u00e2\u0080\u0099m overall very satisfied with Zoho. The new CRM4E update has significantly enhanced the potential for effective team collaboration.\nAri Daniel Hernandez Sanchez\nMarketing Director, Ava 7\nAI is here to assist.\nFrom rewriting emails to detecting anomalies, let Zia and ChatGPT help you get things done smarter.\nDiscover Zia AI capabilities\nEngage with customers\nContextual customer engagement in \nreal-time,\n across every channel, to ensure rich experiences.\nSimplify customer engagement\nStay informed\nNuanced forecasting, performance management, and deep BI capabilities for the right insight at all times.\nExplore forecasting & BI\nScale \n your sales\nAdvanced workflows, cadences, and no-code functions to help you sell and scale efficiently.\nExplore workflow automation\n Canvas Design \n Studio\nSales Force \n Automation\nJourney \n Orchestration\nCPQ\nModule 360\nKiosk \n Studio\nPredictive \n AI & BI\nAdvanced \n Analytics\nAgents\nEverything your \nbusiness needs,\n with a neat \n360\u00b0 view.\nGET STARTED\nSee Pricing\nObsessed with Privacy since 1999\nUncompromized privacy & compliance. \n View all of our security certificates.\n Read more\nIS 642819: Information Security\n Management Certificate\nPM 732705: Privacy Information \n Management Certificate\nCLOUD 714132, PII 714133: Cloud Security \n Management Certificate\nCLOUD 714132, PII 714133: Personal Data in \n the Cloud Certificate\nGrow \n with Zoho \n27\n%\nIncreased productivity\nDo more in less time\n50\n%\nFaster implementation\nGet started in no time\n71\n%\nSaved on licensing fees\nBig savings for a lifetime\n* Growth metrics reported by our customers in an internal survey.\nTake us for a spin!\nQuick Tour\nWatch Overview\nFrequently Asked Questions\nCan I integrate my favorite apps with \nZoho CRM?\nZoho CRM seamlessly integrates with over 1,000+ applications, and it takes no time to set up and get started. Check out Zoho Marketplace to find out which of your daily-drivers are ready to pair.\nHow do I know what's the right edition for me?\nTry our \nEdition Selector\n and answer a few questions about your requirements for a CRM. Based on your choices, we'll recommend the edition that aligns best with your business goals.\nHow flexible are the contracts?\nYou are not bound by any contracts or commitments. \nZoho CRM\n is a pay-as-you-go service (monthly or yearly), so you can make changes to your plan whenever you need to, and upgrade or downgrade at will.\n How do I migrate to \nZoho CRM?\nYou can comfortably switch to Zoho from any popular CRM service\u00e2\u0080\u0093even spreadsheets. You can also avail our Jumpstart service that includes everything from requirement gathering to setup and onboarding. Alongside, we have a dedicated program Enterprises looking to move, and we'll help you get started in no time.\nExplore Zwitch (Migration)\nExplore Jumpstart (Service)\nContact EBS (Enterprise)\nIs Zoho CRM available for my industry?\nZoho CRM is built to serve business of all kinds, and we cater to all industries and verticals. Explore our \nindustry-specific solutions\n to learn more, and book a personalized demo to understand how \nZoho CRM\n can be customized to meet your business needs.\nDoes Zoho CRM have a free plan?\nZoho CRM's freemium edition supports up to 3 users and comes with the essentials like leads, documents, and mobile apps, it\u00e2\u0080\u0099s a perfect fit for your home business. Alternatively, check out \nBigin by Zoho CRM,\n built specifically for small businesses, freelancers, and entrepreneurs.\nCan I get a demo of \nZoho CRM?\nYes, we would be happy to demonstrate \nZoho CRM\n through a web-conference at your convenience. The demo is a one hour session. To schedule your personal session, please contact \nsales@zohocorp.com.",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "zoho",
+    "name": "Zoho",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "CRM",
+      "Marketing Automation"
+    ],
+    "tools_count": 57.0,
+    "description": "Zoho is a suite of cloud applications including CRM, email marketing, and collaboration tools, enabling businesses to automate and scale operations"
+  },
+  "llm_raw": {
+    "description": "A comprehensive customer relationship management platform designed to help businesses manage sales, marketing, and customer support processes.",
+    "authentication": [
+      "OAuth2"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://zoho.com/crm"
+    ],
+    "notes": "Zoho CRM is highly buildable and already has extensive integrations (including 57 tools on Composio) utilizing its comprehensive REST API with OAuth2.",
+    "self_confidence": 1.0
+  }
+}

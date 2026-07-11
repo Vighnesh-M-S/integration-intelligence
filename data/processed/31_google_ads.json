@@ -1,0 +1,27 @@
+{
+  "id": "31",
+  "name": "Google Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "hint_url": "developers.google.com/google-ads",
+  "composio_registry_match": null,
+  "description": "A comprehensive advertising platform that allows businesses to create, manage, and automate ad campaigns across Google's network.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://developers.google.com/google-ads"
+  ],
+  "notes": "Google Ads API is highly robust but has a steep learning curve due to the complexity of the underlying Google Ads data model.",
+  "confidence": 0.7,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

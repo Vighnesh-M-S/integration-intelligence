@@ -1,0 +1,39 @@
+{
+  "id": "27",
+  "name": "Telegram",
+  "category": "Communications and Messaging",
+  "hint_url": "core.telegram.org",
+  "composio_registry_match": {
+    "slug": "telegram",
+    "name": "Telegram",
+    "auth_schemes": [],
+    "categories": [
+      "Team Chat",
+      "Notifications"
+    ],
+    "tools_count": 18.0,
+    "description": "Telegram is a cloud-based messaging app with a focus on security and speed. Build bots to send messages, manage chats, and interact with users."
+  },
+  "description": "A cloud-based messaging platform providing APIs for building bots, customized clients, and integrated web applications.",
+  "authentication": [
+    "Bot Token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://core.telegram.org"
+  ],
+  "notes": "Telegram Bot API uses token-based API keys generated via @BotFather. While MTProto is their primary protocol, the Bot API is a simplified HTTPS REST-like interface perfect for agent toolkits. [human-verified: Auth is Bot Token via @BotFather not API key. Instant creation. Fully free.]",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research",
+  "human_verified": true,
+  "human_verified_fields": [
+    "authentication"
+  ]
+}

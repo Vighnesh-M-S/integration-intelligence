@@ -1,0 +1,37 @@
+{
+  "docs": {
+    "url": "https://ahrefs.com/api",
+    "status": 200,
+    "text": "Ahrefs for Developers\nDocs\nSearch docs...\n\u2318K\n\u2715\nProducts\nBuild with\nAhrefs data\nAccess Ahrefs marketing and search data through our APIs and developer tools to build custom integrations and workflows.\nSearch documentation...\n\u2318K\nAPI Request\nResponse\n200 OK\nDomain / DR\nRef. Domains\n1\nwikipedia.org\n98\n2\ngithub.com\n96\n3\nmedium.com\n94\n4\nstackoverflow.com\n93\n5\nproducthunt.com\n91\nOutput for illustration purposes.\nREST API\nResearch keywords, analyze backlinks, track rankings, and monitor brand visibility across traditional search and AI platforms.\nIntroduction\nOverview, authentication, and rate limits\nFree test queries\nTry API endpoints without an Enterprise plan\nExplore endpoints\nBrowse all available API endpoints\nAPI keys\nCreate and manage your API keys\nChangelog\nLatest API updates and changes\nIntroduction\nOverview, authentication, and rate limits\nFree test queries\nTry API endpoints without an Enterprise plan\nExplore endpoints\nBrowse all available API endpoints\nAPI keys\nCreate and manage your API keys\nChangelog\nLatest API updates and changes\nMCP\nConnect your Ahrefs data to AI assistants and agents to enhance their answers with real marketing insights.\nIntroduction\nWhat is MCP and how to get started\nClaude Desktop / Web\nConnect Ahrefs to Claude on desktop or web\nChatGPT setup\nUse Ahrefs data in ChatGPT conversations\nClaude Code\nIntegrate Ahrefs into your coding workflow\nIntroduction\nWhat is MCP and how to get started\nClaude Desktop / Web\nConnect Ahrefs to Claude on desktop or web\nChatGPT setup\nUse Ahrefs data in ChatGPT conversations\nClaude Code\nIntegrate Ahrefs into your coding workflow\nData Studio\nBuild custom dashboards with Ahrefs data in Google Data Studio.\nIntroduction\nGet started with Ahrefs connectors for Data Studio\nSite Explorer connector\nBacklinks, organic traffic, and domain metrics\nRank Tracker connector\nTrack keyword rankings over time\nSite Audit connector\nMonitor site health and technical SEO issues\nBrand Radar connector\nTrack your brand presence in AI search\nIntroduction\nGet started with Ahrefs connectors for Data Studio\nSite Explorer connector\nBacklinks, organic traffic, and domain metrics\nRank Tracker connector\nTrack keyword rankings over time\nSite Audit connector\nMonitor site health and technical SEO issues\nBrand Radar connector\nTrack your brand presence in AI search\nBot Analytics\nUnderstand how bots interact with your website. Track crawl activity, identify bot types, and monitor their impact.\nIntroduction\nOverview of Bot Analytics\nCloudflare Logpush\nRecommended Cloudflare Enterprise setup\nCloudflare Worker\nWorker-based setup for any Cloudflare plan\nIntroduction\nOverview of Bot Analytics\nCloudflare Logpush\nRecommended Cloudflare Enterprise setup\nCloudflare Worker\nWorker-based setup for any Cloudflare plan\nAhrefs Connect\nBring Ahrefs data into third-party apps through our integration program. Built on API v3.\nIntroduction\nOverview of the integration program\nHow it works\nArchitecture and data flow\nOAuth guide\nImplement OAuth 2.0 authorization\nHow to apply\nSteps to join the program\nIntroduction\nOverview of the integration program\nHow it works\nArchitecture and data flow\nOAuth guide\nImplement OAuth 2.0 authorization\nHow to apply\nSteps to join the program",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "ahrefs",
+    "name": "Ahrefs",
+    "auth_schemes": [],
+    "categories": [
+      "Marketing Automation",
+      "Analytics"
+    ],
+    "tools_count": 40.0,
+    "description": "Ahrefs is an SEO and marketing platform offering site audits, keyword research, content analysis, and competitive insights to improve search rankings and drive organic traffic"
+  },
+  "llm_raw": {
+    "description": "A comprehensive SEO and digital marketing tool suite providing extensive data on backlinks, keywords, site health, and search rankings.",
+    "authentication": [
+      "API key",
+      "OAuth2"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": true,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://ahrefs.com/api"
+    ],
+    "notes": "Composio reports 40 tools, indicating a mature, broad API surface. Documentation explicitly mentions OAuth2 for integrations and API keys for direct access.",
+    "self_confidence": 1.0
+  }
+}

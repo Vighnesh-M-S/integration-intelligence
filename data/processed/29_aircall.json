@@ -1,0 +1,29 @@
+{
+  "id": "29",
+  "name": "Aircall",
+  "category": "Communications and Messaging",
+  "hint_url": "aircall.io",
+  "composio_registry_match": null,
+  "description": "A cloud-based business phone and contact center software that integrates voice, SMS, and AI-driven automation with CRM and help desk platforms.",
+  "authentication": [
+    "OAuth2",
+    "API key",
+    "Token"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://aircall.io"
+  ],
+  "notes": "Aircall maintains a comprehensive public API (developer.aircall.io) that allows for robust integration with CRM, contact management, and call-log systems, making it highly suitable for agent tooling.",
+  "confidence": 0.69,
+  "needs_verification": true,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

@@ -1,0 +1,39 @@
+{
+  "docs": {
+    "url": "https://developers.facebook.com/docs/whatsapp",
+    "status": 200,
+    "text": "WhatsApp Business Platform\nWhatsApp Business Platform\nWhat\u2019s next for business messaging and AI? Watch the Conversations keynote.\nWatch now\n\u2060\nWhatsApp Business Platform\n            \n                Drive revenue growth, boost efficiency, and deliver exceptional customer experiences with the WhatsApp Business Platform\u2014our enterprise-grade APIs for messaging and calling.\n              \nGet started\nDemo the API\n          \nPreview an interactive experience showing how Jasper\u2019s Market (our demo retail business) connects with customers using the WhatsApp Business Platform. \nDemo retail business\nTry the demo\n                Download the sample app\n              \nSelect language\nPython\nJavaScript\ncURL\nimport requests\nurl = \"https://graph.facebook.com/<API_VERSION>/<WHATSAPP_BUSINESS_PHONE_NUMBER_ID>/messages\"\nheaders = {\n    \"Authorization\": \"Bearer <ACCESS_TOKEN>\",\n    \"Content-Type\": \"application/json\",\n}\ndata = {\n    \"messaging_product\": \"whatsapp\",\n    \"to\": \"<WHATSAPP_USER_PHONE_NUMBER>\",\n    \"type\": \"template\",\n    \"template\": {\n        \"name\": \"hello_world\",\n        \"language\": {\"code\": \"en_US\"},\n    }\n}\n                  \nresponse = requests.post(url, headers=headers, json=data, timeout=30)\nprint(response.json())\n  \nEssentials\n          \nStart building conversational experiences that delight your customers\nAbout the platform\n                    \nLearn more about the key components of the platform and how things work together.\nLearn more\nMessaging\nLearn about the different message types and how to send them.\n                  \nLearn more\nPricing\nLearn how pricing on the WhatsApp Business Platform works.\n                  \nLearn more\nTemplates\n                    \nLearn how to create and manage template messages.\nLearn more\nWebhooks\n                    \nLearn what webhooks are and how they are a core component of Business Messaging.\nLearn more\nAuthentication and authorization\n                    \nLearn how access controls and permissions work on the platform.\nLearn more\nAbout the APIs\n          \nLearn about the APIs that are part of the WhatsApp Business Platform\nCloud API\n                    \nSend and receive WhatsApp messages, make WhatsApp calls, and more from your business phone number.\nLearn more\nMarketing Messages API for WhatsApp \n                    \nAccess new features not available on Cloud API and get automatic optimizations, so high engagement messages can reach more customers.\nLearn more\nBusiness Management API\nProgrammatically manage your WhatsApp business account and its assets.\n                  \nLearn more\nNew releases\n          \nExplore our newest features and launches\n                    WhatsApp API Calling\n                  \n                  Seamless, secure, and personalized voice calling natively within WhatsApp chat to drive superior business outcomes.\n                \nLearn more\n                    Groups API\n                  \n                  Drive sales and solve customer problems with groups on the WhatsApp Business Platform.\n                \nLearn more\n                    API solutions for WhatsApp Business app users\n                  \n                  Use both the WhatsApp Business app and API with the same phone number to simplify onboarding and unlock new features to scale your business.\n                \nLearn more\nPartner resources\n          \nBuild WhatsApp solutions for your business customers.\nBecome a Tech Provider\n                    \nFollow this guide to onboard as a WhatsApp Tech Provider so that you can start providing messaging services to your clients.\nLearn more\nOnboard customers\nLearn how to build Embedded Signup; a flow to onboard customers directly from your website.\n                  \nLearn more\nMM API for WhatsApp Partner Guide\n                    \nLearn how to integrate with MM API for WhatsApp and onboard your customers to send marketing messages with optimizations.\nLearn more\nNot a developer?\n                      \nView the Partner Showcase to find a partner tailored to fit your business needs.\nFind a partner",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "whatsapp",
+    "name": "WhatsApp",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Phone & SMS",
+      "Communication"
+    ],
+    "tools_count": 57.0,
+    "description": "Enables interaction with customers through the WhatsApp Business API for messaging and automation. Only supports WhatsApp Business accounts, not WhatsApp Personal accounts."
+  },
+  "llm_raw": {
+    "description": "Enterprise-grade API platform for businesses to send and receive WhatsApp messages, manage contacts, and facilitate customer communications.",
+    "authentication": [
+      "OAuth2",
+      "Token"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://developers.facebook.com/docs/whatsapp"
+    ],
+    "notes": "While the doc snippet shows Bearer token auth, Meta's broader Graph API platform natively uses OAuth2 for app-level permissions, consistent with Composio's registry.",
+    "self_confidence": 0.95
+  }
+}

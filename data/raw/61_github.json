@@ -1,0 +1,38 @@
+{
+  "docs": {
+    "url": "https://docs.github.com/rest",
+    "status": 200,
+    "text": "GitHub REST API documentation - GitHub Docs\nSkip to main content\nGitHub Docs\nVersion: \nFree, Pro, & Team\nSearch or ask Copilot\nSearch or ask\nCopilot\nSelect language: current language is English\nSearch or ask Copilot\nSearch or ask\nCopilot\nOpen menu\nOpen Sidebar\nThe REST API is now versioned.\n \nFor more information, see \"\nAbout API versioning\n.\"\nGitHub REST API documentation\nCreate integrations, retrieve data, and automate your workflows with the GitHub REST API.\nOverview\n \nQuickstart\n \nRecommended\nQuickstart for GitHub REST API\nLearn how to get started with the GitHub REST API.\nGetting started with the REST API\nLearn how to use the GitHub REST API.\nAuthenticating to the REST API\nYou can authenticate to the REST API to access more endpoints and have a higher rate limit.\nArticles\nCategory\n:\n \nAll categories\nLearn about the REST API\nAbout the OpenAPI description for the REST API\nThe GitHub REST API is fully described in an OpenAPI compliant document.\nLearn about the REST API\nAbout the REST API\nGet oriented to the REST API documentation.\nLearn about the REST API\nAPI Versions\nLearn how to specify which REST API version to use whenever you make a request to the REST API.\nAuthenticate API requests\nAuthenticating to the REST API\nYou can authenticate to the REST API to access more endpoints and have a higher rate limit.\nLearn about the REST API\nBest practices for using the REST API\nFollow these best practices when using GitHub's API.\nAdminister enterprises and billing\nBilling usage\nUse the REST API to get billing usage information.\nLearn about the REST API\nBreaking changes\nLearn about breaking changes that were introduced in each REST API version.\nAdminister enterprises and billing\nBudgets\nUse the REST API to get budget information.\nBuild apps and integrations\nBuilding a CI server\nBuild your own CI system using the Status API.\nShowing 1-9 of 199",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "github",
+    "name": "GitHub",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Developer Tools"
+    ],
+    "tools_count": 871.0,
+    "description": "GitHub is a code hosting platform for version control and collaboration, offering Git-based repository management, issue tracking, and continuous integration features"
+  },
+  "llm_raw": {
+    "description": "A cloud-based hosting service for version control and collaboration, allowing developers to store and manage their code.",
+    "authentication": [
+      "OAuth2",
+      "Token"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "REST+GraphQL",
+    "api_breadth": "broad",
+    "mcp": true,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://docs.github.com/rest"
+    ],
+    "notes": "GitHub has highly mature REST and GraphQL APIs, massive ecosystem support, and a pre-existing official MCP server.",
+    "self_confidence": 1.0
+  }
+}

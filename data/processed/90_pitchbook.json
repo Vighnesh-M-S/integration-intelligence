@@ -1,0 +1,33 @@
+{
+  "id": "90",
+  "name": "PitchBook",
+  "category": "Finance and Fintech",
+  "hint_url": "pitchbook.com",
+  "composio_registry_match": null,
+  "description": "A comprehensive data and research platform providing intelligence on private capital markets including venture capital, private equity, and M&A.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "gated_partnership",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": false,
+  "blocker": "partnership-gated, no self-serve path",
+  "evidence_urls": [
+    "https://pitchbook.com"
+  ],
+  "notes": "PitchBook provides a professional-grade REST API (PitchBook Direct) for enterprise customers; usage is strictly gated and requires an active paid commercial subscription, making it less accessible for hobbyist agent development but highly viable for institutional agent toolkits. [human-verified: Enterprise subscription only. Must contact sales. Agent final pass incorrectly marked buildable=True. Corrected to False.]",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck",
+  "human_verified": true,
+  "human_verified_fields": [
+    "authentication",
+    "self_serve",
+    "buildable"
+  ]
+}

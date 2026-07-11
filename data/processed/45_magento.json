@@ -1,0 +1,28 @@
+{
+  "id": "45",
+  "name": "Magento (Adobe Commerce)",
+  "category": "Ecommerce",
+  "hint_url": "developer.adobe.com/commerce",
+  "composio_registry_match": null,
+  "description": "A comprehensive enterprise-grade e-commerce platform offering B2B and B2C commerce capabilities with extensive extensibility via API.",
+  "authentication": [
+    "OAuth2",
+    "Token"
+  ],
+  "self_serve": "gated_paid_plan",
+  "api_surface": "REST+GraphQL",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://developer.adobe.com/commerce"
+  ],
+  "notes": "While the fetch text is a landing page, Adobe Commerce (formerly Magento) is well-known for its mature, extensive public REST and GraphQL API coverage for headless e-commerce.",
+  "confidence": 0.69,
+  "needs_verification": true,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

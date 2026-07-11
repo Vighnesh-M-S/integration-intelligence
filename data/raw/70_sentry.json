@@ -1,0 +1,39 @@
+{
+  "docs": {
+    "url": "https://docs.sentry.io/api",
+    "status": 200,
+    "text": "API Reference\nSkip to content\nGo to Sentry\nOpen Main Menu\nAPI Reference\nAuthentication\nPaginating Results\nPermissions & Scopes\nRate Limits\nRequests\nCrons\nDashboards\nDiscover & Performance\nEnvironments\nEvents & Issues\nExplore\nIntegration Platform\nIntegrations\nMobile Builds\nMonitors & Alerts\nOrganizations\nProfiling\nProjects\nReleases\nReplays\nSCIM\nSeer\nSnapshots\nSpike Protection Notifications\nTeams\nUsers\nProduct Changelog\nSandbox\nMore\nHome\nAPI Reference\n \nCopy page\nAPI Reference\nThe Sentry web API is used to access the Sentry platform programmatically. You can use the APIs to manage account-level resources, like organizations and teams, as well as manage and export data.\nIf you're looking for information about the API surface for Sentry's SDKs, see the \nSDK Development\n docs.\nVersioning\nThe current version of the Sentry's web API is considered \nv0\n. Our public endpoints are generally stable, but beta endpoints are subject to change.\nGetting Started\nAuthentication\nPagination\nPermissions\nRate Limits\nRequests\nSentry API Tutorials\nTutorial: Create a Sentry Authentication Token\nTutorial: Create and List Teams with the Sentry API\nChoosing the Right API Base Domain\nWhile many of Sentry's APIs use \nsentry.io\n as the host for API endpoints, if you want to indicate a specific \ndata storage location\n, you can use your region-specific domain. Using your organization's region-specific domain will generally result in lower latency for most API calls. For example, if you are hosted in US2 region, you would use \nus2.sentry.io\n. You can check which region your organization is in by viewing your organization\u2019s settings page.\nUS region is hosted on \nus.sentry.io\nUS2 region is hosted on \nus2.sentry.io\nDE region is hosted on \nde.sentry.io\n.\nTo find out which API resources are available on region-based domains, see \nwhat types of data are stored where\n for more information.\nPrevious\nSentry CLI\nNext\nAuthentication\nWas this helpful?\nYes \ud83d\udc4d\nNo \ud83d\udc4e\nHow can we improve this page?\nEmail\n \n(optional)\nSubmit feedback",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "sentry",
+    "name": "Sentry",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Developer Tools",
+      "Server Monitoring"
+    ],
+    "tools_count": 209.0,
+    "description": "Integrate Sentry to manage your error tracking and monitoring."
+  },
+  "llm_raw": {
+    "description": "Sentry is an application performance monitoring and error tracking platform that helps developers identify, triage, and resolve code issues.",
+    "authentication": [
+      "OAuth2",
+      "Token"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": true,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://docs.sentry.io/api"
+    ],
+    "notes": "Composio registry confirms OAuth2 support; docs confirm API Token support via Authentication section.",
+    "self_confidence": 1
+  }
+}

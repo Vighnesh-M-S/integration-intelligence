@@ -1,0 +1,35 @@
+{
+  "id": "51",
+  "name": "DataForSEO",
+  "category": "Data, SEO and Scraping",
+  "hint_url": "docs.dataforseo.com",
+  "composio_registry_match": {
+    "slug": "dataforseo",
+    "name": "Dataforseo",
+    "auth_schemes": [],
+    "categories": [
+      "Developer Tools",
+      "Marketing"
+    ],
+    "tools_count": 312.0,
+    "description": "SEO data and analytics platform providing SERP data, backlinks, keywords, and competitive intelligence"
+  },
+  "description": "Comprehensive SEO and search engine data API providing SERP, keyword analysis, and on-page data through REST endpoints.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://docs.dataforseo.com"
+  ],
+  "notes": "The API is well-documented with 312 endpoints reported by integration platforms; authentication is handled via API Key (Login/Password credentials used for API access).",
+  "confidence": 0.84,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

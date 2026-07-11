@@ -1,0 +1,31 @@
+{
+  "id": "96",
+  "name": "Devin",
+  "category": "AI, Research and Media-native",
+  "hint_url": "docs.devin.ai",
+  "composio_registry_match": null,
+  "description": "An autonomous AI software engineer capable of coding, debugging, testing, and managing SDLC tasks within an integrated development environment.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "gated_paid_plan",
+  "api_surface": "unclear",
+  "api_breadth": "unknown",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://docs.devin.ai"
+  ],
+  "notes": "While the docs mention a 'Devin API' and 'Devin MCP', public documentation for specific API endpoints or SDKs is currently gated or limited to enterprise/authenticated users. [human-verified: API key confirmed at docs.devin.ai. Paid plan required ($500+/month). MCP server available. Buildable with paid account.]",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck",
+  "human_verified": true,
+  "human_verified_fields": [
+    "authentication"
+  ]
+}

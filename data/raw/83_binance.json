@@ -1,0 +1,27 @@
+{
+  "docs": {
+    "url": "https://binance-docs.github.io",
+    "status": 404,
+    "text": "Site not found \u00b7 GitHub Pages\n404\nThere isn't a GitHub Pages site here.\n        If you're trying to publish one,\n        \nread the full documentation\n        to learn how to set up \nGitHub Pages\n        for your repository, organization, or user account.\n      \nGitHub Status\n \u2014\n        \n@githubstatus",
+    "ok": false
+  },
+  "composio_raw": null,
+  "llm_raw": {
+    "description": "A global cryptocurrency exchange platform offering trading, staking, and financial services for digital assets.",
+    "authentication": [
+      "API key"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://binance-docs.github.io",
+      "https://developers.binance.com"
+    ],
+    "notes": "Official documentation is located at developers.binance.com; the fetched github.io URL is deprecated or incorrect. Binance provides a very mature, broad public REST and WebSocket API.",
+    "self_confidence": 0.95
+  }
+}

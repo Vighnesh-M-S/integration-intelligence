@@ -1,0 +1,38 @@
+{
+  "docs": {
+    "url": "https://help.getharvest.com/api-v2",
+    "status": 200,
+    "text": "Harvest API V2 Documentation\nAPI V2 Documentation\n            Contact Us\n          \nWelcome to the Harvest API v2 Help Center\nThis is the \ncurrent\n API V2 documentation. You can still view the \nlegacy API V1 documentation\n.\nAPI Introduction\nOverview\nPostman Collection\nCode Samples\nSupported Time Zones\nSupported Currencies\nPagination\nSee all docs\nAuthentication\nAuthentication\nSee all docs\nClients API\nClient Contacts\nClients\nSee all docs\nCompany Settings\nCompany\nSee all docs\nInvoices API\nInvoice Messages\nInvoice Payments\nInvoices\nInvoice Item Categories\nSee all docs\nEstimates API\nEstimate Messages\nEstimates\nEstimate Item Categories\nSee all docs\nExpenses API\nExpenses\nExpense Categories\nSee all docs\nTasks API\nTasks\nSee all docs\nTimesheets API\nTime Entries\nSee all docs\nProjects API\nProject User Assignments\nProject Task Assignments\nProjects\nSee all docs\nRoles API\nRoles\nSee all docs\nUsers API\nUser Teammates\nUser Billable Rates\nUser Cost Rates\nUser Project Assignments\nUsers\nSee all docs\nReports API\nExpense Reports\nUninvoiced Report\nTime Reports\nProject Budget Report\nSee all docs",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "harvest",
+    "name": "Harvest",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Time Tracking Software",
+      "Proposal & Invoice Management"
+    ],
+    "tools_count": 57.0,
+    "description": "Harvest is a time-tracking and invoicing tool designed for teams and freelancers, helping them log billable hours, manage projects, and streamline payments"
+  },
+  "llm_raw": {
+    "description": "A time-tracking and project management application that helps businesses track billable hours, manage invoices, and analyze project expenses.",
+    "authentication": [
+      "OAuth2"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://help.getharvest.com/api-v2"
+    ],
+    "notes": "Breadth is high due to comprehensive coverage of projects, timesheets, invoicing, expenses, and user management; auth confirmed via Composio registry.",
+    "self_confidence": 1.0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "docs": {
+    "url": "https://smartsheet.com/developers",
+    "status": 200,
+    "text": "Smartsheet Developers & API\nSkip to content\nSmartsheet Developers & API\nExplore API docs, connect to our MCP server, develop faster on SDKs, and join a thriving community building on Smartsheet.\nSmartsheet\nAI & Smartsheet MCP Server\nSmartsheet MCP Server Tools\nSmartsheet API Guides\nSmartsheet API Reference\nSmartsheet SDKs\nResources\nC# (smartsheet-csharp-sdk)\nJava (smartsheet-java-sdk)\nNode.js (smartsheet-javascript-sdk)\nPython (smartsheet-python-sdk)\nSmartsheet API Samples\nResources\nJava (java-read-write-sheet)\nNode.js (node-read-write-sheet)\nPython (python-read-write-sheet)\nMore Smartsheet samples repositories\nBrandfolder\nBrandfolder API Guides\nBrandfolder API Reference\nBrandfolder SDKs: Python\nBrandfolder SDKs: Panel UI SDK\nResource Management\nResource Management API Guides\nResource Management API Reference\nOther Resources\nAPI & Developers Community\nConnect, collaborate, and innovate with fellow developers building on Smartsheet product APIs.\nLow-code options\nExplore our low-code solutions like Bridge by Smartsheet and other automation tools.\nDeveloper tools registration\nDevelop applications that request user authorization to access Smartsheet data.\nNeed more help?\nReach out to our Support team, we'll be happy to help you.\nContact Support\nAsk AI",
+    "ok": true
+  },
+  "composio_raw": null,
+  "llm_raw": {
+    "description": "A cloud-based platform for work management, project collaboration, and workflow automation.",
+    "authentication": [
+      "OAuth2",
+      "API key",
+      "Token"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": true,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://smartsheet.com/developers"
+    ],
+    "notes": "Smartsheet provides a robust REST API and an official MCP server for agentic integrations.",
+    "self_confidence": 1
+  }
+}

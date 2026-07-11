@@ -1,0 +1,37 @@
+{
+  "id": "12",
+  "name": "Intercom",
+  "category": "Support and Helpdesk",
+  "hint_url": "intercom.com",
+  "composio_registry_match": {
+    "slug": "intercom",
+    "name": "Intercom",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Customer Support",
+      "CRM"
+    ],
+    "tools_count": 133.0,
+    "description": "Intercom provides live chat, messaging, and customer engagement tools, enabling businesses to drive conversions, handle support, and personalize communication at scale"
+  },
+  "description": "A comprehensive AI-powered customer service helpdesk and support platform integrating human agents with an AI agent (Fin) and ticketing workflows.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://intercom.com"
+  ],
+  "notes": "Intercom has an extensive, well-documented public REST API; Composio registry confirms integration support with 133 tools.",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

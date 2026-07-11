@@ -1,0 +1,36 @@
+{
+  "id": "48",
+  "name": "Gumroad",
+  "category": "Ecommerce",
+  "hint_url": "gumroad.com/api",
+  "composio_registry_match": {
+    "slug": "gumroad",
+    "name": "Gumroad",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "eCommerce"
+    ],
+    "tools_count": 7.0,
+    "description": "Gumroad simplifies selling digital goods, physical products, and memberships by offering a streamlined checkout, marketing tools, and direct payout options"
+  },
+  "description": "A creator-focused e-commerce platform for selling digital products, memberships, and courses.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "moderate",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://gumroad.com/api"
+  ],
+  "notes": "The API allows for managing products, customers, and sales data; OAuth2 is the standard for third-party integrations.",
+  "confidence": 0.79,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

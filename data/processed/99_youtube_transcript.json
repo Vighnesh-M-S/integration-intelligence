@@ -1,0 +1,38 @@
+{
+  "id": "99",
+  "name": "YouTube Transcript",
+  "category": "AI, Research and Media-native",
+  "hint_url": "transcriptapi.com",
+  "composio_registry_match": {
+    "slug": "youtube",
+    "name": "YouTube",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Video & Audio",
+      "Social Media Accounts"
+    ],
+    "tools_count": 48.0,
+    "description": "YouTube is a video-sharing platform with user-generated content, live streaming, and monetization opportunities, widely used for marketing, education, and entertainment"
+  },
+  "description": "A REST API and MCP-compatible service that provides access to YouTube transcripts, channel video lists, search functionality, and playlist extraction.",
+  "authentication": [
+    "API key",
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "moderate",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://transcriptapi.com"
+  ],
+  "notes": "While Composio lists OAuth2, the docs prominently feature API key usage for integration; the service is highly compatible with LLM agent workflows via MCP.",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "23",
+  "name": "Zoho Cliq",
+  "category": "Communications and Messaging",
+  "hint_url": "zoho.com/cliq",
+  "composio_registry_match": {
+    "slug": "zoho",
+    "name": "Zoho",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "CRM",
+      "Marketing Automation"
+    ],
+    "tools_count": 57.0,
+    "description": "Zoho is a suite of cloud applications including CRM, email marketing, and collaboration tools, enabling businesses to automate and scale operations"
+  },
+  "description": "A team communication and collaboration platform featuring instant messaging, voice/video calls, and workflow automation.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://zoho.com/cliq"
+  ],
+  "notes": "Extensive developer platform and 57 existing tool integrations indicate a mature, accessible REST API.",
+  "confidence": 0.99,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

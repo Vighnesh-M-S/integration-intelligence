@@ -1,0 +1,38 @@
+{
+  "docs": {
+    "url": "https://gorgias.com",
+    "status": 200,
+    "text": "The Conversational AI platform for Ecommerce | Gorgias\nBook a demo\nConversations that drive revenue, not just resolutions.\nThe #1 Helpdesk + AI Agent built to drive sales. Turn browsers into buyers and automate routine support from one unified platform trained on your brand.\nDiscover pricing\nBook a demo\nWe power customer conversations for 40% of Shopify brands\nRead case study\nRead case study\nRead case study\nRead case study\nRead case study\nRead case study\nRead case study\nRead case study\nRead case study\nRead case study\nRead case study\nRead case study\nRead case study\nRead case study\nRead case study\nGet to know Gorgias\nBuilt for brands that know every conversation counts. \nAutomate routine tickets and personalize the rest.\nAI Agent trained on your brand\nOne conversation. Everywhere.\nOne unified inbox across every channel, with live Shopify data and full customer context built into every conversation.\nHigh-quality answers. Measurable results.\nEngage. Guide. Convert.\n8.83\u00d7 ROI\n\u201cThe AI upsells with a conversational tone that feels genuinely helpful, not pushy. It asks the right follow-up questions and improves AOV. It\u2019s exactly how we train our human agents.\u201d\nAI Agent + Helpdesk \nAI Agent + Helpdesk, built as one.\nMost brands bolt third-party AI onto a generic helpdesk. Gorgias unifies AI and the inbox in a single platform, so agents and automation share context, resulting in faster, more accurate responses.\nExplore the platform\nOne AI Agent. Pre-sale to post-sale.\nLearn more \n->\nPre-trained on 1B+ conversations\nUnderstands ecommerce, Shopify data, and customer intent from day one\nYour rules. Your AI.\nApply your tone, policies, and SOPs with built-in guardrails\nAutomate 60% of support\nResolve inquiries automatically so your team can focus on high-impact work\nAI coaching, built in\nProactive, real-time tips help agents improve with every conversation\nProactive, not reactive AI\nEngage shoppers at the right moment with the right recommendations\nKnows when to escalate to your team\nSeamless hand-offs to human agents with context\nOne inbox. Full store context.\nLearn more \n->\nOne omnichannel inbox\nEmail, chat, SMS, WhatsApp, Instagram, and Facebook in one view\nIn-conversation actions\nCancel, discount, or upsell directly inside the conversation\nNative Shopify integration\nPull up any order, customer, or product without leaving the ticket\n300+ integrations\nRecharge, Klaviyo, Yotpo, and more connected out of the box\nTeam collaboration\nRoute, assign, and manage tickets across your team\nRevenue attribution reporting\nSee exactly how much revenue your support team generates\nCustomer stories\nOur customers say it best\nEvery conversation is a revenue opportunity. Here's the proof.\n19.2x\nROI on AI-driven sales interactions\n56%\nautomation rate in <2 months\n10%\nreduction in total cost of ownership\n$500M+\nrevenue driven through conversations\n17,000+\necommerce brands powered globally\n4.2x\naverage return on investment\n50 in 50 program\nWe help you get to 50% in 50 days.\nToday\nConnect your channels\nConnect your channels, migrate your data, and get your team up and running with implementation resources that guide the way.\nDay 7\nLaunch in 1 week\nStart resolving tickets immediately with full Shopify context, knowledge, and workflows in place.\nDay 21\nAutomate at scale\nAI Agent handles the repetitive tickets filling up the queue, so your team can spend their time where it matters most.\nDay\u00a050\nDrive measurable revenue\nTurn high-intent moments into measurable revenue by engaging shoppers, increasing basket size, and giving each visitor the confidence to convert.\n\"When we first started with Gorgias, our goal was to hit 30% automation in 30 days. We surpassed that and are now above 50% automation, and we\u2019re still climbing.\"\nCourtney Bajek\nCustomer Service Lead at Orthofeet\nRead the full story \n->\nBacked by the best\nThe most trusted names in AI and ecommerce choose Gorgias. Now you can too.\nOpenAI Partner\nBuilt on a direct OpenAI partnership. Deeper model access. AI fine-tuned for product recommendations, order management, and brand voice. A real integration.\nBuilt into Shopify\u2019s DNA\nShopify-invested. Orders, customers, and store data live inside Gorgias natively. One click to install. Zero data syncing.\nPlatform stability\nZero downtime during peak season. Handles high volumes and holiday surges without dropping a single conversation.\nContinuous innovation\nCommerce-first development. Every feature based on how Shopify brands actually work.\nDeepest integrations\n300+ integrations. Klaviyo, Recharge, Yotpo, and your entire stack. One click.\nProtected investment\nScales with you. From 100 tickets a month to 100,000. Same platform.",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "gorgias",
+    "name": "Gorgias",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "CRM",
+      "Customer Support"
+    ],
+    "tools_count": 32.0,
+    "description": "Gorgias is a helpdesk and live chat platform specializing in e-commerce, offering automated support, order management, and unified customer communication"
+  },
+  "llm_raw": {
+    "description": "A comprehensive ecommerce helpdesk platform that integrates AI agents with Shopify data to automate support and drive sales across multiple communication channels.",
+    "authentication": [
+      "OAuth2"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://gorgias.com"
+    ],
+    "notes": "Gorgias has a well-documented public API for developers and a robust developer portal, making it highly suitable for agent tooling.",
+    "self_confidence": 0.95
+  }
+}

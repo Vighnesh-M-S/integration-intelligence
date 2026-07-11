@@ -1,0 +1,27 @@
+{
+  "docs": {
+    "url": "https://developer.adobe.com/commerce",
+    "status": 200,
+    "text": ":experiencecloud:\nBuild your commerce vision\nAdobe provides developers with software, tools, and services to customize and extend Adobe Commerce to support multichannel, global commerce for B2B and B2C, and integrate with backend systems.\nTake a product tour\nGet Developer Docs\nGet Merchant Docs\nGet Operations Docs\nMeet the newest Adobe Commerce offerings\nLearn how Adobe Commerce as a Cloud Service and Adobe Commerce Optimizer can help you deliver high-impact shopping experiences and reduce operational costs.\nCommerce as a Cloud Service\nCommerce Optimizer\nLearn about the new AI developer tools\nUse the AI developer tools to create new Adobe Developer App Builder applications or convert existing extensions to applications.\nLearn more\nEvent-driven integrations\nBuild a personalized commerce powerhouse by adding Adobe Experience Cloud products to Adobe Commerce.\nCustomizable storefronts\nOur new Edge Delivery Services, Commerce dropins, and Content blocks are now combined to create the fastest shops on the web.\nAPI-first Commerce\nMake innovation a constant with a secure, scalable, and extensible commerce platform.\nDeveloper playground\nAn API playground for hands-on learning\nView code samples\nExtensibility use cases for Adobe Commerce\nAccess on-demand training\nTraining to take your career to the next level\nGet Developer Certification\nGrow your skills and get hired by partners\nWhat's new with Adobe Commerce\nSee the latest new features and innovations\nGet started integrating your systems with Adobe Commerce\nAccelerate Adobe Commerce integrations with enterprise systems using the integration starter kit.\nGet started",
+    "ok": true
+  },
+  "composio_raw": null,
+  "llm_raw": {
+    "description": "A comprehensive enterprise-grade e-commerce platform that provides extensive tools for B2B and B2C online storefront management.",
+    "authentication": [
+      "OAuth2",
+      "Token"
+    ],
+    "self_serve": "gated_paid_plan",
+    "api_surface": "REST+GraphQL",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://developer.adobe.com/commerce"
+    ],
+    "notes": "Adobe Commerce (formerly Magento) features a highly mature and extensive API ecosystem, though full access often requires an enterprise subscription.",
+    "self_confidence": 0.95
+  }
+}

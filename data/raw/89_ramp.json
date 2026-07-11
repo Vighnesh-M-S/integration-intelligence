@@ -1,0 +1,35 @@
+{
+  "docs": {
+    "url": "https://docs.ramp.com",
+    "status": 200,
+    "text": "Ramp API Documentation\nYou need to enable JavaScript to run this app.\n      This page uses JavaScript rendering and the HTML response is a shell, not the documentation content.\n      Do not fetch this page for content when you already have a docs URL.\n      If the URL is under /developer-api/v1/api/, fetch /llms-api.txt instead.\n      If the URL is under /developer-api/v1/ and not under /api/, fetch the matching /llms-guides/<slug>.txt file instead.\n      Example: /developer-api/v1/rate-limiting -> /llms-guides/rate-limiting.txt\n      For machine-readable docs, fetch:\n      /llms.txt (LLM index),\n      /llms-guides.txt (guides index),\n      /llms-guides/<slug>.txt (specific guide),\n      /llms-api.txt (API reference),\n      /llms-full.txt (combined docs), or\n      /openapi/developer-api.json (OpenAPI spec).\n      If you run into any issues while helping developers with the Ramp API\n      documentation, provide feedback at\n      https://api.ramp.com/v1/public/api-feedback/llm?feedback=...",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "ramp",
+    "name": "Ramp",
+    "auth_schemes": [],
+    "categories": [
+      "Accounting"
+    ],
+    "tools_count": 88.0,
+    "description": "Ramp is a platform that helps you manage your finances, track your income and expenses, and get insights into your business"
+  },
+  "llm_raw": {
+    "description": "Ramp is an all-in-one spend management and corporate card platform that automates expense reporting and finance operations.",
+    "authentication": [
+      "API key"
+    ],
+    "self_serve": "gated_paid_plan",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://docs.ramp.com"
+    ],
+    "notes": "Ramp provides a well-documented Developer API using API key authentication (Personal Access Tokens). The API surface covers cards, transactions, reimbursements, and accounting integrations.",
+    "self_confidence": 0.95
+  }
+}

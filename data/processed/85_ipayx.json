@@ -1,0 +1,27 @@
+{
+  "id": "85",
+  "name": "iPayX",
+  "category": "Finance and Fintech",
+  "hint_url": "ipayx.ai/docs",
+  "composio_registry_match": null,
+  "description": "A FINTRAC-registered FX verification tool that audits foreign-exchange transactions against mid-market rates to reveal hidden spreads and costs.",
+  "authentication": [
+    "Unknown"
+  ],
+  "self_serve": "unknown",
+  "api_surface": "unclear",
+  "api_breadth": "unknown",
+  "mcp": false,
+  "buildable": false,
+  "blocker": "no public API documentation available",
+  "evidence_urls": [
+    "https://ipayx.ai/docs"
+  ],
+  "notes": "The documentation page provides a conceptual overview and manual input workflow but contains no references to a public API, SDK, or developer portal.",
+  "confidence": 0.69,
+  "needs_verification": true,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

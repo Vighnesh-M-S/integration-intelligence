@@ -1,0 +1,36 @@
+{
+  "id": "69",
+  "name": "Datadog",
+  "category": "Developer, Infra and Data platforms",
+  "hint_url": "docs.datadoghq.com/api",
+  "composio_registry_match": {
+    "slug": "datadog",
+    "name": "Datadog",
+    "auth_schemes": [],
+    "categories": [
+      "Server Monitoring",
+      "Developer Tools"
+    ],
+    "tools_count": 63.0,
+    "description": "Datadog offers monitoring, observability, and security for cloud-scale applications, unifying metrics, logs, and traces to help teams detect issues and optimize performance"
+  },
+  "description": "A comprehensive monitoring, security, and observability platform for cloud-scale applications, infrastructure, and services.",
+  "authentication": [
+    "API key",
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://docs.datadoghq.com/api"
+  ],
+  "notes": "Datadog provides an extensive REST API for almost all platform features, including logs, metrics, monitors, and security tools. It also offers an official MCP server for agent integration.",
+  "confidence": 0.85,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

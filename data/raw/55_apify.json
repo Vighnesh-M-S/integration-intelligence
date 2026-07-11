@@ -1,0 +1,36 @@
+{
+  "docs": {
+    "url": "https://docs.apify.com",
+    "status": 200,
+    "text": "Apify Documentation\nSkip to main content\nApify Documentation\nLearn how to put the web to work.\nGetting started\nApify is all about Actors\u2014a new way to package your code to make it easy to share, integrate, and build upon.\nWhat is an Actor\nRun an existing Actor\nDevelop your own Actor\nPublish and monetize your Actor\nPlatform\nThe full reference of the Apify platform.\nActors\nDevelop, run, and share web scraping and automation tools in the cloud.\nStorage\nStore files and results of your web scraping jobs, and export it to various formats.\nProxy\nAvoid blocking by smartly rotating datacenter and residential IP addresses.\nSchedules\nAutomatically start Actors and saved tasks at specific times.\nIntegrations\nConnect Actors with your favorite web apps and cloud services.\nMonitoring\nCheck the performance of your Actors, validate data quality, and receive alerts.\nCollaboration\nShare Actors with other people, manage your organizations and permissions.\nSecurity\nLearn about Apify platform security and data protection.\nMCP\nDiscover and use Actors with AI agents and LLMs via Apify MCP server.\nApify API\nInteract with the Apify platform from your applications.\nAPI client for JavaScript\nAPI client for Python\nAPI reference\nApify SDK\nSoftware toolkits for developing new Actors.\nSDK for JavaScript\nSDK for Python\nApify CLI\nControl the Apify platform from terminal or shell scripts.\nCLI reference\nApify Academy\nFree practical courses on web scraping and the Apify platform. Go from beginner to expert, all in one place.\nWeb scraping for beginners\nLearn the basics of web scraping and how to develop your own scraper.\nIntroduction to the Apify platform\nLearn the basics of the Apify platform and how to use it for your scraping projects.\nAPI scraping\nLearn how to efficiently extract data from web pages' APIs.\nAnti-scraping protections\nUnderstand the various anti-scraping measures and how to avoid them.\nAdvanced web scraping\nLearn how to extract data from more complicated websites.\nDeploying your code to Apify\nLearn how to easily move your existing projects to the Apify platform.\nGo to Academy\nOpen-source tools\nCrawlee\nWeb crawling, scraping, and browser automation library for Node.js and Python with autoscaling and proxies.\nStar\nFingerprint Suite\nToolkit for generating and injecting realistic browser fingerprints into Playwright and Puppeteer.\nStar\nimpit\nRust-based HTTP client with browser impersonation. Bindings for Node.js, Python, and CLI.\nStar\nmcpc\nCLI client for the Model Context Protocol (MCP) for server exploration, scripting, and code mode.\nStar\nproxy-chain\nNode.js proxy server with SSL, authentication, and upstream proxy chaining.\nStar\nActor whitepaper\nOpen specification for Actors, the serverless microapps at the core of the Apify platform.\nFollow Apify on GitHub\nActor templates\nCreate new web scraping projects using ready-made templates for various programming languages and scraping libraries.\nBrowse all templates\nCommunity & Help\nDiscord\nJoin our community to get news and connect with other Apify developers.\nSupport\nFind answers to common questions or get help from the Apify support team.\nMore reading\nBlog\nCompany and product updates, tips and stories from the world of web scraping.\nChangelog\nSee what's new on the Apify platform.\nMonetize your code\nPublish your Actors on Apify Store and earn regular passive income.\nGet started",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "apify",
+    "name": "Apify",
+    "auth_schemes": [],
+    "categories": [
+      "AI Web Scraping",
+      "Developer Tools"
+    ],
+    "tools_count": 112.0,
+    "description": "Apify is a platform for building, deploying, and managing web scraping and automation tools, known as Actors."
+  },
+  "llm_raw": {
+    "description": "A cloud platform for deploying serverless web scraping and automation Actors, offering proxy, storage, and AI-agent integration tools.",
+    "authentication": [
+      "API key"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": true,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://docs.apify.com"
+    ],
+    "notes": "Apify provides a comprehensive REST API and official MCP server support for AI agents. Authentication is performed via personal API tokens.",
+    "self_confidence": 1.0
+  }
+}

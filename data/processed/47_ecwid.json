@@ -1,0 +1,28 @@
+{
+  "id": "47",
+  "name": "Ecwid",
+  "category": "Ecommerce",
+  "hint_url": "api-docs.ecwid.com",
+  "composio_registry_match": null,
+  "description": "Ecwid is a cloud-based e-commerce platform that allows merchants to build online stores and integrate them into existing websites and social platforms.",
+  "authentication": [
+    "OAuth2",
+    "Token"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://api-docs.ecwid.com"
+  ],
+  "notes": "Ecwid provides an extensive REST API for managing products, orders, customers, and storefront customization; well-suited for AI agent integration.",
+  "confidence": 0.69,
+  "needs_verification": true,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

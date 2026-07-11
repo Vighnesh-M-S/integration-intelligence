@@ -1,0 +1,29 @@
+{
+  "id": "58",
+  "name": "Sherlock",
+  "category": "Data, SEO and Scraping",
+  "hint_url": "github.com/sherlock-project/sherlock",
+  "composio_registry_match": null,
+  "description": "A command-line tool to hunt down social media accounts by username across social networks.",
+  "authentication": [
+    "None"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "none_public",
+  "api_breadth": "unknown",
+  "mcp": false,
+  "buildable": false,
+  "blocker": "no public API (local CLI tool)",
+  "evidence_urls": [
+    "https://github.com/sherlock-project/sherlock"
+  ],
+  "notes": "Sherlock is an open-source command-line tool written in Python rather than a SaaS application, meaning it does not offer a hosted public API out of the box. [human-verified: CLI tool only. No REST API. Cannot be called as agent tool without subprocess wrapper.]",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "human_verified": true,
+  "human_verified_fields": [
+    "authentication"
+  ]
+}

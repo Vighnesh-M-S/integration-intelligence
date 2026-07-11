@@ -1,0 +1,25 @@
+{
+  "id": "39",
+  "name": "Threads (Meta)",
+  "category": "Marketing, Ads, Email and Social",
+  "hint_url": "developers.facebook.com/docs/threads",
+  "composio_registry_match": null,
+  "description": "A social media platform for sharing text, photos, and videos, integrated into the Meta ecosystem for community engagement.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "moderate",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://developers.facebook.com/docs/threads"
+  ],
+  "notes": "Uses standard Meta Graph API authorization flows. MCP status is based on current lack of verified official/widely-adopted community servers.",
+  "confidence": 0.7,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research"
+}

@@ -1,0 +1,26 @@
+{
+  "docs": {
+    "url": "https://docs.mrscraper.com",
+    "status": 200,
+    "text": "Overview | MrScraper Documentation\nDocumentation\nCore Features\nDashboard\nGetting Started\nOverview\nQuickstart\nPlayground\nToken Plan\nCLI\nMCP Server\nMigrating from Platform v2 to v3\nBilling\nFeatures\nAI Scraper\nManual Scraper\nScraper API\nBulk Scraping\nProxy\nMarketplace\nSchedule\nS3 Storage\nWeb Unblocker\nCookie\nTeam\nGuides\nE-commerce\nJob Listing\nSentiment Analysis\nOptimizing Cost\nReal Estate\nFlight Price\nComplex Website\nCreate and Run a Scraper Programmatically\nIntegrations\nEmail\nSQL/Database\nWebhook\nZapier\nn8n\nPython SDK\nNode.js SDK\nLangChain SDK\nMrScraper\nSearch\n\u2318\nK\nDashboard\nDocumentation\nAPI Reference\nResidential Proxy\nOverview\nOverview\nYour all-in-one guide to understanding, configuring, and using our scraping platform.\nWelcome to the MrScraper Documentation!\nDiscover how our powerful scraping platform can transform the way you extract data. Whether you're scraping e-commerce product data, collecting job listings, gathering customer reviews for sentiment analysis, or extracting any website content, our AI-powered and manual scrapers are designed to automate and simplify the process, giving you a powerful edge in any project.\nFeatures\nExplore MrScraper\u2019s key features and tools designed to make data extraction effortless.\nAI Scraper\nAutomatically extract data with natural language instructions \u2014 no coding required.\nManual Workflow\nBuild and customize your own scraper workflow step by step for full control.\nBulk Scraping\nScrape multiple URLs in one go by uploading a list or Excel file.\nListing\nOrganize and view your scraping results in a clean, structured listing format.\nMap\nExtract all URLs from a website to understand its structure and content.\nProxy Management\nConfigure and manage proxy settings for enhanced reliability and anonymity.\nScheduling\nAutomate scraper runs on a schedule to keep your data fresh and up to date.\nMarketplace\nUse ready-to-run scrapers for popular websites and common scraping use cases.\nAPI Playground\nTest and explore API requests directly from the dashboard before integrating.\nUse Cases\nDiscover how MrScraper can support different real-world scenarios.\nE-Commerce\nScrape product details, pricing, and availability from major e-commerce sites.\nJob Listings\nCollect job postings and company data for recruitment or market analysis.\nSentiment Analysis\nExtract and analyze customer feedback to gain insights into sentiment and satisfaction.\nReal Estate\nGather property listings, prices, and market trends from real estate websites.\nTravel & Hospitality\nScrape hotel, flight, and destination data for travel planning and analysis.\nIntegrations\nIntegrate MrScraper with your favorite tools to automate your data flow.\nEmail\nReceive email notifications whenever a scraper finishes or encounters an error.\nDatabase\nAutomatically store scraped data in your database for querying and analysis.\nWebhook\nSend scraper results directly to external services through webhooks.\nQuickstart\nA step-by-step guide to help you scrape data quickly using MrScraper.\nOn this page\nWelcome to the MrScraper Documentation!\nFeatures\nUse Cases\nIntegrations",
+    "ok": true
+  },
+  "composio_raw": null,
+  "llm_raw": {
+    "description": "An all-in-one web scraping and data extraction platform featuring AI-powered scrapers, bulk processing, and programmable SDKs.",
+    "authentication": [
+      "API key"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": true,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://docs.mrscraper.com"
+    ],
+    "notes": "The documentation explicitly mentions an 'MCP Server' as a feature, making it highly suitable for agentic tool integration.",
+    "self_confidence": 1
+  }
+}

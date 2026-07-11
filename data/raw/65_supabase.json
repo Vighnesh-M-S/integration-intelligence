@@ -1,0 +1,38 @@
+{
+  "docs": {
+    "url": "https://supabase.com/docs",
+    "status": 200,
+    "text": "Supabase Docs\nSkip to content\nSupabase Documentation\nLearn how to get up and running with Supabase through tutorials, APIs and platform resources.\nGetting Started\nSet up and connect a database in just a few minutes.\nStart with Supabase AI prompts\nProducts\nDatabase\nSupabase provides a full Postgres database for every project with Realtime functionality, database backups, extensions, and more.\nAuth\nAdd and manage email and password, passwordless, OAuth, and mobile logins to your project through a suite of identity providers and APIs.\nStorage\nStore, organize, transform, and serve large files\u2014fully integrated with your Postgres database with Row Level Security access policies.\nRealtime\nListen to database changes, store and sync user states across clients, broadcast data to clients subscribed to a channel, and more.\nEdge Functions\nGlobally distributed, server-side functions to execute your code closest to your users for the lowest latency.\nModules\nAI & Vectors\nCron\nQueues\nData REST API\nGraphQL API\nClient Libraries\nJavaScript\nFlutter\nPython\nC#\nSwift\nKotlin\nMigrate to Supabase\nBring your existing data, auth and storage to Supabase following our migration guides.\nExplore more resources about /guides/resources\nExplore more resources\nAmazon RDS\nAuth0\nFirebase Auth\nFirebase Storage\nFirestore Data\nHeroku\nMSSQL\nMySQL\nNeon\nPostgres\nRender\nVercel Postgres\nAdditional resources\nAI tools\nDevelop with Supabase AI-first using plugins, MCP, and skills.\nPlatform guides\nLearn more about the tools and services powering Supabase.\nSupabase CLI\nUse the CLI to develop, manage and deploy your projects.\nManagement API\nManage your Supabase projects and organizations.\nIntegrations\nExplore a variety of integrations from Supabase partners.\nSupabase UI\nA collection of pre-built Supabase components to speed up your project.\nTroubleshooting\nOur troubleshooting guide for solutions to common Supabase issues.\nSelf-Hosting\nGet started with self-hosting Supabase.\nMore on Self-Hosting about /guides/self-hosting\nMore on Self-Hosting\nAuth\nRealtime\nStorage\nAnalytics",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "supabase",
+    "name": "Supabase",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Developer Tools",
+      "Databases"
+    ],
+    "tools_count": 124.0,
+    "description": "Supabase is an open-source backend-as-a-service providing a Postgres database, authentication, storage, and real-time subscription APIs for building modern applications"
+  },
+  "llm_raw": {
+    "description": "A backend-as-a-service platform that provides a managed Postgres database, authentication, real-time subscriptions, storage, and edge functions.",
+    "authentication": [
+      "OAuth2"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "REST+GraphQL",
+    "api_breadth": "broad",
+    "mcp": true,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://supabase.com/docs"
+    ],
+    "notes": "The documentation explicitly mentions MCP support in the 'AI tools' section. The API breadth is very broad as it covers database management, auth, and infrastructure.",
+    "self_confidence": 1.0
+  }
+}

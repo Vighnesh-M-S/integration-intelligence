@@ -1,0 +1,36 @@
+{
+  "id": "18",
+  "name": "Help Scout",
+  "category": "Support and Helpdesk",
+  "hint_url": "helpscout.com",
+  "composio_registry_match": {
+    "slug": "help_scout",
+    "name": "Help Scout",
+    "auth_schemes": [],
+    "categories": [
+      "Customer Support",
+      "Communication"
+    ],
+    "tools_count": 129.0,
+    "description": "Help Scout provides customer support software with shared inbox, knowledge base, and customer management tools"
+  },
+  "description": "A customer support and helpdesk platform that combines email, live chat, and AI-powered automation to manage customer relationships.",
+  "authentication": [
+    "API key",
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://helpscout.com"
+  ],
+  "notes": "Help Scout has a well-documented public REST API for managing conversations, customers, mailboxes, and workflows, which is highly suitable for agent toolkits.",
+  "confidence": 0.84,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

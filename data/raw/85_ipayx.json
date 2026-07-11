@@ -1,0 +1,26 @@
+{
+  "docs": {
+    "url": "https://ipayx.ai/docs",
+    "status": 200,
+    "text": "iPayX Protocol \u2014 FINTRAC-registered FX forensic audit layer\niPayX Protocol \u2014 Neutral FX Verification Layer\niPayX Protocol is the neutral FX verification layer for fintech sales teams and FX brokers. We audit foreign-exchange transactions, compare the rate a bank or card network applied against the real-time mid-market rate, reveal invisible spreads, quantify FX costs, and project annual savings.\nHow It Works\nEnter your transaction\n \u2013 Amount, currencies (e.g. CAD \u2192 USD), and the rate your bank applied.\nWe capture the mid-market rate\n \u2013 From regulated interbank data sources at the exact transaction time.\nInstant audit report\n \u2013 Spread %, FX cost in your base currency, execution grade (A/B/C), and annual savings projection.\nTrust & Compliance\nMSB FINTRAC C10001283 | 0-custody | AES-256 | Built in Canada \ud83c\udde8\ud83c\udde6\nLinks\nHome\nPricing\nMethodology\nAbout\nPartners\nPrivacy Policy\nTerms of Service\nContact: \ninfo@ipayx.ai",
+    "ok": true
+  },
+  "composio_raw": null,
+  "llm_raw": {
+    "description": "A FINTRAC-registered FX verification tool that audits foreign-exchange transactions against mid-market rates to reveal hidden spreads and costs.",
+    "authentication": [
+      "Unknown"
+    ],
+    "self_serve": "unknown",
+    "api_surface": "unclear",
+    "api_breadth": "unknown",
+    "mcp": false,
+    "buildable": false,
+    "blocker": "no public API documentation available",
+    "evidence_urls": [
+      "https://ipayx.ai/docs"
+    ],
+    "notes": "The documentation page provides a conceptual overview and manual input workflow but contains no references to a public API, SDK, or developer portal.",
+    "self_confidence": 0.9
+  }
+}

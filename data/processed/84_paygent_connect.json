@@ -1,0 +1,27 @@
+{
+  "id": "84",
+  "name": "Paygent Connect",
+  "category": "Finance and Fintech",
+  "hint_url": "paygent (NMI-powered)",
+  "composio_registry_match": null,
+  "description": "A payment gateway solution providing payment processing, recurring billing, and merchant account services.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "gated_paid_plan",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://paygent.com"
+  ],
+  "notes": "Paygent is an NMI-powered payment gateway; developer access is typically provided upon creating a merchant account through the gateway partner portal.",
+  "confidence": 0.48,
+  "needs_verification": true,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

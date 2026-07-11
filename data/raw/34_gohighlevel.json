@@ -1,0 +1,28 @@
+{
+  "docs": {
+    "url": "https://highlevel.stoplight.io",
+    "status": 200,
+    "text": "Stoplight",
+    "ok": true
+  },
+  "composio_raw": null,
+  "llm_raw": {
+    "description": "An all-in-one marketing and sales automation platform providing CRM, email marketing, landing page builders, and SMS/voice automation tools.",
+    "authentication": [
+      "OAuth2",
+      "API key"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://highlevel.stoplight.io",
+      "https://developers.gohighlevel.com/"
+    ],
+    "notes": "Relying on prior knowledge of the HighLevel Developer API, as the Stoplight URL provided acts as a portal for the extensive REST API documentation.",
+    "self_confidence": 0.95
+  }
+}

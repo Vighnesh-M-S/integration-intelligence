@@ -1,0 +1,38 @@
+{
+  "docs": {
+    "url": "https://discord.com",
+    "status": 200,
+    "text": "Discord - Group Chat That\u2019s All Fun & Games\nSkip to main content\nDownload\n1 of 9\nNitro\n2 of 9\nDiscover\n \n3 of 9\nSafety\n \n4 of 9\nQuests\n \n5 of 9\nSupport\n \n6 of 9\nBlog \n7 of 9\n \nDevelopers\n \n8 of 9\n \u00a0\nCareers\n9 of 9\nLog In\nLog in\nDownload\nNitro\nDiscover\nSafety\nQuests\nSupport\nBlog\nDevelopers\nCareers\nLog In\nApp Store\nGroup chat that\u2019s all fun\u00a0& games\nDiscord is great for playing games and chilling\u00a0with friends, or even building a worldwide community. Customize your own\u00a0space to talk, play, and hang\u00a0out.\nDownload for Windows\nOpen Discord in your browser\nfind your friends on discord.\nDownload\nMAKE YOUR GROUP CHATS MORE FUN\nUse custom emoji, stickers, soundboard effects and more to add\u00a0your personality to your voice, video, or text chat. Set your avatar and a custom status, and write your own profile to show up\u00a0in chat your way.\nstream like you\u2019re in the same room\nHigh quality and low latency streaming makes it\u00a0feel like you're hanging out on the couch with friends while playing a game, watching shows, looking at photos, or idk doing homework\u00a0or something.\nHop in when you're free, no\u00a0need to call\nEasily hop in and out of voice or text chats without having to call or invite anyone, so your party chat lasts before, during, and after your game session.\ntalk\nplay\nchat\nhang out\ntalk\nplay\nchat\nhang out\ntalk\nplay\nchat\nhang out\ntalk\nplay\nchat\nhang out\nSee who's around to chill\nSee who's around, playing games, or\u00a0just hanging out. For supported games, you can see what modes or characters your friends are playing and directly join up.\nalways have something to do together\nWatch videos, play built-in games, listen to music, or just scroll together and spam memes. Seamlessly text, call, video chat, and play games, all\u00a0in\u00a0one group chat.\nwherever YOU GAME, HANG OUT HERE\nOn your PC, phone, or console, you can still hang out on Discord. Easily switch between devices and use tools to manage multiple group chats with\u00a0friends.\nYOU CAN'T SCROLL\n \nANYMORE.\nBETTER GO CHAT.\nDownload for Mac\nLanguage\nEnglish (US)\nSocial\nMenu\nProduct\nProduct\nCompany\nCompany\nResources\nResources\nPolicies\nPolicies\nSocial",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "discord",
+    "name": "Discord",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Team Chat",
+      "Team Collaboration"
+    ],
+    "tools_count": 27.0,
+    "description": "An instant messaging and VoIP social platform."
+  },
+  "llm_raw": {
+    "description": "A platform for real-time communication via voice, video, and text, organized into servers and channels.",
+    "authentication": [
+      "OAuth2"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": true,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://discord.com"
+    ],
+    "notes": "The Discord API is highly mature and widely used for bot integration. MCP servers for Discord exist in the community ecosystem.",
+    "self_confidence": 1.0
+  }
+}

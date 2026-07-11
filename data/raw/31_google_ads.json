@@ -1,0 +1,26 @@
+{
+  "docs": {
+    "url": "https://developers.google.com/google-ads",
+    "status": 200,
+    "text": "Google Ads \u00a0|\u00a0 Google for Developers\n      \n      Skip to main content\n    \nGoogle\nAds\n/\nEnglish\nDeutsch\nEspa\u00f1ol\nEspa\u00f1ol \u2013 Am\u00e9rica Latina\nFran\u00e7ais\nIndonesia\nItaliano\nPolski\nPortugu\u00eas \u2013 Brasil\nTi\u00ea\u0301ng Vi\u00ea\u0323t\nT\u00fcrk\u00e7e\n\u0420\u0443\u0441\u0441\u043a\u0438\u0439\n\u05e2\u05d1\u05e8\u05d9\u05ea\n\u0627\u0644\u0639\u0631\u0628\u064a\u0651\u0629\n\u0641\u0627\u0631\u0633\u06cc\n\u0939\u093f\u0902\u0926\u0940\n\u09ac\u09be\u0982\u09b2\u09be\n\u0e20\u0e32\u0e29\u0e32\u0e44\u0e17\u0e22\n\u4e2d\u6587 \u2013 \u7b80\u4f53\n\u4e2d\u6587 \u2013 \u7e41\u9ad4\n\u65e5\u672c\u8a9e\n\ud55c\uad6d\uc5b4\nSign in\n                Promote your website, products, and app to the right users with Google Ads.\n              \n    \n          Home\n        \n  \n    \n          Products\n        \n  \n    \n          Ads\n        \n  \n    \n          Google Ads\n        \n  \n      \n      Stay organized with collections\n    \n      \n      Save and categorize content based on your preferences.\n    \n    \n        Google Ads\n      \n  \n            Create and manage ads that reach users looking for your products or services on Google Search, Display, YouTube and more.\n          \nGet started on Google Ads\n    \n        Google Ads App Promotion\n      \n  \n            Use Google Ads to drive installs, re-engagement, and lifetime value for your app.\n          \nLearn about app promotion\n    \n        Google Shopping\n      \n  \n            List your products and make them available for online and local shoppers to find and buy.\n          \nLearn about Google Shopping\nContent API for Shopping\n    \n        Google Ads API and Google Ads scripts\n      \n  \n            Save time by automating your Google Ads campaign management. Build an application to interact directly with the Google Ads platform or write programmatic scripts.\n          \nGoogle Ads API\nGoogle Ads Scripts\n    \n        Webhook\n      \n  \n            Use webhook to send data from Google Ads to your CRM system.\n          \nLead form Webhook",
+    "ok": true
+  },
+  "composio_raw": null,
+  "llm_raw": {
+    "description": "A comprehensive advertising platform for managing search, display, and video ad campaigns across Google's ecosystem.",
+    "authentication": [
+      "OAuth2"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": true,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://developers.google.com/google-ads"
+    ],
+    "notes": "The Google Ads API is highly robust, supporting full campaign management, reporting, and automation, but has a steep learning curve and strict rate limiting.",
+    "self_confidence": 0.95
+  }
+}

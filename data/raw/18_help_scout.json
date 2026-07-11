@@ -1,0 +1,37 @@
+{
+  "docs": {
+    "url": "https://helpscout.com",
+    "status": 200,
+    "text": "Help Scout: Intuitive & Affordable Customer Service Software\nBusinesses that run on relationships\n \nrun support on Help\u00a0Scout\nBring customer insights, team collaboration, and thoughtful AI together so every interaction is connected to the last.\nStart for Free\nGet a Demo\nClarity where it counts\nInsights live alongside every conversation, so you can make the right call in real time.\nBuilt for real teamwork\nTeams on Help Scout respond to 56% more messages in their first year.\nAI that multiplies your team\nTake on more volume with AI agents that resolve 73% of interactions on average.\nHelp Scout is by far the best support product I have ever used.\nOne home for all your support conversations\nReply in seconds\nMake it personal\nPrioritize with ease\nPlus, all the little things support teams love\nGet a boost from AI\nRecap long threads, edit and translate replies, or even create a first draft, all with a click.\nCompany management\nGet the context you need to support full accounts, not just individuals.\nSnooze\nNo rush to reply? Resurface the conversation at a later date automatically with snooze.\nSend later\nSchedule a reply so the customer gets it at the perfect time.\nWorkflows\nAutomate the tedious but critical tasks that keep your team (and Inbox) organized.\nSaved replies\nAdd proven answers to common questions or situations with a few clicks.\nMultiple Inboxes\nGive every department or product its own dedicated place for support.\nChannels\nClose those extra tabs and handle messages from social, Shopify, and more in Help Scout.\nMeet Beacon: your embeddable support hub\nAnswer instantly with\u00a0AI\nCustomers can chat their way to fast solutions from your help content 24/7 \u2014 even for complex questions!\nKeep human help within reach\nWhether you offer live chat, email, or both, your team will always be within two clicks.\nSave customers time\nAllow easy access to previous conversations so customers can pick up where they left off.\nGet closer to customers with in-app messages\nWelcome and onboard\nHelp customers start strong with a friendly nudge toward your best resources.\nGather feedback and\u00a0NPS\u00ae\nUnderstand how customers feel in context. Use NPS or pick from our library of surveys to get a read on specific experiences.\nShare what\u2019s new\nUse modals and banners in-app or on your website to get attention on promos, new features, and important updates.\nReporting that tells a story\n\u201cWhat\u2019s our volume across channels?\u201d\nUnderstand the \u201cwhy\u201d behind your volume so you can make the right adjustments.\n\u201cHow\u2019s our response time?\u201d\nMeasure your team\u2019s activity in the queue and get a sense of the factors contributing to wait times.\n\u201cWhere can we improve?\u201d\nGet a bird\u2019s eye view of support team performance, both as a whole and individually.\nStay organized automatically\nAssign the right person for the\u00a0job\nMake sure messages for sales actually get to sales the first time, no redirecting necessary.\nNever miss important messages\nWhether you want to resurface urgent conversations or flag refund requests, workflows do it for you so no one slips through the cracks.\u00a0\nSimplify the queue for your\u00a0team\nHelp everyone get more efficient with custom Views that group conversations.\n100+ powerful integrations\nHelp Scout slides right in with your favorite tools, so you can keep working your way.\nWhy do 12,000+ companies choose Help\u00a0Scout?\nWorld-class support\nOur team answers 99% of emails within 24 hours, so you\u2019re never left in the dark.\nEase of use\nIndependent research showed that our NPS is 7x higher than competitors\u2019 scores.\nBuilt to scale\n80% of customers are still here after 4 years, so you can be confident you won\u2019t outgrow us.\nStart for Free\nLearn the platform in less than\u00a0an\u00a0hour.\nBecome a \npower user\n in less\u00a0than\u00a0a\u00a0day.\nStart for Free\nBook a Demo\nWe\u2019d love to show you the magic of Help\u00a0Scout.\nBook a Demo\nBook a Demo",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "help_scout",
+    "name": "Help Scout",
+    "auth_schemes": [],
+    "categories": [
+      "Customer Support",
+      "Communication"
+    ],
+    "tools_count": 129.0,
+    "description": "Help Scout provides customer support software with shared inbox, knowledge base, and customer management tools"
+  },
+  "llm_raw": {
+    "description": "A customer support and helpdesk platform that combines email, live chat, and AI-powered automation to manage customer relationships.",
+    "authentication": [
+      "API key",
+      "OAuth2"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://helpscout.com"
+    ],
+    "notes": "Help Scout has a well-documented public REST API for managing conversations, customers, mailboxes, and workflows, which is highly suitable for agent toolkits.",
+    "self_confidence": 0.95
+  }
+}

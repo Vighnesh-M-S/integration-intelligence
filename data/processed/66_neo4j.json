@@ -1,0 +1,37 @@
+{
+  "id": "66",
+  "name": "Neo4j",
+  "category": "Developer, Infra and Data platforms",
+  "hint_url": "neo4j.com/docs/api",
+  "composio_registry_match": {
+    "slug": "neo4j",
+    "name": "Neo4J",
+    "auth_schemes": [],
+    "categories": [
+      "Developer Tools"
+    ],
+    "tools_count": 21.0,
+    "description": "Graph database platform for connected data and real-time analytics"
+  },
+  "description": "A graph database platform for managing highly connected data, supporting advanced analytics, AI agent memory, and knowledge graph construction.",
+  "authentication": [
+    "API key",
+    "Token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST+GraphQL",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://neo4j.com/docs/api"
+  ],
+  "notes": "Authentication relies on standard database connection strings or Aura API keys/tokens. Neo4j officially supports the Model Context Protocol (MCP) for AI integration as indicated in the documentation site.",
+  "confidence": 0.84,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

@@ -1,0 +1,41 @@
+{
+  "docs": {
+    "url": "https://airtable.com/developers",
+    "status": 200,
+    "text": "Airtable Developers\nYour browser version is not supported. Try our \ndesktop apps\n!\nAlternatively, use the latest version of \nChrome\n, \nFirefox\n, Safari, or Edge instead.",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "airtable",
+    "name": "Airtable",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Productivity",
+      "Spreadsheets",
+      "Databases"
+    ],
+    "tools_count": 24.0,
+    "description": "Airtable merges spreadsheet functionality with database power, enabling teams to organize projects, track tasks, and collaborate through customizable views, automation, and integrations for data management"
+  },
+  "llm_raw": {
+    "description": "A low-code platform that combines the features of a database and a spreadsheet for flexible project management and data organization.",
+    "authentication": [
+      "OAuth2",
+      "API key"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://airtable.com/developers",
+      "https://airtable.com/developers/web-api/"
+    ],
+    "notes": "While the provided fetch page was empty due to browser detection, Airtable has a robust, publicly documented REST API used extensively in agentic tooling.",
+    "self_confidence": 0.95
+  }
+}

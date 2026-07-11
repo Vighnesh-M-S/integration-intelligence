@@ -1,0 +1,37 @@
+{
+  "id": "86",
+  "name": "QuickBooks",
+  "category": "Finance and Fintech",
+  "hint_url": "developer.intuit.com",
+  "composio_registry_match": {
+    "slug": "quickbooks",
+    "name": "QuickBooks",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Accounting",
+      "Payment Processing"
+    ],
+    "tools_count": 114.0,
+    "description": "Quickbooks is a cloud-based accounting software that helps you manage your finances, track your income and expenses, and get insights into your business"
+  },
+  "description": "A cloud-based accounting software suite for small and medium-sized businesses to manage income, expenses, and financial reporting.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://developer.intuit.com"
+  ],
+  "notes": "Relied on industry knowledge of the Intuit Developer platform and existing Composio toolkit integration capabilities.",
+  "confidence": 0.8,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

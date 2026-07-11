@@ -1,0 +1,25 @@
+{
+  "id": "54",
+  "name": "MrScraper",
+  "category": "Data, SEO and Scraping",
+  "hint_url": "docs.mrscraper.com",
+  "composio_registry_match": null,
+  "description": "An all-in-one web scraping and data extraction platform featuring AI-powered scrapers, bulk processing, and programmable SDKs.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://docs.mrscraper.com"
+  ],
+  "notes": "The documentation explicitly mentions an 'MCP Server' as a feature, making it highly suitable for agentic tool integration.",
+  "confidence": 0.7,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "36",
+  "name": "Klaviyo",
+  "category": "Marketing, Ads, Email and Social",
+  "hint_url": "developers.klaviyo.com",
+  "composio_registry_match": {
+    "slug": "klaviyo",
+    "name": "Klaviyo",
+    "auth_schemes": [],
+    "categories": [
+      "Marketing Automation",
+      "Email Newsletters"
+    ],
+    "tools_count": 225.0,
+    "description": "Klaviyo is a data-driven email and SMS marketing platform that allows e-commerce brands to deliver targeted messages, track conversions, and scale customer relationships"
+  },
+  "description": "Klaviyo is a marketing automation platform specializing in email and SMS marketing, offering deep customer data segmentation and personalized automation flows.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://developers.klaviyo.com"
+  ],
+  "notes": "Authentication is primarily handled via Private API Keys generated in the Klaviyo dashboard; the platform has a mature and extensive REST API surface documented for broad developer use.",
+  "confidence": 0.85,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

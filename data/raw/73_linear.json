@@ -1,0 +1,39 @@
+{
+  "docs": {
+    "url": "https://developers.linear.app",
+    "status": 200,
+    "text": "Skip to content \u2192\nLinear Developers\nLearn about building apps and integrations for Linear using the GraphQL API and TypeScript SDK.\nGetting Started\nGraphQL API\nLearn how to use the GraphQL API to query and mutate your data\nAuthentication\nUse OAuth 2.0 or personal API keys to authenticate your requests to the Linear API\nAgents\nHow to best integrate an AI agent into Linear\nTypeScript SDK\nInstall the Linear SDK to use strongly typed models and operations\nGuides\nUpload a file\nLearn how to reference a file in markdown content, or upload with the API\nCreate issues via URL\nOpen issue creation with pre-filled fields from a URL\nCLI importer\nImport data from other services into Linear\nResources\nChangelog\nStay up to date with the latest changes to Linear and the API\nBrand Guidelines\nResources and assets for presenting the Linear brand\nAgent Interaction Guidelines\nPrinciples and practices for designing agent interactions\nLinear Developers",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "linear",
+    "name": "Linear",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Project Management",
+      "Task Management"
+    ],
+    "tools_count": 46.0,
+    "description": "Linear is a streamlined issue tracking and project planning tool for modern teams, featuring fast workflows, keyboard shortcuts, and GitHub integrations"
+  },
+  "llm_raw": {
+    "description": "Linear is a streamlined project management tool designed for high-performance software development teams to track issues and sprints.",
+    "authentication": [
+      "OAuth2",
+      "API key"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "GraphQL",
+    "api_breadth": "broad",
+    "mcp": true,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://developers.linear.app"
+    ],
+    "notes": "Linear provides a comprehensive GraphQL API and official TypeScript SDK, making it highly suitable for AI agent integration.",
+    "self_confidence": 1.0
+  }
+}

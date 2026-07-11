@@ -1,0 +1,40 @@
+{
+  "id": "13",
+  "name": "Freshdesk",
+  "category": "Support and Helpdesk",
+  "hint_url": "freshdesk.com",
+  "composio_registry_match": {
+    "slug": "freshdesk",
+    "name": "Freshdesk",
+    "auth_schemes": [],
+    "categories": [
+      "CRM",
+      "Customer Support"
+    ],
+    "tools_count": 178.0,
+    "description": "Freshdesk provides customer support software with ticketing, knowledge base, and automation features for efficient helpdesk operations and better customer experiences"
+  },
+  "description": "A cloud-based customer support and helpdesk software platform that integrates AI-powered agents and automation to manage omnichannel service workflows.",
+  "authentication": [
+    "API key",
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://freshdesk.com"
+  ],
+  "notes": "Freshdesk provides a highly mature, broad REST API. Composio registry indicates 178 tools, confirming strong agentic capability. [human-verified: Free forever plan confirmed (up to 10 agents). No trial needed.]",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research",
+  "human_verified": true,
+  "human_verified_fields": [
+    "self_serve"
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "92",
+  "name": "Otter AI",
+  "category": "AI, Research and Media-native",
+  "hint_url": "help.otter.ai",
+  "composio_registry_match": null,
+  "description": "An AI-powered meeting assistant that provides real-time transcription, automated meeting notes, and team collaboration features.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "narrow",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://help.otter.ai"
+  ],
+  "notes": "Otter provides limited public API access primarily through partner integrations (e.g., Zapier, Salesforce, HubSpot); custom agent development typically requires contact with their enterprise/partnership team for dedicated access.",
+  "confidence": 0.68,
+  "needs_verification": true,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

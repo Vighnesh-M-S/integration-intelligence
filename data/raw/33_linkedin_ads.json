@@ -1,0 +1,38 @@
+{
+  "docs": {
+    "url": "https://learn.microsoft.com/linkedin/marketing",
+    "status": 200,
+    "text": "LinkedIn Marketing API Program - LinkedIn | Microsoft Learn\n \n\t\t\tSkip to main content\n\t\t\nThis browser is no longer supported.\n\t\t\t\t\t\tUpgrade to Microsoft Edge to take advantage of the latest features, security updates, and technical support.\n\t\t\t\t\t\n\t\t\t\t\t\t\tDownload Microsoft Edge\n\t\t\t\t\t\t\n\t\t\t\t\t\t\tMore info about Internet Explorer and Microsoft Edge\n\t\t\t\t\t\t\nLinkedIn Marketing API Program\nThe LinkedIn Marketing Platform helps businesses grow by building technology to reach, engage, and convert professional audiences at scale. The platform offers APIs to create LinkedIn marketing campaigns, to report campaign performance, to manage leads, and to grow a company Page.\nQuickstart\nQuick Start\nOverview\nGetting API Access\nHow-To Guide\nAuthentication\nHow-To Guide\nAPI Versioning\nOverview\nData Storage Requirements\nWhat's new\nWhat's New\nLinkedIn Marketing APIs\nAdvertising\nWith Advertising APIs, streamline your campaign management, audience targeting, and track performance to optimize  advertising efforts.\nCampaign Management\nIntegration Requirements - Advertising API\nReporting and Analytics\nIntegration Requirements - Reporting\nEvent Management\nStreamline event operations, amplify visibility, and drive meaningful connections within the professional landscape with Events APIs (Management & Ads).\nOverview\nEvents\nEvent Management API Usecases\nIntegration Requirements\nCommunity Management\nEfficiently manage and engage with their LinkedIn communities, enhancing social media presence and interactions on the platform.\nOverview\nPage Access Management\nPage and Content Analysis\nShares & Social Stream\nMonitor Mentions of Your Brand\nMention a Member or a Brand\nIntegration Requirements\nLead Sync\nSeamlessly synchronize lead data captured through LinkedIn Lead Gen Forms with customer relationship management (CRM) systems and simplify lead management and follow-up processes.\nOverview\nLead Sync\nLead Sync API Use Cases\nIntegration Requirements\nMatched Audiences\nReach specific audiences by uploading contact lists, website retargeting, or utilizing account targeting for more precise Ad campaigns on the platform.\nOverview\nDMP Segments\nDMP Segment Users\nDMP Segment Destinations\nDMP Segment Companies\nDMP Segment List\nWebsite Retargeting\nAd Segments\nPredictive Audiences\nMatched Audiences API Use Cases\nIntegration Requirements\nAudience Insights\nProvides valuable data and analytics to advertisers, helping you better understand and target your audience on the platform for more effective and tailored marketing campaigns.\nOverview\nAudience Insights API\nAudience Insights API Use Cases\nIntegration Requirements\nMedia Planning\nEnables marketers to have a better understanding of investment delivery against valuable audiences and objectives\nOverview\nMedia Planning API\nManage Media Plans\nMedia Planning API Use Cases\nIntegration Requirements\nConversions\nSecurely and accurately track and measure the impact of their LinkedIn ad campaigns by sending conversion event data directly to LinkedIn, to help optimize your advertising efforts.\nOverview\nConversions API\nGetting Access to Conversions API\nDeduplication\nEnabling Click IDs\nGoogle Tag Manager Server-Side Tagging\nConversions API Payload Builder\nUse Cases - Conversions API\nIntegration Requirements\nCompany Intelligence\nGain insights into company level data for all companies reached via LinkedIn with engagement score, paid impressions, paid clicks, leads, organic impressions, and organic engagements.\nOverview\nCompany Intelligence API\nIntegration Requirements\nSupport and Developer Resources\nThese resources can help you stay on top of new features, developer portal access, migrations, and deprecations.\nMigrations\nStay on top of breaking changes related to migration.\nDeveloper Portal\nStay on top of the developer offerings though our portal.\nDeveloper Blog\nStay on top of the latest feature updates via available on our blog post.\nSupport\nRefer to LinkedIn API Partner Support for how to reach Developer Support.",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "linkedin",
+    "name": "LinkedIn",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Social Media Accounts",
+      "Marketing Automation"
+    ],
+    "tools_count": 22.0,
+    "description": "LinkedIn is a professional networking platform enabling job seekers, companies, and thought leaders to connect, share content, and discover business opportunities"
+  },
+  "llm_raw": {
+    "description": "LinkedIn's marketing and advertising platform enables businesses to manage ad campaigns, target professional audiences, track conversions, and sync lead data.",
+    "authentication": [
+      "OAuth2"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://learn.microsoft.com/linkedin/marketing"
+    ],
+    "notes": "While the API is publicly documented, access often requires application review and approval by LinkedIn for production use cases.",
+    "self_confidence": 0.95
+  }
+}

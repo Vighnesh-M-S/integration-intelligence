@@ -1,0 +1,38 @@
+{
+  "id": "17",
+  "name": "Plain",
+  "category": "Support and Helpdesk",
+  "hint_url": "plain.com",
+  "composio_registry_match": {
+    "slug": "plain",
+    "name": "Plain",
+    "auth_schemes": [],
+    "categories": [
+      "Customer Support"
+    ],
+    "tools_count": 22.0,
+    "description": "Plain is a collaborative support platform for B2B support teams, offering a modern, AI-powered interface to consolidate support channels and assist customers efficiently."
+  },
+  "description": "A B2B support infrastructure platform that unifies communication channels and allows for the orchestration of AI agents, workflows, and insights.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://plain.com"
+  ],
+  "notes": "Composio registry indicates 22 tools/endpoints; documentation emphasizes an 'API-first' architecture for extensibility and agent integration. [human-verified: Free tier confirmed for small teams. GraphQL API only. API key in workspace settings.]",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research",
+  "human_verified": true,
+  "human_verified_fields": [
+    "self_serve"
+  ]
+}

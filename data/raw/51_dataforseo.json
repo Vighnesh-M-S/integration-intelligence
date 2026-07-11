@@ -1,0 +1,36 @@
+{
+  "docs": {
+    "url": "https://docs.dataforseo.com",
+    "status": 200,
+    "text": "DataForSEO API v.3\n \n \n                        Search\n                    \n\u2318\nK\n                    \nAsk AI\n                        Menu\n                    \n                        Example\n                    \n \n \nIntroduction\nWelcome to DataForSEO API!\nThis is the starting point on your journey towards building powerful SEO software, data analysis pipelines, and robust no-code automations. With DataForSEO you can get all the data you need while saving your time and budget.\nGetting started\nFollow our recommended learning path to master DataForSEO APIs.\n1. Kickstart Guide to our APIs\n2. Dashboard Guide\n3. Test with API Playground\n4. Free Unlimited Trial Info\n5. Sandbox Best Practices\nREST technology\nDataForSEO API is using\u00a0the \nREST\n\u00a0technology for interchanging data between your application and our service. The data exchange is made through the widely used HTTP protocol, which allows applying our API to almost all programming languages.\nClient libraries\nYou can create your REST class or use the following ready-made classes:\n \nPHP DataForSEO Client\nRecommended: officially supported PHP Client. Author \u2013 Vitaliy Lyabakh \u2013 jovixv\nC# DataForSEO Client\nRecommended: officially supported C# Client. Author \u2013 DataForSEO team\nJava DataForSEO Client\nRecommended: officially supported Java Client. Author \u2013 DataForSEO team\nPython DataForSEO Client\nRecommended: officially supported Python Client. Author \u2013 DataForSEO team\nTypeScript DataForSEO Client\nRecommended: officially supported TypeScript Client. Author \u2013 DataForSEO team\nPHP Simple Rest Client\nPHP REST Client build with cURL. Author \u2013 Fabio Agostinho Boris.\nPython Simple Rest Client\nPython REST Client. Author \u2013 DataForSEO.\nPHP, Python, C# and Postman examples\nChoose your preferred programming language or API testing tool.\n \nPHP Examples\nPHP code examples\nPython Examples\nPython code examples\nC# Examples\nC# code examples\nPOSTMAN Examples\nPOSTMAN examples\nPOSTMAN Documenter\nOnline POSTMAN Documenter\nData encoding\nAll data you send to DataForSEO API should be \nUTF-8\n encoded.\nIf you use one of the Clients listed in the first table, \ngzip\n will be the default format of data exchange. You will see \nContent-Encoding: gzip\n in the header.\nAll the responses are returned in the \nJSON\n\u00a0format by default, but we also support responses in the \nXML\n\u00a0format \u2013 just append \n.xml\n to the end of your request. In addition to that, you can request HTML results from endpoints that return HTML-encoded results by appending \n.html\n to the end of the request\u2019s URL path.\nFor example, the following requests will return response encoded in XML or HTML accordingly:\nhttps://api.dataforseo.com/v3/appendix/user_data.xml\nhttps://api.dataforseo.com/v3/serp/google/organic/task_get/html/09061543-1535-0066-0000-6240830f56ba.html\nRate limits\nEach of DataForSEO APIs has a certain rate limit, which you can find in the HTTP header of every endpoint.\nRate limit HTTP headers we use:\nX-RateLimit-Limit\n \u2013 the rate limit ceiling per minute for the given endpoint;\nX-RateLimit-Remaining\n \u2013 the number of requests remaining in the current rate limit window.\nIf your system requires rate limits to be increased, please contact our support team.\nResults storage\nThe term for storing API results in our system depends on the API and method of data retrieval.\nStandard\n method: results are stored for 30 days\n*\nLive\n method: results are not stored\n*\nHTML\n results: results are stored for 7 days\n*\nfor SERP API in both Standard and Live methods, the results in JSON format are stored for 30 days.\nTo learn more about the terms of results storage, \ncheck this Help Center article\n.\nDataForSEO Help Center\nNeed guidance? Visit our Help Center for integration tips, troubleshooting info, and product FAQs.\n\u2022 Live vs Standard method\n\u2022 What\u2019s task ID?\n\u2022 Task completion & lists of completed tasks\n\u2022 Using filters in DataForSEO APIs\n\u2022 Set multiple tasks in one request\n\u2022 Webhooks & callbacks\n\u2022 SERP API best practices\n\u2022 Keyword Data API best practices\n\u2022 On-Page API best practices\n\u2022 Live endpoints best practices\nAdditional resources\n \nLLMs.txt standard\nLLM-friendly docs version\nOpenAPI specification\nYAML-formatted specification for all APIs\nLangChain integration\nDataForSEO API Wrapper\nTo get detailed information about current system status, past and pending incidents, associated endpoints, incident gravity, and time to resolution, visit a dedicated \nDataForSEO Status Page.\n \n \n                cURL\n            \n                php\n            \n                Node.js\n            \n                Python\n            \n                cSharp",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "dataforseo",
+    "name": "Dataforseo",
+    "auth_schemes": [],
+    "categories": [
+      "Developer Tools",
+      "Marketing"
+    ],
+    "tools_count": 312.0,
+    "description": "SEO data and analytics platform providing SERP data, backlinks, keywords, and competitive intelligence"
+  },
+  "llm_raw": {
+    "description": "Comprehensive SEO and search engine data API providing SERP, keyword analysis, and on-page data through REST endpoints.",
+    "authentication": [
+      "API key"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://docs.dataforseo.com"
+    ],
+    "notes": "The API is well-documented with 312 endpoints reported by integration platforms; authentication is handled via API Key (Login/Password credentials used for API access).",
+    "self_confidence": 0.95
+  }
+}

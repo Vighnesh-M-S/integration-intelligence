@@ -1,0 +1,27 @@
+{
+  "id": "32",
+  "name": "Meta Ads",
+  "category": "Marketing, Ads, Email and Social",
+  "hint_url": "developers.facebook.com/docs/marketing-apis",
+  "composio_registry_match": null,
+  "description": "Meta's Marketing API enables programmatic management and optimization of ad campaigns, audiences, and insights across Facebook, Instagram, Messenger, and WhatsApp.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST+GraphQL",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://developers.facebook.com/docs/marketing-apis"
+  ],
+  "notes": "While the API is broad, implementing it for agents requires managing complex object hierarchies (campaign/ad set/ad) and strict Meta developer app review/permissions.",
+  "confidence": 0.69,
+  "needs_verification": true,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

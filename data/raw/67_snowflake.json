@@ -1,0 +1,37 @@
+{
+  "docs": {
+    "url": "https://docs.snowflake.com",
+    "status": 200,
+    "text": "Snowflake Documentation\nSnowflake Documentation\nStreamline your Snowflake journey with comprehensive documentation and learning resources\nFeatured Resources\nDive into our top picks\nuser guide\nConnecting to Snowflake\nLearn about the applications and tools that you can use to access Snowflake\nuser guide\nWorking with Virtual Warehouses\nLearn how to create and manage warehouses, which are used to process queries\nuser guide\nDatabases, Tables and Views\nLearn how to create and manage databases, tables, and views for storing and accessing your data\nuser guide\nLoad Data into Snowflake\nLearn about the different options for getting data into Snowflake and setting up a pipeline to transform your data\nDiscover the Most Popular Resources\nGetting Started\nBasic information and instructions for first-time users of Snowflake.\nGetting a Trial Account\nSnowflake in 20 Minutes\nKey Concepts and Architecture\nConnecting to Snowflake\nSee all\nUser Guides\nInstructions on performing various Snowflake operations.\nUnderstanding & Using Time Travel\nWorking with Temporary and Transient Tables\nWorking with Materialized Views\nAbout Snowflake Openflow\nSee all\nDeveloper Guides\nWrite applications that extend Snowflake, act as a client, or act as an integrating component.\nSnowflake Native App Framework\nSnowpark API\nUser-defined Functions (UDFs) and Stored Procedures\nDrivers\nSee all\nReference\nReference for SQL data types, SQL commands, SQL functions, SQL classes, scripting, views, and other areas\nSQL Data Types\nSQL Commands\nSQL Functions\nSQL Classes\nSnowflake Scripting\nSee all\nTutorials\nTutorials to help you learn the basics of using Snowflake\nSnowflake in 20 Minutes\nBulk Loading from a Local File System\nBulk Loading from Amazon S3 Using COPY\nSee all\nReleases\nOverview of the new features, enhancements, and important fixes introduced in the most recent releases of Snowflake.\nNew features\nBehavior change log\nSnowflake connector, driver, and library monthly releases\nSee all\nWhat's New\nNew features, enhancements, and important behavior changes introduced in the most recent Snowflake releases.\nSee all\nRecent Release Highlights\npreview\nOn September 30th, 2025\nDeclarative Sharing - Preview\nSnowflake is pleased to announce the preview of Declarative Sharing. Declarative Sharing in the Snowflake Native App Framework enables providers to share and sell data products, and to enhance those apps by including notebooks that help Snowflake consumers visualize data.\npreview\nOn June 2nd, 2025\nSnowpipe Streaming with High-Performance Architecture\nSnowflake is pleased to announce the preview of the Snowpipe Streaming high-performance architecture. This next-generation implementation delivers significantly enhanced throughput and optimized streaming performance with a predictable, throughput-based pricing model.\ngenerally available\nOn May 5th, 2025\nRelease channels for Snowflake Native Apps\ngenerally available\nOn May 23rd, 2025\nSearch optimization: Support for Apache Iceberg\u2122 tables\ngenerally available\nOn May 23rd, 2025\nQuery Acceleration Service: Support for Apache Iceberg\u2122 tables\ngenerally available\nOn May 23rd, 2025\nTriggered tasks: Support for streams hosted on directory tables and data shares\nAnnouncements\nStay informed and discover the latest updates, improvements, and enhancements\nBehavior Changes\nBehavior changes that may impact your usage\nPerformance Improvements\nAll features that can improve performance and make queries run faster",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "snowflake",
+    "name": "Snowflake",
+    "auth_schemes": [],
+    "categories": [
+      "Databases",
+      "Analytics"
+    ],
+    "tools_count": 16.0,
+    "description": "Snowflake is a cloud-based data warehouse offering elastic scaling, secure data sharing, and SQL analytics across multiple cloud environments"
+  },
+  "llm_raw": {
+    "description": "A cloud-based data platform that provides data storage, processing, and analytic solutions.",
+    "authentication": [
+      "OAuth2",
+      "API key"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": true,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://docs.snowflake.com"
+    ],
+    "notes": "Authentication schemes were inferred from established developer ecosystem knowledge; Composio metadata suggests high API utility. MCP support via community-driven projects exists.",
+    "self_confidence": 0.95
+  }
+}

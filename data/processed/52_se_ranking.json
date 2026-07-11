@@ -1,0 +1,29 @@
+{
+  "id": "52",
+  "name": "SE Ranking",
+  "category": "Data, SEO and Scraping",
+  "hint_url": "seranking.com/api",
+  "composio_registry_match": null,
+  "description": "Comprehensive SEO software suite providing tools for rank tracking, website auditing, backlink analysis, and keyword research.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://seranking.com/api"
+  ],
+  "notes": "The site explicitly mentions an 'MCP connector' for ChatGPT. API is well-documented for B2B/Agency use, though it typically requires a paid subscription.",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck",
+  "human_verified": true,
+  "human_verified_fields": []
+}

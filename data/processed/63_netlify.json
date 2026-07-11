@@ -1,0 +1,26 @@
+{
+  "id": "63",
+  "name": "Netlify",
+  "category": "Developer, Infra and Data platforms",
+  "hint_url": "docs.netlify.com/api",
+  "composio_registry_match": null,
+  "description": "A cloud platform for deploying, hosting, and managing web applications, sites, and serverless functions.",
+  "authentication": [
+    "OAuth2",
+    "Token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://docs.netlify.com/api"
+  ],
+  "notes": "Netlify explicitly mentions support for AI code agents in their documentation, confirming suitability for agentic integration.",
+  "confidence": 0.7,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research"
+}

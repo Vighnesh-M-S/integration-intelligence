@@ -1,0 +1,42 @@
+{
+  "id": "28",
+  "name": "WhatsApp Business",
+  "category": "Communications and Messaging",
+  "hint_url": "developers.facebook.com/docs/whatsapp",
+  "composio_registry_match": {
+    "slug": "whatsapp",
+    "name": "WhatsApp",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Phone & SMS",
+      "Communication"
+    ],
+    "tools_count": 57.0,
+    "description": "Enables interaction with customers through the WhatsApp Business API for messaging and automation. Only supports WhatsApp Business accounts, not WhatsApp Personal accounts."
+  },
+  "description": "Enterprise-grade API platform for businesses to send and receive WhatsApp messages, manage contacts, and facilitate customer communications.",
+  "authentication": [
+    "System User Token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://developers.facebook.com/docs/whatsapp"
+  ],
+  "notes": "While the doc snippet shows Bearer token auth, Meta's broader Graph API platform natively uses OAuth2 for app-level permissions, consistent with Composio's registry. [human-verified: System User Token via Meta Business Suite. Free tier 1000 conversations/month. Self-serve with Meta developer account.]",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research",
+  "human_verified": true,
+  "human_verified_fields": [
+    "authentication",
+    "self_serve"
+  ]
+}

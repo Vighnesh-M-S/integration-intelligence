@@ -1,0 +1,31 @@
+{
+  "id": "95",
+  "name": "Reducto",
+  "category": "AI, Research and Media-native",
+  "hint_url": "reducto.ai",
+  "composio_registry_match": null,
+  "description": "An agentic document processing platform that provides APIs for parsing, classifying, and extracting data from complex documents using OCR and vision-language models.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "moderate",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://reducto.ai"
+  ],
+  "notes": "Reducto is designed explicitly as a developer-first platform; while a specific MCP server is not currently listed in public registries, its REST API is highly compatible with agentic tool calling architectures. [human-verified: Free trial credits on signup. No credit card required. Instant API key at app.reducto.ai.]",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck",
+  "human_verified": true,
+  "human_verified_fields": [
+    "self_serve"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "60",
+  "name": "Clay",
+  "category": "Data, SEO and Scraping",
+  "hint_url": "clay.com",
+  "composio_registry_match": null,
+  "description": "A GTM automation platform that functions as an orchestration layer for data enrichment, AI-driven prospect research, and multi-tool workflow execution.",
+  "authentication": [
+    "API key",
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://clay.com"
+  ],
+  "notes": "Clay explicitly promotes a 'Clay MCP' server in their feature set and provides an 'Agent plugin' with API/CLI support, making it highly compatible with agentic workflows.",
+  "confidence": 0.69,
+  "needs_verification": true,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

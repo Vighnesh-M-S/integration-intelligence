@@ -1,0 +1,370 @@
+{
+  "patterns": {
+    "total_apps": 100,
+    "auth_distribution": {
+      "OAuth2": 58,
+      "API key": 53,
+      "Token": 19,
+      "Unknown": 4,
+      "App Token": 1,
+      "Bot Token": 1,
+      "System User Token": 1,
+      "JWT": 1,
+      "None": 1,
+      "Bearer Token": 1,
+      "API Token": 1,
+      "Global API Key": 1,
+      "Public Key": 1,
+      "Private Key": 1,
+      "Personal Access Token": 1,
+      "Basic": 1,
+      "Other": 1
+    },
+    "self_serve_distribution": {
+      "self_serve_free": 51,
+      "self_serve_trial": 35,
+      "gated_paid_plan": 8,
+      "gated_admin_approval": 3,
+      "gated_partnership": 2,
+      "unknown": 1
+    },
+    "top_blockers": {
+      "No public API": 5,
+      "Partnership-gated": 2
+    },
+    "mcp_coverage": {
+      "count": 42,
+      "pct": 0.42
+    },
+    "buildable_today": {
+      "count": 93,
+      "pct": 0.93
+    },
+    "by_category": {
+      "AI, Research and Media-native": {
+        "total": 10,
+        "self_serve": 9,
+        "gated": 1,
+        "buildable": 8
+      },
+      "CRM and Sales": {
+        "total": 10,
+        "self_serve": 9,
+        "gated": 1,
+        "buildable": 10
+      },
+      "Support and Helpdesk": {
+        "total": 10,
+        "self_serve": 8,
+        "gated": 2,
+        "buildable": 9
+      },
+      "Communications and Messaging": {
+        "total": 10,
+        "self_serve": 10,
+        "gated": 0,
+        "buildable": 10
+      },
+      "Marketing, Ads, Email and Social": {
+        "total": 10,
+        "self_serve": 10,
+        "gated": 0,
+        "buildable": 10
+      },
+      "Ecommerce": {
+        "total": 10,
+        "self_serve": 6,
+        "gated": 4,
+        "buildable": 9
+      },
+      "Data, SEO and Scraping": {
+        "total": 10,
+        "self_serve": 9,
+        "gated": 1,
+        "buildable": 9
+      },
+      "Developer, Infra and Data platforms": {
+        "total": 10,
+        "self_serve": 10,
+        "gated": 0,
+        "buildable": 10
+      },
+      "Productivity and Project Management": {
+        "total": 10,
+        "self_serve": 10,
+        "gated": 0,
+        "buildable": 10
+      },
+      "Finance and Fintech": {
+        "total": 10,
+        "self_serve": 5,
+        "gated": 5,
+        "buildable": 8
+      }
+    },
+    "easy_wins": [
+      "Ahrefs",
+      "Aircall",
+      "Airtable",
+      "Apify",
+      "Asana",
+      "Attio",
+      "BigCommerce",
+      "Binance",
+      "Bright Data",
+      "Clay",
+      "ClickUp",
+      "Close",
+      "Cloudflare",
+      "Coda",
+      "Copper",
+      "DataForSEO",
+      "Datadog",
+      "Discord",
+      "Ecwid",
+      "Fathom",
+      "Firecrawl",
+      "Freshdesk",
+      "Front",
+      "GitHub",
+      "GoHighLevel",
+      "Google Ads",
+      "Gorgias",
+      "Grain",
+      "Gumroad",
+      "Harvest",
+      "Help Scout",
+      "HubSpot",
+      "Intercom",
+      "Jira",
+      "Klaviyo",
+      "Lark (Larksuite)",
+      "Linear",
+      "LinkedIn Ads",
+      "LiveAgent",
+      "Mailchimp",
+      "Mermaid CLI",
+      "Meta Ads",
+      "Monday.com",
+      "MongoDB Atlas",
+      "MrScraper",
+      "Neo4j",
+      "Netlify",
+      "Notion",
+      "Otter AI",
+      "Pinterest",
+      "Pipedrive",
+      "Plaid",
+      "Plain",
+      "Podio",
+      "Pumble",
+      "QuickBooks",
+      "Reducto",
+      "SE Ranking",
+      "Salesforce",
+      "SendGrid",
+      "Sentry",
+      "Shopify",
+      "Slack",
+      "Smartsheet",
+      "Snowflake",
+      "Squarespace",
+      "Stripe",
+      "Supabase",
+      "Telegram",
+      "Threads (Meta)",
+      "Twenty",
+      "Twilio",
+      "Vercel",
+      "Vonage",
+      "WhatsApp Business",
+      "WooCommerce",
+      "Xero",
+      "YouTube Transcript",
+      "Zendesk",
+      "Zoho CRM",
+      "Zoho Cliq",
+      "higgsfield",
+      "systeme.io"
+    ],
+    "needs_outreach": [
+      "Consensus",
+      "Gladly",
+      "NotebookLM",
+      "PitchBook",
+      "Sherlock",
+      "fanbasis",
+      "iPayX"
+    ],
+    "low_confidence_count": 20,
+    "composio_registry_hits": 54
+  },
+  "verification_accuracy": {
+    "sample_size_apps": 22,
+    "fields_checked_per_app": [
+      "authentication",
+      "self_serve",
+      "buildable"
+    ],
+    "total_field_checks": 66,
+    "first_pass_accuracy": 0.667,
+    "final_accuracy": 0.652,
+    "accuracy_by_field": {
+      "authentication": {
+        "first_pass_accuracy": 0.409,
+        "final_accuracy": 0.364,
+        "total": 22
+      },
+      "self_serve": {
+        "first_pass_accuracy": 0.682,
+        "final_accuracy": 0.682,
+        "total": 22
+      },
+      "buildable": {
+        "first_pass_accuracy": 0.909,
+        "final_accuracy": 0.909,
+        "total": 22
+      }
+    },
+    "remaining_misses": [
+      {
+        "app": "Copper",
+        "field": "authentication",
+        "agent_said": "['OAuth2', 'API key']",
+        "human_said": "['API key']"
+      },
+      {
+        "app": "Freshdesk",
+        "field": "self_serve",
+        "agent_said": "self_serve_trial",
+        "human_said": "self_serve_free"
+      },
+      {
+        "app": "Pylon",
+        "field": "authentication",
+        "agent_said": "['API key', 'OAuth2']",
+        "human_said": "['API key']"
+      },
+      {
+        "app": "Plain",
+        "field": "self_serve",
+        "agent_said": "self_serve_trial",
+        "human_said": "self_serve_free"
+      },
+      {
+        "app": "Gladly",
+        "field": "authentication",
+        "agent_said": "['API key', 'OAuth2']",
+        "human_said": "['API key']"
+      },
+      {
+        "app": "Gladly",
+        "field": "self_serve",
+        "agent_said": "gated_paid_plan",
+        "human_said": "gated_partnership"
+      },
+      {
+        "app": "Gladly",
+        "field": "buildable",
+        "agent_said": "True",
+        "human_said": "False"
+      },
+      {
+        "app": "Lark (Larksuite)",
+        "field": "authentication",
+        "agent_said": "['OAuth2', 'Token']",
+        "human_said": "['OAuth2', 'App Token']"
+      },
+      {
+        "app": "Telegram",
+        "field": "authentication",
+        "agent_said": "['API key']",
+        "human_said": "['Bot Token']"
+      },
+      {
+        "app": "WhatsApp Business",
+        "field": "authentication",
+        "agent_said": "['OAuth2', 'Token']",
+        "human_said": "['System User Token']"
+      },
+      {
+        "app": "WhatsApp Business",
+        "field": "self_serve",
+        "agent_said": "self_serve_trial",
+        "human_said": "self_serve_free"
+      },
+      {
+        "app": "Vonage",
+        "field": "authentication",
+        "agent_said": "['API key', 'Token']",
+        "human_said": "['API key', 'JWT']"
+      },
+      {
+        "app": "Sherlock",
+        "field": "authentication",
+        "agent_said": "['Other']",
+        "human_said": "['None']"
+      },
+      {
+        "app": "Vercel",
+        "field": "authentication",
+        "agent_said": "['Token']",
+        "human_said": "['Bearer Token']"
+      },
+      {
+        "app": "Cloudflare",
+        "field": "authentication",
+        "agent_said": "['API key', 'Token']",
+        "human_said": "['API Token', 'Global API Key']"
+      },
+      {
+        "app": "MongoDB Atlas",
+        "field": "authentication",
+        "agent_said": "['API key']",
+        "human_said": "['Public Key', 'Private Key']"
+      },
+      {
+        "app": "Harvest",
+        "field": "authentication",
+        "agent_said": "['OAuth2']",
+        "human_said": "['OAuth2', 'Personal Access Token']"
+      },
+      {
+        "app": "Harvest",
+        "field": "self_serve",
+        "agent_said": "self_serve_trial",
+        "human_said": "self_serve_free"
+      },
+      {
+        "app": "PitchBook",
+        "field": "authentication",
+        "agent_said": "['API key', 'OAuth2']",
+        "human_said": "['API key']"
+      },
+      {
+        "app": "PitchBook",
+        "field": "self_serve",
+        "agent_said": "gated_paid_plan",
+        "human_said": "gated_partnership"
+      },
+      {
+        "app": "PitchBook",
+        "field": "buildable",
+        "agent_said": "True",
+        "human_said": "False"
+      },
+      {
+        "app": "Reducto",
+        "field": "self_serve",
+        "agent_said": "self_serve_trial",
+        "human_said": "self_serve_free"
+      },
+      {
+        "app": "Devin",
+        "field": "authentication",
+        "agent_said": "['Token']",
+        "human_said": "['API key']"
+      }
+    ]
+  }
+}

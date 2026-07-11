@@ -1,0 +1,38 @@
+{
+  "docs": {
+    "url": "https://developers.asana.com",
+    "status": 200,
+    "text": "Asana Docs\nFor AI agents: visit https://developers.asana.com/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI.\nJump to Content\nHome\nGuides\nAPI Reference\nApp directory\nDocs\nForum\nMy apps\nHome\nApp directory\nDocs\nForum\nMy apps\n      Build for Clarity, Connectivity, and Collaboration\n    \n      Integrate tools, automate actions, and customize your workflows with Asana\u2019s developer platform.\n    \n      Get started\n    \nQuick start\nNew to the Asana API? Build your first app with our step by step quick start guide. Learn to create and authorize with a token then create tasks via the API.\nView quick start guide\nTutorial: Export status updates to a CSV\nLearn to read status updates from Asana and share them in another tool. This step-by-step tutorial, example app, and recipe will help you build an app that can generate a report of status updates.\nView tutorial\n      Features\n    \nAutomate\n          Automate tedious work in powerful, bespoke ways with our platform\n          features like rule actions, webhooks, and our API. Learn about how\n          you can\n          \n            automate workflows\n          \n          .\n        \nEmbed\n          Plug your app directly into the Asana UI with\n          \napp components\n. Build app\n          components on the surface of tasks or rules so that customers can\n          use their favorite tools and stay in flow.\n        \nIntegrate\n          Many apps in our App Directory create Asana tasks and kick start\n          workflow from other tools. Learn about building and publishing apps\n          that\n          \n            keep work tools connected\n          \n          .\n        \n      Stay in touch\n    \nFollow our developer forum\nAsk questions, get updates about our Platform, and connect with other developers in the Asana community on our \ndeveloper forum\n.\nVisit our Help Center\nCan't find what you're looking for in the forum or documentation? Our Developer Support Team is here to help \u2014 reach out to us through the \nAsana Help Center\n!",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "asana",
+    "name": "Asana",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Project Management",
+      "Task Management"
+    ],
+    "tools_count": 153.0,
+    "description": "Tool to help teams organize, track, and manage their work."
+  },
+  "llm_raw": {
+    "description": "A cloud-based project and task management platform designed to help teams orchestrate work and streamline workflows.",
+    "authentication": [
+      "OAuth2"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://developers.asana.com"
+    ],
+    "notes": "Asana provides a comprehensive REST API and dedicated resources for LLM-based integrations, including a published llms.txt file.",
+    "self_confidence": 1.0
+  }
+}

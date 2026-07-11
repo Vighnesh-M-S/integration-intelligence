@@ -1,0 +1,37 @@
+{
+  "id": "3",
+  "name": "Pipedrive",
+  "category": "CRM and Sales",
+  "hint_url": "pipedrive.com",
+  "composio_registry_match": {
+    "slug": "pipedrive",
+    "name": "Pipedrive",
+    "auth_schemes": [],
+    "categories": [
+      "CRM",
+      "Sales & CRM"
+    ],
+    "tools_count": 399.0,
+    "description": "Pipedrive is a sales management tool built around pipeline visualization, lead tracking, activity reminders, and automation to keep deals progressing"
+  },
+  "description": "A web-based sales CRM and pipeline management platform designed to help businesses plan sales activities and monitor deals.",
+  "authentication": [
+    "OAuth2",
+    "API key",
+    "Token"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://pipedrive.com"
+  ],
+  "notes": "Pipedrive is widely known for its developer-friendly REST API. It supports OAuth 2.0 for marketplace integrations and personal API tokens for simple scripts, with broad endpoint coverage as reflected in its 399 tools on Composio.",
+  "confidence": 0.85,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

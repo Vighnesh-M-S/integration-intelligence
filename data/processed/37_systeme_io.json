@@ -1,0 +1,27 @@
+{
+  "id": "37",
+  "name": "systeme.io",
+  "category": "Marketing, Ads, Email and Social",
+  "hint_url": "systeme.io",
+  "composio_registry_match": null,
+  "description": "An all-in-one marketing platform for sales funnels, email automation, course hosting, and affiliate management.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "moderate",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://systeme.io"
+  ],
+  "notes": "Systeme.io provides a public REST API for managing contacts, tags, and funnels, which is sufficient for agentic automation of marketing workflows.",
+  "confidence": 0.69,
+  "needs_verification": true,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

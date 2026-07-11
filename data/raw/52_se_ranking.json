@@ -1,0 +1,26 @@
+{
+  "docs": {
+    "url": "https://seranking.com/api",
+    "status": 404,
+    "text": "Page not found - SE Ranking\n \n \n \n \n \n \n \n \n \n \n \nNew MCP connector: \n bring your live SEO and GEO data into ChatGPT. \n Learn more \u2192 \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nSE Ranking\nGrow your visibility with AI SEO\n \n \n \n \n \nSE Visible\n \n \n \nAnalyze AI visibility strategically\n \n \n \n \n \n \n \n \n \n \nPlanable\n \n \n \nManage your socials as a team\n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \n \nen\nen\nEnglish\nde\nDeutsch\nfr\nFran\u00e7ais\nes\nEspa\u00f1ol\nnl\nNederlands\nit\nItaliano\npt\nPortugu\u00eas\nua\n\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430\nru\n\u0420\u0443\u0441\u0441\u043a\u0438\u0439\n\u3042\n\u65e5\u672c\u8a9e\n \nSign in\nSee product tour\nStart free trial\n \n \n \n \n \n \nSomething went wrong\nThe page you\u2019re trying to access doesn\u2019t appear to exist. Please check the entered address and try again or go to the homepage.\n \nHome",
+    "ok": false
+  },
+  "composio_raw": null,
+  "llm_raw": {
+    "description": "A comprehensive SEO software suite providing tools for keyword tracking, website auditing, competitor research, and backlink analysis.",
+    "authentication": [
+      "API key"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": true,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://seranking.com/api"
+    ],
+    "notes": "While the specific /api page returned 404, SE Ranking maintains a well-known, established public REST API for business plans and has recently announced an official MCP connector.",
+    "self_confidence": 0.95
+  }
+}

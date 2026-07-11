@@ -1,0 +1,38 @@
+{
+  "docs": {
+    "url": "https://developer.monday.com",
+    "status": 200,
+    "text": "Developer Platform - monday.com\nJump to Content\nDeveloper Platform \u2014 monday.com\nBuild on monday, the \nAI work platform\nThe first \n100% open AI work platform\n to connect your enterprise data, automate any workflow, customize every surface, and turn any AI agent into a teammate.\nGet started\n Ask AI\nRead the docs \n\u2192\n01\n Agents\nTurn agents into teammates\nGive any agent a real identity on monday \u2014 then put it to work alongside your team, everywhere your team already works.\n01 \u00b7 MCP & API\nConnect agents to the platform\nUse our native integration, or manually connect with our hosted MCP url. Each agent gets its own identity on monday.\n02 \u00b7 Bring your own\nBring any agent in\nConnect agents from Claude, ChatGPT, Make, or any provider through a managed connection or a simple webhook \u2014 or build code-first with the apps framework. Each one gets its own identity on monday.\n03 \u00b7 Collaborate\nChat, assign, and @mention\nTalk to agents like teammates. Message them in updates, assign them items, and @mention them in any conversation to kick off real work \u2014 replies, statuses, and follow-ups included.\n04 \u00b7 Omnichannel\nUse them anywhere you work\nBring an agent in once and reach it from Slack, WhatsApp, Telegram, Make, our MCP, or the API. One identity, every surface \u2014 no rebuilding per channel.\n05 \u00b7 Governance\nGovern everything\nScope each agent's board access from the admin, audit every action it takes, and track AI credit spend across the whole org \u2014 all from one dashboard.\n06 \u00b7 Models API\nConnect to any LLM\nWire your apps and agents to leading providers \u2014 Anthropic, Google, and OpenAI \u2014 through one unified Models API.\n07 \u00b7 Agents API\nRun agents from your code\nRun and manage every monday agent programmatically from your own code, anywhere you need it.\nBefore you bring external agents or write code, try \nmonday agents\n02\n Platform API\nConnect to your monday data from anywhere\nAn expressive GraphQL API to interact with your workflows, automate processes, power integrations, and more!\nCoverage\nSecurity\nVersioning\nMCP & CLI\nBefore writing code, try the \nmonday AI workflow builder\n, or our partner connectors at:\n03\n Extensible UI\nCustomize monday to your exact needs\nBuild new views, widgets, menu actions, and doc plug-ins right inside the product. Match monday with Vibe, our open-source React components, so your app looks native from day one.\nView all customizable features \n\u2192\nViews\nBuild the views you need\nCreate custom board views, item views, dashboard widgets, and full-page apps.\nMenus\nExtend menus with your actions\nAdd actions to the item, board, and column menus, right where work happens.\nProducts\nAdd functionality everywhere\nShip new reusable workflow blocks, agent skills, and board column types.\nVibe\nOne design system\nBuild with Vibe, monday's open-source React components, and look native instantly.\nBefore coding, try turning words into work apps using \nmonday vibe\n.\n04\n App framework\nBuild and deploy apps on our infrastructure\nGet hosting, storage, secrets, and scaling on infra certified for SOC 2, HIPAA, and ISO 27001. Your data never leaves our secure servers.\nGet started with apps \n\u2192\nplaceholder \u00b7 deploy\nmonday code \ndeploy\nkv-store\nqueue\ncron\nsecrets\nlogs\nalerts\nHosting\nWrite code, skip the servers\nDeploy to isolated sandboxes monday manages. Your syncs and tools run on our infra, not yours.\nAccess\nOAuth2 scopes built in\nRequest granular scopes like \nboards:read\n. Store keys in managed secret storage.\nDeveloper MCP\nBuild and deploy using AI\nConnect the developer MCP to any agent. Scaffold, set env vars, and promote versions from chat.\nServices\nEverything apps need\nKey-value storage, a pub/sub queue, cron, logs, and alerts out of the box.\n05\n Webhooks\nTrigger workflows from any monday action\nListen for real-time events and run your workflow the moment data changes. We post the payload as it happens, signed and verifiable.\n\u00d7\nData\nAct when data changes\nSubscribe to \ncreate_item\n, \nchange_column_value\n, and more.\n\u00d7\nAgentic\nTrigger on agent activity\nFire when an agent is messaged, assigned an item, or mentioned in an update.\n\u00d7\nPlatform\nReact to platform events\nRespond when a new user joins or a board is created to keep your backend in sync.\nLearn more about webhooks\nwebhook (trigger)\nworkflow (action)\n06\n Get started\nBuild your first full stack app on monday.com developer platform\nYou\n1\nOpen a developer account\n2\nVisit the developer center\n3\nMake your first API call\n4\nConnect your IDE to our MCPs\n5\nExtend the UI\nGet started \n\u2192",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "monday",
+    "name": "Monday",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Project Management",
+      "Task Management"
+    ],
+    "tools_count": 121.0,
+    "description": "monday.com is a customizable work management platform for project planning, collaboration, and automation, supporting agile, sales, marketing, and more"
+  },
+  "llm_raw": {
+    "description": "A collaborative work operating system that enables project management, workflow automation, and the integration of AI agents as first-class team members.",
+    "authentication": [
+      "OAuth2"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "GraphQL",
+    "api_breadth": "broad",
+    "mcp": true,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://developer.monday.com"
+    ],
+    "notes": "Monday.com provides an extensive GraphQL API and explicit support for MCP (Model Context Protocol), making it highly suitable for agentic tool use.",
+    "self_confidence": 1
+  }
+}

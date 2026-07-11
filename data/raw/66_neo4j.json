@@ -1,0 +1,36 @@
+{
+  "docs": {
+    "url": "https://neo4j.com/docs/api",
+    "status": 404,
+    "text": "Page Not Found\nSkip to content\nNeo4j to acquire GraphAware, launch new open-standards intelligence analysis solutions |\n\t\t\t\t\t\t\nRead more\nMenu\nSearch\nClose Menu\nProducts\nFULLY-MANAGED\n      AuraDB    \nStore and query connected data at scale\n \n      Virtual Graph    \nCreate and query a knowledge graph on existing data\n \n      Aura Graph Analytics    \nRun graph algorithms on any data, any cloud\n \n      Aura Agent    \nBuild and deploy context-aware agents fast\n \nSELF-MANAGED\n      Graph Database    \nStore connected data with a graph database\n \n      Graph Data Science    \nRun graph algorithms on connected data\n \n      Bloom    \nSecurely query, explore, and visualize data\n \n      Fleet Manager    \nManage all your Neo4j deployments from one place\n \nAI CAPABILITIES\n      Knowledge layer    \n      AI systems    \n      GraphRAG    \nSolutions\nINDUSTRIES\n      Financial services    \n      Healthcare & life sciences    \n      Retail    \n      Telecommunications    \n      US federal government    \nTECHNICAL PATTERNS\n      Digital twin    \n      Knowledge graphs    \n      Metadata management    \n      Pattern matching    \nUSE CASES\n      AI systems    \n      Customer experiences    \n      Data privacy, risk, & compliance    \n      Fraud    \n      Identify & access management    \n      Network & IT    \n      Real-time recommendations    \n      Supply chain    \nPARTNERS\n      AWS    \n      Databricks    \n      Google Cloud    \n      Microsoft Azure    \n      Snowflake    \n      Partner directory    \n      Become a partner    \n      Customer success stories    \nCase studies, customer videos, proof points, and more\n \n      Neo4j Startup Program    \nWhy Neo4j\nFOR EXECUTIVES\n      Executive insights    \n      AI systems    \n      IDC business value study    \n      Business value calculator    \nCUSTOMERS\n      Customer success stories    \nCase studies, customer videos, proof points, and more\n \n      Contact Sales    \nDevelopers\nLEARNING CENTERS\n      Dev Center    \nBest practices, guides, tutorials, and downloads\n \n      GraphAcademy    \nFree online courses and certifications. Join the 100k+ Neo4j experts.\n \nDEV RESOURCES\n      Community    \n      Discord    \n      Developer blog    \n      Documentation    \n      Downloads    \n      Deployment Center    \nBUILD WITH AI\n      AI + graph    \n      GraphRAG    \n      Agent memory    \n      Model Context Protocol (MCP)    \n      Customer support    \nResources\nLEARN\n      Blog    \nAnnouncements, guides, and best practices\n \n      Customer success stories    \nCase studies, customer videos, proof points, and more\n \n      GraphAcademy    \nFree online courses and certifications. Join the 100k+ Neo4j experts.\n \n      Resource library    \nWhitepapers, datasheets, and more\n \n      Events hub    \nLive and on-demand events, training, webinars, and demos\n \n      Video hub    \nCovering graph databases, data science, analytics, and AI\n \nFEATURED EVENTS\n      GraphSummit 2026    \nGraphs + AI: Transform your data into knowledge\n \n      NODES 2026 | November 12    \nVirtual Conference: Engineering better intelligence\n \nPricing\nAura Login\nSupport\nGet started free\nContact us\nWarning: JavaScript is disabled on your browser. Parts of Neo4j.com will not work properly.\n\t\nSorry, item not found\nBut you might find a relevant page in the search below.",
+    "ok": false
+  },
+  "composio_raw": {
+    "slug": "neo4j",
+    "name": "Neo4J",
+    "auth_schemes": [],
+    "categories": [
+      "Developer Tools"
+    ],
+    "tools_count": 21.0,
+    "description": "Graph database platform for connected data and real-time analytics"
+  },
+  "llm_raw": {
+    "description": "A high-performance graph database management system designed to store, manage, and query highly connected data structures.",
+    "authentication": [
+      "API key",
+      "Basic"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": true,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://neo4j.com/docs/api"
+    ],
+    "notes": "Authentication typically uses HTTP Basic Auth or Bearer tokens via the Neo4j Bolt protocol or REST API. The app is widely used in agentic workflows for RAG and knowledge graph construction, supported by the official Neo4j MCP server.",
+    "self_confidence": 0.95
+  }
+}

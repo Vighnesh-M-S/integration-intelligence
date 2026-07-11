@@ -1,0 +1,37 @@
+{
+  "id": "76",
+  "name": "Monday.com",
+  "category": "Productivity and Project Management",
+  "hint_url": "developer.monday.com",
+  "composio_registry_match": {
+    "slug": "monday",
+    "name": "Monday",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Project Management",
+      "Task Management"
+    ],
+    "tools_count": 121.0,
+    "description": "monday.com is a customizable work management platform for project planning, collaboration, and automation, supporting agile, sales, marketing, and more"
+  },
+  "description": "A collaborative work operating system that enables project management, workflow automation, and the integration of AI agents as first-class team members.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "GraphQL",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://developer.monday.com"
+  ],
+  "notes": "Monday.com provides an extensive GraphQL API and explicit support for MCP (Model Context Protocol), making it highly suitable for agentic tool use.",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

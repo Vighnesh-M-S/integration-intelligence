@@ -1,0 +1,40 @@
+{
+  "id": "64",
+  "name": "Cloudflare",
+  "category": "Developer, Infra and Data platforms",
+  "hint_url": "developers.cloudflare.com/api",
+  "composio_registry_match": {
+    "slug": "cloudflare",
+    "name": "Cloudflare",
+    "auth_schemes": [],
+    "categories": [
+      "Security & Identity Tools",
+      "Developer Tools"
+    ],
+    "tools_count": 20.0,
+    "description": "Cloudflare is a global network designed to make everything you connect to the Internet secure, private, fast, and reliable."
+  },
+  "description": "A global cloud platform providing CDN, edge computing, security, and networking services for developers and organizations.",
+  "authentication": [
+    "API Token",
+    "Global API Key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://developers.cloudflare.com/api"
+  ],
+  "notes": "Cloudflare provides extensive API coverage for almost all service management tasks. MCP servers for Cloudflare exist in the open-source community (e.g., via ModelContextProtocol organization). [human-verified: Both confirmed. API Token recommended. Free tier available. Instant dashboard access.]",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research",
+  "human_verified": true,
+  "human_verified_fields": [
+    "authentication"
+  ]
+}

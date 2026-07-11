@@ -1,0 +1,27 @@
+{
+  "docs": {
+    "url": "https://pitchbook.com",
+    "status": 403,
+    "text": "Just a moment...\nEnable JavaScript and cookies to continue",
+    "ok": false
+  },
+  "composio_raw": null,
+  "llm_raw": {
+    "description": "A comprehensive data provider for private and public capital markets, offering deep intelligence on companies, investors, deals, and funds.",
+    "authentication": [
+      "API key"
+    ],
+    "self_serve": "gated_paid_plan",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": false,
+    "blocker": "requires paid plan",
+    "evidence_urls": [
+      "https://pitchbook.com",
+      "https://docs.pitchbook.com"
+    ],
+    "notes": "PitchBook operates a highly gated enterprise API model requiring custom licensing agreements; public documentation is restricted and not open for self-serve agent integration.",
+    "self_confidence": 0.9
+  }
+}

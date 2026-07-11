@@ -1,0 +1,36 @@
+{
+  "id": "41",
+  "name": "Shopify",
+  "category": "Ecommerce",
+  "hint_url": "shopify.dev",
+  "composio_registry_match": {
+    "slug": "shopify",
+    "name": "Shopify",
+    "auth_schemes": [],
+    "categories": [
+      "eCommerce"
+    ],
+    "tools_count": 315.0,
+    "description": "Shopify is an e-commerce platform. This toolkit is GraphQL-first for new Admin API automations while retaining legacy REST compatibility actions for older workflows and numeric-ID interoperability"
+  },
+  "description": "A leading e-commerce platform that enables businesses to build online stores and manage sales, inventory, and checkout.",
+  "authentication": [
+    "OAuth2",
+    "API key",
+    "Token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST+GraphQL",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://shopify.dev"
+  ],
+  "notes": "Shopify provides free Partner accounts which allow unlimited creation of development stores for building and testing apps. It features robust REST and GraphQL APIs.",
+  "confidence": 0.84,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

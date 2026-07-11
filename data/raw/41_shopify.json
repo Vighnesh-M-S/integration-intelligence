@@ -1,0 +1,37 @@
+{
+  "docs": {
+    "url": "https://shopify.dev",
+    "status": 200,
+    "text": "Shopify Dev Docs\nSkip to main content\nThe Spring \u201926 Edition is here\nShopify Dev Docs\nLearn how to build an app, or customize your storefront. Whether you're just getting started, deep in the development process, or ready to distribute and monetize your work, Shopify's docs, dev tools and frameworks make building easy and efficient.\nApps\nExtend Shopify's core functionality with apps that integrate into Shopify's admin, online store, checkout and more.\nBuild your first app\nStorefronts\nHelp merchants express their unique brand by building a custom theme or Hydrogen storefront.\nBuild a storefront\nAgents\nBuild agentic shopping experiences powered by Shopify merchants, from product discovery to checkout.\nBuild agents with UCP\nApps\nExtend Shopify's core functionality with apps that integrate into Shopify's admin, online store, checkout and more.\nBuild your first app\nStorefronts\nHelp merchants express their unique brand by building a custom theme or Hydrogen storefront.\nBuild a storefront\nAgents\nBuild agentic shopping experiences powered by Shopify merchants, from product discovery to checkout.\nBuild agents with UCP\nAccelerate development with Shopify CLI 3.0\nInitialize new \napps\n, \nthemes\n, and \nheadless storefronts\n in an instant with the latest Shopify CLI. A single command installs all the dependencies you need, including the CLI itself, so you can dive straight into development.\nApps\nInstall Shopify CLI globally.\nNavigate to the directory where you want to create your app.\nRun the second command to create a new app. Your app will be added as a new subdirectory.\nThemes\nInstall Shopify CLI globally.\nNavigate to the directory where you want to create your theme.\nRun the second command to clone a Shopify starter theme that you can build on top of. Your theme will be created in a new subdirectory.\nHeadless storefronts\nInstall Shopify CLI globally.\nNavigate to the directory where you want to create your Hydrogen storefront.\nRun the second command to initialize a Hydrogen storefront in a new subdirectory.\nInstall Shopify CLI\nnpm\nyarn\npnpm\nCopy\n9\n1\nnpm\n \ni\n \n-\ng\n \n@shopify\n/\ncli\n@latest\n9\n1\nyarn\n \nglobal\n \nadd\n \n@shopify\n/\ncli\n@latest\n9\n1\npnpm\n \nadd\n \n-\ng\n \n@shopify\n/\ncli\n@latest\nnpm\nnpm i -g @shopify/cli@latest\nyarn\nyarn global add @shopify/cli@latest\npnpm\npnpm add -g @shopify/cli@latest\nInitialize your app instance\nCopy\n9\n1\nshopify\n \napp\n \ninit\nInitialize your theme instance\nCopy\n9\n1\nshopify\n \ntheme\n \ninit\nInitialize your storefront instance\nCopy\n9\n1\nshopify\n \nhydrogen\n \ninit\nLaunch your app or theme\nApp Store\nWhen you're ready, submit your app to the \nShopify App \nStore\n so merchants can find and buy your app through search or personalized recommendations.\nSee App Store requirements\nTheme Store\nPromote and sell your custom theme to merchants building their brands on the \nShopify Theme \nStore\n.\nSee Theme Store requirements\nJoin a community of builders\n.dev Community ->\nQ&A and advice from Shopify community experts\n#### \n.dev Community ->\nQ&A and advice from Shopify community experts\n@ShopifyDevs on X ->\nProduct announcements, API updates, tips, and more\n#### \n@ShopifyDevs on X ->\nProduct announcements, API updates, tips, and more\nDeveloper Changelog ->\nThe latest Shopify ecosystem updates\n#### \nDeveloper Changelog ->\nThe latest Shopify ecosystem updates\nShopifyDevs YouTube channel ->\nTips and insights in dev and design\n#### \nShopifyDevs YouTube channel ->\nTips and insights in dev and design\nShopify Partners blog ->\nEducational resources and product previews\n#### \nShopify Partners blog ->\nEducational resources and product previews",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "shopify",
+    "name": "Shopify",
+    "auth_schemes": [],
+    "categories": [
+      "eCommerce"
+    ],
+    "tools_count": 315.0,
+    "description": "Shopify is an e-commerce platform. This toolkit is GraphQL-first for new Admin API automations while retaining legacy REST compatibility actions for older workflows and numeric-ID interoperability"
+  },
+  "llm_raw": {
+    "description": "A leading e-commerce platform that enables businesses to build online stores and manage sales, inventory, and checkout.",
+    "authentication": [
+      "OAuth2",
+      "API key",
+      "Token"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "REST+GraphQL",
+    "api_breadth": "broad",
+    "mcp": true,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://shopify.dev"
+    ],
+    "notes": "Shopify provides free Partner accounts which allow unlimited creation of development stores for building and testing apps. It features robust REST and GraphQL APIs.",
+    "self_confidence": 0.95
+  }
+}

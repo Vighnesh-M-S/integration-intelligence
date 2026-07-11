@@ -1,0 +1,31 @@
+{
+  "id": "15",
+  "name": "Pylon",
+  "category": "Support and Helpdesk",
+  "hint_url": "usepylon.com",
+  "composio_registry_match": null,
+  "description": "An AI-native B2B support platform that unifies omnichannel customer conversations into a single interface with built-in AI agents for automated routing, resolution, and account intelligence.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "gated_paid_plan",
+  "api_surface": "REST",
+  "api_breadth": "moderate",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://usepylon.com"
+  ],
+  "notes": "Pylon exposes a public API (referenced in navigation) and supports deep integration with ticketing, CRMs, and project management tools, making it highly suitable for agentic tooling. [human-verified: Paid plan required. No free tier. Demo required to onboard.]",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck",
+  "human_verified": true,
+  "human_verified_fields": [
+    "authentication"
+  ]
+}

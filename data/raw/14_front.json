@@ -1,0 +1,37 @@
+{
+  "docs": {
+    "url": "https://front.com",
+    "status": 200,
+    "text": "Front | Customer service platform \u2014 powered by AI, designed for humans\nProduct\nSolutions\nResources\nPricing\nSign in\nRequest a demo\nTry for free\nFront Overview\nProduct Tour\nWhat's New\nUse Cases\nCustomer Service\nAll-in-one support platform\nEmail Management\nCollaborative shared inboxes\nClient Communication\nPersonalized service at scale\nAI Platform\nFront AI Overview\nAI for the hard stuff\nAutopilot\nBeyond happy-path automation\nCopilot\nAI help that actually gets complexity\nSmart QA\nQA minus the blind spots\nSmart CSAT\nCSAT without the lies\nMore Features\nOmnichannel\nAll the channels, zero chaos\nTicketing\nComplexity in, clarity out\nLive chat\nChat people don\u2019t hate\nKnowledge base\nStop answering d\u00e9j\u00e0 vu\nIntegrations & API\nEscape from tab hell\nIndustries\nTech\nFinancial Services\nLogistics\nManufacturing\nProfessional Services\nTravel\nTeams\nCustomer Support\nOperations\nInbound Sales\nAccount Management\nCustomer Success\nUsing Front\nAcademy\nCommunity\nHelp Center\nDeveloper Portal\nExplore\nBlog\nIntegrations\nGuides & Webinars\nSecurity\nCustomer Stories\nDownload App\nFront's Support Report\nChannel Partnerships\nSee how Autopilot and Copilot handle what other AI tools can\u2019t.\nAI for simple support is everywhere. Complex customer operations demand Front.\nOnly Front brings teams, conversations, and AI into one coordinated system, so customer operations stay fast, accurate, and in control.\nRequest demo\nStart free trial\nCross-team coordination\nMulti-step workflows\nAI command center\nCross-team coordination\nMulti-step workflows\nAI command center\nTrusted by 9,300+ companies\nComplexity is where most customer support platforms tap out\nTeams lack shared context\nScattered tools mean incomplete context and customers who have to repeat themselves\nAI stops at simple questions\nOther AI tools can only handle simple FAQs, not real-world, complex requests\nResolution slows to a crawl\nYour agents shouldn't spend half their time fixing what AI got wrong\nWhere cross-team customer operations stops crossing wires\nFRONT AI\nResolve up to 70% of requests with AI, not just the low-hanging fruit\nFront AI takes on complex requests others escalate by automating responses, assisting teams, and analyzing quality across your entire operation. Every reply improves with each conversation.\nExplore Front AI\nCUSTOMER SUPPORT\nComplex tickets span departments, your system should too\nTackle high-stakes inquiries with full customer context and shared visibility across every team and conversation. Route, escalate, or loop in the right team to resolve issues without dropping the ball.\nFront for customer support\nOPERATIONS\nTame the inbox chaos and tackle the workflows your business depends on\nCoordinate across teams and systems from one centralized AI command center.  Eliminate bottlenecks and keep complex customer requests moving across your organization.\nFront for complex operations\nThe more complex the operation, the clearer the choice.\nFront\u2019s AI doesn\u2019t just reply. It runs the operation. G2 proves who\u2019s built for complex work.\n2026\nCapterra Customer Service Shortlist\nWhere industry complexity meets operational control\nCustomer Service Support\nWork across departments to tackle your gnarliest tickets with ease\nExplore more\nInbound Sales\nRoute requests, respond with speed, and nail the hand off every time\nExplore more\nCustomer Success\nWhere Success, Support, and Onboarding finally work as one\nExplore more\nOperations\nOrchestrate customer operations from one AI command center\nExplore more\nAccount Management\nManage complex accounts without the scramble across teams\nExplore more\nThe Coordination Tax\nA report on the hidden cost of coordination in B2B customer operations\nExplore more\n9,300+ customers trust Front with the hard stuff\n\u201cFront enabled us to transition from a one-dimensional Outlook email setup to a more dynamic platform with internal and external functionalities that we previously lacked.\u201d\nTony Peckham\nGlobal Operations Director\n\u201cFront keeps everything trackable in one place. Our agents who\u2019ve worked in support roles elsewhere say they love the way collaboration is handled in Front.\u201d\nLiz Sanchez\nSenior Customer Support Manager\n\u201cWe use tagging automation extensively. It\u2019s so flexible, yet powerful\u2014it lets us see where the biggest pain points and inefficiencies are across the business.\u201d\nRum Walia\nChief Operating Officer\n\u201cAfter switching from Zendesk, we saw our productivity improve by 40% in our member support team managing email, text, and chat channels.\u201d\nJoe Emison\nCTO & Co-founder\nWe love that we can leave a comment on an email [in Front] and escalate it, and we know that nothing will get lost in Slack. We don\u2019t need to open up tons of other tools like we used to\nLaura Ene\nCustomer Success Team Lead\nFront drives efficiency: it removes unnecessary work so the team can focus on the critical 1% of exceptions that truly matter.\nJordan Dunn\nSenior Manager, Strategic Customer Success\nAlt+Tab isn\u2019t a workflow. Unify your whole stack.\nConnect your channels and most-used tools with Front\u2019s 160+ integrations and no-code workflows bring your entire stack into one shared view.\nView all integrations\nReady to tame the insanity? Come to Front.\nRequest a demo\nTry for free\nDon't miss these\nBlog\nTake control of service quality with AI: Smart QA & ticketing for modern support leaders\nBlog\n15 must-track SLA metrics to keep your team and customers aligned\nBlog\nHow to reduce email overload for your team\nBlog\nShared inbox rules: How to set them up successfully",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "front",
+    "name": "Front",
+    "auth_schemes": [],
+    "categories": [
+      "CRM",
+      "Sales & Customer Support"
+    ],
+    "tools_count": 0.0,
+    "description": "Front is a shared inbox and collaboration platform that centralizes customer communications from multiple channels, enabling teams to manage emails, chats, and more"
+  },
+  "llm_raw": {
+    "description": "A customer service and communication platform that unifies shared inboxes, ticketing, and AI-powered collaboration tools across multiple channels.",
+    "authentication": [
+      "API key",
+      "OAuth2"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://front.com"
+    ],
+    "notes": "Front provides a comprehensive developer platform with extensive documentation for custom integrations and internal apps, contrary to the empty toolkit registry entry.",
+    "self_confidence": 0.95
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "id": "98",
+  "name": "Mermaid CLI",
+  "category": "AI, Research and Media-native",
+  "hint_url": "github.com/mermaid-js/mermaid-cli",
+  "composio_registry_match": null,
+  "description": "A command-line interface for generating SVG, PNG, or PDF files from Mermaid diagram definition files.",
+  "authentication": [
+    "Unknown"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "none_public",
+  "api_breadth": "narrow",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://github.com/mermaid-js/mermaid-cli"
+  ],
+  "notes": "The tool is an open-source CLI/Node.js library rather than a SaaS with a public web API; it is directly consumable as a local dependency or shell command by agents.",
+  "confidence": 0.69,
+  "needs_verification": true,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

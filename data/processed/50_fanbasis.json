@@ -1,0 +1,27 @@
+{
+  "id": "50",
+  "name": "fanbasis",
+  "category": "Ecommerce",
+  "hint_url": "fanbasis.com",
+  "composio_registry_match": null,
+  "description": "An all-in-one digital business infrastructure platform for selling high-ticket knowledge, services, and digital products with integrated payments and fulfillment.",
+  "authentication": [
+    "Unknown"
+  ],
+  "self_serve": "gated_admin_approval",
+  "api_surface": "unclear",
+  "api_breadth": "unknown",
+  "mcp": false,
+  "buildable": false,
+  "blocker": "no public API documentation available",
+  "evidence_urls": [
+    "https://fanbasis.com"
+  ],
+  "notes": "The platform functions as a closed enterprise-grade infrastructure; public developer documentation or API references are not accessible via their marketing site.",
+  "confidence": 0.69,
+  "needs_verification": true,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

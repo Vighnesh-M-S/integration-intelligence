@@ -1,0 +1,35 @@
+{
+  "id": "40",
+  "name": "SendGrid",
+  "category": "Marketing, Ads, Email and Social",
+  "hint_url": "sendgrid.com",
+  "composio_registry_match": {
+    "slug": "sendgrid",
+    "name": "SendGrid",
+    "auth_schemes": [],
+    "categories": [
+      "Transactional Email",
+      "Email Newsletters"
+    ],
+    "tools_count": 359.0,
+    "description": "SendGrid is a cloud-based email delivery platform providing transactional and marketing email services, with APIs for integration, analytics, and scalability"
+  },
+  "description": "Cloud-based email infrastructure platform providing transactional email APIs, SMTP relay, and marketing campaign management tools.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://sendgrid.com"
+  ],
+  "notes": "Authentication is primarily via API Key (often referred to as 'Authorization: Bearer' tokens in their docs). Broad API surface is well-documented on the Twilio/SendGrid developer portal.",
+  "confidence": 0.85,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

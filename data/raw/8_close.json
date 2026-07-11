@@ -1,0 +1,36 @@
+{
+  "docs": {
+    "url": "https://close.com",
+    "status": 200,
+    "text": "Close CRM | Sales CRM with Built-In AI Sales Agent\nDemo\nLog In\nTry for free\nThe sales CRM built for calling, emailing, texting, automation and action\nThe sales CRM built for \ncalling\nemailing\ntexting\nautomation\naction\nTry for free\nNo credit card required\nWhat is Close?\nClose is a sales CRM built for teams that sell. It \ncombines calling, email, SMS, pipeline management, \nreporting, and an AI sales agent named Chloe into a \nsingle platform. Close helps teams act on their sales \ndata.\nWhat is Chloe?\nChloe is an AI sales agent built into Close CRM that \ncalls leads, qualifies prospects through real \nconversations, and can book meetings while updating \nyour CRM automatically. She is part of the CRM \u2014 not \na separate tool or integration.\n11,500+\nSales teams trust Close\n2B+\nCalls, emails, and texts\n4.7\nRated on G2\n\u201c\nOur booked appointments per week have gone up ~50% since Chloe went live.\nBuilt for conversations.\nNow Close runs them, end-to-end.\nCalling, SMS, email, and pipeline. \nAll in one place: working your deals for you.\nNew lead comes in?\nContacted instantly\nA lead hits your pipeline. Chloe calls within minutes \u2014 using Close\u2019s built-in dialer. Transcript, notes, and next steps logged automatically.\nStart your free trial\nCold lead sitting in your CRM?\nRe-engaged automatically\nWhen Chloe finds cold leads she re-opens the conversation and sends warm responses straight to your rep's inbox.\nRe-engage cold leads\nYour rep forgot to follow-up?\nFollowed up and moved forward\nChloe instantly writes the follow-up, sends it at the right time, and updates the deal stage so nothing falls through the cracks.\nAutomate follow-ups\nYour lead is now qualified and ready for sales\nHandled and routed\nChloe qualified your lead, booked your meeting, assigned the right rep, and now prepped your notes, before the call even starts.\nUpdate your CRM\n\u201c\nWe've saved over $100,000 in tech costs switching from Salesforce to Close. We're doing things we never dreamed of doing in a CRM.\n\u201c\n\"If you're worried your clients will be turned off by AI, don't be \u2014 it's just noise. Close and Chloe have done nothing but impact my bottom line in a positive way.\"\nCustomers can\u2019t stop talking about how much they love Close\nReal customers loving Close and Chloe:\nYour CRM has all the data. \u2028Now it can act on it.\nChloe turns your pipeline data into calls, follow-ups, and booked meetings. Without your reps even lifting a finger.\nSummarized calls\nAutomatic follow-ups\nUpdated CRM\nSurfaced insights\nEvery call, captured and summarized\nChloe generates a complete AI summary of every lead \u2014 pulling from calls, emails, and meetings. Full transcripts, action items, and key moments are all logged to the CRM automatically\nThe right message, right on time\nChloe prepares follow-ups based on call transcripts and sends them or queues them for your rep to review.\nThe CRM that updates itself\nEvery conversation moves your deal forward. Plus, Chloe fills contact fields with rich data insights from LinkedIn and the web.\nDaily action-items\nHot leads waiting for follow-up while other deals stall? Not anymore. Chloe's on top of everything.\n\u201c\nWe\u2019re not using AI to replace people. We\u2019re doing it so that the people we have are unlocked to do more. Chloe is not just innovation. She is actually creating the work we need to do.\nWorks with the tools you already use\nClose connects to your favorite sales, marketing, and support tools. Out of the box.\nSee all integrations\nDon't take our word for it\nAsk AI\nabout Close\nSee an unfiltered review of Close before you come back and start your free trial.\n      Ask ChatGPT\n      \n      Ask Claude\n      \n      Ask Perplexity\n      \nPrompt copied \u2014 open Claude and paste to get started \u2713\nLike what you heard?\nTry for free\nBuilt for teams that build\nBuild on Close\nREST API, webhooks, and MCP server. \u2028Everything you need to customize Close for the way your team works.\nExplore the developer platform\nStop missing leads. Start closing deals.\nThe best part of sales is still you. Chloe handles the rest.\n\u201c\nNo matter what business model you\u2019re in, your competition is about to be using this technology.\nTry for free\nNo credit card required.",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "close",
+    "name": "Close",
+    "auth_schemes": [],
+    "categories": [
+      "CRM",
+      "Drip Emails"
+    ],
+    "tools_count": 6.0,
+    "description": "Close is a CRM platform designed to help businesses manage and streamline their sales processes, including calling, email automation, and predictive dialers."
+  },
+  "llm_raw": {
+    "description": "A sales CRM platform that integrates calling, email, SMS, and pipeline management with an embedded AI agent named Chloe for automated lead qualification and follow-up.",
+    "authentication": [
+      "API key"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": true,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://close.com"
+    ],
+    "notes": "Close provides a robust REST API and explicitly mentions an official MCP server on their developer page. API key authentication is the industry standard for their REST API.",
+    "self_confidence": 1
+  }
+}

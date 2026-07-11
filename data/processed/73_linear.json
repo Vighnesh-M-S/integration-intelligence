@@ -1,0 +1,38 @@
+{
+  "id": "73",
+  "name": "Linear",
+  "category": "Productivity and Project Management",
+  "hint_url": "developers.linear.app",
+  "composio_registry_match": {
+    "slug": "linear",
+    "name": "Linear",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Project Management",
+      "Task Management"
+    ],
+    "tools_count": 46.0,
+    "description": "Linear is a streamlined issue tracking and project planning tool for modern teams, featuring fast workflows, keyboard shortcuts, and GitHub integrations"
+  },
+  "description": "Linear is a streamlined project management tool designed for high-performance software development teams to track issues and sprints.",
+  "authentication": [
+    "OAuth2",
+    "API key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "GraphQL",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://developers.linear.app"
+  ],
+  "notes": "Linear provides a comprehensive GraphQL API and official TypeScript SDK, making it highly suitable for AI agent integration.",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

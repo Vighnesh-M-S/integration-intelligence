@@ -1,0 +1,29 @@
+{
+  "id": "16",
+  "name": "LiveAgent",
+  "category": "Support and Helpdesk",
+  "hint_url": "liveagent.com",
+  "composio_registry_match": null,
+  "description": "An all-in-one omnichannel help desk platform featuring ticketing, live chat, call center, and built-in AI automation tools.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://liveagent.com"
+  ],
+  "notes": "LiveAgent provides a well-documented REST API used by many third-party integrations, making it highly suitable for agent toolkits.",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck",
+  "human_verified": true,
+  "human_verified_fields": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": "87",
+  "name": "Xero",
+  "category": "Finance and Fintech",
+  "hint_url": "developer.xero.com",
+  "composio_registry_match": {
+    "slug": "xero",
+    "name": "Xero",
+    "auth_schemes": [],
+    "categories": [
+      "Accounting"
+    ],
+    "tools_count": 53.0,
+    "description": "Xero is a cloud-based accounting software for small businesses, providing invoicing, bank reconciliation, bookkeeping, and financial reporting in real time"
+  },
+  "description": "A cloud-based accounting software platform for small businesses, providing comprehensive financial management, invoicing, and reporting capabilities.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://developer.xero.com"
+  ],
+  "notes": "Composio integration data confirmed existence of OAuth2 and a large tool count. Xero docs explicitly mention an 'OpenAI Agents SDK' and 'MCP Server'.",
+  "confidence": 0.85,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

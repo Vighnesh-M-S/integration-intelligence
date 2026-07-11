@@ -1,0 +1,37 @@
+{
+  "docs": {
+    "url": "https://freshdesk.com",
+    "status": 200,
+    "text": "Freshdesk: AI-powered platform for modern customer service | Freshworks\nFRESHDESK\nCustomer service that puts people first\nWith Freshdesk, AI handles the complexity from day one while your team builds the connections. All in a central workspace designed for faster and accurate resolutions.\nTry it free\nBook a demo\nTRUSTED BY 74,000+ BUSINESSES WORLDWIDE \nIntroducing Vertical AI Agents and a new customer service home\nResolve complex, yet repetitive queries with ready-to-launch Vertical AI Agents and 50+ prebuilt agentic workflows. Bring every conversation, AI intelligence, and customer insight together in the Freshdesk Command Center.\nLaunch AI agents in minutes\nResolve in a central workspace\nSeamless support. Smarter agents. Faster resolutions.\nUnify every channel, cut the noise, and give agents an easy-to-use platform to resolve requests without missing a beat. With Freshdesk, you don\u2019t just keep up, you stay ahead.\nAuto-resolve issues with AI agents\nAI agents go beyond suggestions. They take action. From resolving routine queries to updating records and processing requests, these digital teammates handle the busywork. No waiting, no hand-holding. Just automated resolutions, 24/7.\n0:00\n/ \n0:00\nBe resolution ready with a single workspace\nWork smarter with AI Copilot and AI Insights\nStreamline every queue, every time\nMeet\u00a0Freddy AI\nFrom AI Agents that resolve queries and tasks to AI Copilot and AI Insights for human agents and leaders, Freddy combines automation and intelligence to help your team work more efficiently, scale effortlessly, and deliver great experiences across every channel.\nLearn more\nJoin 74,000+ companies uncomplicating customer service\nView all customer stories\nI want the ability to get one view of how we support our customers\u2014not just the number of tickets, but any information on how we interact with them. You've got to bring everything into one platform. Freshworks allows us to do that.\nTony Barbone\nChief Revenue Officer\nRead more\nFreshdesk\u2019s agent workspace, and how it worked, was very user-friendly\u2014it had all the features we needed to collect tickets, assign tickets to different agents, and store information.\nLuke Gaspar\nField Engineer\nRead more\nI had team members who weren\u2019t comfortable at all with emails. With Freddy AI, they\u2019ve gained so much confidence, and the quality of emails they\u2019re sending now is remarkable.\nKeira Hayter\nSales Team Manager\nRead more\nAI chatbots now answer up to 30% of questions, helping to free up Hobbycraft's agents so they can spend more time sharing their crafting knowledge.\nSimon Birch\nHead of Customer Experience, Hobbycraft\nRead more\nThe full customer service experience\nEverything you need to support customers and empower teams\u2014all in one place, available out of the box.\nOmnichannel customer service\nSupport customers on any channel with AI, context, and workflows in one connected view.\nFreshdesk Command Center\nBring every conversation, AI Intelligence, and customer insight into a single, central view.\nAdvanced ticketing\nResolve issues that need deeper problem solving with a robust ticketing platform.\nFreddy AI Agent\nResolve complex, repetitive queries with ready to launch AI agents.\nFreddy AI Copilot\nHelp agents work smarter with AI summaries, live translations, reply suggestions, and more.\nFreddy AI Insights\nGive proactive visibility to leaders when issues arise and ask questions to get instant insights.\nSelf-service\nEmpower customers to find answers with AI agents and knowledge base.\nCollaboration\nSolve complex issues that require multiple teams easily.\nAdvanced workflows\nAutomate routing, prioritization, SLAs based on sentiment, agent skills, and workload.\nIndustry-leading results with Freshdesk\nUp to 80%\nResolutions with Freddy AI Agent\n<2 mins\nAverage conversational resolution time\n97%\nOmnichannel first contact resolution rate\n60%\nImproved agent productivity with Freddy AI Copilot\n*Stats sourced from Customer Results and \nCustomer Service Benchmark Report 2025\nINSTALL. CUSTOMIZE. BUILD.\nConnect your business apps\nIntegrate with the tools your team relies on, seamlessly connected with Freshdesk. Get started without any complexity.\nExplore integrations\nTOP-RATED\nThe experts agree\nRecognized by G2 and TrustRadius for delivering modern, AI-powered customer service that drives results.\nExplore insights & resources on AI-powered customer service\nReal-world stories, practical insights, and tools to help you deliver modern, AI-powered customer service.\nReport\n2025 Customer Service Report\nEvaluate your performance against industry competitors to see how you measure up.\nStudy\nForrester on the TEI of Freshworks\nSee the Total Economic ImpactTM of ticketing and conversational support in one with Freshworks.\nGet started with Freshdesk\nTrial\nFree to try. Fast to scale.\nExperience the power of Freshdesk with a free trial. No credit card needed. Set up in minutes and see immediate value.\nTry it free\nContact Sales\nSee rapid impact in action\nLet our product experts show you how Freshdesk can solve your specific challenges. Get a personalized walkthrough tailored to your needs.\nBook a demo\nProduct Tour\nLearn, explore, get inspired\nCheck out the interactive product tour to explore Freshdesk\u2019s capabilities.\nTake the tour",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "freshdesk",
+    "name": "Freshdesk",
+    "auth_schemes": [],
+    "categories": [
+      "CRM",
+      "Customer Support"
+    ],
+    "tools_count": 178.0,
+    "description": "Freshdesk provides customer support software with ticketing, knowledge base, and automation features for efficient helpdesk operations and better customer experiences"
+  },
+  "llm_raw": {
+    "description": "A cloud-based customer support and helpdesk software platform that integrates AI-powered agents and automation to manage omnichannel service workflows.",
+    "authentication": [
+      "API key",
+      "OAuth2"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://freshdesk.com"
+    ],
+    "notes": "Freshdesk provides a highly mature, broad REST API. Composio registry indicates 178 tools, confirming strong agentic capability.",
+    "self_confidence": 0.95
+  }
+}

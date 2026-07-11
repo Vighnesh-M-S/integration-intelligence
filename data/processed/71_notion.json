@@ -1,0 +1,40 @@
+{
+  "id": "71",
+  "name": "Notion",
+  "category": "Productivity and Project Management",
+  "hint_url": "developers.notion.com",
+  "composio_registry_match": {
+    "slug": "notion",
+    "name": "Notion",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Notes",
+      "Documents",
+      "Project Management"
+    ],
+    "tools_count": 45.0,
+    "description": "Notion centralizes notes, docs, wikis, and tasks in a unified workspace, letting teams build custom workflows for collaboration and knowledge management"
+  },
+  "description": "A connected workspace for wiki, docs, and project management, allowing teams to collaborate and organize information.",
+  "authentication": [
+    "OAuth2",
+    "API key",
+    "Token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://developers.notion.com"
+  ],
+  "notes": "Notion has a highly mature REST API supporting OAuth 2.0 and API keys (Internal integrations / Personal Access Tokens). Community MCP servers exist for Notion.",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

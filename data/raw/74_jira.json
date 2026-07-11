@@ -1,0 +1,38 @@
+{
+  "docs": {
+    "url": "https://developer.atlassian.com",
+    "status": 200,
+    "text": "Developer\nDocumentation\nResources\nNews and Updates\nGet Support\nSign in\nDeveloper\nGet Support\nSign in\nDOCUMENTATION\nCloud\nData Center\nResources\nNews and Updates\nGet support\nSign in\nDeveloper\nSign in\nDOCUMENTATION\nCloud\nData Center\nResources\nNews and Updates\nGet support\nSign in",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "jira",
+    "name": "Jira",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Project Management",
+      "Task Management"
+    ],
+    "tools_count": 97.0,
+    "description": "A tool for bug tracking, issue tracking, and agile project management."
+  },
+  "llm_raw": {
+    "description": "A comprehensive project management and issue tracking platform for agile software development teams.",
+    "authentication": [
+      "OAuth2"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "REST+GraphQL",
+    "api_breadth": "broad",
+    "mcp": true,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://developer.atlassian.com"
+    ],
+    "notes": "Jira provides an extensive REST API for issue management, workflow automation, and project administration, widely supported by existing agentic frameworks.",
+    "self_confidence": 1.0
+  }
+}

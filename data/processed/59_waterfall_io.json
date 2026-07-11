@@ -1,0 +1,27 @@
+{
+  "id": "59",
+  "name": "Waterfall.io",
+  "category": "Data, SEO and Scraping",
+  "hint_url": "waterfall.io",
+  "composio_registry_match": null,
+  "description": "A GTM enrichment API that aggregates data from 30+ providers to supply verified emails, mobile numbers, and prospect profiles.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "gated_paid_plan",
+  "api_surface": "REST",
+  "api_breadth": "moderate",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://waterfall.io"
+  ],
+  "notes": "Self-serve status is classified as gated_paid_plan because the site emphasizes 'Book a Call' for access and pricing rather than a public signup/key generation page.",
+  "confidence": 0.69,
+  "needs_verification": true,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

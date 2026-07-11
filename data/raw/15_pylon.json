@@ -1,0 +1,27 @@
+{
+  "docs": {
+    "url": "https://usepylon.com",
+    "status": 200,
+    "text": "Pylon | AI-native B2B Support\n \n \nRegister for our upcoming webinar \u2192 \nPylon's biggest announcement yet\nYour support platform wasn't built for \nAI\nPylon is AI-native B2B support, across every channel.\nSee Pylon\nThank you! Your submission has been received!\nOops! Something went wrong while submitting the form.\nMigrated off Zendesk\nMigrated off Intercom\nOthers\nAutomate resolution\nEvery channel, full context\nSlack, Teams, WhatsApp, email \u2014 all in one place, with complete account history on every conversation.\nLearn More\nRouting based on intent\nAI reads the issue, identifies the right team, and routes instantly \u2014 eliminating manual triage queues.\nLearn More\nKnowledge automation\nAI finds gaps in your KB, drafts articles, and surfaces the right answer before your team has to search.\nLearn More\nAccount Intelligence\nSupport conversations surface churn signals, feature requests, and renewal risk automatically.\nLearn More\nBuild a support engine\nOmnichannel\nSupport customers \nanywhere.\nBring every customer conversation \u2014 Slack, WhatsApp, Email, Chat, Teams, Discord and more \u2014 into a single view.\nLearn about Omnichannel Support\nManage \nSlack Connect and Community\n \nchannels in Pylon\nSupport \nMicrosoft Teams\n users without switching apps\nTrack all \nDiscord\n conversations and forums in one place \nAI\nWork faster with\n AI built\n for B2B.\nRoute issues, identify and fill knowledge gaps, draft articles and replies, categorize tickets, surface insights across accounts, generate charts, and Ask AI any question about your customers.\nLearn about AI Assistants + Agents\nAutomate repetitive tasks\n and ticket pre-work \nAsk AI\n\u00a0anything and get answers with sources\nFill \nknowledge gaps\n and automatically generate docs\nAccount Intelligence\nSurface the right context for \neach team.\nManage accounts proactively with shared context from support, success, and sales in one view.\nLearn about Account Intelligence\nTrack \nkey account signals\n \nautomatically\nSee full \ncustomer context\n in seconds\nTurn conversations into actionable \ntasks and projects\nLearn from the best\n90%\ndecrease in First Response Time,\n from 35 minutes to < 3.5 minutes\nLearn more\n90%\ndecrease in First Response Time,\n from 35 minutes to < 3.5 minutes\nLearn more\n90%\ndecrease in First Response Time,\n from 35 minutes to < 3.5 minutes\nLearn more\n90%\ndecrease in First Response Time,\n from 35 minutes to < 3.5 minutes\nLearn more\nOpen Case Study\nOpen Case Study\n50%\nof eligible support inquiries resolved without human intervention\nLearn more\n50%\nof eligible support inquiries resolved without human intervention\nLearn more\n50%\nof eligible support inquiries resolved without human intervention\nLearn more\n50%\nof eligible support inquiries resolved without human intervention\nLearn more\nOpen Case Study\nOpen Case Study\n8x\nfaster resolution time, despite 76% more ticket volume\nLearn more\n8x\nfaster resolution time, despite 76% more ticket volume\nLearn more\n8x\nfaster resolution time, despite 76% more ticket volume\nLearn more\n8x\nfaster resolution time, despite 76% more ticket volume\nLearn more\nOpen Case Study\nOpen Case Study\nSecurity & trust\nCompliance\nWe are SOC 2 Type II, GDPR, ISO 27001, and HIPAA compliant.\nLearn more\nInvestors\nWe've raised $50M from the best firms including a16z, Bain Capital Ventures, General Catalyst, and YC.\nLearn more\nIndustry\nWe have earned dozens of badges and are rated 5 stars on G2.\nLearn more\nWant faster, smarter customer support?\nSee how Pylon cuts the busywork and brings your support teams into one place.\nBook a Demo\nSee our latest updates\nIndustry\nWhat\u2019s Customer Retention? Key Benefits for Your Company\nDan Guo\nNovember 20, 2025\nLearn more\nBlog post\nBlog post\nGuides\nPrinciples and Strategies for Effective Customer Support\nDan Guo\nNovember 7, 2025\nLearn more\nBlog post\nBlog post\nIndustry\nCustomer Retention Strategies and Insights To Reduce Churn\nDan Guo\nNovember 20, 2025\nLearn more\nBlog post\nBlog post",
+    "ok": true
+  },
+  "composio_raw": null,
+  "llm_raw": {
+    "description": "An AI-native omnichannel support platform that unifies customer communication channels (Slack, Email, WhatsApp, etc.) for B2B teams.",
+    "authentication": [
+      "API key",
+      "OAuth2"
+    ],
+    "self_serve": "gated_paid_plan",
+    "api_surface": "REST",
+    "api_breadth": "moderate",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://usepylon.com"
+    ],
+    "notes": "Pylon is targeted at enterprise B2B support and generally requires a sales conversation for access, though they maintain a developer-facing REST API for integrations.",
+    "self_confidence": 0.85
+  }
+}

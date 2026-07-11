@@ -1,0 +1,27 @@
+{
+  "docs": {
+    "url": "https://open.larksuite.com",
+    "status": 200,
+    "text": "Lark \u5f00\u653e\u5e73\u53f0",
+    "ok": true
+  },
+  "composio_raw": null,
+  "llm_raw": {
+    "description": "An all-in-one collaboration suite integrating instant messaging, video conferencing, document collaboration, and project management tools.",
+    "authentication": [
+      "OAuth2",
+      "Token"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://open.larksuite.com"
+    ],
+    "notes": "Lark provides an extensive Open Platform API covering almost every aspect of the suite (IM, Calendar, Docs, Drive, HR, etc.), making it highly suitable for agent tooling.",
+    "self_confidence": 0.95
+  }
+}

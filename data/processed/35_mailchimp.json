@@ -1,0 +1,38 @@
+{
+  "id": "35",
+  "name": "Mailchimp",
+  "category": "Marketing, Ads, Email and Social",
+  "hint_url": "mailchimp.com/developer",
+  "composio_registry_match": {
+    "slug": "mailchimp",
+    "name": "Mailchimp",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Email Newsletters",
+      "Marketing Automation"
+    ],
+    "tools_count": 272.0,
+    "description": "Mailchimp is an email marketing and automation platform providing campaign templates, audience segmentation, and performance analytics to drive engagement and conversions"
+  },
+  "description": "An all-in-one marketing platform providing APIs for email marketing campaigns, transactional messaging, and e-commerce stack integration.",
+  "authentication": [
+    "OAuth2",
+    "API key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST+GraphQL",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://mailchimp.com/developer"
+  ],
+  "notes": "Mailchimp Marketing API supports both OAuth2 and API Key authentication. Open Commerce utilizes GraphQL.",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

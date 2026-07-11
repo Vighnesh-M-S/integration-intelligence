@@ -1,0 +1,40 @@
+{
+  "docs": {
+    "url": "https://clickup.com/api",
+    "status": 200,
+    "text": "ClickUp\nFor AI agents: visit https://developer.clickup.com/llms.txt for an index of all pages formatted in Markdown and endpoints in OpenAPI.\nJump to Content\nHome\nGuides\nAPI Docs\nHome\nJump to Content\n        Develop innovative solutions with the ClickUp API\n      \n        Build integrations and apps with our Public API.\n\t      Connect your AI with ClickUp using our MCP Server.\n      \nAPI\n            Browse our Public API specification.\n          \nMCP\n            Use ClickUp right from your AI assistant.\n          \nWebhooks\n            Trigger workflows from ClickUp events.\n          \nOAuth\n\t\t\t\t\t\tLet people sign into their ClickUp account.\n          \nGet started with the API\nTry the API\n                Download the spec\n              \nGet started with the MCP\nMCP setup instructions\n                MCP tools\n              \nGet support\n                Contact ClickUp support\n\t\t\t\t\t\t\t\n                Share your feedback",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "clickup",
+    "name": "ClickUp",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Productivity",
+      "Project Management",
+      "Task Management"
+    ],
+    "tools_count": 162.0,
+    "description": "ClickUp unifies tasks, docs, goals, and chat in a single platform, allowing teams to plan, organize, and collaborate across projects with customizable workflows"
+  },
+  "llm_raw": {
+    "description": "A comprehensive cloud-based project management and productivity platform for task tracking, document collaboration, and workflow automation.",
+    "authentication": [
+      "OAuth2"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": true,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://clickup.com/api",
+      "https://developer.clickup.com/llms.txt"
+    ],
+    "notes": "Composio integration data supports the OAuth2 authentication scheme; official documentation confirms explicit support for MCP.",
+    "self_confidence": 1.0
+  }
+}

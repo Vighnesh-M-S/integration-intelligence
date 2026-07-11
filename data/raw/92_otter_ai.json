@@ -1,0 +1,26 @@
+{
+  "docs": {
+    "url": "https://help.otter.ai",
+    "status": 200,
+    "text": "Help Center\nSkip to main content\n|\nHelp Center\nHelp Center\n  Hi there! How can we help? \nSearch\nQuick topics:\nauto-join\n,\n  \nnotetaker meeting\n,\n  \ncalendar\nCategories\nGetting started\nNew to Otter? Here are the basics to get started with Otter.\nUsing Otter\nFrom recording to creating groups, learn how Otter works from top to bottom.\nMeeting settings & recordings\nLearn about managing your settings and features for your online meetings.\nOtter Enterprise\nLearn how to use and manage Otter Enterprise features.\nOtter Workspaces\nLearn how to manage your team in Otter. \nIntegrations\nConnect, simplify, and automate. Discover the power of apps.\nAccount settings & billing\nAdjust your settings and manage your billing in Otter.\nAnnouncements\n\u2728\n    Tips & shortcuts\n  \nOtter Chat & Quick Search\n        Press \n\u2318/Ctrl + K\n to open the search bar to ask Otter Chat or search for conversations.\n      \nManage Otter Notetaker Settings\nAll Notetaker settings (e.g., \nauto-share\n, \nauto-join\n) can be managed in \nAccount Settings > Meetings\n.\n      \nRecord without headphones\nDownload our \nDesktop app\n to record meetings without headphones.\n      \nPromoted articles\n                  What is Otter?\n                  \n                \n                  Otter.ai features\n                  \n                \n                  Otter Quick Start Guide\n                  \n                \n                  Otter Recording Best Practices: Pause, Resume and Upload\n                  \n                \n                  Custom Meeting Type Templates\n                  \n                \n                  Otter AI Chat Overview\n                  \n                \n                  Using Otter Chat during a live meeting\n                  \n                \n                  I have an issue with one of my conversations\n                  \n                \n                  Troubleshoot audio recording problems\n                  \n                \n                  Conversation Page Overview \ud83c\udd95\n                  \n                \n                  Fix problems importing files to Otter\n                  \n                \n                  Set up Otter Notetaker to join your Zoom meeting\n                  \n                \n                  Automatically add Otter Notetaker to your meetings\n                  \n                \n                  Manage your Otter Notetaker settings\n                  \n                \n                  Stop Otter Notetaker from automatically joining your meetings\n                  \n                \n                  \ud83d\ude80 Otter.ai Enterprise Onboarding Guide\n                  \n                \n                  Enterprise Admin Controls Overview\n                  \n                \n                  Otter HubSpot for Enterprise\n                  \n                \n                  Otter Salesforce for Enterprise\n                  \n                \n                  HIPAA | Otter.ai\n                  \n                \n                  Workspace Overview\n                  \n                \n                  Otter Workspace Admin Guide\n                  \n                \n                  Invite members to join your Workspace\n                  \n                \n                  Managing your Workspace trial members\n                  \n                \n                  Understanding how seats (licenses) work\n                  \n                \n                  Zapier <> Otter.ai Integration\n                  \n                \n                  Connect Salesforce with Otter.ai\n                  \n                \n                  Connect Slack to Otter.ai\n                  \n                \n                  Connect HubSpot with Otter.ai\n                  \n                \n                  My paid subscription is not showing\n                  \n                \n                  Contact Otter.ai Support\n                  \n                \n                  Otter transcript missing audio when using a Chrome browser\n                  \n                \n\u00d7\n\u276e\n\u276f",
+    "ok": true
+  },
+  "composio_raw": null,
+  "llm_raw": {
+    "description": "An AI-powered meeting assistant that records, transcribes, and summarizes voice conversations in real-time.",
+    "authentication": [
+      "OAuth2"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "REST",
+    "api_breadth": "moderate",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://help.otter.ai"
+    ],
+    "notes": "Otter provides a REST API primarily for Enterprise customers and specific integrations; public developer documentation is limited compared to general SaaS platforms.",
+    "self_confidence": 0.85
+  }
+}

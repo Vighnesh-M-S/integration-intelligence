@@ -1,0 +1,27 @@
+{
+  "docs": {
+    "url": "https://paygent (NMI-powered)",
+    "status": null,
+    "text": "",
+    "ok": false,
+    "error": "HTTPSConnectionPool(host='paygent%20(nmi-powered)', port=443): Max retries exceeded with url: / (Caused by NameResolutionError(\"HTTPSConnection(host='paygent%20(nmi-powered)', port=443): Failed to resolve 'paygent%20(nmi-powered)' ([Errno 8] nodename nor servname provided, or not known)\"))"
+  },
+  "composio_raw": null,
+  "llm_raw": {
+    "description": "A payment gateway solution powered by NMI providing merchant services, payment processing, and transaction management.",
+    "authentication": [
+      "API key"
+    ],
+    "self_serve": "gated_paid_plan",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://paygent.com"
+    ],
+    "notes": "Paygent acts as a white-label interface for NMI; integration typically requires a merchant account and access to NMI's broad transaction and vaulting APIs.",
+    "self_confidence": 0.85
+  }
+}

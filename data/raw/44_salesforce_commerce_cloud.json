@@ -1,0 +1,38 @@
+{
+  "docs": {
+    "url": "https://developer.salesforce.com/docs/commerce",
+    "status": 403,
+    "text": "Oops\n              \n                Something went wrong\n              \n                Reference id: 0.8ca2dfad.1783737887.f4a0cb93",
+    "ok": false
+  },
+  "composio_raw": {
+    "slug": "salesforce",
+    "name": "Salesforce",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "CRM",
+      "Contact Management"
+    ],
+    "tools_count": 184.0,
+    "description": "Salesforce is a leading CRM platform integrating sales, service, marketing, and analytics to build customer relationships and drive business growth"
+  },
+  "llm_raw": {
+    "description": "A comprehensive enterprise-grade e-commerce platform providing cloud-based solutions for B2C and B2B online storefronts.",
+    "authentication": [
+      "OAuth2"
+    ],
+    "self_serve": "gated_paid_plan",
+    "api_surface": "REST+GraphQL",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://developer.salesforce.com/docs/commerce"
+    ],
+    "notes": "Information based on industry knowledge and Composio registry data due to transient fetch failure; platform requires enterprise-level partnership/contract to access sandbox environments.",
+    "self_confidence": 0.95
+  }
+}

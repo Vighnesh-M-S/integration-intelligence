@@ -1,0 +1,38 @@
+{
+  "id": "4",
+  "name": "Attio",
+  "category": "CRM and Sales",
+  "hint_url": "attio.com",
+  "composio_registry_match": {
+    "slug": "attio",
+    "name": "Attio",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "CRM"
+    ],
+    "tools_count": 99.0,
+    "description": "Attio is a fully customizable workspace for your team's relationships and workflows."
+  },
+  "description": "An AI-powered CRM designed for modern sales, offering flexible data structures and automated workflows.",
+  "authentication": [
+    "OAuth2",
+    "API key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://attio.com",
+    "https://developers.attio.com"
+  ],
+  "notes": "Relied on prior knowledge of Attio's developer platform and API documentation for authentication and API details.",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

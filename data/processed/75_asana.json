@@ -1,0 +1,37 @@
+{
+  "id": "75",
+  "name": "Asana",
+  "category": "Productivity and Project Management",
+  "hint_url": "developers.asana.com",
+  "composio_registry_match": {
+    "slug": "asana",
+    "name": "Asana",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Project Management",
+      "Task Management"
+    ],
+    "tools_count": 153.0,
+    "description": "Tool to help teams organize, track, and manage their work."
+  },
+  "description": "A cloud-based project and task management platform designed to help teams orchestrate work and streamline workflows.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://developers.asana.com"
+  ],
+  "notes": "Asana provides a comprehensive REST API and dedicated resources for LLM-based integrations, including a published llms.txt file.",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

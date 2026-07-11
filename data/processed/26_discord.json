@@ -1,0 +1,37 @@
+{
+  "id": "26",
+  "name": "Discord",
+  "category": "Communications and Messaging",
+  "hint_url": "discord.com",
+  "composio_registry_match": {
+    "slug": "discord",
+    "name": "Discord",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Team Chat",
+      "Team Collaboration"
+    ],
+    "tools_count": 27.0,
+    "description": "An instant messaging and VoIP social platform."
+  },
+  "description": "A platform for real-time communication via voice, video, and text, organized into servers and channels.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://discord.com"
+  ],
+  "notes": "The Discord API is highly mature and widely used for bot integration. MCP servers for Discord exist in the community ecosystem.",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

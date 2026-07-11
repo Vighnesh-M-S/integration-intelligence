@@ -1,0 +1,27 @@
+{
+  "docs": {
+    "url": "https://api.docs.dealcloud.com",
+    "status": 200,
+    "text": "Dealcloud Developer Documentation - DealCloud API Docs\n\ud83d\ude80 New: DealCloud MCP Server \u2014 client preview starting July 2026\nFeedback\n (opens in a new tab)\nAPI Reference\nGetting Started\nAPI Keys\nAuthorization Token\nPagination\nRate Limits\nStatus Codes and Handling\nCore\nSchema\nEntryTypes\nAll Entry Types\nEntry Type by ID\nFields\nAll Fields\nFields by EntryType\nField by ID\nMultiple Field IDs\nChoice Field Values\nSite Metadata\nCurrencies\nField Types\nField Units\nFilter Operations\nMappings\nMappings Types\nSystem Entry Types\nSystem Field Types\nTime Zones\nUsers\nData\nCells\nGet Data\nList Entries\nList Entries using Filters\nCreate, Update or Upsert\nRows\nQuery\nGet\nUpdate\nCreate\nList Views\nGet Data using View\nHistory\nHistory or All History\nHistorical Data\nFiles\nDelete\nMerge\nTemplate Reports\nGet Template\nGenerate\nGet Report\nUser Management\nCreate User\nGet User\nGet Users by ID\nUpdate User\nDelete User\nGet All User Groups\nGet User Group by ID\nCreate Users Proxy\nGet User Proxy\nInvite Users\nUser Activity\nOther\nPublications\nGetting Started\nTopics\nPoll\nAcknowledge\nEvent Types\nData\nSchema\nUser\nBootstrap\nSite Backups\nRequest Backup\nRetrieve Backups\nDelete\nEncryption\nRelationship Intelligence\nPOST Emails\nPOST Meetings\nGET Status\nGET Settings\nSchema Contracts\nMCP\nGetting Started\nAuthentication\nAvailable Tools\nSDKs\nPython\nInstallation\nAuthentication\nUsage\nSchema\nData\nLicense\nC#\nInstallation\nAuthentication\nLogging\nUsage\nSchema\nData\nLicense\nGuides\nHow to Create a User\nHow to Download Files\nHow to Upload Files\nHow to Backlink DMS Documents\nReal-Time Events from DealCloud\nAudit Trail for Read Events\nMaking Requests on Behalf of Users\nLight\nDealcloud Developer Documentation\nQuick Start\nAPI References\n\u2192\nGuides\n\u2192\nSDK Documentation\nPython\n\u2192\nC#\n\u2192",
+    "ok": true
+  },
+  "composio_raw": null,
+  "llm_raw": {
+    "description": "A specialized CRM and relationship management platform tailored for financial services, investment banking, and private capital firms.",
+    "authentication": [
+      "API key",
+      "Token"
+    ],
+    "self_serve": "gated_paid_plan",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": true,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://api.docs.dealcloud.com"
+    ],
+    "notes": "DealCloud (by Intapp) is enterprise-grade software typically requiring a contract and dedicated implementation; API access is generally restricted to licensed clients.",
+    "self_confidence": 0.95
+  }
+}

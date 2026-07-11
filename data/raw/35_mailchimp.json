@@ -1,0 +1,39 @@
+{
+  "docs": {
+    "url": "https://mailchimp.com/developer",
+    "status": 200,
+    "text": "Mailchimp Developer\nBuild with Mailchimp\nMailchimp\u2019s developer tools provide everything you need to integrate your data with intelligent marketing tools and event-driven transactional email and SMS.\nMailchimp Marketing API\nSend marketing campaigns\nQuick Start\nAPI Reference\nDocumentation\nMailchimp\u2019s Marketing API powers timely, relevant marketing campaigns with custom data pulled directly from your app.        \nMailchimp Transactional\nSend transactional email and SMS\nQuick Start\nAPI Reference\nDocumentation\nMailchimp Transactional (formerly Mandrill) sends targeted and event-driven messages via the API or SMTP, fast\u2014with best-in-class deliverability.\n12409\nMailchimp Open Commerce \n12409\nBuild your own commerce stack\nMailchimp Open Commerce (formerly Reaction Commerce) is an open source, API-first, modular commerce stack made for technical, growth-minded retailers.\nQuick Start\nGraphQL Playground\nDocumentation\nYou\u2019ll be in good company\nWhen you build integrations with Mailchimp, you\u2019re creating tools for a trusted and reliable platform that powers marketing, e-commerce, and more for millions of small businesses.\n14M\nTrusted by fourteen million customers and counting\n1B\nRock-solid reliability delivers 1 billion emails daily\n300+\nDev teams have launched over 300 Mailchimp integrations so far\nMailchimp Integration Partner Program\nA helping hand to scale your Mailchimp Integration\nAs an Integration Partner, you\u2019ll have access to exclusive benefits, insights, and opportunities to grow your business.\nLearn More\n \n$1 Million to the Developer Community\nWe\u2019ve invested in the developer community with a fund to power the creation of new Mailchimp integrations. Keep an eye on the integrations directory to see what\u2019s new!\nBrowse Integrations\nOn the Mailchimp side, the fact that the API allows us to send automated emails to catch potential customers that might otherwise be lost is a great feature.\nSantiago Paragarino, Senior Magento developer & Gonzalo Dominguez, Senior Engineer, Ebizmarts",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "mailchimp",
+    "name": "Mailchimp",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Email Newsletters",
+      "Marketing Automation"
+    ],
+    "tools_count": 272.0,
+    "description": "Mailchimp is an email marketing and automation platform providing campaign templates, audience segmentation, and performance analytics to drive engagement and conversions"
+  },
+  "llm_raw": {
+    "description": "An all-in-one marketing platform providing APIs for email marketing campaigns, transactional messaging, and e-commerce stack integration.",
+    "authentication": [
+      "OAuth2",
+      "API key"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "REST+GraphQL",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://mailchimp.com/developer"
+    ],
+    "notes": "Mailchimp Marketing API supports both OAuth2 and API Key authentication. Open Commerce utilizes GraphQL.",
+    "self_confidence": 1.0
+  }
+}

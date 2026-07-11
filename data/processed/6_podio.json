@@ -1,0 +1,26 @@
+{
+  "id": "6",
+  "name": "Podio",
+  "category": "CRM and Sales",
+  "hint_url": "podio.com",
+  "composio_registry_match": null,
+  "description": "A flexible work management and CRM platform that enables teams to build custom workspaces, automate workflows, and collaborate.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://podio.com",
+    "https://developers.podio.com"
+  ],
+  "notes": "Podio provides an extremely thorough, developer-friendly REST API with comprehensive coverage of workspaces, apps, items, tasks, and integrations using OAuth2.",
+  "confidence": 0.7,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research"
+}

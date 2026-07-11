@@ -1,0 +1,27 @@
+{
+  "docs": {
+    "url": "https://consensus.app",
+    "status": 200,
+    "text": "Consensus: AI for Research\nResearch starts here\nSources\nCorpus\nDeep\nFilter",
+    "ok": true
+  },
+  "composio_raw": null,
+  "llm_raw": {
+    "description": "An AI-powered search engine that extracts and synthesizes answers directly from peer-reviewed scientific research papers.",
+    "authentication": [
+      "OAuth2",
+      "Token"
+    ],
+    "self_serve": "self_serve_free",
+    "api_surface": "none_public",
+    "api_breadth": "unknown",
+    "mcp": false,
+    "buildable": false,
+    "blocker": "no public API",
+    "evidence_urls": [
+      "https://consensus.app"
+    ],
+    "notes": "Consensus does not offer a public developer API or official SDK; automated access is restricted to the browser-based web interface.",
+    "self_confidence": 0.95
+  }
+}

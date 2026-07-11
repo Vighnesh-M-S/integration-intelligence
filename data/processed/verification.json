@@ -1,0 +1,1568 @@
+[
+  {
+    "id": "10",
+    "name": "DealCloud",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "A specialized CRM and relationship management platform tailored for financial services, investment banking, and private capital firms.",
+      "authentication": [
+        "API key",
+        "Token"
+      ],
+      "self_serve": "gated_paid_plan",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": true,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://api.docs.dealcloud.com"
+      ],
+      "notes": "DealCloud (by Intapp) is enterprise-grade software typically requiring a contract and dedicated implementation; API access is generally restricted to licensed clients."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "A specialized CRM and deal management platform tailored for financial services, private equity, and investment banking.",
+      "authentication": [
+        "API key",
+        "OAuth2"
+      ],
+      "self_serve": "gated_paid_plan",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": true,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://api.docs.dealcloud.com"
+      ],
+      "notes": "DealCloud is an enterprise-grade platform that typically requires a commercial agreement for API access, despite having public-facing documentation."
+    },
+    "verified_confidence": 0.48,
+    "changed_fields": [
+      "description",
+      "authentication",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 3 field(s)"
+  },
+  {
+    "id": "15",
+    "name": "Pylon",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "An AI-native omnichannel support platform that unifies customer communication channels (Slack, Email, WhatsApp, etc.) for B2B teams.",
+      "authentication": [
+        "API key",
+        "OAuth2"
+      ],
+      "self_serve": "gated_paid_plan",
+      "api_surface": "REST",
+      "api_breadth": "moderate",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://usepylon.com"
+      ],
+      "notes": "Pylon is targeted at enterprise B2B support and generally requires a sales conversation for access, though they maintain a developer-facing REST API for integrations."
+    },
+    "original_confidence": 0.68,
+    "verified": {
+      "description": "An AI-native B2B support platform that unifies omnichannel customer conversations into a single interface with built-in AI agents for automated routing, resolution, and account intelligence.",
+      "authentication": [
+        "API key",
+        "OAuth2"
+      ],
+      "self_serve": "gated_paid_plan",
+      "api_surface": "REST",
+      "api_breadth": "moderate",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://usepylon.com"
+      ],
+      "notes": "Pylon exposes a public API (referenced in navigation) and supports deep integration with ticketing, CRMs, and project management tools, making it highly suitable for agentic tooling."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 2 field(s)"
+  },
+  {
+    "id": "16",
+    "name": "LiveAgent",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "An all-in-one omnichannel help desk platform featuring ticketing, live chat, call center capabilities, and built-in AI automation tools.",
+      "authentication": [
+        "API key"
+      ],
+      "self_serve": "self_serve_trial",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://liveagent.com"
+      ],
+      "notes": "LiveAgent provides a well-documented public REST API for developers to manage tickets, contacts, and agents, making it highly suitable for agent tooling."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "An all-in-one omnichannel help desk platform featuring ticketing, live chat, call center, and built-in AI automation tools.",
+      "authentication": [
+        "API key"
+      ],
+      "self_serve": "self_serve_trial",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://liveagent.com"
+      ],
+      "notes": "LiveAgent provides a well-documented REST API used by many third-party integrations, making it highly suitable for agent toolkits."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 2 field(s)"
+  },
+  {
+    "id": "20",
+    "name": "Gladly",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "A customer service platform featuring an AI-driven helpdesk that consolidates customer communication and interaction history across multiple channels.",
+      "authentication": [
+        "API key",
+        "OAuth2"
+      ],
+      "self_serve": "gated_paid_plan",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://gladly.com"
+      ],
+      "notes": "Gladly offers a well-documented REST API (Gladly Sidekick/API) primarily for enterprise customers; extensive integration capabilities exist for agent-tooling workflows."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "A customer service platform featuring AI-driven agents that manage omnichannel support conversations and maintain lifelong customer profiles.",
+      "authentication": [
+        "API key",
+        "OAuth2"
+      ],
+      "self_serve": "gated_paid_plan",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://gladly.com"
+      ],
+      "notes": "Gladly provides a comprehensive REST API for developers and partners to access customer history, conversations, and tasks. High-level API documentation is typically gated behind partner/customer access portals."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 2 field(s)"
+  },
+  {
+    "id": "24",
+    "name": "Lark (Larksuite)",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "An all-in-one collaboration suite integrating instant messaging, video conferencing, document collaboration, and project management tools.",
+      "authentication": [
+        "OAuth2",
+        "Token"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://open.larksuite.com"
+      ],
+      "notes": "Lark provides an extensive Open Platform API covering almost every aspect of the suite (IM, Calendar, Docs, Drive, HR, etc.), making it highly suitable for agent tooling."
+    },
+    "original_confidence": 0.49,
+    "verified": {
+      "description": "A comprehensive enterprise collaboration suite integrating messaging, calendars, documents, video conferencing, and workflow automation into a single platform.",
+      "authentication": [
+        "OAuth2",
+        "Token"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://open.larksuite.com"
+      ],
+      "notes": "Lark provides an extensive Open Platform with over 2500+ APIs, making it highly suitable for agent tooling integration via bots and webhooks."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 2 field(s)"
+  },
+  {
+    "id": "25",
+    "name": "Pumble",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "A comprehensive team communication and collaboration platform featuring persistent messaging, channels, video/voice conferencing, and file sharing.",
+      "authentication": [
+        "API key",
+        "Token"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "moderate",
+      "mcp": true,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://pumble.com"
+      ],
+      "notes": "Pumble explicitly markets an MCP server, indicating native support for AI agent integrations."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "A team communication and collaboration platform featuring messaging, threads, file sharing, and integrated video/voice conferencing.",
+      "authentication": [
+        "Unknown"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "unclear",
+      "api_breadth": "unknown",
+      "mcp": true,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://pumble.com"
+      ],
+      "notes": "While the site explicitly mentions an MCP server, public documentation for a REST API is not prominent on the main marketing pages; however, the explicit support for MCP makes it highly buildable for AI agents."
+    },
+    "verified_confidence": 0.68,
+    "changed_fields": [
+      "description",
+      "authentication",
+      "api_surface",
+      "api_breadth",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 5 field(s)"
+  },
+  {
+    "id": "29",
+    "name": "Aircall",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "A cloud-based AI-powered phone and customer communication platform that integrates voice, SMS, and messaging with CRM and help desk tools.",
+      "authentication": [
+        "OAuth2",
+        "API key"
+      ],
+      "self_serve": "self_serve_trial",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://aircall.io"
+      ],
+      "notes": "Aircall has a well-documented public REST API (developer.aircall.io) enabling telephony management, contact sync, and call analytics. Integration with AI agents is natively supported through their webhook and API ecosystem."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "A cloud-based business phone and contact center software that integrates voice, SMS, and AI-driven automation with CRM and help desk platforms.",
+      "authentication": [
+        "OAuth2",
+        "API key",
+        "Token"
+      ],
+      "self_serve": "self_serve_trial",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://aircall.io"
+      ],
+      "notes": "Aircall maintains a comprehensive public API (developer.aircall.io) that allows for robust integration with CRM, contact management, and call-log systems, making it highly suitable for agent tooling."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "authentication",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 3 field(s)"
+  },
+  {
+    "id": "30",
+    "name": "Vonage",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "A comprehensive communications platform offering APIs for voice, video, messaging, and network capabilities to integrate real-time connectivity into applications.",
+      "authentication": [
+        "API key",
+        "Token"
+      ],
+      "self_serve": "self_serve_trial",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://developer.vonage.com"
+      ],
+      "notes": "While Vonage has an extensive REST API surface for voice and messaging, there is no widely recognized official MCP server; however, it is highly suitable for custom tool building for agents."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "A communications platform providing APIs for voice, video, messaging, and network capabilities to integrate real-time connectivity into applications.",
+      "authentication": [
+        "API key",
+        "Token"
+      ],
+      "self_serve": "self_serve_trial",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://developer.vonage.com"
+      ],
+      "notes": "Vonage uses a combination of API keys/secrets and JWT tokens for authentication; well-established API ecosystem for agentic voice and messaging integration."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 2 field(s)"
+  },
+  {
+    "id": "31",
+    "name": "Google Ads",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "A comprehensive advertising platform for managing search, display, and video ad campaigns across Google's ecosystem.",
+      "authentication": [
+        "OAuth2"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": true,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://developers.google.com/google-ads"
+      ],
+      "notes": "The Google Ads API is highly robust, supporting full campaign management, reporting, and automation, but has a steep learning curve and strict rate limiting."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "A comprehensive advertising platform that allows businesses to create, manage, and automate ad campaigns across Google's network.",
+      "authentication": [
+        "OAuth2"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://developers.google.com/google-ads"
+      ],
+      "notes": "Google Ads API is highly robust but has a steep learning curve due to the complexity of the underlying Google Ads data model."
+    },
+    "verified_confidence": 0.7,
+    "changed_fields": [
+      "description",
+      "mcp",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 3 field(s)"
+  },
+  {
+    "id": "32",
+    "name": "Meta Ads",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "A comprehensive API suite for managing, automating, and optimizing advertising campaigns across Meta's platforms including Facebook, Instagram, Messenger, and WhatsApp.",
+      "authentication": [
+        "OAuth2"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST+GraphQL",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://developers.facebook.com/docs/marketing-apis"
+      ],
+      "notes": "While public, the Marketing API requires an approved app in Meta's Developer portal with specific 'Ads Management' permissions, which involves a vetting process for production access."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "Meta's Marketing API enables programmatic management and optimization of ad campaigns, audiences, and insights across Facebook, Instagram, Messenger, and WhatsApp.",
+      "authentication": [
+        "OAuth2"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST+GraphQL",
+      "api_breadth": "broad",
+      "mcp": true,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://developers.facebook.com/docs/marketing-apis"
+      ],
+      "notes": "While the API is broad, implementing it for agents requires managing complex object hierarchies (campaign/ad set/ad) and strict Meta developer app review/permissions."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "mcp",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 3 field(s)"
+  },
+  {
+    "id": "34",
+    "name": "GoHighLevel",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "An all-in-one marketing and sales automation platform providing CRM, email marketing, landing page builders, and SMS/voice automation tools.",
+      "authentication": [
+        "OAuth2",
+        "API key"
+      ],
+      "self_serve": "self_serve_trial",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://highlevel.stoplight.io",
+        "https://developers.gohighlevel.com/"
+      ],
+      "notes": "Relying on prior knowledge of the HighLevel Developer API, as the Stoplight URL provided acts as a portal for the extensive REST API documentation."
+    },
+    "original_confidence": 0.49,
+    "verified": {
+      "description": "An all-in-one sales and marketing automation platform for agencies and small businesses featuring CRM, email marketing, and funnel building.",
+      "authentication": [
+        "OAuth2",
+        "API key"
+      ],
+      "self_serve": "self_serve_trial",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://highlevel.stoplight.io",
+        "https://developers.gohighlevel.com/"
+      ],
+      "notes": "Relying on external knowledge of the GoHighLevel Developer API as the provided stoplight URL is a generic workspace placeholder."
+    },
+    "verified_confidence": 0.49,
+    "changed_fields": [
+      "description",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 2 field(s)"
+  },
+  {
+    "id": "37",
+    "name": "systeme.io",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "An all-in-one marketing platform for sales funnels, email automation, course hosting, and e-commerce management.",
+      "authentication": [
+        "API key"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "moderate",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://systeme.io"
+      ],
+      "notes": "Systeme.io provides a public REST API documented for managing contacts, funnels, and courses, making it well-suited for agent-based automation."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "An all-in-one marketing platform for sales funnels, email automation, course hosting, and affiliate management.",
+      "authentication": [
+        "API key"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "moderate",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://systeme.io"
+      ],
+      "notes": "Systeme.io provides a public REST API for managing contacts, tags, and funnels, which is sufficient for agentic automation of marketing workflows."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 2 field(s)"
+  },
+  {
+    "id": "38",
+    "name": "Pinterest",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "A visual discovery and social media platform that allows users to manage pins, boards, advertising campaigns, and shopping product catalogs via API.",
+      "authentication": [
+        "OAuth2"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://developers.pinterest.com"
+      ],
+      "notes": "Pinterest uses OAuth2 for standard app integration; API access is generally open to registered developers via the developer portal."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "A visual discovery engine and advertising platform that allows users to save ideas and brands to reach customers through promoted Pins and product catalogs.",
+      "authentication": [
+        "OAuth2"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://developers.pinterest.com"
+      ],
+      "notes": "Pinterest uses OAuth 2.0 for API access; while it does not have an official MCP server listed in the default registry, its REST API is well-documented and highly suitable for agentic integration."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 2 field(s)"
+  },
+  {
+    "id": "45",
+    "name": "Magento (Adobe Commerce)",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "A comprehensive enterprise-grade e-commerce platform that provides extensive tools for B2B and B2C online storefront management.",
+      "authentication": [
+        "OAuth2",
+        "Token"
+      ],
+      "self_serve": "gated_paid_plan",
+      "api_surface": "REST+GraphQL",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://developer.adobe.com/commerce"
+      ],
+      "notes": "Adobe Commerce (formerly Magento) features a highly mature and extensive API ecosystem, though full access often requires an enterprise subscription."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "A comprehensive enterprise-grade e-commerce platform offering B2B and B2C commerce capabilities with extensive extensibility via API.",
+      "authentication": [
+        "OAuth2",
+        "Token"
+      ],
+      "self_serve": "gated_paid_plan",
+      "api_surface": "REST+GraphQL",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://developer.adobe.com/commerce"
+      ],
+      "notes": "While the fetch text is a landing page, Adobe Commerce (formerly Magento) is well-known for its mature, extensive public REST and GraphQL API coverage for headless e-commerce."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 2 field(s)"
+  },
+  {
+    "id": "46",
+    "name": "Squarespace",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "A comprehensive website building and commerce platform offering hosted infrastructure, template customization, and APIs for site management.",
+      "authentication": [
+        "OAuth2",
+        "API key"
+      ],
+      "self_serve": "self_serve_trial",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://developers.squarespace.com"
+      ],
+      "notes": "Squarespace provides extensive REST APIs for commerce and content management, though specific enterprise-grade features may be gated."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "A website building and hosting platform offering integrated ecommerce tools, content management, and developer APIs for custom site extensions.",
+      "authentication": [
+        "OAuth2",
+        "API key"
+      ],
+      "self_serve": "self_serve_trial",
+      "api_surface": "REST",
+      "api_breadth": "moderate",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://developers.squarespace.com"
+      ],
+      "notes": "Authentication methods inferred from general platform knowledge as the provided text focuses on feature overview rather than technical auth specs."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "api_breadth",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 3 field(s)"
+  },
+  {
+    "id": "47",
+    "name": "Ecwid",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "Ecwid is an e-commerce platform providing APIs for store management, custom app development, and storefront integration.",
+      "authentication": [
+        "OAuth2",
+        "Token"
+      ],
+      "self_serve": "self_serve_trial",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://api-docs.ecwid.com"
+      ],
+      "notes": "API supports extensive management of orders, products, customers, and payment/shipping integrations."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "Ecwid is a cloud-based e-commerce platform that allows merchants to build online stores and integrate them into existing websites and social platforms.",
+      "authentication": [
+        "OAuth2",
+        "Token"
+      ],
+      "self_serve": "self_serve_trial",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://api-docs.ecwid.com"
+      ],
+      "notes": "Ecwid provides an extensive REST API for managing products, orders, customers, and storefront customization; well-suited for AI agent integration."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 2 field(s)"
+  },
+  {
+    "id": "50",
+    "name": "fanbasis",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "An all-in-one ecommerce operating system designed for high-ticket digital businesses to manage payments, fulfillment, and affiliate marketing.",
+      "authentication": [
+        "API key",
+        "OAuth2"
+      ],
+      "self_serve": "gated_paid_plan",
+      "api_surface": "unclear",
+      "api_breadth": "unknown",
+      "mcp": false,
+      "buildable": false,
+      "blocker": "no public API documentation available; enterprise-focused model typically requires direct sales contact",
+      "evidence_urls": [
+        "https://fanbasis.com"
+      ],
+      "notes": "FanBasis positions itself as a white-glove, enterprise-grade platform. While they mention 7000+ integrations, public API documentation for developers is not exposed on their marketing site."
+    },
+    "original_confidence": 0.68,
+    "verified": {
+      "description": "An all-in-one digital business infrastructure platform for selling high-ticket knowledge, services, and digital products with integrated payments and fulfillment.",
+      "authentication": [
+        "Unknown"
+      ],
+      "self_serve": "gated_admin_approval",
+      "api_surface": "unclear",
+      "api_breadth": "unknown",
+      "mcp": false,
+      "buildable": false,
+      "blocker": "no public API documentation available",
+      "evidence_urls": [
+        "https://fanbasis.com"
+      ],
+      "notes": "The platform functions as a closed enterprise-grade infrastructure; public developer documentation or API references are not accessible via their marketing site."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "authentication",
+      "self_serve",
+      "blocker",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 5 field(s)"
+  },
+  {
+    "id": "52",
+    "name": "SE Ranking",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "A comprehensive SEO software suite providing tools for keyword tracking, website auditing, competitor research, and backlink analysis.",
+      "authentication": [
+        "API key"
+      ],
+      "self_serve": "self_serve_trial",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": true,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://seranking.com/api"
+      ],
+      "notes": "While the specific /api page returned 404, SE Ranking maintains a well-known, established public REST API for business plans and has recently announced an official MCP connector."
+    },
+    "original_confidence": 0.49,
+    "verified": {
+      "description": "Comprehensive SEO software suite providing tools for rank tracking, website auditing, backlink analysis, and keyword research.",
+      "authentication": [
+        "API key"
+      ],
+      "self_serve": "self_serve_trial",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": true,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://seranking.com/api"
+      ],
+      "notes": "The site explicitly mentions an 'MCP connector' for ChatGPT. API is well-documented for B2B/Agency use, though it typically requires a paid subscription."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 2 field(s)"
+  },
+  {
+    "id": "59",
+    "name": "Waterfall.io",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "An aggregator API that provides B2B contact enrichment, prospect searching, and job change tracking by pooling data from over 30 external vendors.",
+      "authentication": [
+        "API key"
+      ],
+      "self_serve": "gated_paid_plan",
+      "api_surface": "REST",
+      "api_breadth": "moderate",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://waterfall.io"
+      ],
+      "notes": "While the API is public-facing and documented for developers, access appears to be enterprise-focused and requires a booked call/commercial engagement rather than an automated sign-up flow."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "A GTM enrichment API that aggregates data from 30+ providers to supply verified emails, mobile numbers, and prospect profiles.",
+      "authentication": [
+        "API key"
+      ],
+      "self_serve": "gated_paid_plan",
+      "api_surface": "REST",
+      "api_breadth": "moderate",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://waterfall.io"
+      ],
+      "notes": "Self-serve status is classified as gated_paid_plan because the site emphasizes 'Book a Call' for access and pricing rather than a public signup/key generation page."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 2 field(s)"
+  },
+  {
+    "id": "5",
+    "name": "Twenty",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "An open-source, highly customizable CRM designed as a modern alternative to Salesforce.",
+      "authentication": [
+        "API key",
+        "Token"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST+GraphQL",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://twenty.com"
+      ],
+      "notes": "Twenty is an open-source CRM with strong developer-first extensibility, offering both GraphQL and REST APIs alongside SDKs, making it highly suitable for agentic integrations and custom tool building."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "An open-source, modular CRM framework that provides developer-focused building blocks for custom sales applications.",
+      "authentication": [
+        "OAuth2",
+        "API key"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "GraphQL",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://twenty.com"
+      ],
+      "notes": "Twenty is architected as an extensible CRM platform. It provides a GraphQL API for its data model and is designed for self-hosting, making it highly amenable to agentic integration via local or cloud-hosted instances."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "authentication",
+      "api_surface",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 4 field(s)"
+  },
+  {
+    "id": "60",
+    "name": "Clay",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "An AI-powered GTM orchestration platform that automates lead research, data enrichment, and multi-channel outreach workflows.",
+      "authentication": [
+        "API key"
+      ],
+      "self_serve": "self_serve_trial",
+      "api_surface": "REST",
+      "api_breadth": "moderate",
+      "mcp": true,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://clay.com"
+      ],
+      "notes": "Clay explicitly lists 'Clay MCP' in their feature set, confirming official support for Model Context Protocol. The 'Agent plugin' functionality also suggests a focus on programmatic extensibility."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "A GTM automation platform that functions as an orchestration layer for data enrichment, AI-driven prospect research, and multi-tool workflow execution.",
+      "authentication": [
+        "API key",
+        "OAuth2"
+      ],
+      "self_serve": "self_serve_trial",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": true,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://clay.com"
+      ],
+      "notes": "Clay explicitly promotes a 'Clay MCP' server in their feature set and provides an 'Agent plugin' with API/CLI support, making it highly compatible with agentic workflows."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "authentication",
+      "api_breadth",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 4 field(s)"
+  },
+  {
+    "id": "62",
+    "name": "Vercel",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "A cloud platform for static sites and Serverless Functions that enables developers to host, deploy, and scale web applications.",
+      "authentication": [
+        "Token"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": true,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://vercel.com/docs/rest-api"
+      ],
+      "notes": "Vercel uses Bearer Token authentication (Personal Access Tokens) for its extensive REST API. The documentation is located at /docs/api rather than the fetched /docs/rest-api."
+    },
+    "original_confidence": 0.65,
+    "verified": {
+      "description": "A cloud platform for static sites and Serverless Functions that provides a REST API to manage deployments, domains, projects, and infrastructure.",
+      "authentication": [
+        "Token"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": true,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://vercel.com/docs/rest-api"
+      ],
+      "notes": "Vercel has an extensive public REST API and existing community-maintained MCP servers available for integration."
+    },
+    "verified_confidence": 0.85,
+    "changed_fields": [
+      "description",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 2 field(s)"
+  },
+  {
+    "id": "66",
+    "name": "Neo4j",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "A high-performance graph database management system designed to store, manage, and query highly connected data structures.",
+      "authentication": [
+        "API key",
+        "Basic"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": true,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://neo4j.com/docs/api"
+      ],
+      "notes": "Authentication typically uses HTTP Basic Auth or Bearer tokens via the Neo4j Bolt protocol or REST API. The app is widely used in agentic workflows for RAG and knowledge graph construction, supported by the official Neo4j MCP server."
+    },
+    "original_confidence": 0.64,
+    "verified": {
+      "description": "A graph database platform for managing highly connected data, supporting advanced analytics, AI agent memory, and knowledge graph construction.",
+      "authentication": [
+        "API key",
+        "Token"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST+GraphQL",
+      "api_breadth": "broad",
+      "mcp": true,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://neo4j.com/docs/api"
+      ],
+      "notes": "Authentication relies on standard database connection strings or Aura API keys/tokens. Neo4j officially supports the Model Context Protocol (MCP) for AI integration as indicated in the documentation site."
+    },
+    "verified_confidence": 0.84,
+    "changed_fields": [
+      "description",
+      "authentication",
+      "api_surface",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 4 field(s)"
+  },
+  {
+    "id": "68",
+    "name": "MongoDB Atlas",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "A fully managed multi-cloud database service providing a comprehensive suite of APIs for infrastructure provisioning, database management, and AI-integrated operations.",
+      "authentication": [
+        "API key"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://mongodb.com/docs/atlas/api"
+      ],
+      "notes": "While no official MCP server is listed on the provided page, the mature Admin API and Go SDK make this a prime candidate for an agent toolkit."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "A multi-cloud developer data platform that provides a fully managed MongoDB database, vector search, and operational infrastructure via APIs.",
+      "authentication": [
+        "API key"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://mongodb.com/docs/atlas/api"
+      ],
+      "notes": "While no official MCP server exists, the Atlas Administration API is robust and well-documented for agentic tool use. Public API keys (Programmatic API Keys) are used for authentication."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 2 field(s)"
+  },
+  {
+    "id": "83",
+    "name": "Binance",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "A global cryptocurrency exchange platform offering trading, staking, and financial services for digital assets.",
+      "authentication": [
+        "API key"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://binance-docs.github.io",
+        "https://developers.binance.com"
+      ],
+      "notes": "Official documentation is located at developers.binance.com; the fetched github.io URL is deprecated or incorrect. Binance provides a very mature, broad public REST and WebSocket API."
+    },
+    "original_confidence": 0.49,
+    "verified": {
+      "description": "A global cryptocurrency exchange platform providing services for trading, staking, and managing digital assets.",
+      "authentication": [
+        "API key"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://binance-docs.github.io",
+        "https://developers.binance.com/docs/binance-trading-api/rest-api"
+      ],
+      "notes": "The fetched GitHub Pages URL returned 404; based evaluation on the official Binance Developer documentation portal."
+    },
+    "verified_confidence": 0.49,
+    "changed_fields": [
+      "description",
+      "evidence_urls",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 3 field(s)"
+  },
+  {
+    "id": "84",
+    "name": "Paygent Connect",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "A payment gateway solution powered by NMI providing merchant services, payment processing, and transaction management.",
+      "authentication": [
+        "API key"
+      ],
+      "self_serve": "gated_paid_plan",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://paygent.com"
+      ],
+      "notes": "Paygent acts as a white-label interface for NMI; integration typically requires a merchant account and access to NMI's broad transaction and vaulting APIs."
+    },
+    "original_confidence": 0.48,
+    "verified": {
+      "description": "A payment gateway solution providing payment processing, recurring billing, and merchant account services.",
+      "authentication": [
+        "API key"
+      ],
+      "self_serve": "gated_paid_plan",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://paygent.com"
+      ],
+      "notes": "Paygent is an NMI-powered payment gateway; developer access is typically provided upon creating a merchant account through the gateway partner portal."
+    },
+    "verified_confidence": 0.48,
+    "changed_fields": [
+      "description",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 2 field(s)"
+  },
+  {
+    "id": "85",
+    "name": "iPayX",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "A FINTRAC-registered FX verification tool that audits foreign-exchange transactions against mid-market rates to reveal hidden spreads and costs.",
+      "authentication": [
+        "Unknown"
+      ],
+      "self_serve": "unknown",
+      "api_surface": "unclear",
+      "api_breadth": "unknown",
+      "mcp": false,
+      "buildable": false,
+      "blocker": "no public API documentation available",
+      "evidence_urls": [
+        "https://ipayx.ai/docs"
+      ],
+      "notes": "The documentation page provides a conceptual overview and manual input workflow but contains no references to a public API, SDK, or developer portal."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "A payment processing and fintech solution provider, primarily focused on healthcare billing and automated payment workflows.",
+      "authentication": [
+        "Unknown"
+      ],
+      "self_serve": "gated_partnership",
+      "api_surface": "unclear",
+      "api_breadth": "unknown",
+      "mcp": false,
+      "buildable": false,
+      "blocker": "no public API documentation; enterprise-gated access",
+      "evidence_urls": [
+        "https://ipayx.ai/docs"
+      ],
+      "notes": "The provided documentation URL returns a 404, and the product is known to operate as an enterprise-gated fintech provider for healthcare, offering no public developer portal or API documentation."
+    },
+    "verified_confidence": 0.48,
+    "changed_fields": [
+      "description",
+      "self_serve",
+      "blocker",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 4 field(s)"
+  },
+  {
+    "id": "90",
+    "name": "PitchBook",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "A comprehensive data provider for private and public capital markets, offering deep intelligence on companies, investors, deals, and funds.",
+      "authentication": [
+        "API key"
+      ],
+      "self_serve": "gated_paid_plan",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": false,
+      "blocker": "requires paid plan",
+      "evidence_urls": [
+        "https://pitchbook.com",
+        "https://docs.pitchbook.com"
+      ],
+      "notes": "PitchBook operates a highly gated enterprise API model requiring custom licensing agreements; public documentation is restricted and not open for self-serve agent integration."
+    },
+    "original_confidence": 0.48,
+    "verified": {
+      "description": "A comprehensive data and research platform providing intelligence on private capital markets including venture capital, private equity, and M&A.",
+      "authentication": [
+        "API key",
+        "OAuth2"
+      ],
+      "self_serve": "gated_paid_plan",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://pitchbook.com"
+      ],
+      "notes": "PitchBook provides a professional-grade REST API (PitchBook Direct) for enterprise customers; usage is strictly gated and requires an active paid commercial subscription, making it less accessible for hobbyist agent development but highly viable for institutional agent toolkits."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "authentication",
+      "buildable",
+      "blocker",
+      "evidence_urls",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 6 field(s)"
+  },
+  {
+    "id": "92",
+    "name": "Otter AI",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "An AI-powered meeting assistant that records, transcribes, and summarizes voice conversations in real-time.",
+      "authentication": [
+        "OAuth2"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "moderate",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://help.otter.ai"
+      ],
+      "notes": "Otter provides a REST API primarily for Enterprise customers and specific integrations; public developer documentation is limited compared to general SaaS platforms."
+    },
+    "original_confidence": 0.68,
+    "verified": {
+      "description": "An AI-powered meeting assistant that provides real-time transcription, automated meeting notes, and team collaboration features.",
+      "authentication": [
+        "OAuth2"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "REST",
+      "api_breadth": "narrow",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://help.otter.ai"
+      ],
+      "notes": "Otter provides limited public API access primarily through partner integrations (e.g., Zapier, Salesforce, HubSpot); custom agent development typically requires contact with their enterprise/partnership team for dedicated access."
+    },
+    "verified_confidence": 0.68,
+    "changed_fields": [
+      "description",
+      "api_breadth",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 3 field(s)"
+  },
+  {
+    "id": "94",
+    "name": "Consensus",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "An AI-powered search engine that extracts and synthesizes answers directly from peer-reviewed scientific research papers.",
+      "authentication": [
+        "OAuth2",
+        "Token"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "none_public",
+      "api_breadth": "unknown",
+      "mcp": false,
+      "buildable": false,
+      "blocker": "no public API",
+      "evidence_urls": [
+        "https://consensus.app"
+      ],
+      "notes": "Consensus does not offer a public developer API or official SDK; automated access is restricted to the browser-based web interface."
+    },
+    "original_confidence": 0.49,
+    "verified": {
+      "description": "An AI-powered academic search engine that synthesizes answers from over 200 million peer-reviewed research papers.",
+      "authentication": [
+        "Unknown"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "none_public",
+      "api_breadth": "unknown",
+      "mcp": false,
+      "buildable": false,
+      "blocker": "no public API",
+      "evidence_urls": [
+        "https://consensus.app"
+      ],
+      "notes": "Consensus does not currently provide a public developer API; usage is primarily via their web interface."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "authentication",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 3 field(s)"
+  },
+  {
+    "id": "95",
+    "name": "Reducto",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "An agentic document processing platform that provides APIs for parsing, structuring, extracting, and editing complex document data using vision-language models.",
+      "authentication": [
+        "API key"
+      ],
+      "self_serve": "self_serve_trial",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://reducto.ai"
+      ],
+      "notes": "Positioned as a developer-first platform with explicit focus on 'toolbox of flexible APIs' for AI teams."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "An agentic document processing platform that provides APIs for parsing, classifying, and extracting data from complex documents using OCR and vision-language models.",
+      "authentication": [
+        "API key"
+      ],
+      "self_serve": "self_serve_trial",
+      "api_surface": "REST",
+      "api_breadth": "moderate",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://reducto.ai"
+      ],
+      "notes": "Reducto is designed explicitly as a developer-first platform; while a specific MCP server is not currently listed in public registries, its REST API is highly compatible with agentic tool calling architectures."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "api_breadth",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 3 field(s)"
+  },
+  {
+    "id": "96",
+    "name": "Devin",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "An autonomous AI software engineer capable of writing, running, and testing code to handle end-to-end software development tasks.",
+      "authentication": [
+        "Other"
+      ],
+      "self_serve": "gated_paid_plan",
+      "api_surface": "unclear",
+      "api_breadth": "narrow",
+      "mcp": false,
+      "buildable": false,
+      "blocker": "Public API documentation is not available despite API mention",
+      "evidence_urls": [
+        "https://docs.devin.ai"
+      ],
+      "notes": "While the docs mention a 'Devin API', there is no public documentation page defining endpoints, schema, or access methods; it appears to be a gated or enterprise-focused feature."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "An autonomous AI software engineer capable of coding, debugging, testing, and managing SDLC tasks within an integrated development environment.",
+      "authentication": [
+        "Token"
+      ],
+      "self_serve": "gated_paid_plan",
+      "api_surface": "unclear",
+      "api_breadth": "unknown",
+      "mcp": true,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://docs.devin.ai"
+      ],
+      "notes": "While the docs mention a 'Devin API' and 'Devin MCP', public documentation for specific API endpoints or SDKs is currently gated or limited to enterprise/authenticated users."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "authentication",
+      "api_breadth",
+      "mcp",
+      "buildable",
+      "blocker",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 7 field(s)"
+  },
+  {
+    "id": "98",
+    "name": "Mermaid CLI",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "A CLI tool and Node.js library to convert Mermaid diagram definitions into static image formats like SVG, PNG, and PDF.",
+      "authentication": [
+        "Unknown"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "none_public",
+      "api_breadth": "narrow",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://github.com/mermaid-js/mermaid-cli"
+      ],
+      "notes": "While there is no REST/GraphQL API, the package provides a Node.js API that can be easily wrapped into an agent tool. The 'api_surface' is marked as none_public because it is a local library/CLI tool rather than a network service."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "A command-line interface for generating SVG, PNG, or PDF files from Mermaid diagram definition files.",
+      "authentication": [
+        "Unknown"
+      ],
+      "self_serve": "self_serve_free",
+      "api_surface": "none_public",
+      "api_breadth": "narrow",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://github.com/mermaid-js/mermaid-cli"
+      ],
+      "notes": "The tool is an open-source CLI/Node.js library rather than a SaaS with a public web API; it is directly consumable as a local dependency or shell command by agents."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 2 field(s)"
+  },
+  {
+    "id": "9",
+    "name": "Copper",
+    "method": "playwright_recheck",
+    "original": {
+      "description": "A CRM and project management platform built specifically for Google Workspace that integrates lead tracking, sales pipelines, and service delivery.",
+      "authentication": [
+        "API key",
+        "OAuth2"
+      ],
+      "self_serve": "self_serve_trial",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://copper.com"
+      ],
+      "notes": "Copper provides a well-documented REST API and is designed for deep integration with Google Workspace, making it highly suitable for agentic tooling."
+    },
+    "original_confidence": 0.69,
+    "verified": {
+      "description": "A CRM platform tightly integrated with Google Workspace designed to manage customer relationships, sales pipelines, and project delivery.",
+      "authentication": [
+        "OAuth2",
+        "API key"
+      ],
+      "self_serve": "self_serve_trial",
+      "api_surface": "REST",
+      "api_breadth": "broad",
+      "mcp": false,
+      "buildable": true,
+      "blocker": "",
+      "evidence_urls": [
+        "https://copper.com"
+      ],
+      "notes": "Uses OAuth2 for Google Workspace integration and provides a robust REST API for managing CRM entities like people, companies, opportunities, and projects."
+    },
+    "verified_confidence": 0.69,
+    "changed_fields": [
+      "description",
+      "authentication",
+      "notes"
+    ],
+    "reason": "browser-rendered re-fetch + independent LLM pass; changed 3 field(s)"
+  }
+]

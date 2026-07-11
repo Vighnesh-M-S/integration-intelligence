@@ -1,0 +1,39 @@
+{
+  "id": "81",
+  "name": "Stripe",
+  "category": "Finance and Fintech",
+  "hint_url": "stripe.com/docs/api",
+  "composio_registry_match": {
+    "slug": "stripe",
+    "name": "Stripe",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Payment Processing",
+      "eCommerce"
+    ],
+    "tools_count": 425.0,
+    "description": "Stripe offers online payment infrastructure, fraud prevention, and APIs enabling businesses to accept and manage payments globally"
+  },
+  "description": "A financial infrastructure platform providing payment processing, billing, and commerce APIs for online businesses.",
+  "authentication": [
+    "OAuth2",
+    "API key",
+    "Basic"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://stripe.com/docs/api"
+  ],
+  "notes": "Stripe provides a robust sandbox environment that is free to sign up and test immediately. It supports both API keys (often sent via Basic Auth) and OAuth2 for Stripe Connect.",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

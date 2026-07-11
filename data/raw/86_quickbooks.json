@@ -1,0 +1,38 @@
+{
+  "docs": {
+    "url": "https://developer.intuit.com",
+    "status": 200,
+    "text": "Intuit Developer\n \n \n \nCompiling and pre-filling your Intuit info...",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "quickbooks",
+    "name": "QuickBooks",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Accounting",
+      "Payment Processing"
+    ],
+    "tools_count": 114.0,
+    "description": "Quickbooks is a cloud-based accounting software that helps you manage your finances, track your income and expenses, and get insights into your business"
+  },
+  "llm_raw": {
+    "description": "A cloud-based accounting software suite for small and medium-sized businesses to manage income, expenses, and financial reporting.",
+    "authentication": [
+      "OAuth2"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://developer.intuit.com"
+    ],
+    "notes": "Relied on industry knowledge of the Intuit Developer platform and existing Composio toolkit integration capabilities.",
+    "self_confidence": 1.0
+  }
+}

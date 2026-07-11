@@ -1,0 +1,8 @@
+composio>=1.0.0
+google-genai
+requests
+beautifulsoup4
+playwright
+python-dotenv
+pandas
+jinja2

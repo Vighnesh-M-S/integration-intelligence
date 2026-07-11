@@ -1,0 +1,25 @@
+{
+  "id": "42",
+  "name": "WooCommerce",
+  "category": "Ecommerce",
+  "hint_url": "woocommerce.com/document/woocommerce-rest-api",
+  "composio_registry_match": null,
+  "description": "A flexible, open-source ecommerce plugin for WordPress that turns a website into an online store.",
+  "authentication": [
+    "API key"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://woocommerce.com/document/woocommerce-rest-api"
+  ],
+  "notes": "API relies on Consumer Key/Secret pairs linked to WordPress users; deep integration with WP core REST API exists.",
+  "confidence": 0.7,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research"
+}

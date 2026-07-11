@@ -1,0 +1,38 @@
+{
+  "docs": {
+    "url": "https://zoho.com/cliq",
+    "status": 200,
+    "text": "Team chat & communication software for businesses - Zoho Cliq\n \n \n \nBusiness communication software for teams\nWork how you want from wherever you want. Zoho Cliq streamlines your business communication and fuels effortless conversations within teams and external stakeholders through organization, automation, and AI.\nTry for free\nAnchor Point UCaas Solution\nISG Research 2023: Must have for Modern Communication Collaboration Needs\nLeader\nG2 Spring Reports: Grid and Momentum Leader in Business Instant Messaging\nStart your 15-day free trial\n Brands using Zoho Cliq\nYour central hub for\n uninterrupted team collaboration\n\u00a0\nRemote\n\u00a0\nchats\n\u00a0\nchannel\n\u00a0\nhistory\nfiles\ncalendar\nnotes\nprojects\norg\nEverything that matters, all in one place\nConnect without limitations\nBreak down silos in your organization and connect with colleagues effortlessly. Be it internal communication or external communication with vendors and agencies, keep conversations flowing through chats, channels, and online meetings in Zoho Cliq.\nCommunicate \nwith ease\nFind the best time to start discussions. Communicate instantly and arrive at conclusions with synchronous communication tools like calls, or schedule your conversations and work with teammates across time zones using asynchronous voice and video messages.\nCollaborate with maximum productivity\nKeep your team on track and save time with better planning. Unlock the full potential of online meetings with a collaborative whiteboard and screen sharing. Manage your day-to-day tasks and stay on top of your schedule with the built-in calendar. Plus, meet all your deadlines with contextual reminders.\nCentralize conversations and information\nMaintain a centralized hub for your teams. With Zoho Cliq, you can give your employees access to people, data, and actions in the same space, while also displaying information from your key external apps through integrations.\nCustomize your \noverall experience\nMake Zoho Cliq your own. With Cliq's admin panel, explore the range of customizations available for your business by setting up your own domain, brand assets, and themes. Have the app work the way you want with easy-to-build components in Cliq\u00e2\u0080\u0099s developer platform.\nConnect\nCommunicate\nCollaborate\nCentralize\nCustomize\nFeatures that power your team's productivity\nAI-powered conversations\nSummarize chats instantly and save time.\nSeamless integrations\nConnect your favorite tools to stay productive.\nWorkflow automation\nAutomate repetitive tasks for better efficiency.\nAwards & Recognition\nWhy Businesses love Zoho Cliq\nZoho Cliq supports teams of all sizes, empowering almost \n500,000\n users globally\nWe use Cliq every minute of every hour of every day. Without Cliq, our communication would have been a lot more difficult. Cliq has been the biggest surprise. We never even thought about bringing a product like that into printIQ, but once we started using it, the email traffic internally dropped significantly and now everyone is chatting all the time across the world over Cliq.\nAdrian Fleming\nGlobal Director of Sales, printIQ\nZoho Cliq is not only a chat application, but also an information lifeline for the company. We can easily collaborate on multiple projects, attend meetings and screen-sharing sessions, and instantly exchange documents to bring out the best campaigns for our clients. It helps us feel that we are working together (physically) even when we are not.\nXavier Tan\nCo-Founder, Heroes of Digital\n\"One Business Solutions\"\nDesigned to \nsuit your needs\nNo matter the industry, communication is key. Zoho Cliq is designed to accommodate all kinds of teams and businesses.\nEnterprise\nWith Cliq\u00e2\u0080\u0099s enterprise-grade security and admin controls, members of your organization can communicate securely.\nLearn more\nHybrid work\nConnect with employees across time zones with online collaboration tools.\nLearn more\nSoftware\nBuild and deploy software with Zoho Cliq\u00e2\u0080\u0099s built-in developer tools. Share code snippets, identify bugs, review progress, and iterate, all from the Cliq platform.\nLearn more\nEducation\nConduct trainings, courses, and webinars with virtual meetings, screen sharing, whiteboard collaboration, channels, and file sharing.\nLearn more\nGetting started with\n team communication is simple\nZoho Cliq is easy to set up. Kick-start your internal \ncommunication in a few clicks.\n1. Sign up\nCreate a new account by filling in your organization\u00e2\u0080\u0099s details.\n2. Set up\nNavigate to Cliq\u00e2\u0080\u0099s admin panel to get your organization account ready.\n3. Onboard\nStart onboarding your employees as users and start collaborating!\nGet personalized assistance\nGet Cliq \nfor mobile\nCollaborate with your team even while you are away from your desktop with \nZoho Cliq for mobile and wearables.\nEasy migration\nMigrating from your existing solution to Cliq is a breeze. Our \nhelp guides\n show you how to import your data so you can pick up right where you left off.\nFull-time support\nLooking for help or a product demo? \nGet in touch\n and we\u00e2\u0080\u0099ll be happy to assist you.\nTry Zoho Cliq for your business\nSign up for free",
+    "ok": true
+  },
+  "composio_raw": {
+    "slug": "zoho",
+    "name": "Zoho",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "CRM",
+      "Marketing Automation"
+    ],
+    "tools_count": 57.0,
+    "description": "Zoho is a suite of cloud applications including CRM, email marketing, and collaboration tools, enabling businesses to automate and scale operations"
+  },
+  "llm_raw": {
+    "description": "A team communication and collaboration platform featuring instant messaging, voice/video calls, and workflow automation.",
+    "authentication": [
+      "OAuth2"
+    ],
+    "self_serve": "self_serve_trial",
+    "api_surface": "REST",
+    "api_breadth": "broad",
+    "mcp": false,
+    "buildable": true,
+    "blocker": "",
+    "evidence_urls": [
+      "https://zoho.com/cliq"
+    ],
+    "notes": "Extensive developer platform and 57 existing tool integrations indicate a mature, accessible REST API.",
+    "self_confidence": 0.95
+  }
+}

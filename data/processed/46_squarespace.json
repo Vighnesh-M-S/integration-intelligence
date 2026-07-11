@@ -1,0 +1,28 @@
+{
+  "id": "46",
+  "name": "Squarespace",
+  "category": "Ecommerce",
+  "hint_url": "developers.squarespace.com",
+  "composio_registry_match": null,
+  "description": "A website building and hosting platform offering integrated ecommerce tools, content management, and developer APIs for custom site extensions.",
+  "authentication": [
+    "OAuth2",
+    "API key"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "moderate",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://developers.squarespace.com"
+  ],
+  "notes": "Authentication methods inferred from general platform knowledge as the provided text focuses on feature overview rather than technical auth specs.",
+  "confidence": 0.69,
+  "needs_verification": true,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research",
+  "verified": true,
+  "verification_method": "playwright_recheck"
+}

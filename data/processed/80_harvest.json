@@ -1,0 +1,43 @@
+{
+  "id": "80",
+  "name": "Harvest",
+  "category": "Productivity and Project Management",
+  "hint_url": "help.getharvest.com/api-v2",
+  "composio_registry_match": {
+    "slug": "harvest",
+    "name": "Harvest",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Time Tracking Software",
+      "Proposal & Invoice Management"
+    ],
+    "tools_count": 57.0,
+    "description": "Harvest is a time-tracking and invoicing tool designed for teams and freelancers, helping them log billable hours, manage projects, and streamline payments"
+  },
+  "description": "A time-tracking and project management application that helps businesses track billable hours, manage invoices, and analyze project expenses.",
+  "authentication": [
+    "OAuth2",
+    "Personal Access Token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://help.getharvest.com/api-v2"
+  ],
+  "notes": "Breadth is high due to comprehensive coverage of projects, timesheets, invoicing, expenses, and user management; auth confirmed via Composio registry. [human-verified: Both OAuth2 and PAT confirmed. Free plan (1 seat 2 projects). PAT at id.getharvest.com instantly.]",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research",
+  "human_verified": true,
+  "human_verified_fields": [
+    "authentication",
+    "self_serve"
+  ]
+}

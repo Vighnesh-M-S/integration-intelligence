@@ -1,0 +1,38 @@
+{
+  "id": "21",
+  "name": "Slack",
+  "category": "Communications and Messaging",
+  "hint_url": "slack.com",
+  "composio_registry_match": {
+    "slug": "slack",
+    "name": "Slack",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "Team Chat",
+      "Team Collaboration"
+    ],
+    "tools_count": 158.0,
+    "description": "Slack is a channel-based messaging platform. With Slack, people can work together more effectively, connect all their software tools and services, and find the information they need to do their best work - all within a secure, enterprise-grade environment."
+  },
+  "description": "Slack is a cloud-based collaboration hub that connects people, information, and tools through channels and messaging.",
+  "authentication": [
+    "OAuth2",
+    "Token"
+  ],
+  "self_serve": "self_serve_free",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://slack.com"
+  ],
+  "notes": "Relied heavily on prior knowledge of api.slack.com for Slack's REST API architecture and token structure. Page mentions new native Slackbot MCP integrations.",
+  "confidence": 1.0,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}

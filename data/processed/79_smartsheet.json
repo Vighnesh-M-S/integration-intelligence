@@ -1,0 +1,27 @@
+{
+  "id": "79",
+  "name": "Smartsheet",
+  "category": "Productivity and Project Management",
+  "hint_url": "smartsheet.com/developers",
+  "composio_registry_match": null,
+  "description": "A cloud-based platform for work management, project collaboration, and workflow automation.",
+  "authentication": [
+    "OAuth2",
+    "API key",
+    "Token"
+  ],
+  "self_serve": "self_serve_trial",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": true,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://smartsheet.com/developers"
+  ],
+  "notes": "Smartsheet provides a robust REST API and an official MCP server for agentic integrations.",
+  "confidence": 0.7,
+  "needs_verification": false,
+  "source": "llm_from_docs",
+  "pipeline_stage": "research"
+}

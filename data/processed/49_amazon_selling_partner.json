@@ -1,0 +1,36 @@
+{
+  "id": "49",
+  "name": "Amazon Selling Partner",
+  "category": "Ecommerce",
+  "hint_url": "developer-docs.amazon.com/sp-api",
+  "composio_registry_match": {
+    "slug": "amazon",
+    "name": "Amazon",
+    "auth_schemes": [
+      "OAUTH2"
+    ],
+    "categories": [
+      "E-commerce"
+    ],
+    "tools_count": 0.0,
+    "description": "Amazon is an e-commerce giant delivering a massive online marketplace, cloud services, and digital products that connect retailers, consumers, and businesses worldwide for seamless transactions"
+  },
+  "description": "Amazon's comprehensive REST-based API enabling developers to build applications for Amazon Selling Partners to manage orders, inventory, reports, and financial data.",
+  "authentication": [
+    "OAuth2"
+  ],
+  "self_serve": "gated_admin_approval",
+  "api_surface": "REST",
+  "api_breadth": "broad",
+  "mcp": false,
+  "buildable": true,
+  "blocker": "",
+  "evidence_urls": [
+    "https://developer-docs.amazon.com/sp-api"
+  ],
+  "notes": "Requires strict Amazon developer registration and application approval process; while technically 'self-serve' for registration, it is highly gated by compliance reviews.",
+  "confidence": 0.99,
+  "needs_verification": false,
+  "source": "composio_registry+llm",
+  "pipeline_stage": "research"
+}
